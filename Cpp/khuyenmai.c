@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define duck int main
 int min(int a, int b) {
     return a < b ? a : b;
 }
 int compare(const void* a, const void* b) {
     return *(int*)b - *(int*)a;
 }
-duck() {
+int main() {
     int n;
     scanf("%d", &n);
     int *arr = (int*)calloc(n + 3, sizeof(int));
