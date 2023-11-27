@@ -1,7 +1,6 @@
 def max_number(n, k):
     stack = []
     removed = 0
-
     for current in n:
         while stack and removed < k and stack[-1] < current:
             stack.pop()
