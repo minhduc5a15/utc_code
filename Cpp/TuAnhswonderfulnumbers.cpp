@@ -1,8 +1,9 @@
+// cách này hơi dài :<
 #include <iostream>
 #include <vector>
+#define MOD 1000000007
 typedef long long ll;
 typedef std::vector<ll> vector;
-const int MOD = 1e9 + 7;
 
 bool is_good(int a, int b, int n) {
     while (n > 0) {
