@@ -1,6 +1,5 @@
 #include <iostream>
 #include <unordered_map>
-#include <vector>
 using namespace std;
 
 int main() {
@@ -9,14 +8,14 @@ int main() {
     cout.tie(NULL);
     int n;
     cin >> n;
-    vector<int> arr(n);
     unordered_map<int, bool> map;
     for (int i = 0; i < n; ++i) {
-        cin >> arr[i];
-        if (!map[arr[i]]) {
-            cout << arr[i] << " ";
+        int x;
+        cin >> x;
+        if (!map[x]) {
+            cout << x << " ";
         }
-        map[arr[i]] = true;
+        map[x] = true;
     }
     return 0;
 }
