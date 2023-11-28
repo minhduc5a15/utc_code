@@ -1,19 +1,19 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#define ll long long
+
 using namespace std;
-vector<ll> arr = { 1, 2, 5, 10, 20, 25, 50 };
-vector<ll> root = { 100, 125, 200, 250, 500 };
+vector<int> arr = { 1, 2, 5, 10, 20, 25, 50 };
+vector<int> root = { 100, 125, 200, 250, 500 };
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     arr.reserve(8 * root.size() + arr.size() + 1);
-    for (int i = 1; i < 8; i++) {
+    for (int i = 1; i < 8; ++i) {
         arr.insert(arr.end(), root.begin(), root.end());
-        for (ll& item : root) {
+        for (int& item : root) {
             item *= 10;
         }
     }
@@ -21,7 +21,7 @@ int main() {
     int n;
     cin >> n;
     for (int i = 0; i < n; ++i) {
-        ll num;
+        int num;
         cin >> num;
         int count = upper_bound(arr.begin(), arr.end(), num) - arr.begin();
         cout << "#Case " << i + 1 << ": " << count << "\n";
