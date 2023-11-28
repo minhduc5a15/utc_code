@@ -17,4 +17,5 @@ int main() {
     }
     ll odd_count = n - even_count;
     cout << even_count * (even_count - 1) * (even_count - 2) / 6 + odd_count * (odd_count - 1) / 2 * even_count;
+    return 0;
 }
