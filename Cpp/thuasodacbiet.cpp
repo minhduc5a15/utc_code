@@ -2,13 +2,14 @@
 #include <algorithm>
 #include <vector>
 #define ll long long
-#define vector std::vector<ll>
+using namespace std;
+vector<ll> arr = { 1, 2, 5, 10, 20, 25, 50 };
+vector<ll> root = { 100, 125, 200, 250, 500 };
+
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
-    vector arr = { 1, 2, 5, 10, 20, 25, 50 };
-    vector root = { 100, 125, 200, 250, 500 };
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     arr.reserve(8 * root.size() + arr.size() + 1);
     for (int i = 1; i < 8; i++) {
         arr.insert(arr.end(), root.begin(), root.end());
@@ -16,23 +17,14 @@ int main() {
             item *= 10;
         }
     }
-    arr.push_back(1000000000);
-
+    arr.push_back(1e9);
     int n;
-    std::cin >> n;
-    vector list;
-    list.reserve(n);
+    cin >> n;
     for (int i = 0; i < n; ++i) {
         ll num;
-        std::cin >> num;
-        list.push_back(num);
+        cin >> num;
+        int count = upper_bound(arr.begin(), arr.end(), num) - arr.begin();
+        cout << "#Case " << i + 1 << ": " << count << "\n";
     }
-    int index = 0;
-    for (ll &item : list) {
-        index++;
-        int count = std::upper_bound(arr.begin(), arr.end(), item) - arr.begin();
-        std::cout << "#Case " << index << ": " << count << "\n";
-    }
-
     return 0;
 }
