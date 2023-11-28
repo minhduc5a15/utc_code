@@ -34,4 +34,5 @@ int main() {
         cows.insert(Fraction(a, b));
     }
     cout << cows.size() << endl;
+    return 0;
 }
