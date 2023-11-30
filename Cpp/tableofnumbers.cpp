@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
 typedef long long ll;
-typedef std::vector<ll> Vector;
-typedef std::vector<Vector> Matrix;
-typedef std::pair<ll, ll> Pair;
+typedef std::vector<ll> vectorl;
+typedef std::vector<vectorl> matrixl;
+typedef std::pair<ll, ll> pii;
 const ll INF = 2147483647;
 
-Pair solve(int m, int n, Matrix& matrix) {
-    Matrix dp_count(m, Vector(n, 0));
-    Matrix dp(m, Vector(n, INF));
+pii solve(int m, int n, matrixl& matrix) {
+    matrixl dp_count(m, vectorl(n, 0));
+    matrixl dp(m, vectorl(n, INF));
     if (matrix[0][0] > 0) {
         dp[0][0] = matrix[0][0];
         dp_count[0][0] = 1;
@@ -51,13 +51,13 @@ int main() {
     std::cout.tie(NULL);
     int m, n;
     std::cin >> m >> n;
-    Matrix matrix(m, Vector(n));
+    matrixl matrix(m, vectorl(n));
     for (int i = 0; i < m; ++i) {
         for (int j = 0; j < n; ++j) {
             std::cin >> matrix[i][j];
         };
     };
-    Pair result = solve(m, n, matrix);
+    pii result = solve(m, n, matrix);
     std::cout << result.first << " " << result.second;
     return 0;
 }

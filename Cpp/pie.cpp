@@ -13,7 +13,7 @@ bool check(double mid, std::vector<int>& radii, int F) {
     return pieces >= F;
 }
 
-double max_piece_size(std::vector<int>& radii, int F) {
+double solve(std::vector<int>& radii, int F) {
     double left = 0, right = PI * *std::max_element(radii.begin(), radii.end()) * *std::max_element(radii.begin(), radii.end());
     while (right - left > 1e-5) {
         double mid = (left + right) / 2;
@@ -40,7 +40,7 @@ int main() {
         for (int i = 0; i < n; ++i) {
             std::cin >> pies_radii_list[i];
         }
-        std::cout << std::fixed << std::setprecision(3) << max_piece_size(pies_radii_list, f + 1) << '\n';
+        std::cout << std::fixed << std::setprecision(3) << solve(pies_radii_list, f + 1) << '\n';
     }
     return 0;
 }

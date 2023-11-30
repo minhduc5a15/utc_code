@@ -25,7 +25,9 @@ int main() {
     ll k;
     cin >> n >> k;
     vector<ll> arr(n);
-    for (int i = 0; i < n; i++) cin >> arr[i];
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
     cout << solve(arr, n, k);
     return 0;
 }

@@ -13,7 +13,7 @@ ll power(ll base, ll exponent, int modulus) {
     return result;
 }
 
-void duck() {
+int main() {
     ll n;
     scanf("%lld", &n);
     if (n >= 4) printf("%lld", power(2, n - 2, MOD));
@@ -21,9 +21,5 @@ void duck() {
         if (n == 1) printf("1");
         else printf("2");
     }
-}
-
-int main() {
-    duck();
     return 0;
 }

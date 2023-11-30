@@ -1,7 +1,6 @@
 // source: https://stackoverflow.com/questions/1697334/algorithm-for-solving-sudoku
 #include <iostream>
 #include <vector>
-#define duck int main
 using namespace std;
 pair<int, int> next_cell(vector<vector<int>>& grid, int i, int j) {
     for (int x = i; x < 9; ++x) {
@@ -63,7 +62,7 @@ bool solveSudoku(vector<vector<int>>& grid, int i = 0, int j = 0) {
     return false;
 }
 
-duck() {
+int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);

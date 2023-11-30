@@ -14,11 +14,10 @@ int main() {
     cin >> n;
     n *= 2;
     for (int i = 1; i <= trunc(sqrt(n)); ++i) {
-        if (n % i != 0)
-            continue;
+        if (n % i) continue;
         r = n / i;
         h = r - i + 1;
-        if (h % 2 != 0) continue;
+        if (h % 2) continue;
         first_termination = h / 2;
         end_termination = r - first_termination + 1;
         if (first_termination == end_termination) continue;

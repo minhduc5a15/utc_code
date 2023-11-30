@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
     std::cout.tie(NULL);
@@ -10,8 +9,7 @@ int main()
     if (n == 0) {
         std::cout << "0 0";
     }
-    else
-    {
+    else {
         int arr[n];
         for (int i = 0; i < n; ++i) {
             std::cin >> arr[i];

@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-std::vector<int> sieve_of_eratosthenes(int limit) {
+std::vector<int> sieve(int limit) {
     std::vector<bool> sieve(limit, true);
     sieve[0] = sieve[1] = false;
     for (int i = 2; i * i <= limit; ++i) {
@@ -25,7 +25,7 @@ void solve(int n) {
     int limit = n;
     std::vector<int> primes;
     while (primes.size() < n) {
-        primes = sieve_of_eratosthenes(limit);
+        primes = sieve(limit);
         limit *= 2;
     }
     for (int i = 0; i < n; ++i) {
