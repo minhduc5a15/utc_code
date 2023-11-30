@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 struct Node {
     int countWord;
@@ -30,7 +31,7 @@ void addWord(Node* root, string s) {
 int findWord(Node* root, string s) {
     Node* temp = root;
     int n = s.size();
-    for (int i = 0; i <n; ++i) {
+    for (int i = 0; i < n; ++i) {
         int ch = s[i] - 'a';
         if (temp->child[ch] == NULL) {
             return 0;
