@@ -23,14 +23,11 @@ int main() {
             colors[color]++;
         }
     }
-
     vector<pair<int, string>> vec;
-    for (auto it : colors) {
+    for (pair<string, int> it : colors) {
         vec.push_back(make_pair(it.second, it.first));
     }
-
     sort(vec.begin(), vec.end(), lambda);
-
     cout << vec[0].second << '\n' << vec[1].second;
     return 0;
 }
