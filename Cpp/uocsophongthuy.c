@@ -28,9 +28,9 @@ void solve(ll n) {
             printf("%d ", i);
         }
     }
-    int d = find_x(n);
-    if (d > k) {
-        printf("%d\n", d);
+    int x = find_x(n);
+    if (x > k) {
+        printf("%d\n", x);
     }
     else {
         printf("\n");

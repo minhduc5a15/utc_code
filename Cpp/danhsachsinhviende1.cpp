@@ -61,6 +61,7 @@ int main() {
             if (s.id == searchId) {
                 cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << '\n';
                 found = true;
+                break;
             }
         }
         if (!found) {
@@ -71,7 +72,7 @@ int main() {
     if (b == 1) {
         sort(students.begin(), students.end(), compare);
         for (Score s : students) {
-            cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << endl;
+            cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << '\n';
         }
     }
     return 0;

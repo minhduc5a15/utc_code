@@ -49,9 +49,9 @@ int main() {
     int n;
     cin >> n;
     for (int i = 0; i < n; ++i) {
-        string operation, word;
-        cin >> operation >> word;
-        if (operation == "add") {
+        string cmd, word;
+        cin >> cmd >> word;
+        if (cmd == "add") {
             addWord(root, word);
         }
         else {
