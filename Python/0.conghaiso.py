@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    a, b = map(int, input().split())
+    print(a + b)
+// code by duck it1
