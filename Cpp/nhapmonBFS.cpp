@@ -44,3 +44,6 @@ int main() {
     std::cout << solve(n, m, x1, y1, x2, y2) << std::endl;
     return 0;
 }
+
+
+// code by duck it1

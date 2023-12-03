@@ -23,3 +23,5 @@ int main() {
     cout << solve(n) << '\n';
     return 0;
 }
+
+// code by duck it1

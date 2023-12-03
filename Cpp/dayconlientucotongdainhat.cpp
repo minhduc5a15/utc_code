@@ -22,3 +22,5 @@ int main() {
     std::cout << kadane(list, n);
     return 0;
 }
+
+// code by duck it1

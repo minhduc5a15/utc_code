@@ -23,3 +23,6 @@ int main() {
     cout << solve(n, s) << endl;
     return 0;
 }
+
+
+// code by duck it1

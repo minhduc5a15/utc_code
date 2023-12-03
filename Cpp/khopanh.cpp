@@ -39,3 +39,6 @@ int main() {
     std::cout << (solve(matrixA, matrixB) ? "Yes" : "No") << "\n";
     return 0;
 }
+
+
+// code by duck it1

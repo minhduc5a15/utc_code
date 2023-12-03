@@ -29,3 +29,5 @@ int main() {
         if (check) cout << "YES";
     }
 }
+
+// code by duck it1

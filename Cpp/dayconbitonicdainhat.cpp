@@ -27,3 +27,5 @@ int main() {
     }
     cout << res;
 }
+
+// code by duck it1

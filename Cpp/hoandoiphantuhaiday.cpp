@@ -18,3 +18,5 @@ int main() {
     cout << res;
     return 0;
 }
+
+// code by duck it1

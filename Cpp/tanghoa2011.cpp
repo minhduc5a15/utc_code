@@ -31,3 +31,5 @@ int main() {
     cout << vec[0].second << '\n' << vec[1].second;
     return 0;
 }
+
+// code by duck it1

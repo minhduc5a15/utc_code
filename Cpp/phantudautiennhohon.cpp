@@ -82,3 +82,5 @@ int main() {
         cout << res + 1 << "\n";
     return 0;
 }
+
+// code by duck it1

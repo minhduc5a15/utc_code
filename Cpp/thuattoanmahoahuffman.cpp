@@ -71,3 +71,6 @@ int main() {
     cout << solve(s);
     return 0;
 }
+
+
+// code by duck it1

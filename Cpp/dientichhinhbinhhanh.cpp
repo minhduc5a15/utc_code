@@ -13,3 +13,5 @@ int main() {
     cout << fixed << setprecision(3) << sqrt(p * (p - a) * (p - b) * (p - c)) * 2 << endl;
     return 0;
 }
+
+// code by duck it1

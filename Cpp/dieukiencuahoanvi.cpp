@@ -18,3 +18,6 @@ int main() {
     cout << dp[n];
     return 0;
 }
+
+
+// code by duck it1

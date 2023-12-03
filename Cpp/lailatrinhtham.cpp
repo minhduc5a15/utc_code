@@ -37,3 +37,5 @@ int main() {
     solve(arr, n, k);
     return 0;
 }
+
+// code by duck it1

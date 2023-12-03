@@ -69,3 +69,6 @@ int main() {
     else std::cout << res;
     return 0;
 }
+
+
+// code by duck it1

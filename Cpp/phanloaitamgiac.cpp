@@ -22,3 +22,5 @@ int main() {
     checkTriangle(a, b, c);
     return 0;
 }
+
+// code by duck it1

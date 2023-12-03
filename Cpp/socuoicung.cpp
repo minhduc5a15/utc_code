@@ -27,3 +27,6 @@ int main() {
     cout << solve(a, b);
     return 0;
 }
+
+
+// code by duck it1

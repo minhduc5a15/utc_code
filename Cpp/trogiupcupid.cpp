@@ -51,3 +51,5 @@ int main() {
     cout << solve(arr) << endl;
     return 0;
 }
+
+// code by duck it1

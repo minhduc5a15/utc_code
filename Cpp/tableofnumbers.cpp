@@ -61,3 +61,5 @@ int main() {
     std::cout << result.first << " " << result.second;
     return 0;
 }
+
+// code by duck it1

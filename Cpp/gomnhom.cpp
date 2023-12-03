@@ -36,3 +36,6 @@ int main() {
     cout << *max_element(arr3.begin(), arr3.end()) << endl;
     return 0;
 }
+
+
+// code by duck it1

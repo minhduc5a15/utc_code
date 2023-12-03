@@ -29,3 +29,6 @@ int main() {
     solve(arr);
     return 0;
 }
+
+
+// code by duck it1

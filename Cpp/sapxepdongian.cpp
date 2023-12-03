@@ -15,3 +15,5 @@ int main() {
     cout << a << endl << b << endl << c << endl;
     return 0;
 }
+
+// code by duck it1

@@ -26,3 +26,6 @@ int main() {
     for (int item : result) std::cout << item << '\n';
     return 0;
 }
+
+
+// code by duck it1

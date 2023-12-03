@@ -9,3 +9,5 @@ int main() {
     std::cout << n + s;
     return 0;
 }
+
+// code by duck it1

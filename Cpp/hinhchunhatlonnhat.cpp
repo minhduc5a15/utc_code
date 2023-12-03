@@ -44,3 +44,6 @@ int main() {
     std::cout << solve(matrix);
     return 0;
 }
+
+
+// code by duck it1

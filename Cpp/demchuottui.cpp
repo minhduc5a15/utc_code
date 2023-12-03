@@ -54,3 +54,6 @@ int main() {
     solve(n, arr);
     return 0;
 }
+
+
+// code by duck it1

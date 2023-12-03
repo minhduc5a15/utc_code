@@ -81,3 +81,6 @@ int main() {
     cout << operands.top();
     return 0;
 }
+
+
+// code by duck it1

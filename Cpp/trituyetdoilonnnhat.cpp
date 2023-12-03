@@ -25,3 +25,6 @@ int main() {
     std::cout << result << std::endl;
     return 0;
 }
+
+
+// code by duck it1

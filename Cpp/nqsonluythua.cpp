@@ -35,3 +35,5 @@ int main() {
     cout << solve(arr, n, sum);
     return 0;
 }   
+
+// code by duck it1

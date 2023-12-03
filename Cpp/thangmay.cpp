@@ -30,3 +30,5 @@ int main() {
     cout << solve(n, k, m, s, f);
     return 0;
 }
+
+// code by duck it1

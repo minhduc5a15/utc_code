@@ -15,3 +15,6 @@ int main() {
     cout << max(arr[0] * arr[1], arr[n - 1] * arr[n - 2]);
     return 0;
 }
+
+
+// code by duck it1

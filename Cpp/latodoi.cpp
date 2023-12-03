@@ -10,3 +10,6 @@ int main() {
     cout << k;
     return 0;
 }
+
+
+// code by duck it1

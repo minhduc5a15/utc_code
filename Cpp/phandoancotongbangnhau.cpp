@@ -60,3 +60,6 @@ int main() {
     cout << max_sum / step;
     return 0;
 }
+
+
+// code by duck it1

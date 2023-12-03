@@ -55,3 +55,6 @@ int main() {
     cout << solve(n) << endl;
     return 0;
 }
+
+
+// code by duck it1

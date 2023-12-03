@@ -42,3 +42,6 @@ int main() {
     cout << fixed << setprecision(2) << determinant(matrix) << endl;
     return 0;
 }
+
+
+// code by duck it1

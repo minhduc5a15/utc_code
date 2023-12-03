@@ -41,3 +41,6 @@ int main() {
     std::cout << count_ways(n + 1) << std::endl;
     return 0;
 }
+
+
+// code by duck it1

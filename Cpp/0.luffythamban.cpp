@@ -29,3 +29,5 @@ int main() {
     std::cout << solve(arr) << std::endl;
     return 0;
 }
+
+// code by duck it1

@@ -37,3 +37,5 @@ int main() {
     std::cout << solve(n);
     return 0;
 }
+
+// code by duck it1

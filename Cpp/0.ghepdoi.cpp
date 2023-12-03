@@ -6,3 +6,5 @@ int main() {
     std::cout << std::min(a, b) << " " << (int)(abs(a - b) / 2);
     return 0;
 }
+
+// code by duck it1

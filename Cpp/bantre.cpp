@@ -15,3 +15,5 @@ int main() {
     cout << sum;
     return 0;
 }
+
+// code by duck it1

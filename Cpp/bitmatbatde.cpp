@@ -11,3 +11,6 @@ int main() {
     cout << solve(n, k);
     return 0;
 }
+
+
+// code by duck it1
