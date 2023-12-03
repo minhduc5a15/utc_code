@@ -9,4 +9,4 @@ if arr[2] % 2 != 0:
     result += 1
     arr[1] -= 2
 print((result + int((arr[1] + 3) / 4)) if arr[1] > 0 else result) 
-// code by duck it1
+# code by duck it1

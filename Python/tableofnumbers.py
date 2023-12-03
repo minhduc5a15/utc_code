@@ -1,11 +1,9 @@
 def solve(m, n, matrix):
     dp_count =[[0] * n for _ in range(m)]
     dp = [[float('inf')] * n for _ in range(m)]
-    #first cell
     if matrix[0][0] > 0:
         dp[0][0] = matrix[0][0]
         dp_count[0][0] = 1
-    #first row and column
     for i in range(1, m):
         if matrix[i][0] > 0:
             dp[i][0] = dp[i - 1][0] + matrix[i][0]
