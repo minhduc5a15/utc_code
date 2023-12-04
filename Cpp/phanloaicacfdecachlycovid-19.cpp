@@ -50,3 +50,4 @@ int main() {
     solve(n, adj_list);
     return 0;
 }
+// code by duck it1
