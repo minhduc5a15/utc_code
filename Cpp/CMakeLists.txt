@@ -194,5 +194,4 @@ add_executable(Cpp
         xaythap.c
         xaythapchanle.c
         xepmanh.cpp
-        __gcd.cpp
-        __gcd.h)
+)
