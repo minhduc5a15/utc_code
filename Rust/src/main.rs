@@ -1,51 +1,49 @@
-fn inverse_matrix(matrix: &mut Vec<Vec<f64>>, n: usize) -> Result<Vec<Vec<f64>>, &'static str> {
-    let mut inv_matrix: Vec<Vec<f64>> = vec![vec![0.0; n]; n];
-    for i in 0..n {
-        inv_matrix[i][i] = 1.0;
+use std::collections::{HashMap, VecDeque};
+use std::io::{self, BufRead};
+
+fn solve(n: usize, adj_list: &Vec<Vec<usize>>) {
+    let mut q = VecDeque::new();
+    let mut map = HashMap::new();
+    let mut dist = vec![-1isize; n + 1];
+    let stdin = io::stdin();
+    let mut it = stdin.lock().lines();
+    let t: usize = it.next().unwrap().unwrap().parse().unwrap();
+    map.insert(0, t);
+    for _ in 0..t {
+        let node: usize = it.next().unwrap().unwrap().parse().unwrap();
+        q.push_back(node);
+        dist[node] = 0;
     }
-    for i in 0..n {
-        if matrix[i][i] == 0.0 {
-            return Err("khong co ma tran nghich dao");
-        }
-        for j in 0..n {
-            if i != j {
-                let ratio: f64 = matrix[j][i] / matrix[i][i];
-                for k in 0..n {
-                    matrix[j][k] -= ratio * matrix[i][k];
-                    inv_matrix[j][k] -= ratio * inv_matrix[i][k];
-                }
+    while let Some(u) = q.pop_front() {
+        for &v in &adj_list[u] {
+            if dist[v] == -1 {
+                q.push_back(v);
+                dist[v] = dist[u] + 1;
+                *map.entry(dist[v] as usize).or_insert(0) += 1;
             }
         }
-        let pivot: f64 = matrix[i][i];
-        for k in 0..n {
-            matrix[i][k] /= pivot;
-            inv_matrix[i][k] /= pivot;
+    }
+
+    for i in 0..n {
+        if let Some(&count) = map.get(&i) {
+            println!("F{}: {}", i, count);
+        } else {
+            break;
         }
     }
-    
-    Ok(inv_matrix)
 }
 
 fn main() {
-    let mut matrix: Vec<Vec<f64>> = Vec::new();
-    let mut input: String = String::new();
-    std::io::stdin().read_line(&mut input).expect("");
-    let n: usize = input.trim().parse().expect("");
-    for _ in 0..n {
-        input.clear();
-        std::io::stdin().read_line(&mut input).expect("");
-        let rows: Vec<f64> = input
-            .split_whitespace()
-            .map(|s: &str| s.trim().parse().expect(""))
-            .collect();
-        matrix.push(rows);
+    let stdin = io::stdin();
+    let mut it = stdin.lock().lines();
+    let nm: Vec<usize> = it.next().unwrap().unwrap().split_whitespace().map(|x| x.parse().unwrap()).collect();
+    let (n, m) = (nm[0], nm[1]);
+    let mut adj_list = vec![vec![]; n + 1];
+    for _ in 0..m {
+        let uv: Vec<usize> = it.next().unwrap().unwrap().split_whitespace().map(|x| x.parse().unwrap()).collect();
+        let (u, v) = (uv[0], uv[1]);
+        adj_list[u].push(v);
+        adj_list[v].push(u);
     }
-    match inverse_matrix(&mut matrix, n) {
-        Ok(result) => {
-            for rows in result {
-                println!("{}", rows.iter().map(|&x| format!("{:.6}", x)).collect::<Vec<_>>().join(" "));
-            }
-        }
-        Err(err) => println!("{}", err),
-    }
+    solve(n, &adj_list);
 }
