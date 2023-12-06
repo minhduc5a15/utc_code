@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "/Repositories/laptrinhonline_club/Cpp",
-      "program": "/Repositories/laptrinhonline_club/Cpp/build/Debug/outDebug",
+      "cwd": "d:/Repositories/laptrinhonline_club/Cpp",
+      "program": "d:/Repositories/laptrinhonline_club/Cpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
