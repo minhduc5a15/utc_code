@@ -32,3 +32,5 @@ int main() {
     printf("%llu", power(s1, s2, MOD));
     return 0;
 }
+
+// code by duck it1

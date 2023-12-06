@@ -1,12 +1,13 @@
 #include <iostream>
 #include <unordered_set>
 #include <algorithm>
+
 using namespace std;
 
 struct Fraction {
     int a, b;
     Fraction(int a, int b) : a(a), b(b) {
-        int d = __gcd(abs(a), abs(b));
+        int d = std::__gcd(abs(a), abs(b));
         this->a /= d;
         this->b /= d;
     }

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <climits>
 
-int solve(const std::vector<int>arr) {
+int solve(const std::vector<int>& arr) {
     int minDiff = INT_MAX;
     for (int k = *std::min_element(arr.begin(), arr.end()); k <= *std::max_element(arr.begin(), arr.end()); ++k) {
         int diffSum = 0;
