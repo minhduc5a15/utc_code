@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 
-int solve(std::vector<int> &arr) {
+int solve(const std::vector<int> &arr) {
 	std::vector<int> list;
-	for (int &num: arr) {
+	for (const int &num: arr) {
 		std::vector<int>::iterator pos = lower_bound(list.begin(), list.end(), num);
 		if (pos == list.end()) {
 			list.push_back(num);

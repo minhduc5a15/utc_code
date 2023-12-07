@@ -390,6 +390,9 @@
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/mahoachuithe.cpp">
 			<Option target="Cpp"/>
 		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/main.cpp">
+			<Option target="Cpp"/>
+		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/mangsapxep.cpp">
 			<Option target="Cpp"/>
 		</Unit>

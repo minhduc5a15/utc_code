@@ -203,6 +203,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cpp.dir/luythuavaboiso.cpp.obj.d"
   "CMakeFiles/Cpp.dir/mahoachuithe.cpp.obj"
   "CMakeFiles/Cpp.dir/mahoachuithe.cpp.obj.d"
+  "CMakeFiles/Cpp.dir/main.cpp.obj"
+  "CMakeFiles/Cpp.dir/main.cpp.obj.d"
   "CMakeFiles/Cpp.dir/mangsapxep.cpp.obj"
   "CMakeFiles/Cpp.dir/mangsapxep.cpp.obj.d"
   "CMakeFiles/Cpp.dir/ngoidenthanthanh.cpp.obj"

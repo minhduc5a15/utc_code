@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int kadane(std::vector<int> &list, int n) {
+int kadane(const std::vector<int> &list, int n) {
 	int max_so_far = list[0], current_max = list[0];
 	for (int i = 1; i < n; i++) {
 		current_max = std::max(list[i], current_max + list[i]);

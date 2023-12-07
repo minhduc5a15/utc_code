@@ -127,6 +127,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/Repositories/utc_code/Cpp/lop.cpp" "CMakeFiles/Cpp.dir/lop.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/lop.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/luythuavaboiso.cpp" "CMakeFiles/Cpp.dir/luythuavaboiso.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/luythuavaboiso.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/mahoachuithe.cpp" "CMakeFiles/Cpp.dir/mahoachuithe.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/mahoachuithe.cpp.obj.d"
+  "D:/code/Repositories/utc_code/Cpp/main.cpp" "CMakeFiles/Cpp.dir/main.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/main.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/mangsapxep.cpp" "CMakeFiles/Cpp.dir/mangsapxep.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/mangsapxep.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/ngoidenthanthanh.cpp" "CMakeFiles/Cpp.dir/ngoidenthanthanh.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/ngoidenthanthanh.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/nhamaysanxuatgiay.cpp" "CMakeFiles/Cpp.dir/nhamaysanxuatgiay.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/nhamaysanxuatgiay.cpp.obj.d"

@@ -197,4 +197,5 @@ add_executable(Cpp
         0.sohoanhao.cpp
         gapgiayngangdoc.c
         phepbiendoicapdoilienke.c
+        main.cpp
 )

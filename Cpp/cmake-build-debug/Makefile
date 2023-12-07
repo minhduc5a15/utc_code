@@ -2576,6 +2576,30 @@ mahoachuithe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/mahoachuithe.cpp.s
 .PHONY : mahoachuithe.cpp.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 mangsapxep.obj: mangsapxep.cpp.obj
 .PHONY : mangsapxep.obj
 
@@ -4955,6 +4979,9 @@ help:
 	@echo ... mahoachuithe.obj
 	@echo ... mahoachuithe.i
 	@echo ... mahoachuithe.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 	@echo ... mangsapxep.obj
 	@echo ... mangsapxep.i
 	@echo ... mangsapxep.s
