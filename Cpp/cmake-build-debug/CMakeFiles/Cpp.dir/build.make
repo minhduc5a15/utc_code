@@ -2303,26 +2303,11 @@ CMakeFiles/Cpp.dir/tanghoacrush.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Cpp.dir/tanghoacrush.c.s"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\code\Repositories\utc_code\Cpp\tanghoacrush.c -o CMakeFiles\Cpp.dir\tanghoacrush.c.s
 
-CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/flags.make
-CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
-CMakeFiles/Cpp.dir/test.cpp.obj: D:/code/Repositories/utc_code/Cpp/test.cpp
-CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/Cpp.dir/test.cpp.obj"
-	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/test.cpp.obj -MF CMakeFiles\Cpp.dir\test.cpp.obj.d -o CMakeFiles\Cpp.dir\test.cpp.obj -c D:\code\Repositories\utc_code\Cpp\test.cpp
-
-CMakeFiles/Cpp.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/test.cpp.i"
-	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\code\Repositories\utc_code\Cpp\test.cpp > CMakeFiles\Cpp.dir\test.cpp.i
-
-CMakeFiles/Cpp.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/test.cpp.s"
-	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\code\Repositories\utc_code\Cpp\test.cpp -o CMakeFiles\Cpp.dir\test.cpp.s
-
 CMakeFiles/Cpp.dir/thangmay.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/thangmay.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/thangmay.cpp.obj: D:/code/Repositories/utc_code/Cpp/thangmay.cpp
 CMakeFiles/Cpp.dir/thangmay.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/Cpp.dir/thangmay.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/Cpp.dir/thangmay.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/thangmay.cpp.obj -MF CMakeFiles\Cpp.dir\thangmay.cpp.obj.d -o CMakeFiles\Cpp.dir\thangmay.cpp.obj -c D:\code\Repositories\utc_code\Cpp\thangmay.cpp
 
 CMakeFiles/Cpp.dir/thangmay.cpp.i: cmake_force
@@ -2337,7 +2322,7 @@ CMakeFiles/Cpp.dir/thayxau.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/thayxau.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/thayxau.cpp.obj: D:/code/Repositories/utc_code/Cpp/thayxau.cpp
 CMakeFiles/Cpp.dir/thayxau.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/Cpp.dir/thayxau.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/Cpp.dir/thayxau.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/thayxau.cpp.obj -MF CMakeFiles\Cpp.dir\thayxau.cpp.obj.d -o CMakeFiles\Cpp.dir\thayxau.cpp.obj -c D:\code\Repositories\utc_code\Cpp\thayxau.cpp
 
 CMakeFiles/Cpp.dir/thayxau.cpp.i: cmake_force
@@ -2352,7 +2337,7 @@ CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj: D:/code/Repositories/utc_code/Cpp/thuasodacbiet.cpp
 CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj -MF CMakeFiles\Cpp.dir\thuasodacbiet.cpp.obj.d -o CMakeFiles\Cpp.dir\thuasodacbiet.cpp.obj -c D:\code\Repositories\utc_code\Cpp\thuasodacbiet.cpp
 
 CMakeFiles/Cpp.dir/thuasodacbiet.cpp.i: cmake_force
@@ -2367,7 +2352,7 @@ CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj: D:/code/Repositories/utc_code/Cpp/thuattoanmahoahuffman.cpp
 CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.obj -MF CMakeFiles\Cpp.dir\thuattoanmahoahuffman.cpp.obj.d -o CMakeFiles\Cpp.dir\thuattoanmahoahuffman.cpp.obj -c D:\code\Repositories\utc_code\Cpp\thuattoanmahoahuffman.cpp
 
 CMakeFiles/Cpp.dir/thuattoanmahoahuffman.cpp.i: cmake_force
@@ -2382,7 +2367,7 @@ CMakeFiles/Cpp.dir/tichvatong.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tichvatong.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tichvatong.cpp.obj: D:/code/Repositories/utc_code/Cpp/tichvatong.cpp
 CMakeFiles/Cpp.dir/tichvatong.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/Cpp.dir/tichvatong.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/Cpp.dir/tichvatong.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tichvatong.cpp.obj -MF CMakeFiles\Cpp.dir\tichvatong.cpp.obj.d -o CMakeFiles\Cpp.dir\tichvatong.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tichvatong.cpp
 
 CMakeFiles/Cpp.dir/tichvatong.cpp.i: cmake_force
@@ -2397,7 +2382,7 @@ CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj: CMakeFiles/Cpp.dir/fl
 CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj: D:/code/Repositories/utc_code/Cpp/timdayconlientuccotongchotruoc.cpp
 CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.obj -MF CMakeFiles\Cpp.dir\timdayconlientuccotongchotruoc.cpp.obj.d -o CMakeFiles\Cpp.dir\timdayconlientuccotongchotruoc.cpp.obj -c D:\code\Repositories\utc_code\Cpp\timdayconlientuccotongchotruoc.cpp
 
 CMakeFiles/Cpp.dir/timdayconlientuccotongchotruoc.cpp.i: cmake_force
@@ -2412,7 +2397,7 @@ CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj: D:/code/Repositories/utc_code/Cpp/timhaisocotichlonnhat.cpp
 CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.obj -MF CMakeFiles\Cpp.dir\timhaisocotichlonnhat.cpp.obj.d -o CMakeFiles\Cpp.dir\timhaisocotichlonnhat.cpp.obj -c D:\code\Repositories\utc_code\Cpp\timhaisocotichlonnhat.cpp
 
 CMakeFiles/Cpp.dir/timhaisocotichlonnhat.cpp.i: cmake_force
@@ -2427,7 +2412,7 @@ CMakeFiles/Cpp.dir/timso.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/timso.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/timso.cpp.obj: D:/code/Repositories/utc_code/Cpp/timso.cpp
 CMakeFiles/Cpp.dir/timso.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/Cpp.dir/timso.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/Cpp.dir/timso.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/timso.cpp.obj -MF CMakeFiles\Cpp.dir\timso.cpp.obj.d -o CMakeFiles\Cpp.dir\timso.cpp.obj -c D:\code\Repositories\utc_code\Cpp\timso.cpp
 
 CMakeFiles/Cpp.dir/timso.cpp.i: cmake_force
@@ -2442,7 +2427,7 @@ CMakeFiles/Cpp.dir/timsonguyento.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/timsonguyento.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/timsonguyento.cpp.obj: D:/code/Repositories/utc_code/Cpp/timsonguyento.cpp
 CMakeFiles/Cpp.dir/timsonguyento.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/Cpp.dir/timsonguyento.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/Cpp.dir/timsonguyento.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/timsonguyento.cpp.obj -MF CMakeFiles\Cpp.dir\timsonguyento.cpp.obj.d -o CMakeFiles\Cpp.dir\timsonguyento.cpp.obj -c D:\code\Repositories\utc_code\Cpp\timsonguyento.cpp
 
 CMakeFiles/Cpp.dir/timsonguyento.cpp.i: cmake_force
@@ -2457,7 +2442,7 @@ CMakeFiles/Cpp.dir/timx.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/timx.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/timx.c.obj: D:/code/Repositories/utc_code/Cpp/timx.c
 CMakeFiles/Cpp.dir/timx.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/Cpp.dir/timx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/Cpp.dir/timx.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/timx.c.obj -MF CMakeFiles\Cpp.dir\timx.c.obj.d -o CMakeFiles\Cpp.dir\timx.c.obj -c D:\code\Repositories\utc_code\Cpp\timx.c
 
 CMakeFiles/Cpp.dir/timx.c.i: cmake_force
@@ -2472,7 +2457,7 @@ CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj: D:/code/Repositories/utc_code/Cpp/tinhgandungtichphan.c
 CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tinhgandungtichphan.c.obj -MF CMakeFiles\Cpp.dir\tinhgandungtichphan.c.obj.d -o CMakeFiles\Cpp.dir\tinhgandungtichphan.c.obj -c D:\code\Repositories\utc_code\Cpp\tinhgandungtichphan.c
 
 CMakeFiles/Cpp.dir/tinhgandungtichphan.c.i: cmake_force
@@ -2487,7 +2472,7 @@ CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj: D:/code/Repositories/utc_code/Cpp/tinhtohopchapkcuan.cpp
 CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.obj -MF CMakeFiles\Cpp.dir\tinhtohopchapkcuan.cpp.obj.d -o CMakeFiles\Cpp.dir\tinhtohopchapkcuan.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tinhtohopchapkcuan.cpp
 
 CMakeFiles/Cpp.dir/tinhtohopchapkcuan.cpp.i: cmake_force
@@ -2502,7 +2487,7 @@ CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj: D:/code/Repositories/utc_code/Cpp/tinhtonga^n+b^n.cpp
 CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT "CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.obj" -MF "CMakeFiles\Cpp.dir\tinhtonga^n+b^n.cpp.obj.d" -o "CMakeFiles\Cpp.dir\tinhtonga^n+b^n.cpp.obj" -c "D:\code\Repositories\utc_code\Cpp\tinhtonga^n+b^n.cpp"
 
 CMakeFiles/Cpp.dir/tinhtonga^n+b^n.cpp.i: cmake_force
@@ -2517,7 +2502,7 @@ CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj: D:/code/Repositories/utc_code/Cpp/tong3songuyen.cpp
 CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tong3songuyen.cpp.obj -MF CMakeFiles\Cpp.dir\tong3songuyen.cpp.obj.d -o CMakeFiles\Cpp.dir\tong3songuyen.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tong3songuyen.cpp
 
 CMakeFiles/Cpp.dir/tong3songuyen.cpp.i: cmake_force
@@ -2532,7 +2517,7 @@ CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj: D:/code/Repositories/utc_code/Cpp/tongdacbiet.cpp
 CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tongdacbiet.cpp.obj -MF CMakeFiles\Cpp.dir\tongdacbiet.cpp.obj.d -o CMakeFiles\Cpp.dir\tongdacbiet.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tongdacbiet.cpp
 
 CMakeFiles/Cpp.dir/tongdacbiet.cpp.i: cmake_force
@@ -2547,7 +2532,7 @@ CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj: D:/code/Repositories/utc_code/Cpp/tongdayfibonacci.cpp
 CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.obj -MF CMakeFiles\Cpp.dir\tongdayfibonacci.cpp.obj.d -o CMakeFiles\Cpp.dir\tongdayfibonacci.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tongdayfibonacci.cpp
 
 CMakeFiles/Cpp.dir/tongdayfibonacci.cpp.i: cmake_force
@@ -2562,7 +2547,7 @@ CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj: D:/code/Repositories/utc_code/Cpp/tongtatcacacuoclelonnhat.c
 CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.obj -MF CMakeFiles\Cpp.dir\tongtatcacacuoclelonnhat.c.obj.d -o CMakeFiles\Cpp.dir\tongtatcacacuoclelonnhat.c.obj -c D:\code\Repositories\utc_code\Cpp\tongtatcacacuoclelonnhat.c
 
 CMakeFiles/Cpp.dir/tongtatcacacuoclelonnhat.c.i: cmake_force
@@ -2577,7 +2562,7 @@ CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj: D:/code/Repositories/utc_code/Cpp/tongtrenduongcheo.cpp
 CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.obj -MF CMakeFiles\Cpp.dir\tongtrenduongcheo.cpp.obj.d -o CMakeFiles\Cpp.dir\tongtrenduongcheo.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tongtrenduongcheo.cpp
 
 CMakeFiles/Cpp.dir/tongtrenduongcheo.cpp.i: cmake_force
@@ -2592,7 +2577,7 @@ CMakeFiles/Cpp.dir/top3.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/top3.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/top3.c.obj: D:/code/Repositories/utc_code/Cpp/top3.c
 CMakeFiles/Cpp.dir/top3.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/Cpp.dir/top3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/Cpp.dir/top3.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/top3.c.obj -MF CMakeFiles\Cpp.dir\top3.c.obj.d -o CMakeFiles\Cpp.dir\top3.c.obj -c D:\code\Repositories\utc_code\Cpp\top3.c
 
 CMakeFiles/Cpp.dir/top3.c.i: cmake_force
@@ -2607,7 +2592,7 @@ CMakeFiles/Cpp.dir/trinhtham.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/trinhtham.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/trinhtham.cpp.obj: D:/code/Repositories/utc_code/Cpp/trinhtham.cpp
 CMakeFiles/Cpp.dir/trinhtham.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/Cpp.dir/trinhtham.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object CMakeFiles/Cpp.dir/trinhtham.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/trinhtham.cpp.obj -MF CMakeFiles\Cpp.dir\trinhtham.cpp.obj.d -o CMakeFiles\Cpp.dir\trinhtham.cpp.obj -c D:\code\Repositories\utc_code\Cpp\trinhtham.cpp
 
 CMakeFiles/Cpp.dir/trinhtham.cpp.i: cmake_force
@@ -2622,7 +2607,7 @@ CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj: D:/code/Repositories/utc_code/Cpp/trituyetdoilonnnhat.cpp
 CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.obj -MF CMakeFiles\Cpp.dir\trituyetdoilonnnhat.cpp.obj.d -o CMakeFiles\Cpp.dir\trituyetdoilonnnhat.cpp.obj -c D:\code\Repositories\utc_code\Cpp\trituyetdoilonnnhat.cpp
 
 CMakeFiles/Cpp.dir/trituyetdoilonnnhat.cpp.i: cmake_force
@@ -2637,7 +2622,7 @@ CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj: D:/code/Repositories/utc_code/Cpp/trogiupcupid.cpp
 CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/trogiupcupid.cpp.obj -MF CMakeFiles\Cpp.dir\trogiupcupid.cpp.obj.d -o CMakeFiles\Cpp.dir\trogiupcupid.cpp.obj -c D:\code\Repositories\utc_code\Cpp\trogiupcupid.cpp
 
 CMakeFiles/Cpp.dir/trogiupcupid.cpp.i: cmake_force
@@ -2652,7 +2637,7 @@ CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj: D:/code/Repositories/utc_code/Cpp/trungbinhcong.cpp
 CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/trungbinhcong.cpp.obj -MF CMakeFiles\Cpp.dir\trungbinhcong.cpp.obj.d -o CMakeFiles\Cpp.dir\trungbinhcong.cpp.obj -c D:\code\Repositories\utc_code\Cpp\trungbinhcong.cpp
 
 CMakeFiles/Cpp.dir/trungbinhcong.cpp.i: cmake_force
@@ -2667,7 +2652,7 @@ CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj: D:/code/Repositories/utc_code/Cpp/trungvicuakphantu.cpp
 CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.obj -MF CMakeFiles\Cpp.dir\trungvicuakphantu.cpp.obj.d -o CMakeFiles\Cpp.dir\trungvicuakphantu.cpp.obj -c D:\code\Repositories\utc_code\Cpp\trungvicuakphantu.cpp
 
 CMakeFiles/Cpp.dir/trungvicuakphantu.cpp.i: cmake_force
@@ -2682,7 +2667,7 @@ CMakeFiles/Cpp.dir/truotbang.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/truotbang.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/truotbang.cpp.obj: D:/code/Repositories/utc_code/Cpp/truotbang.cpp
 CMakeFiles/Cpp.dir/truotbang.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object CMakeFiles/Cpp.dir/truotbang.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object CMakeFiles/Cpp.dir/truotbang.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/truotbang.cpp.obj -MF CMakeFiles\Cpp.dir\truotbang.cpp.obj.d -o CMakeFiles\Cpp.dir\truotbang.cpp.obj -c D:\code\Repositories\utc_code\Cpp\truotbang.cpp
 
 CMakeFiles/Cpp.dir/truotbang.cpp.i: cmake_force
@@ -2697,7 +2682,7 @@ CMakeFiles/Cpp.dir/truotmon.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/truotmon.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/truotmon.cpp.obj: D:/code/Repositories/utc_code/Cpp/truotmon.cpp
 CMakeFiles/Cpp.dir/truotmon.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object CMakeFiles/Cpp.dir/truotmon.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object CMakeFiles/Cpp.dir/truotmon.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/truotmon.cpp.obj -MF CMakeFiles\Cpp.dir\truotmon.cpp.obj.d -o CMakeFiles\Cpp.dir\truotmon.cpp.obj -c D:\code\Repositories\utc_code\Cpp\truotmon.cpp
 
 CMakeFiles/Cpp.dir/truotmon.cpp.i: cmake_force
@@ -2712,7 +2697,7 @@ CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj: CMakeFiles/Cpp.dir/flag
 CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj: D:/code/Repositories/utc_code/Cpp/truyvanmaxcuadoanconlientiep.cpp
 CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.obj -MF CMakeFiles\Cpp.dir\truyvanmaxcuadoanconlientiep.cpp.obj.d -o CMakeFiles\Cpp.dir\truyvanmaxcuadoanconlientiep.cpp.obj -c D:\code\Repositories\utc_code\Cpp\truyvanmaxcuadoanconlientiep.cpp
 
 CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.i: cmake_force
@@ -2727,7 +2712,7 @@ CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj: D:/code/Repositories/utc_code/Cpp/TuAnhswonderfulnumbers.cpp
 CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.obj -MF CMakeFiles\Cpp.dir\TuAnhswonderfulnumbers.cpp.obj.d -o CMakeFiles\Cpp.dir\TuAnhswonderfulnumbers.cpp.obj -c D:\code\Repositories\utc_code\Cpp\TuAnhswonderfulnumbers.cpp
 
 CMakeFiles/Cpp.dir/TuAnhswonderfulnumbers.cpp.i: cmake_force
@@ -2742,7 +2727,7 @@ CMakeFiles/Cpp.dir/uocsophongthuy.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/uocsophongthuy.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/uocsophongthuy.c.obj: D:/code/Repositories/utc_code/Cpp/uocsophongthuy.c
 CMakeFiles/Cpp.dir/uocsophongthuy.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building C object CMakeFiles/Cpp.dir/uocsophongthuy.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object CMakeFiles/Cpp.dir/uocsophongthuy.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/uocsophongthuy.c.obj -MF CMakeFiles\Cpp.dir\uocsophongthuy.c.obj.d -o CMakeFiles\Cpp.dir\uocsophongthuy.c.obj -c D:\code\Repositories\utc_code\Cpp\uocsophongthuy.c
 
 CMakeFiles/Cpp.dir/uocsophongthuy.c.i: cmake_force
@@ -2757,7 +2742,7 @@ CMakeFiles/Cpp.dir/vandemodulo.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/vandemodulo.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/vandemodulo.cpp.obj: D:/code/Repositories/utc_code/Cpp/vandemodulo.cpp
 CMakeFiles/Cpp.dir/vandemodulo.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object CMakeFiles/Cpp.dir/vandemodulo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object CMakeFiles/Cpp.dir/vandemodulo.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/vandemodulo.cpp.obj -MF CMakeFiles\Cpp.dir\vandemodulo.cpp.obj.d -o CMakeFiles\Cpp.dir\vandemodulo.cpp.obj -c D:\code\Repositories\utc_code\Cpp\vandemodulo.cpp
 
 CMakeFiles/Cpp.dir/vandemodulo.cpp.i: cmake_force
@@ -2772,7 +2757,7 @@ CMakeFiles/Cpp.dir/vietlien.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/vietlien.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/vietlien.cpp.obj: D:/code/Repositories/utc_code/Cpp/vietlien.cpp
 CMakeFiles/Cpp.dir/vietlien.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object CMakeFiles/Cpp.dir/vietlien.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object CMakeFiles/Cpp.dir/vietlien.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/vietlien.cpp.obj -MF CMakeFiles\Cpp.dir\vietlien.cpp.obj.d -o CMakeFiles\Cpp.dir\vietlien.cpp.obj -c D:\code\Repositories\utc_code\Cpp\vietlien.cpp
 
 CMakeFiles/Cpp.dir/vietlien.cpp.i: cmake_force
@@ -2787,7 +2772,7 @@ CMakeFiles/Cpp.dir/vietlot.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/vietlot.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/vietlot.c.obj: D:/code/Repositories/utc_code/Cpp/vietlot.c
 CMakeFiles/Cpp.dir/vietlot.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building C object CMakeFiles/Cpp.dir/vietlot.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building C object CMakeFiles/Cpp.dir/vietlot.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/vietlot.c.obj -MF CMakeFiles\Cpp.dir\vietlot.c.obj.d -o CMakeFiles\Cpp.dir\vietlot.c.obj -c D:\code\Repositories\utc_code\Cpp\vietlot.c
 
 CMakeFiles/Cpp.dir/vietlot.c.i: cmake_force
@@ -2802,7 +2787,7 @@ CMakeFiles/Cpp.dir/vuontoimattrang.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/vuontoimattrang.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/vuontoimattrang.c.obj: D:/code/Repositories/utc_code/Cpp/vuontoimattrang.c
 CMakeFiles/Cpp.dir/vuontoimattrang.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building C object CMakeFiles/Cpp.dir/vuontoimattrang.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building C object CMakeFiles/Cpp.dir/vuontoimattrang.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/vuontoimattrang.c.obj -MF CMakeFiles\Cpp.dir\vuontoimattrang.c.obj.d -o CMakeFiles\Cpp.dir\vuontoimattrang.c.obj -c D:\code\Repositories\utc_code\Cpp\vuontoimattrang.c
 
 CMakeFiles/Cpp.dir/vuontoimattrang.c.i: cmake_force
@@ -2817,7 +2802,7 @@ CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj: D:/code/Repositories/utc_code/Cpp/xaudoixungdainhat.cpp
 CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj -MF CMakeFiles\Cpp.dir\xaudoixungdainhat.cpp.obj.d -o CMakeFiles\Cpp.dir\xaudoixungdainhat.cpp.obj -c D:\code\Repositories\utc_code\Cpp\xaudoixungdainhat.cpp
 
 CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.i: cmake_force
@@ -2832,7 +2817,7 @@ CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj: D:/code/Repositories/utc_code/Cpp/xaydungdanhba.cpp
 CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj -MF CMakeFiles\Cpp.dir\xaydungdanhba.cpp.obj.d -o CMakeFiles\Cpp.dir\xaydungdanhba.cpp.obj -c D:\code\Repositories\utc_code\Cpp\xaydungdanhba.cpp
 
 CMakeFiles/Cpp.dir/xaydungdanhba.cpp.i: cmake_force
@@ -2847,7 +2832,7 @@ CMakeFiles/Cpp.dir/xaythap.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/xaythap.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/xaythap.c.obj: D:/code/Repositories/utc_code/Cpp/xaythap.c
 CMakeFiles/Cpp.dir/xaythap.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building C object CMakeFiles/Cpp.dir/xaythap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building C object CMakeFiles/Cpp.dir/xaythap.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/xaythap.c.obj -MF CMakeFiles\Cpp.dir\xaythap.c.obj.d -o CMakeFiles\Cpp.dir\xaythap.c.obj -c D:\code\Repositories\utc_code\Cpp\xaythap.c
 
 CMakeFiles/Cpp.dir/xaythap.c.i: cmake_force
@@ -2862,7 +2847,7 @@ CMakeFiles/Cpp.dir/xaythapchanle.c.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/xaythapchanle.c.obj: CMakeFiles/Cpp.dir/includes_C.rsp
 CMakeFiles/Cpp.dir/xaythapchanle.c.obj: D:/code/Repositories/utc_code/Cpp/xaythapchanle.c
 CMakeFiles/Cpp.dir/xaythapchanle.c.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building C object CMakeFiles/Cpp.dir/xaythapchanle.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building C object CMakeFiles/Cpp.dir/xaythapchanle.c.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cpp.dir/xaythapchanle.c.obj -MF CMakeFiles\Cpp.dir\xaythapchanle.c.obj.d -o CMakeFiles\Cpp.dir\xaythapchanle.c.obj -c D:\code\Repositories\utc_code\Cpp\xaythapchanle.c
 
 CMakeFiles/Cpp.dir/xaythapchanle.c.i: cmake_force
@@ -2877,7 +2862,7 @@ CMakeFiles/Cpp.dir/xepmanh.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/xepmanh.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/xepmanh.cpp.obj: D:/code/Repositories/utc_code/Cpp/xepmanh.cpp
 CMakeFiles/Cpp.dir/xepmanh.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object CMakeFiles/Cpp.dir/xepmanh.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building CXX object CMakeFiles/Cpp.dir/xepmanh.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/xepmanh.cpp.obj -MF CMakeFiles\Cpp.dir\xepmanh.cpp.obj.d -o CMakeFiles\Cpp.dir\xepmanh.cpp.obj -c D:\code\Repositories\utc_code\Cpp\xepmanh.cpp
 
 CMakeFiles/Cpp.dir/xepmanh.cpp.i: cmake_force
@@ -2892,7 +2877,7 @@ CMakeFiles/Cpp.dir/main.cpp.obj: CMakeFiles/Cpp.dir/flags.make
 CMakeFiles/Cpp.dir/main.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
 CMakeFiles/Cpp.dir/main.cpp.obj: D:/code/Repositories/utc_code/Cpp/main.cpp
 CMakeFiles/Cpp.dir/main.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building CXX object CMakeFiles/Cpp.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object CMakeFiles/Cpp.dir/main.cpp.obj"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/main.cpp.obj -MF CMakeFiles\Cpp.dir\main.cpp.obj.d -o CMakeFiles\Cpp.dir\main.cpp.obj -c D:\code\Repositories\utc_code\Cpp\main.cpp
 
 CMakeFiles/Cpp.dir/main.cpp.i: cmake_force
@@ -3054,7 +3039,6 @@ Cpp_OBJECTS = \
 "CMakeFiles/Cpp.dir/tamgiacpascal.c.obj" \
 "CMakeFiles/Cpp.dir/tanghoa2011.cpp.obj" \
 "CMakeFiles/Cpp.dir/tanghoacrush.c.obj" \
-"CMakeFiles/Cpp.dir/test.cpp.obj" \
 "CMakeFiles/Cpp.dir/thangmay.cpp.obj" \
 "CMakeFiles/Cpp.dir/thayxau.cpp.obj" \
 "CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj" \
@@ -3247,7 +3231,6 @@ Cpp.exe: CMakeFiles/Cpp.dir/tableofnumbers.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/tamgiacpascal.c.obj
 Cpp.exe: CMakeFiles/Cpp.dir/tanghoa2011.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/tanghoacrush.c.obj
-Cpp.exe: CMakeFiles/Cpp.dir/test.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/thangmay.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/thayxau.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj
@@ -3291,7 +3274,7 @@ Cpp.exe: CMakeFiles/Cpp.dir/build.make
 Cpp.exe: CMakeFiles/Cpp.dir/linkLibs.rsp
 Cpp.exe: CMakeFiles/Cpp.dir/objects1.rsp
 Cpp.exe: CMakeFiles/Cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Linking CXX executable Cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Linking CXX executable Cpp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Cpp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -168,7 +168,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/Repositories/utc_code/Cpp/svmc 2017 code1 - secret Code.cpp" "CMakeFiles/Cpp.dir/svmc_2017_code1_-_secret_Code.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/svmc_2017_code1_-_secret_Code.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/tableofnumbers.cpp" "CMakeFiles/Cpp.dir/tableofnumbers.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/tableofnumbers.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/tanghoa2011.cpp" "CMakeFiles/Cpp.dir/tanghoa2011.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/tanghoa2011.cpp.obj.d"
-  "D:/code/Repositories/utc_code/Cpp/test.cpp" "CMakeFiles/Cpp.dir/test.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/test.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/thangmay.cpp" "CMakeFiles/Cpp.dir/thangmay.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/thangmay.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/thayxau.cpp" "CMakeFiles/Cpp.dir/thayxau.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/thayxau.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/thuasodacbiet.cpp" "CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/thuasodacbiet.cpp.obj.d"

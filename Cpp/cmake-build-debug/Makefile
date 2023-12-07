@@ -3752,30 +3752,6 @@ tanghoacrush.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/tanghoacrush.c.s
 .PHONY : tanghoacrush.c.s
 
-test.obj: test.cpp.obj
-.PHONY : test.obj
-
-# target to build an object file
-test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.obj
-.PHONY : test.cpp.obj
-
-test.i: test.cpp.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.s
-.PHONY : test.cpp.s
-
 thangmay.obj: thangmay.cpp.obj
 .PHONY : thangmay.obj
 
@@ -5126,9 +5102,6 @@ help:
 	@echo ... tanghoacrush.obj
 	@echo ... tanghoacrush.i
 	@echo ... tanghoacrush.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
 	@echo ... thangmay.obj
 	@echo ... thangmay.i
 	@echo ... thangmay.s

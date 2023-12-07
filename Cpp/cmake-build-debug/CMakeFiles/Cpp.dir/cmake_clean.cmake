@@ -301,8 +301,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cpp.dir/tanghoa2011.cpp.obj.d"
   "CMakeFiles/Cpp.dir/tanghoacrush.c.obj"
   "CMakeFiles/Cpp.dir/tanghoacrush.c.obj.d"
-  "CMakeFiles/Cpp.dir/test.cpp.obj"
-  "CMakeFiles/Cpp.dir/test.cpp.obj.d"
   "CMakeFiles/Cpp.dir/thangmay.cpp.obj"
   "CMakeFiles/Cpp.dir/thangmay.cpp.obj.d"
   "CMakeFiles/Cpp.dir/thayxau.cpp.obj"

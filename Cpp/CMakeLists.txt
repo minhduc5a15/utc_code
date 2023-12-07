@@ -155,7 +155,6 @@ add_executable(Cpp
         tamgiacpascal.c
         tanghoa2011.cpp
         tanghoacrush.c
-        test.cpp
         thangmay.cpp
         thayxau.cpp
         thuasodacbiet.cpp
