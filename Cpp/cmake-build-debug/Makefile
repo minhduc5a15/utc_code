@@ -1424,6 +1424,30 @@ demsoxaunhiphanmachuso0khongithonchuso1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/demsoxaunhiphanmachuso0khongithonchuso1.cpp.s
 .PHONY : demsoxaunhiphanmachuso0khongithonchuso1.cpp.s
 
+dibuon.obj: dibuon.cpp.obj
+.PHONY : dibuon.obj
+
+# target to build an object file
+dibuon.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/dibuon.cpp.obj
+.PHONY : dibuon.cpp.obj
+
+dibuon.i: dibuon.cpp.i
+.PHONY : dibuon.i
+
+# target to preprocess a source file
+dibuon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/dibuon.cpp.i
+.PHONY : dibuon.cpp.i
+
+dibuon.s: dibuon.cpp.s
+.PHONY : dibuon.s
+
+# target to generate assembly for a file
+dibuon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/dibuon.cpp.s
+.PHONY : dibuon.cpp.s
+
 diem-goc-duongtron.obj: diem-goc-duongtron.cpp.obj
 .PHONY : diem-goc-duongtron.obj
 
@@ -4811,6 +4835,9 @@ help:
 	@echo ... demsoxaunhiphanmachuso0khongithonchuso1.obj
 	@echo ... demsoxaunhiphanmachuso0khongithonchuso1.i
 	@echo ... demsoxaunhiphanmachuso0khongithonchuso1.s
+	@echo ... dibuon.obj
+	@echo ... dibuon.i
+	@echo ... dibuon.s
 	@echo ... diem-goc-duongtron.obj
 	@echo ... diem-goc-duongtron.i
 	@echo ... diem-goc-duongtron.s

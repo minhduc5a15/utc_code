@@ -107,6 +107,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cpp.dir/demsoxaunhiphankhongchua101.cpp.obj.d"
   "CMakeFiles/Cpp.dir/demsoxaunhiphanmachuso0khongithonchuso1.cpp.obj"
   "CMakeFiles/Cpp.dir/demsoxaunhiphanmachuso0khongithonchuso1.cpp.obj.d"
+  "CMakeFiles/Cpp.dir/dibuon.cpp.obj"
+  "CMakeFiles/Cpp.dir/dibuon.cpp.obj.d"
   "CMakeFiles/Cpp.dir/diem-goc-duongtron.cpp.obj"
   "CMakeFiles/Cpp.dir/diem-goc-duongtron.cpp.obj.d"
   "CMakeFiles/Cpp.dir/dientichduoi.c.obj"

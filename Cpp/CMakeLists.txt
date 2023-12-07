@@ -197,4 +197,5 @@ add_executable(Cpp
         gapgiayngangdoc.c
         phepbiendoicapdoilienke.c
         main.cpp
+        dibuon.cpp
 )
