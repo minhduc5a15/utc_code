@@ -15,7 +15,7 @@ int main() {
     for (int i = 0; i < t; ++i) {
         long long n;
         cin >> n;
-        cout << solve(n) << endl;
+        cout << solve(n) << '\n';
     }
     return 0;
 }

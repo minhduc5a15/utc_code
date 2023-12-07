@@ -17,7 +17,7 @@ int main() {
 	while (q--) {
 		int index, value;
 		std::cin >> index >> value;
-		if (index > (int) count[value].size()) {
+		if (index > static_cast<int>(count[value].size())) {
 			std::cout << "-1" << '\n';
 		}
 		else {

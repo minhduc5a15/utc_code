@@ -5,7 +5,7 @@
 
 std::vector<ll> solve(ll n) {
 	std::vector<ll> result = {n};
-	for (ll i = 2; i * i <= n; i++) {
+	for (ll i = 2; i * i <= n; ++i) {
 		while (n % i == 0) {
 			n /= i;
 			result.push_back(n);

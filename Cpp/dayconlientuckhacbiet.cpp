@@ -1,9 +1,10 @@
 #include <iostream>
+#include <vector>
 #include <unordered_map>
 
 using namespace std;
 
-int solve(int arr[], int n) {
+int solve(const vector<int> &arr, int n) {
 	unordered_map<int, int> distinct_elements;
 	int result = 0;
 	int start = 0;
@@ -24,7 +25,7 @@ int main() {
 	cout.tie(NULL);
 	int n;
 	cin >> n;
-	int arr[n];
+	vector<int> arr(n);
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
 	}
