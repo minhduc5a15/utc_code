@@ -35,6 +35,7 @@ ll factorial(int n) {
     }
     return res;
 }
+
 ll inverse(int n) {
     return power(n, MOD - 2);
 }

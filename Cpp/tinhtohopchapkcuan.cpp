@@ -1,8 +1,8 @@
 #include <iostream>
-#include <cmath>
 #define ll long long
 #define MOD 1000000007
 #define MAXN 100001
+
 using namespace std;
 
 ll factorial[MAXN], inverse[MAXN];
@@ -28,7 +28,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    factorial[0] = 1; inverse[0] = 1;
+    factorial[0] = 1;
+    inverse[0] = 1;
     for (int i = 1; i < MAXN; ++i) {
         factorial[i] = (factorial[i - 1] * i) % MOD;
         inverse[i] = inverse_num(factorial[i]);

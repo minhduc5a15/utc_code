@@ -10,12 +10,12 @@ std::vector<std::string> solve(std::string s) {
     dp[0] = {""};
     for (int i = 1; i <= s.length(); ++i) {
         if (std::stoi(s.substr(i - 1, 1)) > 0) {
-            for (const auto& result : dp[i - 1]) {
+            for (const std::string &result: dp[i - 1]) {
                 dp[i].push_back(result + static_cast<char>(std::stoi(s.substr(i - 1, 1)) + 'a' - 1));
             }
         }
         if (i != 1 && 10 <= std::stoi(s.substr(i - 2, 2)) && std::stoi(s.substr(i - 2, 2)) <= 26) {
-            for (const auto& result : dp[i - 2]) {
+            for (const auto &result: dp[i - 2]) {
                 dp[i].push_back(result + static_cast<char>(std::stoi(s.substr(i - 2, 2)) + 'a' - 1));
             }
         }
@@ -30,7 +30,7 @@ int main() {
     std::string input;
     std::cin >> input;
     std::vector<std::string> result = solve(input);
-    for (const std::string& str : result) {
+    for (const std::string &str: result) {
         std::cout << str << "\n";
     }
     return 0;

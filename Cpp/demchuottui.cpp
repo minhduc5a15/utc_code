@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #define BIT 8
+
 using namespace std;
 
 void solve(int n, vector<int>& arr) {

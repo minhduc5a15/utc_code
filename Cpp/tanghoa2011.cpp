@@ -1,12 +1,14 @@
-#include <iostream> 
+#include <iostream>
 #include <map>
 #include <algorithm>
 #include <vector>
 
 using namespace std;
-bool lambda(const pair<int, string>& a, const pair<int, string>& b) {
+
+bool lambda(const pair<int, string> &a, const pair<int, string> &b) {
     return a.first == b.first ? a.second < b.second : a.first > b.first;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
@@ -24,7 +26,7 @@ int main() {
         }
     }
     vector<pair<int, string>> vec;
-    for (pair<string, int> it : colors) {
+    for (pair<string, int> it: colors) {
         vec.push_back(make_pair(it.second, it.first));
     }
     sort(vec.begin(), vec.end(), lambda);

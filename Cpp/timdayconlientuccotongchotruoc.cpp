@@ -3,9 +3,10 @@
 #include <unordered_map>
 #include <algorithm>
 #define ll long long
+
 using namespace std;
 
-ll solve(vector<ll>& arr, int n, ll k) {
+ll solve(const vector<ll> &arr, int n, ll k) {
     unordered_map<ll, ll> sum_pos;
     ll max_len = 0, curr_sum = 0;
     for (int i = 0; i < n; ++i) {

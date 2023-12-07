@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #define MAXN 1000000
+
 using namespace std;
 
 vector<bool> prime(MAXN + 1, true);

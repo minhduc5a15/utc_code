@@ -3,6 +3,7 @@
 #include <vector>
 #define MOD 1000000007
 #define ll long long
+
 using namespace std;
 
 
@@ -19,7 +20,7 @@ vector<int> Sieve_of_Eratosthenes(int n) {
     vector<bool> prime(n + 1, true);
     int p = 2;
     while (p * p <= n) {
-        if (prime[p] == true) {
+        if (prime[p]) {
             for (int i = p * p; i <= n; i += p) {
                 prime[i] = false;
             }
@@ -29,7 +30,7 @@ vector<int> Sieve_of_Eratosthenes(int n) {
     prime[0] = false;
     prime[1] = false;
     vector<int> primes;
-    for (int p = 2; p <= n; ++p) {
+    for (p = 2; p <= n; ++p) {
         if (prime[p]) {
             primes.push_back(p);
         }
@@ -40,7 +41,7 @@ vector<int> Sieve_of_Eratosthenes(int n) {
 ll solve(int n) {
     ll res = 1;
     vector<int> primes = Sieve_of_Eratosthenes(n);
-    for (int prime : primes) {
+    for (int prime: primes) {
         res = (res * total_pow(n, prime)) % MOD;
     }
     return res;

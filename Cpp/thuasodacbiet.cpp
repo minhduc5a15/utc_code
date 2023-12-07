@@ -3,8 +3,8 @@
 #include <vector>
 
 using namespace std;
-vector<int> arr = { 1, 2, 5, 10, 20, 25, 50 };
-vector<int> root = { 100, 125, 200, 250, 500 };
+vector<int> arr = {1, 2, 5, 10, 20, 25, 50};
+vector<int> root = {100, 125, 200, 250, 500};
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -13,7 +13,7 @@ int main() {
     arr.reserve(8 * root.size() + arr.size() + 1);
     for (int i = 1; i < 8; ++i) {
         arr.insert(arr.end(), root.begin(), root.end());
-        for (int& item : root) {
+        for (int &item: root) {
             item *= 10;
         }
     }

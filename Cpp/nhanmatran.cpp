@@ -1,19 +1,20 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 int main() {
     int m, n, p;
     cin >> m >> n >> p;
-    int** A = new int* [m];
+    int **A = new int *[m];
     for (int i = 0; i < m; ++i)
         A[i] = new int[n];
 
-    int** B = new int* [n];
+    int **B = new int *[n];
     for (int i = 0; i < n; ++i)
         B[i] = new int[p];
 
-    int** C = new int* [m];
+    int **C = new int *[m];
     for (int i = 0; i < m; ++i)
         C[i] = new int[p];
 

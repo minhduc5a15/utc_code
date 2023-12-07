@@ -36,10 +36,10 @@
 #define ll long long
 #define ull unsigned long long
 typedef std::vector<std::vector<int>> matrixi;
-typedef std::vector<std::vector<ll>> matrixl;
+typedef std::vector<std::vector<ll>> matrixll;
 typedef std::vector<std::vector<ull>> matrixull;
 typedef std::vector<int> vectori;
-typedef std::vector<ll> vectorl;
+typedef std::vector<ll> vectorll;
 typedef std::vector<ull> vectorull;
 typedef std::pair<int, int> pii;
 

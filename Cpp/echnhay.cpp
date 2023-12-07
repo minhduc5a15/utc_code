@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-bool solve(vector<int>& arr, int n) {
+bool solve(const vector<int>& arr, int n) {
     int max_reach = arr[0];
     for (int i = 0; i < n; ++i) {
         if (i > max_reach) return false;

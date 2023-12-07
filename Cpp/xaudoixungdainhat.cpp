@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 int manacher(string s) {
     string str = "^";
-    for (char c : s) {
+    for (char c: s) {
         str += "#";
         str += c;
     }

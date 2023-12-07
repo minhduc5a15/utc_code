@@ -1,5 +1,6 @@
 #include <iostream>
 #define ll long long
+
 using namespace std;
 
 ll count_zeros(ll x) {
@@ -10,6 +11,7 @@ ll count_zeros(ll x) {
     }
     return count;
 }
+
 ll solve(ll n) {
     ll lower_bound = 0, upper_bound = n * 5;
     while (lower_bound < upper_bound) {
@@ -24,6 +26,7 @@ ll solve(ll n) {
     }
     return lower_bound;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);

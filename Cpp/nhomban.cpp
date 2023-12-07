@@ -1,9 +1,12 @@
 #include <iostream>
 #include <vector>
 #define MAXN 100001
+
 using namespace std;
+
 vector<int> parent(MAXN, 0);
 vector<int> comp_size(MAXN, 0);
+
 int solve(int a, int b) {
     a = (parent[a] != a) ? solve(parent[a], b) : parent[a];
     b = (parent[b] != b) ? solve(parent[b], a) : parent[b];

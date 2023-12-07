@@ -1,0 +1,3 @@
+"D:\Programs\CLion 2023.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Cpp.dir/objects.a
+"D:\Programs\CLion 2023.3\bin\mingw\bin\ar.exe" qc CMakeFiles\Cpp.dir/objects.a @CMakeFiles\Cpp.dir\objects1.rsp
+"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\Cpp.dir/objects.a -Wl,--no-whole-archive -o Cpp.exe -Wl,--out-implib,libCpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Cpp.dir\linkLibs.rsp

@@ -2,10 +2,10 @@
 #include <cstdio>
 #include <cmath>
 #include <stack>
+
 using namespace std;
 
-int main()
-{
+int main() {
     int t;
     scanf("%d", &t);
     while (t--) {

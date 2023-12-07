@@ -1,9 +1,11 @@
 #include <iostream>
 #include <memory>
 #include <vector>
+
 using namespace std;
 typedef vector<int> vectori;
-shared_ptr<vectori> add(const shared_ptr<vectori>& a, const shared_ptr<vectori>& b) {
+
+shared_ptr<vectori> add(const shared_ptr<vectori> &a, const shared_ptr<vectori> &b) {
     int size_a = a->size(), size_b = b->size();
     shared_ptr<vectori> result = make_shared<vectori>(max(size_a, size_b) + 1);
     int carry = 0;
@@ -17,9 +19,10 @@ shared_ptr<vectori> add(const shared_ptr<vectori>& a, const shared_ptr<vectori>&
     return result;
 }
 
-void solve(const shared_ptr<vectori>& arr) {
+void solve(const shared_ptr<vectori> &arr) {
     for (int i = static_cast<int>(arr->size()) - 1; i >= 0; --i) cout << (*arr)[i];
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);

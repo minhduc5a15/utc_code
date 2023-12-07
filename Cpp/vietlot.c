@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 #define ll long long
 #define MAX 1024
 
 int main() {
-    ll arr[MAX] = { 0 };
+    ll arr[MAX] = {0};
     ll res = 0;
     int n;
     scanf("%d", &n);

@@ -58,6 +58,7 @@ int main() {
             cout << findWord(root, word) << '\n';
         }
     }
+    delete root;
     return 0;
 }
 

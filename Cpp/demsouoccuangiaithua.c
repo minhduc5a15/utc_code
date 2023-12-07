@@ -28,7 +28,7 @@ bool* Sieve_of_Eratosthenes(int n, int* primeCount) {
         ++p;
     }
     *primeCount = 0;
-    for (int p = 2; p <= n; ++p) {
+    for (p = 2; p <= n; ++p) {
         if (prime[p]) {
             (*primeCount)++;
         }

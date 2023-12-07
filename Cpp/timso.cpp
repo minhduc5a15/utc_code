@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 std::vector<int> sieve(int limit) {
     std::vector<bool> sieve(limit, true);

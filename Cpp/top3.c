@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #define SIZE 3
 
 void swap(int* a, int* b) {

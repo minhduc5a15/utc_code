@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 int main() {
@@ -25,12 +26,12 @@ int main() {
         maxm = max(maxm, query);
     }
     vector<int> dp(maxm + 1, 0);
-    for (const pair<int, int>& item : items) {
+    for (const pair<int, int> &item: items) {
         for (int w = maxm; w >= item.first; --w) {
             dp[w] = max(dp[w], item.second + dp[w - item.first]);
         }
     }
-    for (const int& query : queries) {
+    for (const int &query: queries) {
         cout << dp[query] << endl;
     }
     return 0;

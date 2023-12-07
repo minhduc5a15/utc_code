@@ -75,7 +75,7 @@ add_executable(Cpp
         duongdingannhat-thuattoanfloyd.c
         easyproblem.cpp
         echnhay.cpp
-        gapgiayngangdoc.cpp
+        gapgiayngangdoc.c
         giaisogamesudoku.cpp
         giatrixorlonnhat.c
         gomnhom.cpp
@@ -130,7 +130,7 @@ add_executable(Cpp
         phantichsothanhtongmotdaykhonggiamcacsonguyenduong.cpp
         phantudautiennhohon.cpp
         phantunhohonlonnhatdungtruoc.cpp
-        phepbiendoicapdoilienke.cpp
+        phepbiendoicapdoilienke.c
         pie.cpp
         quantuongthuvi.cpp
         quyluatbangso.c
@@ -194,4 +194,7 @@ add_executable(Cpp
         xaythap.c
         xaythapchanle.c
         xepmanh.cpp
+        0.sohoanhao.cpp
+        gapgiayngangdoc.c
+        phepbiendoicapdoilienke.c
 )

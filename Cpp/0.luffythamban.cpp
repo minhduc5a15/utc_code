@@ -3,11 +3,11 @@
 #include <algorithm>
 #include <climits>
 
-int solve(const std::vector<int>& arr) {
+int solve(const std::vector<int> &arr) {
     int minDiff = INT_MAX;
     for (int k = *std::min_element(arr.begin(), arr.end()); k <= *std::max_element(arr.begin(), arr.end()); ++k) {
         int diffSum = 0;
-        for (const int& num : arr) {
+        for (const int &num: arr) {
             diffSum += std::abs(num - k);
         }
         minDiff = std::min(minDiff, diffSum);
@@ -21,7 +21,7 @@ int main() {
     std::cout.tie(NULL);
     int n, m;
     std::cin >> n;
-    std::vector <int> arr;
+    std::vector<int> arr;
     for (int i = 0; i < n; ++i) {
         std::cin >> m;
         arr.push_back(m);

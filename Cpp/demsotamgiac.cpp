@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 #define ll long long
+
 using namespace std;
-ll solve(vector<pair<int, int>> points, int n) {
+
+ll solve(const vector<pair<int, int>> &points, int n) {
     ll count = 0;
     for (int i = 0; i < n - 2; ++i) {
         for (int j = i + 1; j < n - 1; ++j) {
@@ -18,6 +20,7 @@ ll solve(vector<pair<int, int>> points, int n) {
     }
     return count;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);

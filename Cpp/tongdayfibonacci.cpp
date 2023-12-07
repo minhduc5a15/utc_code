@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
+#define MOD 1000000007
 typedef long long ll;
 typedef std::vector<std::vector<ll>> matrix;
-const int MOD = 1000000009;
 
-matrix multiply(matrix& matrix1, matrix& matrix2) {
+matrix multiply(matrix &matrix1, matrix &matrix2) {
     matrix result(2, std::vector<ll>(2));
     for (int i = 0; i < 2; ++i) {
         for (int j = 0; j < 2; ++j) {
@@ -19,17 +19,19 @@ matrix multiply(matrix& matrix1, matrix& matrix2) {
 }
 
 matrix power(matrix base, int exponent) {
-    matrix identMatrix = { {1, 0}, {0, 1} };
+    matrix identMatrix = {{1, 0},
+                          {0, 1}};
     while (exponent) {
         if (exponent & 1) identMatrix = multiply(identMatrix, base);
         base = multiply(base, base);
-        exponent >>= 1; 
+        exponent >>= 1;
     }
     return identMatrix;
 }
 
 ll solve(int n) {
-    matrix fibMatrix = { {1, 1}, {1, 0} };
+    matrix fibMatrix = {{1, 1},
+                        {1, 0}};
     if (n == 0) return 0;
     fibMatrix = power(fibMatrix, n + 1);
     return (fibMatrix[0][0] - 1 + MOD) % MOD;

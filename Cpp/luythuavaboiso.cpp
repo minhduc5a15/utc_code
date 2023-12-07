@@ -3,9 +3,12 @@
 #define ull unsigned long long
 #define MOD 1000000007ull
 #define MAXN 1000001
+
 using namespace std;
+
 vector<bool> primes(MAXN, true);
 vector<ull> primeNumbers;
+
 void Sieve() {
     int p = 2;
     while (p * p <= MAXN) {
@@ -40,32 +43,26 @@ ull power(ull base, ull exponent) {
 void solve(ull n) {
     if (n == 0) {
         cout << "1" << endl;
-    }
-    else if (1 <= n && n <= 5) {
+    } else if (1 <= n && n <= 5) {
         cout << "OK" << endl;
-    }
-    else if (n % 3 == 0) {
+    } else if (n % 3 == 0) {
         cout << power(3, n / 3) << endl;
-    }
-    else if (n % 2 == 0) {
+    } else if (n % 2 == 0) {
         cout << power(2, n / 2) << endl;
-    }
-    else if (6 <= n && n <= MAXN) {
+    } else if (6 <= n && n <= MAXN) {
         if (primes[n]) {
             cout << "OK" << endl;
-        }
-        else {
-            for (ull& prime : primeNumbers) {
+        } else {
+            for (ull &prime: primeNumbers) {
                 if (n % prime == 0) {
                     cout << power(prime, n / prime) << endl;
                     break;
                 }
             }
         }
-    }
-    else {
+    } else {
         bool check = false;
-        for (ull& prime : primeNumbers) {
+        for (ull &prime: primeNumbers) {
             if (n % prime == 0) {
                 check = true;
                 cout << power(prime, n / prime) << endl;
@@ -83,7 +80,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int t; cin >> t;
+    int t;
+    cin >> t;
     Sieve();
     while (t--) {
         ull n;

@@ -6,7 +6,6 @@ using namespace std;
 string solve(int n) {
     queue<string> q;
     q.push("9");
-
     while (!q.empty()) {
         string num = q.front();
         q.pop();

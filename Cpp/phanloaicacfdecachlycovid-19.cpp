@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 #include <unordered_map>
+
 using namespace std;
 
 void solve(int n, const vector<int> adj_list[]) {
@@ -20,7 +21,7 @@ void solve(int n, const vector<int> adj_list[]) {
     while (!q.empty()) {
         int u = q.front();
         q.pop();
-        for (const int& v : adj_list[u]) {
+        for (const int &v: adj_list[u]) {
             if (dist[v] == -1) {
                 q.push(v);
                 dist[v] = dist[u] + 1;

@@ -14,13 +14,13 @@ int main() {
             std::cin >> matrix[i][j];
         }
     }
-    std::vector<ll> diagonals(2*n-1, 0);
+    std::vector<ll> diagonals(2 * n - 1, 0);
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            diagonals[i-j+n-1] += matrix[i][j];
+            diagonals[i - j + n - 1] += matrix[i][j];
         }
     }
-    for (ll sum : diagonals) {
+    for (const ll &sum: diagonals) {
         std::cout << sum << std::endl;
     }
 

@@ -4,7 +4,7 @@
 int main() {
     int n, m, result = 0;
     scanf("%d %d", &n, &m);
-    int* sum_arr = (int*)calloc(n + 1, sizeof(int));
+    int *sum_arr = (int *) calloc(n + 1, sizeof(int));
     for (int i = 1; i <= n; ++i) {
         int temp;
         scanf("%d", &temp);

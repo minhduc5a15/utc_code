@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<cmath>
+
 using namespace std;
 
 double distance(int x, int y) {
@@ -24,7 +25,7 @@ int main() {
         cout << 0;
     }
     else {
-        for (auto item : arr) {
+        for (const pair<int, int> &item: arr) {
             if (distance(item.first, item.second) == max_distance) {
                 cout << item.first << " " << item.second << endl;
                 break;

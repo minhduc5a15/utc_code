@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
+
 using namespace std;
 
 vector<int> divisor(int x) {
@@ -35,10 +36,10 @@ int main() {
     int max_sum = list[n];
     vector<int> arr = divisor(max_sum);
     sort(arr.begin(), arr.end());
-    int check = 0, step;
-    int sz = arr.size();
+    int step = 0;
+    size_t sz = arr.size();
     for (int i = 0; i < sz; ++i) {
-        int sum_arr = arr[i], step_arr = max_sum / sum_arr, check2 = 1, d = 0, count = 0;
+        int sum_arr = arr[i], step_arr = max_sum / sum_arr, check2, d = 0, count = 0;
         while (true) {
             check2 = 0;
             for (int j = d + 1; j <= n; ++j) {
@@ -53,7 +54,6 @@ int main() {
         }
         if (count == step_arr) {
             step = step_arr;
-            check = 1;
             break;
         }
     }

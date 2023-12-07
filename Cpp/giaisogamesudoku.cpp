@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-pair<int, int> next_cell(vector<vector<int>>& grid, int i, int j) {
+pair<int, int> next_cell(const vector<vector<int>>& grid, int i, int j) {
     for (int x = i; x < 9; ++x) {
         for (int y = j; y < 9; ++y) {
             if (grid[x][y] == 0) {
@@ -20,7 +20,7 @@ pair<int, int> next_cell(vector<vector<int>>& grid, int i, int j) {
     return make_pair(-1, -1);
 }
 
-bool isValid(vector<vector<int>>& grid, int i, int j, int e) {
+bool isValid(const vector<vector<int>>& grid, int i, int j, int e) {
     for (int x = 0; x < 9; ++x) {
         if (grid[i][x] == e) {
             return false;

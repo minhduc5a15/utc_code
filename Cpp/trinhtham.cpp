@@ -1,7 +1,7 @@
 #include <iostream>
 #include <deque>
 #include <vector>
-void solve(std::vector<int>& arr, int n, int k) {
+void solve(const std::vector<int>& arr, int n, int k) {
     std::deque<int> Qi(k);
     int i;
     for (i = 0; i < k; ++i) {

@@ -1,12 +1,12 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
 typedef std::vector<int> List;
-List solve(List& arr, List& queries) {
+
+List solve(List &arr, const List &queries) {
     std::sort(arr.begin(), arr.end());
     List result;
-    for (int query : queries) {
+    for (int query: queries) {
         int count = std::upper_bound(arr.begin(), arr.end(), query) - arr.begin();
         result.push_back(count);
     }
@@ -20,10 +20,10 @@ int main() {
     int n, m;
     std::cin >> n >> m;
     List arr(n), queries(m);
-    for (int i = 0; i < n; ++i) std::cin >> arr[i];
-    for (int i = 0; i < m; ++i) std::cin >> queries[i];
+    for (int i = 0; i < n; ++i) { std::cin >> arr[i]; }
+    for (int i = 0; i < m; ++i) { std::cin >> queries[i]; }
     List result = solve(arr, queries);
-    for (int item : result) std::cout << item << '\n';
+    for (int item: result) { std::cout << item << '\n'; }
     return 0;
 }
 

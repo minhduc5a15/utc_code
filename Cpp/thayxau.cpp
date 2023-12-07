@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 int main() {
@@ -35,7 +36,7 @@ int main() {
             }
         }
     }
-    for (char ch : s) {
+    for (char ch: s) {
         if (map[ch] != '\0') {
             cout << map[ch];
         }

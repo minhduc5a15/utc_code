@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -7,7 +8,7 @@ int main() {
     cout.tie(NULL);
     int n;
     cin >> n;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; ++i) {
         long long x;
         cin >> x;
         if (x == 6 || x == 28 || x == 496 || x == 8128 || x == 33550336 || x == 8589869056 || x == 137438691328)

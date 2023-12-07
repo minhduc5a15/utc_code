@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
+
 using namespace std;
 
 class SegmentTree {
@@ -12,6 +13,7 @@ public:
         size = n;
         tree.assign(2 * n, INT_MAX);
     }
+
     void update(int index, int value) {
         index += size;
         tree[index] = value;
@@ -20,6 +22,7 @@ public:
             index /= 2;
         }
     }
+
     int query(int left, int right) {
         left += size;
         right += size;
@@ -40,7 +43,7 @@ public:
     }
 };
 
-vector<int> solve(vector<pair<int, int>>& arr, vector<pair<int, int>>& queries) {
+vector<int> solve(vector<pair<int, int>> &arr, const vector<pair<int, int>> &queries) {
     sort(arr.begin(), arr.end());
     int n = arr.size();
     int q = queries.size();
@@ -55,7 +58,7 @@ vector<int> solve(vector<pair<int, int>>& arr, vector<pair<int, int>>& queries) 
         }
         result[idx] = tree.query(0, n);
     }
-    for (int& res : result) {
+    for (int &res: result) {
         res = res == INT_MAX ? -1 : res;
     }
     return result;
@@ -78,8 +81,7 @@ int main() {
     }
     sort(queries.begin(), queries.end());
     vector<int> result = solve(arr, queries);
-    for (int res : result)
-        cout << res + 1 << "\n";
+    for (int res: result) cout << res + 1 << "\n";
     return 0;
 }
 

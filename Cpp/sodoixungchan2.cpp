@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+
 int main() {
     std::string n;
     std::cin >> n;

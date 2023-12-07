@@ -1,7 +1,7 @@
 #include <iostream>
 #define MOD 1000000007
-using namespace std;
 
+using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -15,6 +15,5 @@ int main() {
     cout << result << endl;
     return 0;
 }
-
 
 // code by duck it1

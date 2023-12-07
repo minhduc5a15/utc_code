@@ -3,18 +3,19 @@
 #include <map>
 #include <algorithm>
 #define ll long long
-bool lambda(std::pair<ll, int>& a, std::pair<ll, int>& b) {
+
+bool lambda(std::pair<ll, int> &a, std::pair<ll, int> &b) {
     return a.second < b.second || (a.second == b.second && a.first < b.first);
 }
 
 void solve(std::vector<ll> arr) {
     std::map<ll, int> counter;
-    for (ll item : arr) {
+    for (const ll &item: arr) {
         counter[item]++;
     }
     std::vector<std::pair<ll, int>> items(counter.begin(), counter.end());
     std::sort(items.begin(), items.end(), lambda);
-    for (std::pair<ll, int> item : items) {
+    for (std::pair<ll, int> item: items) {
         std::cout << item.first << ' ';
     }
 }

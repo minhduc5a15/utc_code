@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define ll long long
 #define MAXN 31
 
 struct Node {
-    long long val;
+    ll val;
     struct Node* child[2];
 };
 struct Node* root;
-void Add(long long n) {
+void add(ll n) {
     struct Node* current = root;
     for (int i = MAXN; i >= 0; --i) {
         int j = (n & (1LL << i)) ? 1 : 0;
@@ -21,7 +22,7 @@ void Add(long long n) {
     current->val = n;
 }
 
-long long solve(long long n) {
+ll solve(ll n) {
     struct Node* current = root;
     for (int i = MAXN; i >= 0; --i) {
         int j = (n & (1LL << i)) ? 1 : 0;
@@ -42,14 +43,14 @@ int main() {
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; ++i) {
-        long long item;
+        ll item;
         scanf("%lld", &item);
-        Add(item);
+        add(item);
     }
     int m;
     scanf("%d", &m);
     while (m--) {
-        long long q;
+        ll q;
         scanf("%lld", &q);
         printf("%lld\n", solve(q));
     }

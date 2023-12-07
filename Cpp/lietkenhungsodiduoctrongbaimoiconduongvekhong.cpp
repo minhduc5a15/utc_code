@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stack>
 #include <map>
+
 using namespace std;
 
 int main() {
@@ -12,9 +13,11 @@ int main() {
     stack<int> st;
     map<int, bool> mp;
     st.push(n);
-    mp[0] = true; mp[n] = true;
+    mp[0] = true;
+    mp[n] = true;
     while (!st.empty()) {
-        int num = st.top(); st.pop();
+        int num = st.top();
+        st.pop();
         for (int i = 1; i * i <= num; ++i) {
             if (num % i == 0) {
                 int j = (i - 1) * (num / i + 1);

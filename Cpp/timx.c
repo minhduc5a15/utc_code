@@ -3,8 +3,8 @@
 #include <string.h>
 
 int main() {
-    char eq[50], left[25], right[25], d;
-    char* p1, * p2;
+    char eq[50], left[25], right[25], d = 0;
+    char *p1, *p2;
     fgets(eq, 50, stdin);
     sscanf(eq, "%[^=]=%s", left, right);
     int len = strlen(left);

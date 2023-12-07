@@ -1,6 +1,7 @@
 #include <iostream>
 #define MOD 1000000007
 #define ll long long
+
 int power(int a, int b) {
     if (b == 0) return 1;
     if (b == 1) return a % MOD;
@@ -19,10 +20,12 @@ int catalan(int n) {
     res = (res * power(n + 1, MOD - 2)) % MOD;
     return res;
 }
+
 int solve(int n) {
     if (n % 2 != 0) return 0;
     return catalan(n / 2);
 }
+
 int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);

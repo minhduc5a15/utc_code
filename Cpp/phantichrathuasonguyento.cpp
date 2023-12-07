@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+
 using namespace std;
 
 map<int, int> prime_factors(int n) {
@@ -20,10 +21,10 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int n, result = 1;
+    int n;
     cin >> n;
     map<int, int> factors = prime_factors(n);
-    for (pair<int, int> item : factors) {
+    for (pair<int, int> item: factors) {
         cout << item.first << " " << item.second << endl;
     }
     return 0;

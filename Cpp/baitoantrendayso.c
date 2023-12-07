@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define MAX_BITMASK 1024
 
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-int solve(int n, int* arr) {
-    int currMax[MAX_BITMASK] = { 0 }, prevMax[MAX_BITMASK] = { 0 };
+int solve(int n, int *arr) {
+    int currMax[MAX_BITMASK] = {0}, prevMax[MAX_BITMASK] = {0};
     int result = 0;
     for (int i = 0; i < n; ++i) {
         int num = arr[i];
@@ -38,7 +39,7 @@ int main() {
     while (t--) {
         int n;
         scanf("%d", &n);
-        int* arr = (int*)malloc(n * sizeof(int));
+        int *arr = (int *) malloc(n * sizeof(int));
         for (int i = 0; i < n; ++i) {
             scanf("%d", &arr[i]);
         }

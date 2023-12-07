@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 long long solve(std::vector<int>& list, int n, int k) {
     std::sort(list.begin(), list.end());
     int left = 0, right = n - 1;

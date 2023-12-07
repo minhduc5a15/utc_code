@@ -15,19 +15,16 @@ int calc(int a, int b, char op) {
     switch (op) {
     case '+':
         return a + b;
-        break;
     case '-':
         return a - b;
-        break;
     case '*':
         return a * b;
-        break;
     case '/':
         return a / b;
-        break;
     default:
         break;
     }
+    return -1;
 }
 
 int main() {

@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int solve(int N, int S) {

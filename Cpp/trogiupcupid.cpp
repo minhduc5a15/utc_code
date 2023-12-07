@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int solve(const vector<int>& arr) {
+int solve(const vector<int> &arr) {
     int n = arr.size();
     vector<vector<int>> dist(n, vector<int>(n, 0));
 
@@ -18,13 +18,13 @@ int solve(const vector<int>& arr) {
     vector<pair<int, pair<int, int>>> pairs;
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
-            pairs.push_back({ dist[i][j], {i, j} });
+            pairs.push_back({dist[i][j], {i, j}});
         }
     }
     sort(pairs.begin(), pairs.end());
     vector<bool> matched(n, false);
     int total_diff = 0;
-    for (const auto& p : pairs) {
+    for (const auto &p: pairs) {
         int d = p.first;
         int i = p.second.first;
         int j = p.second.second;

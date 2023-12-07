@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#include <algorithm>
+
 #define ll long long
 using namespace std;
 
-ll solve(vector<int>& arr, int n) {
-    unordered_map<int, int> map; 
+ll solve(const vector<int> &arr, int n) {
+    unordered_map<int, int> map;
     map[0] = 1;
     ll result = 0, j = 0, k = 1;
     for (int i = 1; i <= n; ++i) {
@@ -22,8 +22,7 @@ ll solve(vector<int>& arr, int n) {
         ++k;
         if (map.find(arr[i]) != map.end()) {
             map[arr[i]] += 1;
-        }
-        else {
+        } else {
             map[arr[i]] = 1;
         }
     }

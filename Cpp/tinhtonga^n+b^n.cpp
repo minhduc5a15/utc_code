@@ -3,11 +3,11 @@
 #define ll long long
 #define MOD 1000000007ll
 #define SIZE 2
-typedef std::vector<std::vector<ll>> matrixl;
-typedef std::vector<ll> vectorl;
+typedef std::vector<std::vector<ll>> matrixll;
+typedef std::vector<ll> vectorll;
 
 matrixl multiply(const matrixl& a, const matrixl& b) {
-    matrixl result(SIZE, vectorl(SIZE, 0));
+    matrixl result(SIZE, vectorll(SIZE, 0));
     for (int i = 0; i < SIZE; ++i) {
         for (int j = 0; j < SIZE; ++j) {
             for (int k = 0; k < SIZE; ++k) {

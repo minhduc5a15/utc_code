@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 void checkTriangle(int a, int b, int c) {
     if (a + b <= c || a + c <= b || b + c <= a) {
@@ -17,6 +16,9 @@ void checkTriangle(int a, int b, int c) {
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    std::cout.tie(NULL);
     int a, b, c;
     std::cin >> a >> b >> c;
     checkTriangle(a, b, c);

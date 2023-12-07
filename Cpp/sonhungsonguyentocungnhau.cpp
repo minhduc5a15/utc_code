@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int Euler_totient_function(int n) {

@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
-vector<int> prefix_sum(string s, char c) {
+vector<int> prefix_sum(const string &s, char c) {
     vector<int> prefix(s.size());
     prefix[0] = (s[0] == c) ? 1 : 0;
     for (int i = 1; i < s.size(); ++i) {
@@ -12,7 +13,7 @@ vector<int> prefix_sum(string s, char c) {
     return prefix;
 }
 
-int solve(vector<int>& prefix, int a, int b) {
+int solve(vector<int> &prefix, int a, int b) {
     if (a > 1) {
         return prefix[b - 1] - prefix[a - 2];
     }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #define ull unsigned long long
+
 using namespace std;
 
 ull multiply(ull a, ull b, ull M) {
@@ -14,7 +15,7 @@ void solve() {
     string x;
     ull a = 0, b, M, t = 1;
     cin >> x >> b >> M;
-    for (char c : x) a = (a * 10 + c - '0') % M;
+    for (char c: x) { a = (a * 10 + c - '0') % M; }
     while (b) {
         if (b % 2) t = multiply(a, t, M);
         b /= 2;

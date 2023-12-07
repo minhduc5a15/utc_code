@@ -5,25 +5,25 @@
 using namespace std;
 
 void solve(vector<int>& arr, int n, int k) {
-    deque<int> Qi(k);
+    deque<int> q(k);
     int i;
     for (i = 0; i < k; ++i) {
-        while ((!Qi.empty()) && arr[i] >= arr[Qi.back()]) {
-            Qi.pop_back();
+        while ((!q.empty()) && arr[i] >= arr[q.back()]) {
+            q.pop_back();
         }
-        Qi.push_back(i);
+        q.push_back(i);
     }
     for (; i < n; ++i) {
-        cout << arr[Qi.front()] << " ";
-        while ((!Qi.empty()) && Qi.front() <= i - k) {
-            Qi.pop_front();
+        cout << arr[q.front()] << " ";
+        while ((!q.empty()) && q.front() <= i - k) {
+            q.pop_front();
         }
-        while ((!Qi.empty()) && arr[i] >= arr[Qi.back()]) {
-            Qi.pop_back();
+        while ((!q.empty()) && arr[i] >= arr[q.back()]) {
+            q.pop_back();
         }
-        Qi.push_back(i);
+        q.push_back(i);
     }
-    cout << arr[Qi.front()] << endl;
+    cout << arr[q.front()] << endl;
 }
 
 int main() {

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <climits>
 #include <cmath>
+
 using namespace std;
 
 bool square_number(int n) {
@@ -14,7 +15,7 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
     int arr[3];
-    for (int& i : arr) cin >> i;
+    for (int &i: arr) cin >> i;
     int min_result = INT_MAX;
     bool check = false;
     for (int i = 0; i < 3; ++i) {

@@ -14,7 +14,6 @@ string solve(int n) {
         queue.push(num + "6");
         queue.push(num + "8");
     }
-    return "";
 }
 int main() {
     ios_base::sync_with_stdio(false);

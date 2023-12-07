@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 int solve(string s) {
     int sum = 0;
-    for (char c : s) {
+    for (char c: s) {
         if (isdigit(c)) {
             sum += c - '0';
         }

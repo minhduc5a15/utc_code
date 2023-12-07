@@ -2,21 +2,23 @@
 #include <queue>
 #include <iostream>
 #include <tuple>
+
 typedef std::vector<int> vectori;
+
 bool is_valid(int x, int y, int n, int m) {
     return 0 <= x && x < n && 0 <= y && y < m;
 }
 
 int solve(int n, int m, int x1, int y1, int x2, int y2) {
-    vectori dx = { -2, -1, 1, 2, 2, 1, -1, -2 };
-    vectori dy = { 1, 2, 2, 1, -1, -2, -2, -1 };
+    vectori dx = {-2, -1, 1, 2, 2, 1, -1, -2};
+    vectori dy = {1, 2, 2, 1, -1, -2, -2, -1};
     std::vector<std::vector<bool>> is_visited(n, std::vector<bool>(m));
     std::queue<std::tuple<int, int, int>> q;
     q.push(std::make_tuple(x1, y1, 0));
     is_visited[x1][y1] = true;
 
     while (!q.empty()) {
-        auto front = q.front();
+        std::tuple<int, int, int> front = q.front();
         q.pop();
         int x = std::get<0>(front);
         int y = std::get<1>(front);

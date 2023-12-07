@@ -2,12 +2,14 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
+
 using namespace std;
 
 class TrieNode {
 public:
-    unordered_map<char, TrieNode*> children;
+    unordered_map<char, TrieNode *> children;
     bool end_of_word;
+
     TrieNode() {
         end_of_word = true;
     }
@@ -15,14 +17,15 @@ public:
 
 class Trie {
 public:
-    TrieNode* root;
+    TrieNode *root;
+
     Trie() {
         root = new TrieNode();
     }
 
     void insert(string word) {
-        TrieNode* node = root;
-        for (char c : word) {
+        TrieNode *node = root;
+        for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
                 node->children[c] = new TrieNode();
             }
@@ -32,8 +35,8 @@ public:
     }
 
     bool search(string word) {
-        TrieNode* node = root;
-        for (char c : word) {
+        TrieNode *node = root;
+        for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
                 return false;
             }
@@ -45,7 +48,7 @@ public:
 
 int solve(vector<string> arr) {
     Trie trie;
-    for (string num : arr) {
+    for (string num: arr) {
         trie.insert(num);
     }
     int k = 1;

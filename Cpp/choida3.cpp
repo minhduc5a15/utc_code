@@ -21,7 +21,7 @@ int main() {
     for (int i = 1; i < n; ++i) prefixSum[i] = prefixSum[i - 1] + arr[i];
     int t;
     cin >> t;
-    for (int i = 0; i < t; ++i) {
+    while (t--) {
         int q;
         cin >> q;
         int target = prev_arr[q];

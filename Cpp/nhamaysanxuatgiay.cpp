@@ -3,23 +3,24 @@
 #include <algorithm>
 #define ll long long
 typedef std::vector<int> vector;
-ll solve(vector& arr, int t) {
+
+ll solve(vector &arr, int t) {
     ll left = 1, right = *max_element(arr.begin(), arr.end()) * (ll) t;
     while (left < right) {
         ll mid = (left + right) / 2;
         ll total = 0;
-        for (int& item: arr) {
+        for (int &item: arr) {
             total += mid / item;
         }
         if (total >= t) {
             right = mid;
-        }
-        else {
+        } else {
             left = mid + 1;
         }
     }
     return left;
 }
+
 int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
