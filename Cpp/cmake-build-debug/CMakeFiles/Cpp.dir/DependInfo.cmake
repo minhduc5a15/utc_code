@@ -67,6 +67,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/Repositories/utc_code/Cpp/bobatongchan.cpp" "CMakeFiles/Cpp.dir/bobatongchan.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/bobatongchan.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/boctrung.cpp" "CMakeFiles/Cpp.dir/boctrung.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/boctrung.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/boisodacbiet.cpp" "CMakeFiles/Cpp.dir/boisodacbiet.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/boisodacbiet.cpp.obj.d"
+  "D:/code/Repositories/utc_code/Cpp/buonduale.cpp" "CMakeFiles/Cpp.dir/buonduale.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/buonduale.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/canhcuathanki.cpp" "CMakeFiles/Cpp.dir/canhcuathanki.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/canhcuathanki.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/chanbo.cpp" "CMakeFiles/Cpp.dir/chanbo.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/chanbo.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/chanvoile.cpp" "CMakeFiles/Cpp.dir/chanvoile.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/chanvoile.cpp.obj.d"
@@ -196,6 +197,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/Repositories/utc_code/Cpp/vietlien.cpp" "CMakeFiles/Cpp.dir/vietlien.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/vietlien.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/xaudoixungdainhat.cpp" "CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/xaudoixungdainhat.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/xaydungdanhba.cpp" "CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/xaydungdanhba.cpp.obj.d"
+  "D:/code/Repositories/utc_code/Cpp/xephang.cpp" "CMakeFiles/Cpp.dir/xephang.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/xephang.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/xepmanh.cpp" "CMakeFiles/Cpp.dir/xepmanh.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/xepmanh.cpp.obj.d"
   )
 

@@ -141,6 +141,9 @@
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/boisodacbiet.cpp">
 			<Option target="Cpp"/>
 		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/buonduale.cpp">
+			<Option target="Cpp"/>
+		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/canbi.c">
 			<Option target="Cpp"/>
 		</Unit>
@@ -646,6 +649,9 @@
 			<Option target="Cpp"/>
 		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/xaythapchanle.c">
+			<Option target="Cpp"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/xephang.cpp">
 			<Option target="Cpp"/>
 		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/xepmanh.cpp">

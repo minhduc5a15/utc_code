@@ -212,7 +212,9 @@
 				183,
 				186,
 				187,
-				188
+				188,
+				189,
+				190
 			]
 		},
 		{
@@ -498,7 +500,9 @@
 				185,
 				186,
 				187,
-				188
+				188,
+				189,
+				190
 			]
 		}
 	],
@@ -1636,6 +1640,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "dibuon.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "xephang.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "buonduale.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

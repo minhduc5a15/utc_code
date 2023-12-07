@@ -198,4 +198,6 @@ add_executable(Cpp
         phepbiendoicapdoilienke.c
         main.cpp
         dibuon.cpp
+        xephang.cpp
+        buonduale.cpp
 )

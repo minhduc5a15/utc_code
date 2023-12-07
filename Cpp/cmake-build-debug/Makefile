@@ -584,6 +584,30 @@ boisodacbiet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/boisodacbiet.cpp.s
 .PHONY : boisodacbiet.cpp.s
 
+buonduale.obj: buonduale.cpp.obj
+.PHONY : buonduale.obj
+
+# target to build an object file
+buonduale.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/buonduale.cpp.obj
+.PHONY : buonduale.cpp.obj
+
+buonduale.i: buonduale.cpp.i
+.PHONY : buonduale.i
+
+# target to preprocess a source file
+buonduale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/buonduale.cpp.i
+.PHONY : buonduale.cpp.i
+
+buonduale.s: buonduale.cpp.s
+.PHONY : buonduale.s
+
+# target to generate assembly for a file
+buonduale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/buonduale.cpp.s
+.PHONY : buonduale.cpp.s
+
 canbi.obj: canbi.c.obj
 .PHONY : canbi.obj
 
@@ -4640,6 +4664,30 @@ xaythapchanle.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/xaythapchanle.c.s
 .PHONY : xaythapchanle.c.s
 
+xephang.obj: xephang.cpp.obj
+.PHONY : xephang.obj
+
+# target to build an object file
+xephang.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/xephang.cpp.obj
+.PHONY : xephang.cpp.obj
+
+xephang.i: xephang.cpp.i
+.PHONY : xephang.i
+
+# target to preprocess a source file
+xephang.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/xephang.cpp.i
+.PHONY : xephang.cpp.i
+
+xephang.s: xephang.cpp.s
+.PHONY : xephang.s
+
+# target to generate assembly for a file
+xephang.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/xephang.cpp.s
+.PHONY : xephang.cpp.s
+
 xepmanh.obj: xepmanh.cpp.obj
 .PHONY : xepmanh.obj
 
@@ -4730,6 +4778,9 @@ help:
 	@echo ... boisodacbiet.obj
 	@echo ... boisodacbiet.i
 	@echo ... boisodacbiet.s
+	@echo ... buonduale.obj
+	@echo ... buonduale.i
+	@echo ... buonduale.s
 	@echo ... canbi.obj
 	@echo ... canbi.i
 	@echo ... canbi.s
@@ -5237,6 +5288,9 @@ help:
 	@echo ... xaythapchanle.obj
 	@echo ... xaythapchanle.i
 	@echo ... xaythapchanle.s
+	@echo ... xephang.obj
+	@echo ... xephang.i
+	@echo ... xephang.s
 	@echo ... xepmanh.obj
 	@echo ... xepmanh.i
 	@echo ... xepmanh.s
