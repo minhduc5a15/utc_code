@@ -2336,6 +2336,30 @@ lailatinhtohopchapkcuan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/lailatinhtohopchapkcuan.cpp.s
 .PHONY : lailatinhtohopchapkcuan.cpp.s
 
+lailatong3songuyen.obj: lailatong3songuyen.cpp.obj
+.PHONY : lailatong3songuyen.obj
+
+# target to build an object file
+lailatong3songuyen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj
+.PHONY : lailatong3songuyen.cpp.obj
+
+lailatong3songuyen.i: lailatong3songuyen.cpp.i
+.PHONY : lailatong3songuyen.i
+
+# target to preprocess a source file
+lailatong3songuyen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.i
+.PHONY : lailatong3songuyen.cpp.i
+
+lailatong3songuyen.s: lailatong3songuyen.cpp.s
+.PHONY : lailatong3songuyen.s
+
+# target to generate assembly for a file
+lailatong3songuyen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.s
+.PHONY : lailatong3songuyen.cpp.s
+
 lailatrinhtham.obj: lailatrinhtham.cpp.obj
 .PHONY : lailatrinhtham.obj
 
@@ -4997,6 +5021,9 @@ help:
 	@echo ... lailatinhtohopchapkcuan.obj
 	@echo ... lailatinhtohopchapkcuan.i
 	@echo ... lailatinhtohopchapkcuan.s
+	@echo ... lailatong3songuyen.obj
+	@echo ... lailatong3songuyen.i
+	@echo ... lailatong3songuyen.s
 	@echo ... lailatrinhtham.obj
 	@echo ... lailatrinhtham.i
 	@echo ... lailatrinhtham.s

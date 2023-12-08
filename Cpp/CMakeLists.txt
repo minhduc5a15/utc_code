@@ -200,4 +200,5 @@ add_executable(Cpp
         dibuon.cpp
         xephang.cpp
         buonduale.cpp
+        lailatong3songuyen.cpp
 )

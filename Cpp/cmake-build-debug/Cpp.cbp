@@ -360,6 +360,9 @@
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/lailatinhtohopchapkcuan.cpp">
 			<Option target="Cpp"/>
 		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/lailatong3songuyen.cpp">
+			<Option target="Cpp"/>
+		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/lailatrinhtham.cpp">
 			<Option target="Cpp"/>
 		</Unit>

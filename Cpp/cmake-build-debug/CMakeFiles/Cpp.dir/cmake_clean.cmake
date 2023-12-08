@@ -183,6 +183,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cpp.dir/lailasaikhac.cpp.obj.d"
   "CMakeFiles/Cpp.dir/lailatinhtohopchapkcuan.cpp.obj"
   "CMakeFiles/Cpp.dir/lailatinhtohopchapkcuan.cpp.obj.d"
+  "CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj"
+  "CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj.d"
   "CMakeFiles/Cpp.dir/lailatrinhtham.cpp.obj"
   "CMakeFiles/Cpp.dir/lailatrinhtham.cpp.obj.d"
   "CMakeFiles/Cpp.dir/latbangvuong.c.obj"

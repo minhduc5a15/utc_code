@@ -120,6 +120,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/Repositories/utc_code/Cpp/kiemtrangoacdung.cpp" "CMakeFiles/Cpp.dir/kiemtrangoacdung.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/kiemtrangoacdung.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/lailasaikhac.cpp" "CMakeFiles/Cpp.dir/lailasaikhac.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/lailasaikhac.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/lailatinhtohopchapkcuan.cpp" "CMakeFiles/Cpp.dir/lailatinhtohopchapkcuan.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/lailatinhtohopchapkcuan.cpp.obj.d"
+  "D:/code/Repositories/utc_code/Cpp/lailatong3songuyen.cpp" "CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/lailatrinhtham.cpp" "CMakeFiles/Cpp.dir/lailatrinhtham.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/lailatrinhtham.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/latbittrongkhoang.cpp" "CMakeFiles/Cpp.dir/latbittrongkhoang.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/latbittrongkhoang.cpp.obj.d"
   "D:/code/Repositories/utc_code/Cpp/latodoi.cpp" "CMakeFiles/Cpp.dir/latodoi.cpp.obj" "gcc" "CMakeFiles/Cpp.dir/latodoi.cpp.obj.d"
