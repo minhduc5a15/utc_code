@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool solve(int n, vector<vector<float>> &matrix) {
+bool solve(int n, const vector<vector<float>> &matrix) {
     vector<vector<float>> log_exchange_rates(n, vector<float>(n));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
@@ -21,7 +21,7 @@ bool solve(int n, vector<vector<float>> &matrix) {
     }
 
     for (int i = 0; i < n; ++i) {
-        if (log_exchange_rates[i][i] > 0) {
+        if (log_exchange_rates[i][i]) {
             return true;
         }
     }

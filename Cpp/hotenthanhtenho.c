@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     char x[1000];
@@ -8,6 +7,5 @@ int main() {
     char y[1000];
     gets(y);
     printf("%s %s", y, x);
-    
     return 0;
 }

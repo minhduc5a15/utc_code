@@ -3,8 +3,10 @@
 #include <climits>
 typedef std::vector<int> Vector;
 typedef std::vector<std::vector<int>> Matrix;
-
-int kadane(Vector& arr) {
+using std::cin;
+using std::cout;
+using std::ios_base;
+int kadane(Vector &arr) {
     int max_sum = INT_MIN;
     int current_sum = 0;
     for (int i = 0; i < arr.size(); ++i) {
@@ -14,7 +16,7 @@ int kadane(Vector& arr) {
     return max_sum;
 }
 
-int solve(Matrix& matrix) {
+int solve(Matrix &matrix) {
     int N = matrix.size();
     int max_sum = INT_MIN;
     for (int left = 0; left < N; ++left) {
@@ -30,18 +32,18 @@ int solve(Matrix& matrix) {
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     int n;
-    std::cin >> n;
+    cin >> n;
     Matrix matrix(n, Vector(n));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            std::cin >> matrix[i][j];
+            cin >> matrix[i][j];
         }
     }
-    std::cout << solve(matrix);
+    cout << solve(matrix);
     return 0;
 }
 

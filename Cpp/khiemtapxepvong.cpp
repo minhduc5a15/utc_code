@@ -36,6 +36,9 @@ long long count_ways(int n) {
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    std::cout.tie(NULL);
     int n;
     std::cin >> n;
     std::cout << count_ways(n + 1) << std::endl;

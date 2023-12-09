@@ -1,6 +1,6 @@
 #include <iostream>
 
-void checkTriangle(int a, int b, int c) {
+void solve(int a, int b, int c) {
     if (a + b <= c || a + c <= b || b + c <= a) {
         std::cout << "KHONG PHAI TAM GIAC";
     }
@@ -21,7 +21,7 @@ int main() {
     std::cout.tie(NULL);
     int a, b, c;
     std::cin >> a >> b >> c;
-    checkTriangle(a, b, c);
+    solve(a, b, c);
     return 0;
 }
 

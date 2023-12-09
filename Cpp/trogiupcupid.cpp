@@ -7,7 +7,6 @@ using namespace std;
 int solve(const vector<int> &arr) {
     int n = arr.size();
     vector<vector<int>> dist(n, vector<int>(n, 0));
-
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
             int diff = min(abs(arr[i] - arr[j]), 24 - abs(arr[i] - arr[j]));
@@ -24,7 +23,7 @@ int solve(const vector<int> &arr) {
     sort(pairs.begin(), pairs.end());
     vector<bool> matched(n, false);
     int total_diff = 0;
-    for (const auto &p: pairs) {
+    for (const pair<int, pair<int, int>> &p: pairs) {
         int d = p.first;
         int i = p.second.first;
         int j = p.second.second;

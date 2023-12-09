@@ -1400,6 +1400,30 @@ demsouoccuangiaithua.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/demsouoccuangiaithua.cpp.s
 .PHONY : demsouoccuangiaithua.cpp.s
 
+demsoxaunhiphanchua100.obj: demsoxaunhiphanchua100.cpp.obj
+.PHONY : demsoxaunhiphanchua100.obj
+
+# target to build an object file
+demsoxaunhiphanchua100.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj
+.PHONY : demsoxaunhiphanchua100.cpp.obj
+
+demsoxaunhiphanchua100.i: demsoxaunhiphanchua100.cpp.i
+.PHONY : demsoxaunhiphanchua100.i
+
+# target to preprocess a source file
+demsoxaunhiphanchua100.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.i
+.PHONY : demsoxaunhiphanchua100.cpp.i
+
+demsoxaunhiphanchua100.s: demsoxaunhiphanchua100.cpp.s
+.PHONY : demsoxaunhiphanchua100.s
+
+# target to generate assembly for a file
+demsoxaunhiphanchua100.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.s
+.PHONY : demsoxaunhiphanchua100.cpp.s
+
 demsoxaunhiphankhongchua101.obj: demsoxaunhiphankhongchua101.cpp.obj
 .PHONY : demsoxaunhiphankhongchua101.obj
 
@@ -3824,6 +3848,30 @@ tanghoacrush.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/tanghoacrush.c.s
 .PHONY : tanghoacrush.c.s
 
+test.obj: test.cpp.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 thangmay.obj: thangmay.cpp.obj
 .PHONY : thangmay.obj
 
@@ -4472,6 +4520,30 @@ truyvanmaxcuadoanconlientiep.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/truyvanmaxcuadoanconlientiep.cpp.s
 .PHONY : truyvanmaxcuadoanconlientiep.cpp.s
 
+tungxucxac.obj: tungxucxac.cpp.obj
+.PHONY : tungxucxac.obj
+
+# target to build an object file
+tungxucxac.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/tungxucxac.cpp.obj
+.PHONY : tungxucxac.cpp.obj
+
+tungxucxac.i: tungxucxac.cpp.i
+.PHONY : tungxucxac.i
+
+# target to preprocess a source file
+tungxucxac.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/tungxucxac.cpp.i
+.PHONY : tungxucxac.cpp.i
+
+tungxucxac.s: tungxucxac.cpp.s
+.PHONY : tungxucxac.s
+
+# target to generate assembly for a file
+tungxucxac.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cpp.dir\build.make CMakeFiles/Cpp.dir/tungxucxac.cpp.s
+.PHONY : tungxucxac.cpp.s
+
 uocsophongthuy.obj: uocsophongthuy.c.obj
 .PHONY : uocsophongthuy.obj
 
@@ -4904,6 +4976,9 @@ help:
 	@echo ... demsouoccuangiaithua.obj
 	@echo ... demsouoccuangiaithua.i
 	@echo ... demsouoccuangiaithua.s
+	@echo ... demsoxaunhiphanchua100.obj
+	@echo ... demsoxaunhiphanchua100.i
+	@echo ... demsoxaunhiphanchua100.s
 	@echo ... demsoxaunhiphankhongchua101.obj
 	@echo ... demsoxaunhiphankhongchua101.i
 	@echo ... demsoxaunhiphankhongchua101.s
@@ -5207,6 +5282,9 @@ help:
 	@echo ... tanghoacrush.obj
 	@echo ... tanghoacrush.i
 	@echo ... tanghoacrush.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 	@echo ... thangmay.obj
 	@echo ... thangmay.i
 	@echo ... thangmay.s
@@ -5288,6 +5366,9 @@ help:
 	@echo ... truyvanmaxcuadoanconlientiep.obj
 	@echo ... truyvanmaxcuadoanconlientiep.i
 	@echo ... truyvanmaxcuadoanconlientiep.s
+	@echo ... tungxucxac.obj
+	@echo ... tungxucxac.i
+	@echo ... tungxucxac.s
 	@echo ... uocsophongthuy.obj
 	@echo ... uocsophongthuy.i
 	@echo ... uocsophongthuy.s

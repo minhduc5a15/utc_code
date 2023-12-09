@@ -37,8 +37,7 @@ int main() {
     while (q--) {
         int l, r;
         std::cin >> l >> r;
-        --l;
-        --r;
+        --l; --r;
         std::cout << solve(l, r) << '\n';
     }
     return 0;

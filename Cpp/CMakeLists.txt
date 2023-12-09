@@ -196,9 +196,10 @@ add_executable(Cpp
         0.sohoanhao.cpp
         gapgiayngangdoc.c
         phepbiendoicapdoilienke.c
-        main.cpp
         dibuon.cpp
         xephang.cpp
         buonduale.cpp
         lailatong3songuyen.cpp
+        tungxucxac.cpp
+        demsoxaunhiphanchua100.cpp
 )

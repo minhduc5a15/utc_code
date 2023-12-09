@@ -243,6 +243,9 @@
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/demsouoccuangiaithua.cpp">
 			<Option target="Cpp"/>
 		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/demsoxaunhiphanchua100.cpp">
+			<Option target="Cpp"/>
+		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/demsoxaunhiphankhongchua101.cpp">
 			<Option target="Cpp"/>
 		</Unit>
@@ -546,6 +549,9 @@
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/tanghoacrush.c">
 			<Option target="Cpp"/>
 		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/test.cpp">
+			<Option target="Cpp"/>
+		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/thangmay.cpp">
 			<Option target="Cpp"/>
 		</Unit>
@@ -625,6 +631,9 @@
 			<Option target="Cpp"/>
 		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/truyvanmaxcuadoanconlientiep.cpp">
+			<Option target="Cpp"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/utc_code/Cpp/tungxucxac.cpp">
 			<Option target="Cpp"/>
 		</Unit>
 		<Unit filename="D:/code/Repositories/utc_code/Cpp/uocsophongthuy.c">

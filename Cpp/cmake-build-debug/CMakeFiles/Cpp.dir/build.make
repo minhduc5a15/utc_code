@@ -2948,6 +2948,51 @@ CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.s"
 	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\code\Repositories\utc_code\Cpp\lailatong3songuyen.cpp -o CMakeFiles\Cpp.dir\lailatong3songuyen.cpp.s
 
+CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/flags.make
+CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
+CMakeFiles/Cpp.dir/test.cpp.obj: D:/code/Repositories/utc_code/Cpp/test.cpp
+CMakeFiles/Cpp.dir/test.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building CXX object CMakeFiles/Cpp.dir/test.cpp.obj"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/test.cpp.obj -MF CMakeFiles\Cpp.dir\test.cpp.obj.d -o CMakeFiles\Cpp.dir\test.cpp.obj -c D:\code\Repositories\utc_code\Cpp\test.cpp
+
+CMakeFiles/Cpp.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/test.cpp.i"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\code\Repositories\utc_code\Cpp\test.cpp > CMakeFiles\Cpp.dir\test.cpp.i
+
+CMakeFiles/Cpp.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/test.cpp.s"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\code\Repositories\utc_code\Cpp\test.cpp -o CMakeFiles\Cpp.dir\test.cpp.s
+
+CMakeFiles/Cpp.dir/tungxucxac.cpp.obj: CMakeFiles/Cpp.dir/flags.make
+CMakeFiles/Cpp.dir/tungxucxac.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
+CMakeFiles/Cpp.dir/tungxucxac.cpp.obj: D:/code/Repositories/utc_code/Cpp/tungxucxac.cpp
+CMakeFiles/Cpp.dir/tungxucxac.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building CXX object CMakeFiles/Cpp.dir/tungxucxac.cpp.obj"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/tungxucxac.cpp.obj -MF CMakeFiles\Cpp.dir\tungxucxac.cpp.obj.d -o CMakeFiles\Cpp.dir\tungxucxac.cpp.obj -c D:\code\Repositories\utc_code\Cpp\tungxucxac.cpp
+
+CMakeFiles/Cpp.dir/tungxucxac.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/tungxucxac.cpp.i"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\code\Repositories\utc_code\Cpp\tungxucxac.cpp > CMakeFiles\Cpp.dir\tungxucxac.cpp.i
+
+CMakeFiles/Cpp.dir/tungxucxac.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/tungxucxac.cpp.s"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\code\Repositories\utc_code\Cpp\tungxucxac.cpp -o CMakeFiles\Cpp.dir\tungxucxac.cpp.s
+
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj: CMakeFiles/Cpp.dir/flags.make
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj: CMakeFiles/Cpp.dir/includes_CXX.rsp
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj: D:/code/Repositories/utc_code/Cpp/demsoxaunhiphanchua100.cpp
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj: CMakeFiles/Cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building CXX object CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj -MF CMakeFiles\Cpp.dir\demsoxaunhiphanchua100.cpp.obj.d -o CMakeFiles\Cpp.dir\demsoxaunhiphanchua100.cpp.obj -c D:\code\Repositories\utc_code\Cpp\demsoxaunhiphanchua100.cpp
+
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.i"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\code\Repositories\utc_code\Cpp\demsoxaunhiphanchua100.cpp > CMakeFiles\Cpp.dir\demsoxaunhiphanchua100.cpp.i
+
+CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.s"
+	"D:\Programs\CLion 2023.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\code\Repositories\utc_code\Cpp\demsoxaunhiphanchua100.cpp -o CMakeFiles\Cpp.dir\demsoxaunhiphanchua100.cpp.s
+
 # Object files for target Cpp
 Cpp_OBJECTS = \
 "CMakeFiles/Cpp.dir/0.boisocua13.cpp.obj" \
@@ -3141,7 +3186,10 @@ Cpp_OBJECTS = \
 "CMakeFiles/Cpp.dir/dibuon.cpp.obj" \
 "CMakeFiles/Cpp.dir/xephang.cpp.obj" \
 "CMakeFiles/Cpp.dir/buonduale.cpp.obj" \
-"CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj"
+"CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj" \
+"CMakeFiles/Cpp.dir/test.cpp.obj" \
+"CMakeFiles/Cpp.dir/tungxucxac.cpp.obj" \
+"CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj"
 
 # External object files for target Cpp
 Cpp_EXTERNAL_OBJECTS =
@@ -3338,11 +3386,14 @@ Cpp.exe: CMakeFiles/Cpp.dir/dibuon.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/xephang.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/buonduale.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/lailatong3songuyen.cpp.obj
+Cpp.exe: CMakeFiles/Cpp.dir/test.cpp.obj
+Cpp.exe: CMakeFiles/Cpp.dir/tungxucxac.cpp.obj
+Cpp.exe: CMakeFiles/Cpp.dir/demsoxaunhiphanchua100.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/build.make
 Cpp.exe: CMakeFiles/Cpp.dir/linkLibs.rsp
 Cpp.exe: CMakeFiles/Cpp.dir/objects1.rsp
 Cpp.exe: CMakeFiles/Cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Linking CXX executable Cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\code\Repositories\utc_code\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Linking CXX executable Cpp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Cpp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
