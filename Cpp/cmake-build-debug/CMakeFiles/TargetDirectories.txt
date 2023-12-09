@@ -1,3 +1,0 @@
-D:/code/Repositories/utc_code/Cpp/cmake-build-debug/CMakeFiles/Cpp.dir
-D:/code/Repositories/utc_code/Cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/code/Repositories/utc_code/Cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
