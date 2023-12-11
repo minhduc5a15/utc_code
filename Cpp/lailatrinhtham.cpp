@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void solve(vector<int>& arr, int n, int k) {
+void solve(const vector<int>& arr, int n, int k) {
     deque<int> q(k);
     int i;
     for (i = 0; i < k; ++i) {

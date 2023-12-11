@@ -3,6 +3,9 @@
 #define ll long long
 #define MOD 1000000007ll
 #define SIZE 2
+using std::cin;
+using std::cout;
+using std::ios_base;
 typedef std::vector<std::vector<ll>> matrixll;
 typedef std::vector<ll> vectorll;
 
@@ -32,22 +35,22 @@ matrixll pow(const matrixll &mat, int power) {
 	return result;
 }
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 	ll P, S;
-	std::cin >> P >> S;
+	cin >> P >> S;
 	matrixll F = {{S * S * S - 3 * P * S, S * S - 2 * P}, {S * S - 2 * P, S}};
 	matrixll A = {{S, 1}, {-P, 0}};
 	int n;
-	std::cin >> n;
+	cin >> n;
 	if (n <= 3) {
-		std::cout << F[0][0];
+		cout << F[0][0];
 	}
 	else {
 		matrixll powResult = pow(A, n - 3);
 		matrixll result = multiply(F, powResult);
-		std::cout << (result[0][0] + MOD) % MOD;
+		cout << (result[0][0] + MOD) % MOD;
 	}
 	return 0;
 }

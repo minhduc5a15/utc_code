@@ -2,6 +2,9 @@
 #include <vector>
 #define MOD 1000000007
 #define SIZE 2
+using std::cin;
+using std::cout;
+using std::ios_base;
 typedef long long ll;
 typedef std::vector<std::vector<ll>> matrix;
 
@@ -37,12 +40,12 @@ ll solve(int n) {
 }
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 	int n;
-	std::cin >> n;
-	std::cout << solve(n);
+	cin >> n;
+    cout << solve(n);
 	return 0;
 }
 

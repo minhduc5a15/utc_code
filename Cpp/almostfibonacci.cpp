@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
-
+using std::cin;
+using std::cout;
+using std::ios_base;
 typedef unsigned long long ull;
 typedef std::vector<std::vector<ull>> matrix;
 const ull MOD = 1e9 + 7;
@@ -34,12 +36,12 @@ ull solve(ull n) {
 }
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 	ull n;
-	std::cin >> n;
-	std::cout << solve(n);
+	cin >> n;
+	cout << solve(n);
 	return 0;
 }
 

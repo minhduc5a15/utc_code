@@ -20,9 +20,10 @@ int main() {
     }
     set<int> s;
     unordered_map<int, int> map;
+    set<int>::iterator it;
     s.insert(arr[0]);
     for (const int &item: arr) {
-        set<int>::iterator it = s.lower_bound(item);
+        it = s.lower_bound(item);
         if (*it == item) {
             continue;
         }
@@ -43,4 +44,6 @@ int main() {
     for_each(s.begin(), s.end(), [&map](const int &item) { print(item, map); });
     return 0;
 }
+
+// code by duck IT1 :>
 
