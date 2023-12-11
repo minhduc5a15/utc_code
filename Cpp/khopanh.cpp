@@ -1,8 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
+using std::cin;
+using std::cout;
+using std::ios_base;
+using std::vector;
+using std::string;
 
-bool solve(const std::vector<std::string>& matrixA, const std::vector<std::string>& matrixB) {
+bool solve(const vector<string>& matrixA, const vector<string>& matrixB) {
     int rowsA = matrixA.size(), colsA = matrixA[0].size();
     int rowsB = matrixB.size(), colsB = matrixB[0].size();
     for (int i = 0; i <= rowsA - rowsB; ++i) {
@@ -24,19 +29,19 @@ bool solve(const std::vector<std::string>& matrixA, const std::vector<std::strin
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     int n, m;
-    std::cin >> n >> m;
-    std::vector<std::string> matrixA(n), matrixB(m);
+    cin >> n >> m;
+    vector<string> matrixA(n), matrixB(m);
     for (int i = 0; i < n; ++i) {
-        std::cin >> matrixA[i];
+        cin >> matrixA[i];
     }
     for (int i = 0; i < m; ++i) {
-        std::cin >> matrixB[i];
+        cin >> matrixB[i];
     }
-    std::cout << (solve(matrixA, matrixB) ? "Yes" : "No") << "\n";
+    cout << (solve(matrixA, matrixB) ? "Yes" : "No") << "\n";
     return 0;
 }
 

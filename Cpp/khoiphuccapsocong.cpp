@@ -14,7 +14,7 @@ int main() {
 		sum += temp;
 		prev = curr;
 		n++;
-	};
+	}
 	if (gcd) cout << sum / gcd - n;
 	else cout << 0;
 	return 0;

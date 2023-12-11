@@ -2,10 +2,14 @@
 #include <vector>
 #include <algorithm>
 #define ll long long
+using std::cin;
+using std::cout;
+using std::ios_base;
+using std::vector;
 
-std::vector<ll> solve(ll n) {
-	std::vector<ll> result = {n};
-	for (ll i = 2; i * i <= n; i++) {
+vector<ll> solve(ll n) {
+	vector<ll> result = {n};
+	for (ll i = 2; i * i <= n; ++i) {
 		while (n % i == 0) {
 			n /= i;
 			result.push_back(n);
@@ -18,16 +22,16 @@ std::vector<ll> solve(ll n) {
 }
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
-	ll n;
-	std::cin >> n;
-	std::vector<ll> result = solve(n);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+    ll n;
+	cin >> n;
+	vector<ll> result = solve(n);
 	std::reverse(result.begin(), result.end());
 	if (result[0] != 1) result.insert(result.begin(), 1);
-	for (ll item: result) {
-		std::cout << item << " ";
+	for (const ll &item: result) {
+		cout << item << " ";
 	}
 	return 0;
 }

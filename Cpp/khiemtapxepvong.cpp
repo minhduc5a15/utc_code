@@ -16,19 +16,18 @@ std::vector<int> get_divisors(int n) {
 }
 std::map<int, int> arr = { {0, 0}, {1, 1} };
 
-long long count_ways(int n) {
+long long solve(int n) {
     if (arr.count(n)) {
         return arr[n];
     }
-
     long long total = 0;
     for (int k = 1; k < n; ++k) {
         long long inner_sum = 0;
         std::vector<int> divisors = get_divisors(k);
         for (int d : divisors) {
-            inner_sum += d * count_ways(d);
+            inner_sum += d * solve(d);
         }
-        total += inner_sum * count_ways(n - k);
+        total += inner_sum * solve(n - k);
     }
 
     arr[n] = total / (n - 1);
@@ -41,7 +40,7 @@ int main() {
     std::cout.tie(NULL);
     int n;
     std::cin >> n;
-    std::cout << count_ways(n + 1) << std::endl;
+    std::cout << solve(n + 1) << std::endl;
     return 0;
 }
 

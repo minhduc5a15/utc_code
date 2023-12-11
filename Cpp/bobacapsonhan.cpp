@@ -4,18 +4,18 @@
 #define ll long long
 using namespace std;
 
-ll solve(const vector<int>& arr, int r) {
+ll solve(const vector<int> &arr, int r) {
     map<ll, ll> p;
     map<ll, ll> counter;
     ll count = 0;
-    for (const int& item: arr) {
+    for (const int &item: arr) {
         map<ll, ll>::iterator it = counter.find(item);
         if (it != counter.end()) {
-            count += it -> second;
+            count += it->second;
         }
         it = p.find(item);
         if (it != p.end()) {
-            counter[item * r] += it -> second;
+            counter[item * r] += it->second;
         }
         p[item * r]++;
     }

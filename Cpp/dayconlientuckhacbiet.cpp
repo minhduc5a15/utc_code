@@ -8,7 +8,7 @@ int solve(const vector<int> &arr, int n) {
 	unordered_map<int, int> distinct_elements;
 	int result = 0;
 	int start = 0;
-	for (int end = 0; end < n; end++) {
+	for (int end = 0; end < n; ++end) {
 		if (distinct_elements.find(arr[end]) != distinct_elements.end()) {
 			start = max(start, distinct_elements[arr[end]] + 1);
 		}

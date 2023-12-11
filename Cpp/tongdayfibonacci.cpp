@@ -1,15 +1,16 @@
 #include <iostream>
 #include <vector>
 #define MOD 1000000007
+#define SIZE 2
 typedef long long ll;
 typedef std::vector<std::vector<ll>> matrix;
 
 matrix multiply(matrix &matrix1, matrix &matrix2) {
-	matrix result(2, std::vector<ll>(2));
-	for (int i = 0; i < 2; ++i) {
-		for (int j = 0; j < 2; ++j) {
+	matrix result(SIZE, std::vector<ll>(SIZE));
+	for (int i = 0; i < SIZE; ++i) {
+		for (int j = 0; j < SIZE; ++j) {
 			result[i][j] = 0;
-			for (int k = 0; k < 2; ++k) {
+			for (int k = 0; k < SIZE; ++k) {
 				result[i][j] += (matrix1[i][k] * matrix2[k][j]) % MOD;
 				result[i][j] %= MOD;
 			}

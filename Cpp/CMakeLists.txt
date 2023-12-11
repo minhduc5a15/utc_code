@@ -202,4 +202,10 @@ add_executable(Cpp
         lailatong3songuyen.cpp
         tungxucxac.cpp
         demsoxaunhiphanchua100.cpp
+        dosaucacnutcuacaytimkiemnhiphan.cpp
+        dosaucacnutcuacaytimkiemnhiphan.cpp
+        lailadosaucacnutcuacaytimkiemnhiphan.cpp
+        lambongtuyet.cpp
+        lailadosaucacnutcuacaytimkiemnhiphan.cpp
+        dosaucacnutcuacaytimkiemnhiphan.cpp
 )

@@ -6,3 +6,5 @@ a.png
 init.cpp
 test.md
 cmake-build-debug
+test.py
+main.c

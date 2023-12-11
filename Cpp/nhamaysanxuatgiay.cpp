@@ -9,7 +9,7 @@ ll solve(vector &arr, int t) {
     while (left < right) {
         ll mid = (left + right) / 2;
         ll total = 0;
-        for (int &item: arr) {
+        for (const int &item: arr) {
             total += mid / item;
         }
         if (total >= t) {

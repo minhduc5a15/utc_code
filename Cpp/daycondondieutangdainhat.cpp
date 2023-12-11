@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
-
+using std::cin;
+using std::cout;
+using std::ios_base;
 int solve(const std::vector<int> &arr) {
 	std::vector<int> list;
 	for (const int &num: arr) {
@@ -16,16 +18,16 @@ int solve(const std::vector<int> &arr) {
 }
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 	int n;
-	std::cin >> n;
+	cin >> n;
 	std::vector<int> arr(n);
 	for (int i = 0; i < n; ++i) {
-		std::cin >> arr[i];
+		cin >> arr[i];
 	}
-	std::cout << solve(arr);
+	cout << solve(arr);
 	return 0;
 }
 
