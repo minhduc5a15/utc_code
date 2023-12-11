@@ -19,7 +19,9 @@ int main() {
     for (char z: x) { Q.push_back(z - '0'); }
     R.resize(P.size() + Q.size() - 1);
     for (int i = 0; i < P.size(); ++i) {
-        for (int j = 0; j < Q.size(); ++j) { R[i + j] += P[i] * Q[j]; }
+        for (int j = 0; j < Q.size(); ++j) {
+            R[i + j] += P[i] * Q[j];
+        }
     }
     ll t = 0;
     for (ll &z: R) {

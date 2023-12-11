@@ -8,3 +8,4 @@ test.md
 cmake-build-debug
 test.py
 main.c
+CMakeLists.txt

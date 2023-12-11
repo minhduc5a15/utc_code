@@ -1,14 +1,13 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-
 using namespace std;
 typedef vector<int> vectori;
 
 shared_ptr<vectori> add(const shared_ptr<vectori> &a, const shared_ptr<vectori> &b) {
     int size_a = a->size(), size_b = b->size();
-    shared_ptr<vectori> result = make_shared<vectori>(max(size_a, size_b) + 1);
     int carry = 0;
+    shared_ptr<vectori> result = make_shared<vectori>(max(size_a, size_b) + 1);
     for (int i = 0; i < static_cast<int>(result->size()); ++i) {
         if (i < size_a) carry += (*a)[i];
         if (i < size_b) carry += (*b)[i];
@@ -20,7 +19,9 @@ shared_ptr<vectori> add(const shared_ptr<vectori> &a, const shared_ptr<vectori> 
 }
 
 void solve(const shared_ptr<vectori> &arr) {
-    for (int i = static_cast<int>(arr->size()) - 1; i >= 0; --i) cout << (*arr)[i];
+    for (int i = static_cast<int>(arr->size()) - 1; i >= 0; --i) {
+        cout << (*arr)[i];
+    }
 }
 
 int main() {

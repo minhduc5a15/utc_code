@@ -58,7 +58,7 @@ void solve(ull n) {
 			cout << "OK" << '\n';
 		}
 		else {
-			for (ull &prime: primeNumbers) {
+			for (const ull &prime: primeNumbers) {
 				if (n % prime == 0) {
 					cout << power(prime, n / prime) << '\n';
 					break;
@@ -68,7 +68,7 @@ void solve(ull n) {
 	}
 	else {
 		bool check = false;
-		for (ull &prime: primeNumbers) {
+		for (const ull &prime: primeNumbers) {
 			if (n % prime == 0) {
 				check = true;
 				cout << power(prime, n / prime) << '\n';

@@ -31,7 +31,6 @@ matrixll pow(const matrixll &mat, int power) {
 		temp = multiply(temp, temp);
 		power >>= 1;
 	}
-
 	return result;
 }
 int main() {

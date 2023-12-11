@@ -10,7 +10,7 @@ int main() {
     string s = "YES";
     for (int i = 0; i < n; i++) cin >> arr[i];
     bool check = arr[0] > arr[1];
-    for (int i = 1; i < n - 1; i++) {
+    for (int i = 1; i < n - 1; ++i) {
         if (check != (arr[i] > arr[i + 1])) {
             s = "NO";
             break;
