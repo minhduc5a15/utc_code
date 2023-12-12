@@ -1,4 +1,5 @@
 *.exe
+*.obj
 C/main.c
 C/test.c
 C/test.txt
