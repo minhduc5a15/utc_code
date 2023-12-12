@@ -5,8 +5,10 @@
 ll power(ll base, ll exponent, int modulus) {
     base %= modulus;
     ll result = 1;
-    while (exponent > 0) {
-        if (exponent & 1) result = (result * base) % modulus;
+    while (exponent) {
+        if (exponent & 1) {
+            result = (result * base) % modulus;
+        }
         base = (base * base) % modulus;
         exponent >>= 1;
     }

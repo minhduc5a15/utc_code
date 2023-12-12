@@ -1,1 +1,1 @@
-D:\Repositories\laptrinhonline_club\Rust\target\debug\Rust.exe: D:\Repositories\laptrinhonline_club\Rust\src\main.rs
+D:\code\Repositories\utc_code\Rust\target\debug\rust.exe: D:\code\Repositories\utc_code\Rust\src\main.rs
