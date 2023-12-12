@@ -7,5 +7,6 @@ init.cpp
 test.md
 cmake-build-debug
 test.py
+test.txt
 main.c
 CMakeLists.txt

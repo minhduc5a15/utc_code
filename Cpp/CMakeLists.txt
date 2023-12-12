@@ -209,5 +209,8 @@ add_executable(Cpp
         lailadosaucacnutcuacaytimkiemnhiphan.cpp
         dosaucacnutcuacaytimkiemnhiphan.cpp
         latbittrongkhoang.cpp
+        sogomtoanchuso1.cpp
+        sogomtoanchuso1.cpp
         test.cpp
+        segmenttree.cpp
 )
