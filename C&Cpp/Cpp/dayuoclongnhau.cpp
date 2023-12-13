@@ -29,5 +29,3 @@ int main() {
 	std::for_each(result.cbegin(), result.cend(), [](const ll &x) { std::cout << x << " "; });
 	return 0;
 }
-
-// code by duck it1

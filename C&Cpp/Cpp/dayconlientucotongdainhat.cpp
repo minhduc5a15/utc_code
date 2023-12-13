@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-int kadane(const std::vector<int> &list, int n) {
-	int max_so_far = list[0], current_max = list[0];
+int kadane(const std::vector<int> &arr, int n) {
+	int max_so_far = arr[0], current_max = arr[0];
 	for (int i = 1; i < n; ++i) {
-		current_max = std::max(list[i], current_max + list[i]);
+		current_max = std::max(arr[i], current_max + arr[i]);
 		max_so_far = std::max(current_max, max_so_far);
 	}
 	return max_so_far;
@@ -16,11 +16,11 @@ int main() {
 	std::cout.tie(NULL);
 	int n;
 	std::cin >> n;
-	std::vector<int> list(n);
+	std::vector<int> arr(n);
 	for (int i = 0; i < n; ++i) {
-		std::cin >> list[i];
+		std::cin >> arr[i];
 	}
-	std::cout << kadane(list, n);
+	std::cout << kadane(arr, n);
 	return 0;
 }
 

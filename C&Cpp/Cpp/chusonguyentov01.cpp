@@ -1,11 +1,10 @@
 #include <iostream>
 #include <vector>
-
+#include <string>
 using namespace std;
-
+const vector<int> prime_digits = { 2, 3, 5, 7 };
 string solve(int k) {
-    vector<int> prime_digits = { 2, 3, 5, 7 };
-    string number = "";
+    string number;
     while (k > 0) {
         int digit = (k - 1) % 4;
         k = (k - 1) / 4;
@@ -20,13 +19,12 @@ int main() {
     cout.tie(NULL);
     int t;
     cin >> t;
-    for (int i = 0; i < t; i++) {
+    for (int i = 0; i < t; ++i) {
         int k;
         cin >> k;
-        cout << "#" << (i + 1) << " " << solve(k) << endl;
+        cout << "#" << (i + 1) << " " << solve(k) << '\n';
     }
     return 0;
 }
 
 
-// code by duck it1

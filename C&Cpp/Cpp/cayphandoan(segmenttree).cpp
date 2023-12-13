@@ -8,14 +8,14 @@ class SegmentTree {
 private:
     vector<int> arr, seg, cnt, gcd;
 public:
-    SegmentTree(int n) : arr(n + 1), seg(4 * n + 1), cnt(4 * n + 1), gcd(4 * n + 1) {}
+    explicit SegmentTree(int n) : arr(n + 1), seg(4 * n + 1), cnt(4 * n + 1), gcd(4 * n + 1) {}
 
     void array_input(int n) {
         for (int i = 1; i <= n; ++i) {
             cin >> arr[i];
         }
     }
-    int GCD(int a, int b) {
+    static int GCD(int a, int b) {
         return __gcd(a, b);
     }
     void build(int id, int l, int r) {
