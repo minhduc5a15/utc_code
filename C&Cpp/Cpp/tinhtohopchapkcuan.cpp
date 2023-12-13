@@ -1,11 +1,12 @@
 #include <iostream>
+#include <vector>
 #define ll long long
 #define MOD 1000000007
 #define MAXN 100001
 
 using namespace std;
 
-ll factorial[MAXN], inverse[MAXN];
+vector<ll> factorial(MAXN), inverse(MAXN);
 
 int power(int a, int b) {
     if (b == 0) return 1;
@@ -44,4 +45,3 @@ int main() {
     return 0;
 }
 
-// code by duck it1

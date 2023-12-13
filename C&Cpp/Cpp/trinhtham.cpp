@@ -5,8 +5,9 @@ void solve(const std::vector<int> &arr, int n, int k) {
 	std::deque<int> q(k);
 	int i;
 	for (i = 0; i < k; ++i) {
-		while ((!q.empty()) && arr[i] >= arr[q.back()])
-			q.pop_back();
+		while ((!q.empty()) && arr[i] >= arr[q.back()]) {
+            q.pop_back();
+        }
 		q.push_back(i);
 	}
 	for (; i < n; ++i) {

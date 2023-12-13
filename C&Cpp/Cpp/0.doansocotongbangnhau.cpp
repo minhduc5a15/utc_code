@@ -36,9 +36,8 @@ int main() {
 		divisor(max_sum);
 		std::sort(arr.begin(), arr.end());
 		int step = 0;
-		for (int i = 0; i < arr.size(); ++i) {
-			int sum_arr = arr[i];
-			int step_arr = max_sum / sum_arr;
+		for (const int &sum_arr: arr) {
+            int step_arr = max_sum / sum_arr;
 			int check, d = 0, count = 0;
 			while (true) {
 				check = 0;
@@ -66,4 +65,3 @@ int main() {
 }
 
 
-// code by duck it1

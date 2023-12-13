@@ -5,16 +5,15 @@ using namespace std;
 
 void solve(const vector<int> &arr) {
     int current_sum = 0, back_sum = 0;
-    for (int i = 0; i < arr.size(); ++i) {
-        if (arr[i] == 25) {
-            current_sum += arr[i];
+    for (int i : arr) {
+        if (i == 25) {
+            current_sum += i;
         } else {
-            back_sum += arr[i] - 25;
+            back_sum += i - 25;
         }
     }
     if (current_sum >= back_sum) cout << "YES";
     else cout << "NO";
-    return;
 }
 
 int main() {
@@ -32,4 +31,3 @@ int main() {
 }
 
 
-// code by duck it1

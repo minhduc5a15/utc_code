@@ -19,12 +19,11 @@ int main() {
 	std::ios_base::sync_with_stdio(false);
 	std::cin.tie(NULL);
 	std::cout.tie(NULL);
-	int n, m;
+	int n;
 	std::cin >> n;
-	std::vector<int> arr;
+	std::vector<int> arr(n);
 	for (int i = 0; i < n; ++i) {
-		std::cin >> m;
-		arr.push_back(m);
+		std::cin >> arr[i];
 	}
 	std::cout << solve(arr) << std::endl;
 	return 0;

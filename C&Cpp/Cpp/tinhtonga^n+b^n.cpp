@@ -56,4 +56,3 @@ int main() {
 
 
 
-// code by duck it1

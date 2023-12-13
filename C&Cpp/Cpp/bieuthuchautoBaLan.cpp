@@ -3,26 +3,20 @@
 #include <stack>
 using namespace std;
 
-map<char, int> precedence = {
-    {'+', 1},
-    {'-', 1},
-    {'*', 2},
-    {'/', 2},
-    {'(', 0}
-};
+map<char, int> precedence = {{'+', 1}, {'-', 1}, {'*', 2}, {'/', 2}, {'(', 0}};
 
 int calc(int a, int b, char op) {
     switch (op) {
-    case '+':
-        return a + b;
-    case '-':
-        return a - b;
-    case '*':
-        return a * b;
-    case '/':
-        return a / b;
-    default:
-        break;
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        default:
+            break;
     }
     return -1;
 }
@@ -35,7 +29,7 @@ int main() {
     cin >> s;
     string postFix;
     stack<char> operators;
-    for (char c : s) {
+    for (char c: s) {
         if (c >= '0' && c <= '9') {
             postFix += c;
         }
@@ -63,7 +57,7 @@ int main() {
     }
     cout << postFix << endl;
     stack<int> operands;
-    for (char c : postFix) {
+    for (char c: postFix) {
         if (c >= '0' && c <= '9') {
             operands.push(c - '0');
         }
@@ -80,4 +74,3 @@ int main() {
 }
 
 
-// code by duck it1
