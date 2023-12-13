@@ -1,2 +1,1 @@
-s = input()
-print("YES" if s[-1] not in ['4', '7','0'] and s[0] == '0' else "NO")
+print("YES" if len(num := input()) == 10 and num[len(num) - 1] not in ['4', '7', '0'] and num[0] == "0" else "NO")
