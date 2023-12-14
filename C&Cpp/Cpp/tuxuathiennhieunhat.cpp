@@ -36,4 +36,5 @@ int main() {
         cout << "\n";
         map.clear();
     }
+    return 0;
 }

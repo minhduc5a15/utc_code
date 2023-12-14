@@ -22,7 +22,7 @@ int main() {
 	int t;
 	std::cin >> t;
 	int index, n;
-	for (int k = 1; k <= t; ++k) {
+	while (t--) {
 		std::cin >> index >> n;
 		std::vector<int> a(n + 1);
 		int sum = 0, item;

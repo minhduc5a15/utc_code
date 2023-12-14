@@ -5,11 +5,11 @@ using namespace std;
 
 void solve(const vector<int> &arr) {
     int current_sum = 0, back_sum = 0;
-    for (int i : arr) {
-        if (i == 25) {
-            current_sum += i;
+    for (const int &num : arr) {
+        if (num == 25) {
+            current_sum += num;
         } else {
-            back_sum += i - 25;
+            back_sum += num - 25;
         }
     }
     if (current_sum >= back_sum) cout << "YES";

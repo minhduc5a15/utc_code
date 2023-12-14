@@ -2,8 +2,8 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> solve(std::string s) {
-	if (s == "") {
+std::vector<std::string> solve(const std::string& s) {
+	if (s.empty()) {
 		return {""};
 	}
 	std::vector<std::vector<std::string>> dp(s.length() + 1);
@@ -27,9 +27,9 @@ int main() {
 	std::ios_base::sync_with_stdio(false);
 	std::cin.tie(NULL);
 	std::cout.tie(NULL);
-	std::string input;
-	std::cin >> input;
-	std::vector<std::string> result = solve(input);
+	std::string s;
+	std::cin >> s;
+	std::vector<std::string> result = solve(s);
 	for (const std::string &str: result) {
 		std::cout << str << "\n";
 	}

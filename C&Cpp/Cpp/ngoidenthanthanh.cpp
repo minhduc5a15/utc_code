@@ -5,7 +5,7 @@ using namespace std;
 
 string solve(string s) {
     int n = s.length();
-    string s1 = "", s2 = "", result = "Just a legend";
+    string s1, s2, result = "Just a legend";
     char first_char = s[0];
     for (int i = 0; i < n / 2 + 1; ++i) {
         s1 += s[i];
