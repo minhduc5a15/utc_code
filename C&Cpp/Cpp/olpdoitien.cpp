@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool solve(int n, const vector<vector<float>> &matrix) {
+bool solve(const vector<vector<float>> &matrix, int n) {
     vector<vector<float>> log_exchange_rates(n, vector<float>(n));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
@@ -40,7 +40,7 @@ int main() {
                 cin >> matrix[i][j];
             }
         }
-        cout << (solve(n, matrix) ? "YES" : "NO") << '\n';
+        cout << (solve(matrix, n) ? "YES" : "NO") << '\n';
     }
     return 0;
 }

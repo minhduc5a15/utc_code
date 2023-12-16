@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void solve(int n, vector<int> &arr) {
+void solve(vector<int> &arr, int n) {
 	vector<int> temp(n);
 	for (int j = 0; j < 4; ++j) {
 		int b = 1 << BIT;
@@ -52,7 +52,7 @@ int main() {
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
 	}
-	solve(n, arr);
+	solve(arr, n);
 	return 0;
 }
 

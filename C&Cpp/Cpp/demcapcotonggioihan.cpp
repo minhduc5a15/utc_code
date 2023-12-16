@@ -2,12 +2,12 @@
 #include <vector>
 #include <algorithm>
 
-long long solve(std::vector<int>& list, int n, int k) {
-    std::sort(list.begin(), list.end());
+long long solve(std::vector<int>& arr, int n, int k) {
+    std::sort(arr.begin(), arr.end());
     int left = 0, right = n - 1;
     long long count = 0;
     while (left < right) {
-        if (list[left] + list[right] <= k) {
+        if (arr[left] + arr[right] <= k) {
             count += right - left;
             left++;
         }

@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 int total_pow(int n, int p) {
 	int res = 1;
 	int k = log(n) / log(p);
@@ -16,7 +15,7 @@ int total_pow(int n, int p) {
 	return res;
 }
 
-vector<int> Sieve_of_Eratosthenes(int n) {
+vector<int> Sieve(int n) {
 	vector<bool> prime(n + 1, true);
 	int p = 2;
 	while (p * p <= n) {
@@ -40,7 +39,7 @@ vector<int> Sieve_of_Eratosthenes(int n) {
 
 ll solve(int n) {
 	ll res = 1;
-	vector<int> primes = Sieve_of_Eratosthenes(n);
+	vector<int> primes = Sieve(n);
 	for (int prime: primes) {
 		res = (res * total_pow(n, prime)) % MOD;
 	}

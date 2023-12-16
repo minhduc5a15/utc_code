@@ -9,7 +9,7 @@ private:
         int data;
         Node *left;
         Node *right;
-        Node(int data, Node *left = NULL, Node *right = NULL) {
+        explicit Node(int data, Node *left = NULL, Node *right = NULL) {
             this->data = data;
             this->left = left;
             this->right = right;

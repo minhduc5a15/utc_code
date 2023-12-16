@@ -16,7 +16,7 @@ int power(int a, int b) {
     else return ((a * temp) % MOD);
 }
 
-ll InverseNumber(int n) {
+ll inverse_num(int n) {
     return power(n, MOD - 2);
 }
 
@@ -31,9 +31,9 @@ int main() {
     cout.tie(NULL);
     factorial[0] = 1;
     inverse[0] = 1;
-    for (int i = 1; i < MAX; i++) {
+    for (int i = 1; i < MAX; ++i) {
         factorial[i] = (factorial[i - 1] * i) % MOD;
-        inverse[i] = InverseNumber(factorial[i]);
+        inverse[i] = inverse_num(factorial[i]);
     }
 
     int t;

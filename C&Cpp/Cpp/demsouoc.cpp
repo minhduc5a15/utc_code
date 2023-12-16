@@ -12,7 +12,7 @@ int main() {
     cout.tie(NULL);
     int t;
     cin >> t;
-    for (int i = 0; i < t; ++i) {
+    while (t--) {
         long long n;
         cin >> n;
         cout << solve(n) << '\n';

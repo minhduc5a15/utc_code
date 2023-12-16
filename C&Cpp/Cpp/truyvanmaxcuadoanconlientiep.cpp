@@ -6,7 +6,7 @@
 
 std::vector<vectori> max_list(LIMIT, vectori(20));
 
-void init(vectori &arr, int n) {
+void init(const vectori &arr, int n) {
     for (int i = 0; i < n; ++i) {
         max_list[i][0] = arr[i];
     }
@@ -15,7 +15,6 @@ void init(vectori &arr, int n) {
             max_list[j][i] = std::max(max_list[j][i - 1], max_list[j + (1 << (i - 1))][i - 1]);
         }
     }
-    return;
 }
 
 int solve(int l, int r) {
@@ -37,7 +36,8 @@ int main() {
     while (q--) {
         int l, r;
         std::cin >> l >> r;
-        --l; --r;
+        --l;
+        --r;
         std::cout << solve(l, r) << '\n';
     }
     return 0;
