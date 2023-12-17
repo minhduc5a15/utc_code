@@ -13,10 +13,8 @@ int power(int a, int b) {
 
 int catalan(int n) {
     ll res = 1;
-    for (int i = 2 * n; i > n; --i)
-        res = (res * i) % MOD;
-    for (int i = n; i > 0; --i)
-        res = (res * power(i, MOD - 2)) % MOD;
+    for (int i = 2 * n; i > n; --i) res = (res * i) % MOD;
+    for (int i = n; i > 0; --i) res = (res * power(i, MOD - 2)) % MOD;
     res = (res * power(n + 1, MOD - 2)) % MOD;
     return res;
 }
@@ -36,5 +34,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

@@ -22,5 +22,3 @@ int main() {
 	cout << a * b * (c + d + e) + c * (a + b) * (d + e) + d * e * (a + b + c);
 	return 0;
 }
-
-

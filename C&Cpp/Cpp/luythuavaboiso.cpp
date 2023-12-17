@@ -24,7 +24,6 @@ void Sieve() {
 			primeNumbers.push_back(i);
 		}
 	}
-	return;
 }
 
 ull power(ull base, ull exponent) {
@@ -79,8 +78,7 @@ void solve(ull n) {
 			cout << "OK" << '\n';
 		}
 	}
-	return;
-}
+	}
 
 int main() {
 	ios_base::sync_with_stdio(false);
@@ -97,5 +95,3 @@ int main() {
 	return 0;
 }
 
-
-// code by duck it1

@@ -17,7 +17,7 @@ struct Fraction {
     }
 };
 
-struct Hash {
+struct pair_object {
     size_t operator()(const Fraction &f) const {
         return hash<int>()(f.a) ^ (hash<int>()(f.b) << 1);
     }
@@ -29,7 +29,7 @@ int main() {
     cout.tie(NULL);
     int n;
     cin >> n;
-    unordered_set<Fraction, Hash> cows;
+    unordered_set<Fraction, pair_object> cows;
     for (int i = 0; i < n; ++i) {
         int a, b;
         cin >> a >> b;

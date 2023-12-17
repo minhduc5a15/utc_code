@@ -1,7 +1,6 @@
 #include <iostream>
 #include <queue>
 #include <vector>
-
 using namespace std;
 typedef pair<int, int> pii;
 typedef vector<vector<bool>> matrix;
@@ -28,7 +27,7 @@ int main() {
 	while (!q.empty()) {
 		pii pos = q.front();
 		q.pop();
-		for (vector<int> direction: directions) {
+		for (const vector<int> &direction: directions) {
 			int nx = direction[0], ny = direction[1];
 			int check = 0, i = 1;
 			for (; visited[pos.first + i * nx][pos.second + i * ny]; ++i) {
@@ -52,4 +51,3 @@ int main() {
 	return 0;
 }
 
-// code by duck it1

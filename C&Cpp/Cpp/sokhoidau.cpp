@@ -23,7 +23,7 @@ public:
         root = new TrieNode();
     }
 
-    void insert(string word) {
+    void insert(const string& word) const {
         TrieNode *node = root;
         for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
@@ -34,7 +34,7 @@ public:
         node->end_of_word = true;
     }
 
-    bool search(string word) {
+    bool search(const string& word) const {
         TrieNode *node = root;
         for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
@@ -46,9 +46,9 @@ public:
     }
 };
 
-int solve(vector<string> arr) {
+int solve(const vector<string>& arr) {
     Trie trie;
-    for (string num: arr) {
+    for (const string& num: arr) {
         trie.insert(num);
     }
     int k = 1;
@@ -72,5 +72,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

@@ -29,7 +29,3 @@ int main() {
 	cout << solve(arr, n, m);
 	return 0;
 }
-
-
-
-// code by duck it1

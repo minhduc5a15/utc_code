@@ -20,6 +20,7 @@ matrixll multiply(const matrixll &a, const matrixll &b) {
 	}
 	return result;
 }
+
 matrixll pow(const matrixll &mat, int power) {
 	matrixll result = mat;
 	matrixll temp = mat;
@@ -53,6 +54,3 @@ int main() {
 	}
 	return 0;
 }
-
-
-

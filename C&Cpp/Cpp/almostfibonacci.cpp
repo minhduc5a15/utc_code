@@ -21,7 +21,7 @@ matrix multiply(matrix &F, matrix &M) {
 
 matrix power(matrix F, ull n) {
     matrix result = {{1, 0}, {0, 1}}; 
-    while (n > 0) {
+    while (n) {
         if (n & 1) result = multiply(result, F);
         F = multiply(F, F);
         n >>= 1;

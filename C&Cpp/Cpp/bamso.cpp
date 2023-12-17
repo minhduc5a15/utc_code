@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int solve(string s) {
+int solve(const string& s) {
 	int sum = 0;
 	for (char c: s) {
 		if (isdigit(c)) {
@@ -30,6 +30,3 @@ int main() {
 	cout << solve(n);
 	return 0;
 }
-
-
-// code by duck it1

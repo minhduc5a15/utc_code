@@ -7,7 +7,7 @@
 using namespace std;
 
 void solve(int s, int f) {
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> h;
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> h;
     h.push({ 0, s });
     set<int> visited;
     while (!h.empty()) {
@@ -32,7 +32,6 @@ void solve(int s, int f) {
         }
     }
     cout << -1 << '\n';
-    return;
 }
 
 int main() {

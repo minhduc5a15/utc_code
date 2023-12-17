@@ -5,7 +5,7 @@
 using namespace std;
 
 void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_sum, int n) {
-    priority_queue<ll, vector<ll>, greater<ll>> q;
+    priority_queue<ll, vector<ll>, greater<>> q;
     ll res;
     for (int i = 1; i <= n; ++i) {
         res = 0;
@@ -17,7 +17,6 @@ void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_su
         res += T[i] * q.size();
         cout << res << " ";
     }
-    return;
 }
 
 int main() {

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string solve(string s) {
+string solve(const string &s) {
     int n = s.length();
     string s1, s2, result = "Just a legend";
     char first_char = s[0];
@@ -30,4 +30,3 @@ int main() {
     return 0;
 }
 
-// code by duck it1

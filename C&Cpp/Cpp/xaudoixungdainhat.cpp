@@ -5,7 +5,7 @@
 using namespace std;
 
 // manacher's algorithm
-int solve(string s) {
+int solve(const string& s) {
 	string str = "^";
 	for (char c: s) {
 		str += "#";
@@ -40,5 +40,3 @@ int main() {
 	return 0;
 }
 
-
-// code by duck it1
