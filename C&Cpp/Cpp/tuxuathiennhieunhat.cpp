@@ -6,8 +6,9 @@
 using namespace std;
 
 bool lambda(const pair<string, int> &a, const pair<string, int> &b) {
-    return (a.second == b.second) ? (a.first < b.first) : (a.second > b.second);
+    return a.second == b.second ? a.first < b.first : a.second > b.second;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);

@@ -17,7 +17,7 @@ int main() {
     }
     sort(arr.begin(), arr.end());
     vector<ll> prefixSum(n);
-    prefixSum[0] = arr[0];
+    prefixSum.front() = arr.front();
     for (int i = 1; i < n; ++i) prefixSum[i] = prefixSum[i - 1] + arr[i];
     int t;
     cin >> t;
@@ -40,5 +40,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

@@ -31,10 +31,11 @@ bool solve(const vector<vector<float>> &matrix, int n) {
 int main() {
     int t;
     cin >> t;
+    vector<vector<float>> matrix;
     while (t--) {
         int n;
         cin >> n;
-        vector<vector<float>> matrix(n, vector<float>(n));
+        matrix.resize(n, vector<float>(n));
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
                 cin >> matrix[i][j];

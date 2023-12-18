@@ -5,14 +5,14 @@ using namespace std;
 
 string solve(int n) {
     if (n % 5 == 0) return "0";
-    queue<string> queue;
-    queue.push("6");
+    queue<string> q;
+    q.push("6");
     while (true) {
-        string num = queue.front();
-        queue.pop();
+        string num = q.front();
+        q.pop();
         if (stoll(num) % n == 0) return num;
-        queue.push(num + "6");
-        queue.push(num + "8");
+        q.push(num + "6");
+        q.push(num + "8");
     }
 }
 int main() {

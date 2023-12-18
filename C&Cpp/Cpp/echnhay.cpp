@@ -3,7 +3,7 @@
 using namespace std;
 
 bool solve(const vector<int>& arr, int n) {
-    int max_reach = arr[0];
+    int max_reach = arr.front();
     for (int i = 0; i < n; ++i) {
         if (i > max_reach) return false;
         max_reach = max(max_reach, i + arr[i]);

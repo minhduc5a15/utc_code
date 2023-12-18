@@ -29,14 +29,14 @@ void solve(vector<int> &arr, int n) {
 			arr[--freq2[temp[i] >> j * BIT & (b - 1)]] = temp[i];
 		}
 	}
-	int middle = (n + 1) / 2, index = 0;
-	while (middle < n) {
-		if (arr[middle] >= arr[index] * 2) {
+	int mid = (n + 1) / 2, index = 0;
+	while (mid < n) {
+		if (arr[mid] >= arr[index] * 2) {
 			++index;
-			++middle;
+			++mid;
 		}
 		else {
-			++middle;
+			++mid;
 		}
 	}
 	cout << n - index;

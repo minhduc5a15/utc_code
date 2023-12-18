@@ -38,7 +38,7 @@ void encode(Node *root, const string& str, unordered_map<char, string> &huffmanC
 
 int solve(const string& s) {
     unordered_map<char, int> freq;
-    for (char ch: s) {
+    for (const char &ch: s) {
         freq[ch]++;
     }
 
@@ -59,7 +59,7 @@ int solve(const string& s) {
     unordered_map<char, string> huffmanCode;
     encode(root, "", huffmanCode);
     int result = 0;
-    for (char ch: s) {
+    for (const char &ch: s) {
         result += huffmanCode[ch].size();
     }
     return result;
@@ -74,6 +74,3 @@ int main() {
     cout << solve(s);
     return 0;
 }
-
-
-// code by duck it1

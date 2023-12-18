@@ -2,8 +2,7 @@
 #include <cmath>
 #include <vector>
 #define LIMIT 100001
-#define vectori std::vector<int>
-
+typedef std::vector<int> vectori;
 std::vector<vectori> max_list(LIMIT, vectori(20));
 
 void init(const vectori &arr, int n) {

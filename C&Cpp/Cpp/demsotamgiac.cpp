@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-
 using namespace std;
 
 ll solve(const vector<pair<int, int>> &points, int n) {

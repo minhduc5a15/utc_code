@@ -17,11 +17,11 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    visited[0] = visited[arr[0]] = visited[m] = true;
-    map[arr[0]]++;
-    map[m - arr[0]]++;
-    h.push(arr[0]);
-    h.push(m - arr[0]);
+    visited[0] = visited[arr.front()] = visited[m] = true;
+    map[arr.front()]++;
+    map[m - arr.front()]++;
+    h.push(arr.front());
+    h.push(m - arr.front());
     cout << h.top() << " ";
     int left, right;
     for (int i = 1; i < n; ++i) {

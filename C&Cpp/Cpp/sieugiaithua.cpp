@@ -13,18 +13,18 @@ ll count_zeros(ll x) {
 }
 
 ll solve(ll n) {
-    ll lower_bound = 0, upper_bound = n * 5;
-    while (lower_bound < upper_bound) {
-        ll middle = (lower_bound + upper_bound) / 2;
-        ll count = count_zeros(middle);
+    ll left = 0, right = n * 5;
+    while (left < right) {
+        ll mid = (left + right) / 2;
+        ll count = count_zeros(mid);
         if (count < n) {
-            lower_bound = middle + 1;
+            left = mid + 1;
         }
         else {
-            upper_bound = middle;
+            right = mid;
         }
     }
-    return lower_bound;
+    return left;
 }
 
 int main() {
@@ -37,4 +37,3 @@ int main() {
     return 0;
 }
 
-// code by duck it1

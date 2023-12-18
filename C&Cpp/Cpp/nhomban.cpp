@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #define MAXN 100001
-
 using namespace std;
 
 vector<int> parent(MAXN, 0);

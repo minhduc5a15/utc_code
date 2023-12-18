@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 #include <algorithm>
 
@@ -11,8 +12,8 @@ public:
     string id;
 
     Student(string id, string name) {
-        this->id = id;
-        this->name = name;
+        this->id = std::move(id);
+        this->name = std::move(name);
     }
 };
 
@@ -20,7 +21,7 @@ class Score : public Student {
 public:
     double gpa;
 
-    Score(string id, string name, double gpa) : Student(id, name) {
+    Score(string id, string name, double gpa) : Student(std::move(id), std::move(name)) {
         this->gpa = gpa;
     }
 };

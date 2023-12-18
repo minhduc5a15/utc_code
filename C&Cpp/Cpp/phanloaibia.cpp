@@ -22,10 +22,10 @@ int main() {
     cout.tie(NULL);
     int t;
     cin >> t;
+    vector<pair<float, float>> arr;
     while (t--) {
         int n;
         cin >> n;
-        vector<pair<float, float>> arr;
         arr.reserve(n);
         for (int i = 0; i < n; ++i) {
             float first, second;
@@ -33,6 +33,7 @@ int main() {
             arr.emplace_back(first, second);
         }
         solve(arr, n);
+        arr.clear();
     }
     return 0;
 }

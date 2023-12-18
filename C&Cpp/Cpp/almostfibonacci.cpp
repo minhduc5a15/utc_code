@@ -7,7 +7,7 @@ using std::cin;
 using std::cout;
 using std::ios_base;
 typedef std::vector<ull> vectorull;
-typedef std::vector<std::vector<ull>> matrixull;
+typedef std::vector<vectorull> matrixull;
 
 matrixull multiply(const matrixull &matrixA, const matrixull &matrixB) {
     matrixull result(SIZE, vectorull(SIZE, 0));

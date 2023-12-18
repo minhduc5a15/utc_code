@@ -3,6 +3,7 @@
 using std::cin;
 using std::cout;
 using std::ios_base;
+
 int solve(const std::vector<int> &arr) {
 	std::vector<int> list;
 	for (const int &num: arr) {

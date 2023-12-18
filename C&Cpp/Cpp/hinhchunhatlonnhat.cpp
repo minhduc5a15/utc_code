@@ -1,18 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <climits>
-typedef std::vector<int> vectori;
-typedef std::vector<std::vector<int>> matrixi;
-using std::cin;
-using std::cout;
-using std::ios_base;
+using namespace std;
+typedef vector<int> vectori;
+typedef vector<vectori> matrixi;
 
 int kadane(const vectori &arr) {
     int max_sum = INT_MIN;
     int current_sum = 0;
     for (const int &element : arr) {
-        current_sum = std::max(current_sum + element, element);
-        max_sum = std::max(max_sum, current_sum);
+        current_sum = max(current_sum + element, element);
+        max_sum = max(max_sum, current_sum);
     }
     return max_sum;
 }
@@ -26,7 +24,7 @@ int solve(const matrixi &matrix) {
             for (int i = 0; i < N; i++) {
                 temp[i] += matrix[i][right];
             }
-            max_sum = std::max(max_sum, kadane(temp));
+            max_sum = max(max_sum, kadane(temp));
         }
     }
     return max_sum;

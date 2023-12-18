@@ -17,7 +17,6 @@ void solve(long long n) {
         }
     } while (n >= 10);
     cout << (n & 1 ? 'n' : 'y') << '\n';
-    return;
 }
 
 int main() {
@@ -34,6 +33,3 @@ int main() {
     return 0;
 }
 
-
-
-// code by duck it1

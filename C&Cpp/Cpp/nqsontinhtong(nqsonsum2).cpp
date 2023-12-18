@@ -11,13 +11,12 @@ int main() {
     int n, k;
     cin >> n >> k;
     vector<int> arr(n);
-    unordered_map<int, bool> res;
+    unordered_map<int, bool> map;
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
-        if (res[k - arr[i]]) cout << min(arr[i], k - arr[i]) << " " << max(arr[i], k - arr[i]) << endl;
-        res[arr[i]] = true;
+        if (map[k - arr[i]]) cout << min(arr[i], k - arr[i]) << " " << max(arr[i], k - arr[i]) << endl;
+        map[arr[i]] = true;
     }
     return 0;
 }
 
-// code by duck it1

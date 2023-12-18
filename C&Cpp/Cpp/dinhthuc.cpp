@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-
 using namespace std;
 typedef vector<vector<double>> matrixdb;
+
 double determinant(matrixdb matrix) {
     double total = 0;
     int size = matrix.size();
@@ -35,10 +35,11 @@ int main() {
     int n;
     cin >> n;
     matrixdb matrix(n, vector<double>(n));
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             cin >> matrix[i][j];
         }
+    }
     cout << fixed << setprecision(2) << determinant(matrix) << endl;
     return 0;
 }

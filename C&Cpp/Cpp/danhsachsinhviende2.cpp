@@ -8,7 +8,7 @@ class DiemSinhVien {
 public:
     string maSV;
     string hoTen;
-    float diem;
+    float diem{};
 
     void nhapThongTin() {
         cin >> maSV;
@@ -25,9 +25,7 @@ public:
 class SinhVien : public DiemSinhVien {
 public:
     bool operator<(const SinhVien &other) const {
-        if (hoTen != other.hoTen)
-            return hoTen < other.hoTen;
-        return maSV < other.maSV;
+        return hoTen == other.hoTen ? maSV < other.maSV : hoTen < other.hoTen;
     }
 };
 
@@ -75,5 +73,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

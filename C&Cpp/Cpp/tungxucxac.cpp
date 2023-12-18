@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 #define ll long long
 #define MOD 1000000007ll
 #define SIZE 6

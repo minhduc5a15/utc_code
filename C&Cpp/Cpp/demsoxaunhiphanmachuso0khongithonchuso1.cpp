@@ -4,8 +4,8 @@
 #define ull unsigned long long
 #define MOD 1000000007ull
 #define MAX 1000001
-
 using namespace std;
+
 vector<ull> fact(MAX), inverse(MAX);
 
 ull power(ull base, ull exponent) {

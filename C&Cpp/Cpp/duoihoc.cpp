@@ -30,7 +30,7 @@ int main() {
         std::cin >> item;
         arr.push_back(item);
     }
-    std::cout << arr[0] << " ";
+    std::cout << arr.front() << " ";
     solve(arr);
     return 0;
 }

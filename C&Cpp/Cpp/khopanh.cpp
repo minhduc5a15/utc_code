@@ -1,11 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-using std::cin;
-using std::cout;
-using std::ios_base;
-using std::vector;
-using std::string;
+using namespace std;
 
 bool solve(const vector<string>& matrixA, const vector<string>& matrixB) {
     int rowsA = matrixA.size(), colsA = matrixA[0].size();
@@ -45,5 +41,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

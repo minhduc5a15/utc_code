@@ -11,8 +11,8 @@ int main() {
 	cout.tie(NULL);
 	int n;
 	cin >> n;
+    string s;
 	for (int i = 0; i < n; ++i) {
-		string s;
 		cin >> s;
 		if (s[0] == 'M' || s[0] == 'A' || s[0] == 'R' || s[0] == 'C' || s[0] == 'H') {
 			++dict[s[0]];

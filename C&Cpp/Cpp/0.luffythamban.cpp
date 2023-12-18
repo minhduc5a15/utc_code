@@ -2,8 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
-
 using namespace std;
+
 int solve(const vector<int> &arr) {
 	int minDiff = INT_MAX;
 	for (int k = *min_element(arr.begin(), arr.end()); k <= *max_element(arr.begin(), arr.end()); ++k) {

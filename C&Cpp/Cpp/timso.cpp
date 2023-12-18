@@ -42,5 +42,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

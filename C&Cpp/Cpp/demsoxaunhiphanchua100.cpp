@@ -3,9 +3,9 @@
 #define ll long long
 #define MOD 1000000007
 using namespace std;
-typedef vector<vector<ll>> matrix;
+typedef vector<vector<ll>> matrixll;
 
-void multiply(matrix &F, matrix &M) {
+void multiply(matrixll &F, matrixll &M) {
     ll x = (F[0][0] * M[0][0] + F[0][1] * M[1][0]) % MOD;
     ll y = (F[0][0] * M[0][1] + F[0][1] * M[1][1]) % MOD;
     ll z = (F[1][0] * M[0][0] + F[1][1] * M[1][0]) % MOD;
@@ -16,13 +16,14 @@ void multiply(matrix &F, matrix &M) {
     F[1][1] = w;
 }
 
-void power(matrix &F, ll n) {
+void power(matrixll &F, ll n) {
     if (n <= 1) return;
-    matrix M = {{1, 1}, {1, 0}};
+    matrixll M = {{1, 1}, {1, 0}};
     power(F, n / 2);
     multiply(F, F);
     if (n & 1) multiply(F, M);
 }
+
 ll power(ll base, ll exponent) {
     base %= MOD;
     ll result = 1;
@@ -35,8 +36,9 @@ ll power(ll base, ll exponent) {
     }
     return result;
 }
+
 ll fib(ll n) {
-    matrix F = {{1, 1}, {1, 0}};
+    matrixll F = {{1, 1}, {1, 0}};
     if (n == 0) return 0;
     power(F, n - 1);
     return F[0][0] % MOD;

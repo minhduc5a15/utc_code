@@ -1,12 +1,10 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
 #define MAX 1000000
 using namespace std;
 
 vector<int> memo(MAX + 1);
-
 
 void init() {
     memo[1] = 1;

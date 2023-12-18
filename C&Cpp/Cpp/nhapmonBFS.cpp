@@ -2,7 +2,6 @@
 #include <queue>
 #include <iostream>
 #include <tuple>
-
 typedef std::vector<int> vectori;
 
 bool is_valid(int x, int y, int n, int m) {

@@ -2,7 +2,7 @@
 #include <vector>
 
 int kadane(const std::vector<int> &arr, int n) {
-	int max_so_far = arr[0], current_max = arr[0];
+	int max_so_far = arr.front(), current_max = arr.front();
 	for (int i = 1; i < n; ++i) {
 		current_max = std::max(arr[i], current_max + arr[i]);
 		max_so_far = std::max(current_max, max_so_far);
@@ -24,4 +24,3 @@ int main() {
 	return 0;
 }
 
-// code by duck it1

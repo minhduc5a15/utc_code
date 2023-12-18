@@ -36,7 +36,7 @@ int main() {
             }
         }
     }
-    for (char ch: s) {
+    for (const char &ch: s) {
         if (map[ch] != '\0') {
             cout << map[ch];
         }
@@ -44,5 +44,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

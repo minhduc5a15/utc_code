@@ -6,9 +6,9 @@ using namespace std;
 
 vector<int> prefix_sum(const string &s, char c) {
 	vector<int> prefix(s.size());
-	prefix[0] = (s[0] == c) ? 1 : 0;
+	prefix.front() = (s[0] == c);
 	for (int i = 1; i < s.size(); ++i) {
-		prefix[i] = prefix[i - 1] + ((s[i] == c) ? 1 : 0);
+		prefix[i] = prefix[i - 1] + (s[i] == c);
 	}
 	return prefix;
 }

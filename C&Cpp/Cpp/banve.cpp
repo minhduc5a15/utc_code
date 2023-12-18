@@ -5,10 +5,11 @@ using namespace std;
 
 void solve(const vector<int> &arr) {
     int current_sum = 0, back_sum = 0;
-    for (const int &num : arr) {
+    for (const int &num: arr) {
         if (num == 25) {
             current_sum += num;
-        } else {
+        }
+        else {
             back_sum += num - 25;
         }
     }

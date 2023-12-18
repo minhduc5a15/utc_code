@@ -21,7 +21,7 @@ int main() {
     set<int> s;
     unordered_map<int, int> map;
     set<int>::iterator it;
-    s.insert(arr[0]);
+    s.insert(arr.front());
     for (const int &item: arr) {
         it = s.lower_bound(item);
         if (*it == item) {

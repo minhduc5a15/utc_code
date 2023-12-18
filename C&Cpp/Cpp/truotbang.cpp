@@ -2,8 +2,7 @@
 #include <queue>
 #include <vector>
 using namespace std;
-typedef pair<int, int> pii;
-typedef vector<vector<bool>> matrix;
+typedef vector<vector<bool>> matrixb;
 const vector<pair<int, int>> directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
 int main() {
@@ -12,8 +11,8 @@ int main() {
 	cout.tie(NULL);
 	int n, m;
 	cin >> n >> m;
-	matrix visited(n, vector<bool>(m, false));
-	matrix result(n, vector<bool>(m, false));
+	matrixb visited(n, vector<bool>(m, false));
+	matrixb result(n, vector<bool>(m, false));
 	result[1][1] = true;
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < m; ++j) {
@@ -22,18 +21,19 @@ int main() {
 			visited[i][j] = (c == '.');
 		}
 	}
-	queue<pii> q;
+	queue<pair<int, int>> q;
 	q.push({1, 1});
 	while (!q.empty()) {
-		pii pos = q.front();
+		pair<int, int> pos = q.front();
 		q.pop();
 		for (const pair<int, int> &direction: directions) {
 			int nx = direction.first, ny = direction.second;
-			int check = 0, i = 1;
+			int i = 1;
+            bool check = false;
 			for (; visited[pos.first + i * nx][pos.second + i * ny]; ++i) {
 				if (!result[pos.first + i * nx][pos.second + i * ny]) {
 					result[pos.first + i * nx][pos.second + i * ny] = true;
-					check = 1;
+					check = true;
 				}
 			}
 			if (check) {
