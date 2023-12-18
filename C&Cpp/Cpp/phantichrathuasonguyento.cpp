@@ -24,8 +24,8 @@ int main() {
     int n;
     cin >> n;
     map<int, int> factors = prime_factors(n);
-    for (const pair<const int, int> &item: factors) {
-        cout << item.first << " " << item.second << endl;
+    for (const pair<const int, int> &factor: factors) {
+        cout << factor.first << " " << factor.second << endl;
     }
     return 0;
 }

@@ -3,19 +3,19 @@
 #include <map>
 using namespace std;
 
-bool isValid(string s) {
+bool isValid(const string& s) {
     stack<char> stack;
-    map<char, char> mapping = { {')', '('}, {'}', '{'}, {']', '['} };
-    for (char& chr : s) {
-        if (mapping.count(chr)) {
+    map<char, char> mp = { {')', '('}, {'}', '{'}, {']', '['} };
+    for (const char& c : s) {
+        if (mp.count(c)) {
             char top_element = stack.empty() ? '#' : stack.top();
             stack.pop();
-            if (mapping[chr] != top_element || (chr == ']' && !stack.empty() && stack.top() == '(') || (chr == '}' && !stack.empty() && stack.top() == '[') || (chr == '}' && !stack.empty() && stack.top() == '(')) {
+            if (mp[c] != top_element || (c == ']' && !stack.empty() && stack.top() == '(') || (c == '}' && !stack.empty() && stack.top() == '[') || (c == '}' && !stack.empty() && stack.top() == '(')) {
                 return false;
             }
         }
         else {
-            stack.push(chr);
+            stack.push(c);
         }
     }
     return stack.empty();
@@ -35,5 +35,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

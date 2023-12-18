@@ -9,6 +9,7 @@ class Student {
 public:
     string name;
     string id;
+
     Student(string id, string name) {
         this->id = id;
         this->name = name;
@@ -18,6 +19,7 @@ public:
 class Score : public Student {
 public:
     double gpa;
+
     Score(string id, string name, double gpa) : Student(id, name) {
         this->gpa = gpa;
     }
@@ -31,7 +33,7 @@ string getRank(double gpa) {
     return "Yeu";
 }
 
-bool compare(Student a, Student b) {
+bool compare(const Student &a, const Student &b) {
     return a.name != b.name ? a.name < b.name : a.id < b.id;
 }
 
@@ -57,7 +59,7 @@ int main() {
     cin >> searchId;
     if (a == 1) {
         bool found = false;
-        for (Score s : students) {
+        for (const Score &s: students) {
             if (s.id == searchId) {
                 cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << '\n';
                 found = true;
@@ -71,12 +73,10 @@ int main() {
 
     if (b == 1) {
         sort(students.begin(), students.end(), compare);
-        for (Score s : students) {
+        for (const Score &s: students) {
             cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << '\n';
         }
     }
     return 0;
 }
 
-
-// code by duck it1

@@ -1,8 +1,12 @@
 #include <iostream>
-#include <utility>
 #include <algorithm>
+#include <vector>
+
 #define MAX 1000000
-int memo[MAX + 1];
+using namespace std;
+
+vector<int> memo(MAX + 1);
+
 
 void init() {
     memo[1] = 1;
@@ -23,21 +27,20 @@ void init() {
 }
 
 int solve(int l, int r) {
-    if (l > r) std::swap(l, r);
-    return *std::max_element(memo + l, memo + r + 1);
+    if (l > r) swap(l, r);
+    return *max_element(memo.begin() + l, memo.begin() + r + 1);
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     init();
     int l, r;
-    while (std::cin >> l >> r && (l || r)) {
-        std::cout << l << " " << r << " " << solve(l, r) << '\n';
+    while (cin >> l >> r && (l || r)) {
+        cout << l << " " << r << " " << solve(l, r) << '\n';
     }
     return 0;
 }
 
 
-// code by duck it1

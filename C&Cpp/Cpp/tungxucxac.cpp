@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 #define ll long long
 #define MOD 1000000007ll
 #define SIZE 6
@@ -43,6 +44,7 @@ ll solve(ll n) {
     }
     return res;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);

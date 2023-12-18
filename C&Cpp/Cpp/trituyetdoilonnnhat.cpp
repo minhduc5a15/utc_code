@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#define ll long long
 
 int main() {
     std::ios_base::sync_with_stdio(false);
@@ -8,20 +9,20 @@ int main() {
     std::cout.tie(NULL);
     int n;
     std::cin >> n;
-    std::vector<long long> arr(n);
-    std::vector<long long> arr_1, arr_2;
+    std::vector<ll> negative, positive;
     for (int i = 0; i < n; ++i) {
-        std::cin >> arr[i];
-        if (arr[i] < 0) {
-            arr_1.push_back(arr[i]);
+        int x;
+        std::cin >> x;
+        if (x < 0) {
+            negative.push_back(x);
         }
-        else if (arr[i] > 0) {
-            arr_2.push_back(arr[i]);
+        else if (x > 0) {
+            positive.push_back(x);
         }
     }
-    std::sort(arr_1.begin(), arr_1.end());
-    std::sort(arr_2.begin(), arr_2.end(), std::greater<long long>());
-    long long result = std::max((arr_1[0] + arr_1[1]) * -1, arr_2[0] + arr_2[1]);
+    std::sort(negative.begin(), negative.end());
+    std::sort(positive.begin(), positive.end(), std::greater<>());
+    ll result = std::max((negative[0] + negative[1]) * -1, positive[0] + positive[1]);
     std::cout << result << std::endl;
     return 0;
 }

@@ -7,9 +7,10 @@ using namespace std;
 ll solve(const vector<int> &arr, int r) {
     map<ll, ll> p;
     map<ll, ll> counter;
+    map<ll, ll>::iterator it;
     ll count = 0;
     for (const int &item: arr) {
-        map<ll, ll>::iterator it = counter.find(item);
+        it = counter.find(item);
         if (it != counter.end()) {
             count += it->second;
         }
@@ -21,6 +22,7 @@ ll solve(const vector<int> &arr, int r) {
     }
     return count;
 }
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
@@ -35,4 +37,3 @@ int main() {
     return 0;
 }
 
-// code by duck it1

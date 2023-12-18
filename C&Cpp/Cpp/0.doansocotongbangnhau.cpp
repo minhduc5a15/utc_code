@@ -2,10 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
-std::vector<int> arr;
+
+using namespace std;
+vector<int> arr;
 
 void divisor(int x) {
-	int root = std::sqrt(x);
+	int root = sqrt(x);
 	if (root * root == x) arr.push_back(root);
 	for (int i = 1; i < root; ++i) {
 		if (x % i == 0) {
@@ -16,40 +18,42 @@ void divisor(int x) {
 }
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 	int t;
-	std::cin >> t;
+	cin >> t;
 	int index, n;
 	while (t--) {
-		std::cin >> index >> n;
-		std::vector<int> a(n + 1);
-		int sum = 0, item;
+		cin >> index >> n;
+		vector<int> a(n + 1);
+		int sum = 0;
 		a[0] = 0;
 		for (int i = 1; i <= n; ++i) {
-			std::cin >> item;
-			sum += item;
+            int x;
+			cin >> x;
+			sum += x;
 			a[i] = sum;
 		}
-		int max_sum = a[n];
+		int max_sum = a.back();
 		divisor(max_sum);
-		std::sort(arr.begin(), arr.end());
+		sort(arr.begin(), arr.end());
 		int step = 0;
-		for (const int &sum_arr: arr) {
-            int step_arr = max_sum / sum_arr;
-			int check, d = 0, count = 0;
+		for (const int &item: arr) {
+            int step_arr = max_sum / item;
+			int d = 0, count = 0;
+            bool check;
 			while (true) {
-				check = 0;
+				check = false;
 				for (int j = d + 1; j <= n; ++j) {
-					if (a[j] - a[d] == sum_arr) {
-						check = 1;
+					if (a[j] - a[d] == item) {
+						check = true;
 						d = j;
 						count++;
 						break;
 					}
 				}
-				if (check == 0) break;
+				if (!check) break;
 			}
 			if (count == step_arr) {
 				step = step_arr;
@@ -57,8 +61,8 @@ int main() {
 			}
 		}
 		int result = max_sum / step;
-		if (result) std::cout << index << " " << result << '\n';
-		else std::cout << index << " " << '\n';
+		if (result) cout << index << " " << result << '\n';
+		else cout << index << " " << '\n';
 		arr.clear();
 	}
 	return 0;

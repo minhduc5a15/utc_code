@@ -9,7 +9,7 @@ class SegmentTree {
     vector<int> tree;
     int size;
 public:
-    SegmentTree(int n) {
+    explicit SegmentTree(int n) {
         size = n;
         tree.assign(2 * n, INT_MAX);
     }
@@ -81,8 +81,7 @@ int main() {
     }
     sort(queries.begin(), queries.end());
     vector<int> result = solve(arr, queries);
-    for (int res: result) cout << res + 1 << "\n";
+    for (const int &res: result) cout << res + 1 << "\n";
     return 0;
 }
 
-// code by duck it1

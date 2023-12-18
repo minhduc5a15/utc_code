@@ -2,8 +2,8 @@
 #include <vector>
 #define ll long long
 
-void solve(std::vector<ll>& arr) {
-    ll first_max_item = arr[0];
+void solve(const std::vector<ll> &arr) {
+    ll first_max_item = arr.front();
     bool check_max = false;
     for (int i = 1; i < arr.size(); ++i) {
         if (arr[i] > first_max_item) {
@@ -15,7 +15,6 @@ void solve(std::vector<ll>& arr) {
     if (!check_max) {
         std::cout << -1;
     }
-    return;
 }
 
 int main() {
@@ -25,6 +24,7 @@ int main() {
     int n;
     std::cin >> n;
     std::vector<ll> arr;
+    arr.reserve(n);
     for (int i = 0; i < n; ++i) {
         ll item;
         std::cin >> item;
@@ -35,5 +35,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

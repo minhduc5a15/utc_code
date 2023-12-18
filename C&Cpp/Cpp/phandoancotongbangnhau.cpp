@@ -33,24 +33,24 @@ int main() {
         sum += item;
         list[i] = sum;
     }
-    int max_sum = list[n];
+    int max_sum = list.back();
     vector<int> arr = divisor(max_sum);
     sort(arr.begin(), arr.end());
     int step = 0;
-    size_t sz = arr.size();
-    for (int i = 0; i < sz; ++i) {
-        int sum_arr = arr[i], step_arr = max_sum / sum_arr, check2, d = 0, count = 0;
+    for (const int &item: arr) {
+        int sum_arr = item, step_arr = max_sum / sum_arr, d = 0, count = 0;
+        bool check;
         while (true) {
-            check2 = 0;
+            check = false;
             for (int j = d + 1; j <= n; ++j) {
                 if (list[j] - list[d] == sum_arr) {
-                    check2 = 1;
+                    check = true;
                     d = j;
                     count++;
                     break;
                 }
             }
-            if (check2 == 0) break;
+            if (!check) break;
         }
         if (count == step_arr) {
             step = step_arr;
@@ -61,5 +61,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

@@ -13,7 +13,7 @@ int solve(int n, int k, int m, int s, int f) {
         q.pop();
         if (current.first == f) return current.second;
         vector<int> next_floors = {current.first - m, current.first + k};
-        for (int next_floor: next_floors) {
+        for (const int &next_floor: next_floors) {
             if (1 <= next_floor && next_floor <= n && !visited[next_floor]) {
                 visited[next_floor] = true;
                 q.push({next_floor, current.second + 1});

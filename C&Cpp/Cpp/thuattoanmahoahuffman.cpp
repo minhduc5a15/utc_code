@@ -3,8 +3,8 @@
 #include <algorithm>
 #include <unordered_map>
 #include <queue>
-
 using namespace std;
+
 struct Node {
     char ch;
     int freq;
@@ -26,7 +26,7 @@ struct compare {
     }
 };
 
-void encode(Node *root, string str, unordered_map<char, string> &huffmanCode) {
+void encode(Node *root, const string& str, unordered_map<char, string> &huffmanCode) {
     if (root == nullptr)
         return;
     if (!root->left && !root->right) {
@@ -36,7 +36,7 @@ void encode(Node *root, string str, unordered_map<char, string> &huffmanCode) {
     encode(root->right, str + "1", huffmanCode);
 }
 
-int solve(string s) {
+int solve(const string& s) {
     unordered_map<char, int> freq;
     for (char ch: s) {
         freq[ch]++;

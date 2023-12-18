@@ -5,14 +5,14 @@
 using namespace std;
 
 int solve(const vector<int> &arr, int n) {
-	unordered_map<int, int> distinct_elements;
+	unordered_map<int, int> map;
 	int result = 0;
 	int start = 0;
 	for (int end = 0; end < n; ++end) {
-		if (distinct_elements.find(arr[end]) != distinct_elements.end()) {
-			start = max(start, distinct_elements[arr[end]] + 1);
+		if (map.find(arr[end]) != map.end()) {
+			start = max(start, map[arr[end]] + 1);
 		}
-		distinct_elements[arr[end]] = end;
+		map[arr[end]] = end;
 		result = max(result, end - start + 1);
 	}
 
@@ -33,5 +33,3 @@ int main() {
 	return 0;
 }
 
-
-// code by duck it1

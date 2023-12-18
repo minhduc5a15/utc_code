@@ -3,7 +3,7 @@
 #include <vector>
 #define MOD 1000000007
 typedef long long ll;
-typedef std::vector<ll> vector;
+typedef std::vector<ll> vectorll;
 
 bool is_good(int a, int b, int n) {
 	while (n > 0) {
@@ -54,8 +54,8 @@ int main() {
 	int a, b, n;
 	std::cin >> a >> b >> n;
 	ll res = 0;
-	vector fact(n + 1, 1);
-	vector inv(n + 1, 1);
+	vectorll fact(n + 1, 1);
+	vectorll inv(n + 1, 1);
 	for (int i = 2; i <= n; ++i) {
 		fact[i] = (fact[i - 1] * i) % MOD;
 		inv[i] = power(fact[i], MOD - 2);

@@ -6,8 +6,8 @@
 using std::cin;
 using std::cout;
 using std::ios_base;
-typedef std::vector<std::vector<ll>> matrixll;
 typedef std::vector<ll> vectorll;
+typedef std::vector<vectorll> matrixll;
 
 matrixll multiply(const matrixll &a, const matrixll &b) {
 	matrixll result(SIZE, vectorll(SIZE, 0));
@@ -21,16 +21,16 @@ matrixll multiply(const matrixll &a, const matrixll &b) {
 	return result;
 }
 
-matrixll pow(const matrixll &mat, int power) {
+matrixll power(const matrixll &mat, int exponent) {
 	matrixll result = mat;
 	matrixll temp = mat;
-	--power;
-	while (power) {
-		if (power & 1) {
+	--exponent;
+	while (exponent) {
+		if (exponent & 1) {
 			result = multiply(result, temp);
 		}
 		temp = multiply(temp, temp);
-		power >>= 1;
+		exponent >>= 1;
 	}
 	return result;
 }
@@ -48,7 +48,7 @@ int main() {
 		cout << F[0][0];
 	}
 	else {
-		matrixll powResult = pow(A, n - 3);
+		matrixll powResult = power(A, n - 3);
 		matrixll result = multiply(F, powResult);
 		cout << (result[0][0] + MOD) % MOD;
 	}

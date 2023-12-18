@@ -8,13 +8,13 @@ using std::ios_base;
 typedef long long ll;
 typedef std::vector<std::vector<ll>> matrix;
 
-matrix multiply(matrix &matrix1, matrix &matrix2) {
+matrix multiply(const matrix &matrixA, const matrix &matrixB) {
 	matrix result(SIZE, std::vector<ll>(SIZE));
 	for (int i = 0; i < SIZE; ++i) {
 		for (int j = 0; j < SIZE; ++j) {
 			result[i][j] = 0;
 			for (int k = 0; k < SIZE; ++k) {
-				result[i][j] += (matrix1[i][k] * matrix2[k][j]) % MOD;
+				result[i][j] += (matrixA[i][k] * matrixB[k][j]) % MOD;
 				result[i][j] %= MOD;
 			}
 		}
@@ -49,5 +49,3 @@ int main() {
 	return 0;
 }
 
-
-// code by duck it1

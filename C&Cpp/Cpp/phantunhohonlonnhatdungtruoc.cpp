@@ -8,7 +8,8 @@ void solve(const std::vector<int> &arr, int n) {
         auto it = map.lower_bound(arr[i]);
         if (it == map.begin()) {
             std::cout << "0" << '\n';
-        } else {
+        }
+        else {
             --it;
             std::cout << it->first << " " << it->second << '\n';
         }
@@ -30,5 +31,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

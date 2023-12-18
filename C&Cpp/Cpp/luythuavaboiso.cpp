@@ -41,7 +41,7 @@ ull power(ull base, ull exponent) {
 
 void solve(ull n) {
 	if (n == 0) {
-		cout << "1" << '\n';
+		cout << 1 << '\n';
 	}
 	else if (1 <= n && n <= 5) {
 		cout << "OK" << '\n';
@@ -78,7 +78,7 @@ void solve(ull n) {
 			cout << "OK" << '\n';
 		}
 	}
-	}
+}
 
 int main() {
 	ios_base::sync_with_stdio(false);

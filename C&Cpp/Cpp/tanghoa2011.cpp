@@ -26,7 +26,8 @@ int main() {
 		}
 	}
 	vector<pair<int, string>> vec;
-	for (pair<string, int> it: colors) {
+	vec.reserve(colors.size());
+    for (const pair<const string, int> &it: colors) {
 		vec.push_back(make_pair(it.second, it.first));
 	}
 	sort(vec.begin(), vec.end(), lambda);

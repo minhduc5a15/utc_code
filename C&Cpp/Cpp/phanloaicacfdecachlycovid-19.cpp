@@ -32,7 +32,6 @@ void solve(int n, const vector<int> adj_list[]) {
     for (int i = 0; i < n && map[i]; ++i) {
         cout << "F" << i << ": " << map[i] << '\n';
     }
-    return;
 }
 
 int main() {
@@ -51,4 +50,3 @@ int main() {
     solve(n, adj_list);
     return 0;
 }
-// code by duck it1

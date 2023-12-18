@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 class DiemSinhVien {
@@ -8,6 +9,7 @@ public:
     string maSV;
     string hoTen;
     float diem;
+
     void nhapThongTin() {
         cin >> maSV;
         cin.ignore();
@@ -22,7 +24,7 @@ public:
 
 class SinhVien : public DiemSinhVien {
 public:
-    bool operator<(const SinhVien& other) const {
+    bool operator<(const SinhVien &other) const {
         if (hoTen != other.hoTen)
             return hoTen < other.hoTen;
         return maSV < other.maSV;
@@ -46,7 +48,7 @@ int main() {
         cin.ignore();
         getline(cin, hoTenCanTim);
         vector<string> danhSachMaSV;
-        for (const SinhVien& sv : danhSachSV) {
+        for (const SinhVien &sv: danhSachSV) {
             if (sv.hoTen == hoTenCanTim) {
                 danhSachMaSV.push_back(sv.maSV);
             }
@@ -56,7 +58,7 @@ int main() {
             cout << "Khong tim thay sinh vien" << '\n';
         }
         else {
-            for (const string& maSV : danhSachMaSV) {
+            for (const string &maSV: danhSachMaSV) {
                 cout << maSV << " ";
             }
             cout << '\n';
@@ -65,7 +67,7 @@ int main() {
 
     if (b == 1) {
         sort(danhSachSV.rbegin(), danhSachSV.rend());
-        for (const SinhVien& sv : danhSachSV) {
+        for (const SinhVien &sv: danhSachSV) {
             sv.xuatThongTin();
         }
     }

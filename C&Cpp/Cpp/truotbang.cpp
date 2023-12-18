@@ -4,7 +4,7 @@
 using namespace std;
 typedef pair<int, int> pii;
 typedef vector<vector<bool>> matrix;
-const vector<vector<int>> directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+const vector<pair<int, int>> directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
 int main() {
 	ios_base::sync_with_stdio(false);
@@ -27,8 +27,8 @@ int main() {
 	while (!q.empty()) {
 		pii pos = q.front();
 		q.pop();
-		for (const vector<int> &direction: directions) {
-			int nx = direction[0], ny = direction[1];
+		for (const pair<int, int> &direction: directions) {
+			int nx = direction.first, ny = direction.second;
 			int check = 0, i = 1;
 			for (; visited[pos.first + i * nx][pos.second + i * ny]; ++i) {
 				if (!result[pos.first + i * nx][pos.second + i * ny]) {
