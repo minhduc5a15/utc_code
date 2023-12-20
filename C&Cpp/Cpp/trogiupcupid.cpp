@@ -22,7 +22,7 @@ int solve(const vector<int> &arr) {
     }
     sort(pairs.begin(), pairs.end());
     vector<bool> matched(n, false);
-    int total_diff = 0;
+    int result = 0;
     for (const pair<int, pair<int, int>> &p: pairs) {
         int d = p.first;
         int i = p.second.first;
@@ -30,11 +30,11 @@ int solve(const vector<int> &arr) {
         if (!matched[i] && !matched[j]) {
             matched[i] = true;
             matched[j] = true;
-            total_diff += d;
+            result += d;
         }
     }
 
-    return total_diff;
+    return result;
 }
 
 int main() {

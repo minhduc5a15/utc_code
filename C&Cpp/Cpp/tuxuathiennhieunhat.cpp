@@ -16,11 +16,11 @@ int main() {
     int t;
     cin >> t;
     unordered_map<string, int> map;
+    string x;
     while (t--) {
         int n;
         cin >> n;
         cin.ignore();
-        string x;
         getline(cin, x);
         istringstream iss(x);
         string s;

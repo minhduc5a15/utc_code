@@ -15,7 +15,7 @@ Node *createNode() {
     return node;
 }
 
-void addWord(Node *root, string s) {
+void addWord(Node *root, const string& s) {
     Node *temp = root;
     int n = s.size();
     for (int i = 0; i < n; ++i) {
@@ -28,7 +28,7 @@ void addWord(Node *root, string s) {
     }
 }
 
-int findWord(Node *root, string s) {
+int findWord(Node *root, const string &s) {
     Node *temp = root;
     int n = s.size();
     for (int i = 0; i < n; ++i) {

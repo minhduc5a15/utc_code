@@ -7,7 +7,7 @@ using namespace std;
 // manacher's algorithm
 int solve(const string& s) {
 	string str = "^";
-	for (char c: s) {
+	for (const char &c: s) {
 		str += "#";
 		str += c;
 	}

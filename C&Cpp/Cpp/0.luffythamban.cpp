@@ -5,15 +5,15 @@
 using namespace std;
 
 int solve(const vector<int> &arr) {
-	int minDiff = INT_MAX;
+	int result = INT_MAX;
 	for (int k = *min_element(arr.begin(), arr.end()); k <= *max_element(arr.begin(), arr.end()); ++k) {
 		int diffSum = 0;
 		for (const int &num: arr) {
 			diffSum += abs(num - k);
 		}
-		minDiff = min(minDiff, diffSum);
+		result = min(result, diffSum);
 	}
-	return minDiff;
+	return result;
 }
 
 int main() {

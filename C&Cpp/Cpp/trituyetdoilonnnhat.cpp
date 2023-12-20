@@ -22,8 +22,7 @@ int main() {
     }
     std::sort(negative.begin(), negative.end());
     std::sort(positive.begin(), positive.end(), std::greater<>());
-    ll result = std::max((negative[0] + negative[1]) * -1, positive[0] + positive[1]);
-    std::cout << result << std::endl;
+    std::cout << std::max((negative[0] + negative[1]) * -1, positive[0] + positive[1]) << std::endl;
     return 0;
 }
 

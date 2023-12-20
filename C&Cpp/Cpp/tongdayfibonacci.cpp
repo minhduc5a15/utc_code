@@ -6,10 +6,10 @@ using std::cin;
 using std::cout;
 using std::ios_base;
 typedef long long ll;
-typedef std::vector<std::vector<ll>> matrix;
+typedef std::vector<std::vector<ll>> matrixll;
 
-matrix multiply(const matrix &matrixA, const matrix &matrixB) {
-	matrix result(SIZE, std::vector<ll>(SIZE));
+matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
+	matrixll result(SIZE, std::vector<ll>(SIZE));
 	for (int i = 0; i < SIZE; ++i) {
 		for (int j = 0; j < SIZE; ++j) {
 			result[i][j] = 0;
@@ -22,8 +22,8 @@ matrix multiply(const matrix &matrixA, const matrix &matrixB) {
 	return result;
 }
 
-matrix power(matrix base, int exponent) {
-	matrix identMatrix = {{1, 0}, {0, 1}};
+matrixll power(matrixll base, int exponent) {
+	matrixll identMatrix = {{1, 0}, {0, 1}};
 	while (exponent) {
 		if (exponent & 1) identMatrix = multiply(identMatrix, base);
 		base = multiply(base, base);
@@ -33,7 +33,7 @@ matrix power(matrix base, int exponent) {
 }
 
 ll solve(int n) {
-	matrix fibMatrix = {{1, 1}, {1, 0}};
+	matrixll fibMatrix = {{1, 1}, {1, 0}};
 	if (n == 0) return 0;
 	fibMatrix = power(fibMatrix, n + 1);
 	return (fibMatrix[0][0] - 1 + MOD) % MOD;
