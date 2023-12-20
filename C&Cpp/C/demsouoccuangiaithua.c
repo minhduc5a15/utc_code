@@ -20,7 +20,7 @@ bool* Sieve_of_Eratosthenes(int n, int* primeCount) {
     prime[0] = prime[1] = false;
     int p = 2;
     while (p * p <= n) {
-        if (prime[p] == true) {
+        if (prime[p]) {
             for (int i = p * p; i <= n; i += p) {
                 prime[i] = false;
             }

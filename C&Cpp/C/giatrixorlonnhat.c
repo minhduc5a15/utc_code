@@ -43,9 +43,9 @@ int main() {
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; ++i) {
-        ll item;
-        scanf("%lld", &item);
-        add(item);
+        ll x;
+        scanf("%lld", &x);
+        add(x);
     }
     int m;
     scanf("%d", &m);

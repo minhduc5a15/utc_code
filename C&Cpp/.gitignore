@@ -2,10 +2,12 @@
 *.obj
 C/main.c
 C/test.c
-C/test.txt
+*.txt
 Cpp/test.py
 Cpp/test.md
 Cpp/test.cpp
 Cpp/main.cpp
 Cpp/test.txt
 Cpp/test
+config
+*.png

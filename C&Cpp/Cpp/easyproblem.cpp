@@ -38,7 +38,7 @@ int main() {
     while (n--) {
         int num;
         cin >> num;
-        solve(num)
+        solve(num);
     }
     return 0;
 }
