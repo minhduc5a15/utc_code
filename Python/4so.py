@@ -1,4 +1,4 @@
-def countQuadruplets(nums) -> int:
+def solve(nums) -> int:
         count = {}
         result = 0
         n = len(nums)
@@ -11,4 +11,4 @@ def countQuadruplets(nums) -> int:
                 result += count.get(num, 0)
         return result
 n = input()
-print(countQuadruplets(list(map(int, input().split()))))
+print(solve(list(map(int, input().split()))))
