@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 #define ll long long
 #define MOD 1000000007
 
@@ -16,7 +17,7 @@ int total_pow(int n, int p) {
 
 bool *Sieve(int n) {
     bool *result = (bool *) malloc((n + 1) * sizeof(bool));
-    for (int i = 0; i <= n; ++i) result[i] = true;
+    memset(result, true, (n + 1) * sizeof(bool));
     result[0] = result[1] = false;
     int p = 2;
     while (p * p <= n) {

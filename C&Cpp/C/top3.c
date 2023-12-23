@@ -1,11 +1,12 @@
 #include <stdio.h>
 #define SIZE 3
 
-void swap(int* a, int* b) {
+void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
+
 void minHeapify(int arr[], int i) {
     int smallest = i;
     int left = 2 * i + 1;
@@ -30,8 +31,8 @@ void sort(int arr[]) {
     }
 }
 
-void solve(int arr[], int n) {
-    int heap[SIZE] = { 0 };
+void solve(const int arr[], int n) {
+    int heap[SIZE] = {0};
     for (int i = 0; i < n; ++i) {
         if (i < SIZE)
             heap[i] = arr[i];
@@ -51,7 +52,7 @@ int main() {
     int n;
     scanf("%d", &n);
     int arr[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; ++i) {
         scanf("%d", &arr[i]);
     }
     solve(arr, n);

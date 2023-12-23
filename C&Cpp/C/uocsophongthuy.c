@@ -35,7 +35,6 @@ void solve(ll n) {
 	else {
 		printf("\n");
 	}
-	return;
 }
 
 int main() {

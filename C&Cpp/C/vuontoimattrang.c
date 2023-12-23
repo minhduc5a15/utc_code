@@ -5,9 +5,9 @@
 int solve(int n, int a, int b) {
 	if (n == 0) return 0;
 	int *dp = (int *) calloc(n + 1, sizeof(int));
-	for (int i = 0; i <= n; i++) { dp[i] = 0; }
+	for (int i = 0; i <= n; ++i) { dp[i] = 0; }
 	dp[0] = 1;
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= n; ++i) {
 		if (i - a >= 0) {
 			dp[i] = (dp[i] + dp[i - a]) % MOD;
 		}

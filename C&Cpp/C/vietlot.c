@@ -18,7 +18,7 @@ int main() {
     }
 
     for (int i = 0; i < MAX; ++i) {
-        if (arr[i] > 0) {
+        if (arr[i]) {
             for (int j = i; j < MAX; ++j) {
                 if (arr[j] && (i | j) == MAX - 1) {
                     if (i == j) {

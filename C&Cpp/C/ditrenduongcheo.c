@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-typedef long long ll;
+#define ll long long
 typedef struct {
     ll first;
     ll second;
@@ -10,10 +10,10 @@ obj solve(ll n) {
     ll i = ceil((sqrt(8 * n + 1) - 1) / 2);
     ll k = i * (i + 1) / 2;
     if (k == n) {
-        return (obj) { k, i + 1 };
+        return (obj) {k, i + 1};
     }
     ll l = i * (i - 1) / 2;
-    return (obj) { l, i };
+    return (obj) {l, i};
 }
 
 int main() {
