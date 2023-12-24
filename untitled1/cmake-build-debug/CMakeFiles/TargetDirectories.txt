@@ -1,0 +1,3 @@
+D:/code/Repositories/utc_code/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir
+D:/code/Repositories/utc_code/untitled1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/code/Repositories/utc_code/untitled1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
