@@ -1,10 +1,11 @@
+// Bài thực hành số 1 CNTT5-K62
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #define ll long long
-typedef std::vector<int> vector;
+typedef std::vector<int> vectori;
 
-ll solve(vector &arr, int t) {
+ll solve(const vectori &arr, int t) {
     ll left = 1, right = *max_element(arr.begin(), arr.end()) * (ll) t;
     while (left < right) {
         ll mid = (left + right) / 2;
@@ -14,7 +15,8 @@ ll solve(vector &arr, int t) {
         }
         if (total >= t) {
             right = mid;
-        } else {
+        }
+        else {
             left = mid + 1;
         }
     }
@@ -27,7 +29,7 @@ int main() {
     std::cout.tie(NULL);
     int n, t;
     std::cin >> n >> t;
-    vector arr(n);
+    vectori arr(n);
     for (int i = 0; i < n; ++i) {
         std::cin >> arr[i];
     }

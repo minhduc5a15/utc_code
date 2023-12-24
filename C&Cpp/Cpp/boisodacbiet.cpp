@@ -10,7 +10,7 @@ string solve(int n) {
         string num = q.front();
         q.pop();
         int rem = 0;
-        for (char i : num) rem = (rem * 10 + (i - '0')) % n;
+        for (char i: num) rem = (rem * 10 + (i - '0')) % n;
         if (rem == 0) return num;
         q.push(num + "0");
         q.push(num + "9");

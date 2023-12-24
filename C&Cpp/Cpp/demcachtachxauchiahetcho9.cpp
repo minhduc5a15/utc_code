@@ -6,6 +6,7 @@
 using std::cin;
 using std::cout;
 using std::ios_base;
+
 int solve(const std::string &s) {
 	std::vector<ll> count(10, 0);
 	int temp = 0;
@@ -13,7 +14,7 @@ int solve(const std::string &s) {
 		temp = (temp + (c - '0')) % 9;
 		++count[temp];
 	}
-	int result = count[0];
+	int result = count.front();
 	for (int i = 0; i < 9; ++i) {
         result = (result + ((count[i] * (count[i] - 1)) / 2) % MOD) % MOD;
     }

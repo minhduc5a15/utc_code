@@ -5,28 +5,28 @@
 using namespace std;
 
 int solve(const vector<int> &arr) {
-	int result = INT_MAX;
-	for (int k = *min_element(arr.begin(), arr.end()); k <= *max_element(arr.begin(), arr.end()); ++k) {
-		int diffSum = 0;
-		for (const int &num: arr) {
-			diffSum += abs(num - k);
-		}
-		result = min(result, diffSum);
-	}
-	return result;
+    int result = INT_MAX;
+    for (int k = *min_element(arr.begin(), arr.end()); k <= *max_element(arr.begin(), arr.end()); ++k) {
+        int diffSum = 0;
+        for (const int &num: arr) {
+            diffSum += abs(num - k);
+        }
+        result = min(result, diffSum);
+    }
+    return result;
 }
 
 int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	cout.tie(NULL);
-	int n;
-	cin >> n;
-	vector<int> arr(n);
-	for (int i = 0; i < n; ++i) {
-		cin >> arr[i];
-	}
-	cout << solve(arr) << endl;
-	return 0;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
+    cout << solve(arr) << endl;
+    return 0;
 }
 

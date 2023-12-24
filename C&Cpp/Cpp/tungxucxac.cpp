@@ -36,7 +36,7 @@ matrixll power(matrixll base, ll exponent) {
 ll solve(ll n) {
     matrixll F = {{0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}, {1, 1, 1, 1, 1, 1}};
     vectorll v = {0, 0, 0, 0, 0, 1};
-    F = power(F, n);
+    F = power(F, n + 5);
     ll res = 0;
     for (int i = 0; i < SIZE; ++i) {
         res = (res + (F[0][i] * v[i]) % MOD) % MOD;
@@ -50,6 +50,6 @@ int main() {
     cout.tie(NULL);
     ll n;
     cin >> n;
-    cout << solve(n + 5);
+    cout << solve(n);
     return 0;
 }

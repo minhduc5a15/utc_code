@@ -21,7 +21,6 @@ void solve(const vector<ll> &arr) {
     for (std::pair<ll, int> item: items) {
         std::cout << item.first << ' ';
     }
-    return;
 }
 
 int main() {
@@ -38,5 +37,3 @@ int main() {
     return 0;
 }
 
-
-// code by duck it1

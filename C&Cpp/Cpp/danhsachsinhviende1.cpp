@@ -17,11 +17,11 @@ public:
     }
 };
 
-class Score : public Student {
+class Score: public Student {
 public:
     double gpa;
 
-    Score(string id, string name, double gpa) : Student(std::move(id), std::move(name)) {
+    Score(string id, string name, double gpa): Student(std::move(id), std::move(name)) {
         this->gpa = gpa;
     }
 };

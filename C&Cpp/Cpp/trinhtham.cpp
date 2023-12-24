@@ -1,6 +1,7 @@
 #include <iostream>
 #include <deque>
 #include <vector>
+
 void solve(const std::vector<int> &arr, int n, int k) {
 	std::deque<int> q(k);
 	int i;

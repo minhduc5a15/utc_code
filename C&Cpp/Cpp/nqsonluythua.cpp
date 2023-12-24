@@ -14,12 +14,12 @@ ul count(int n, int d) {
     return count;
 }
 
-ul solve(const vector<int> &arr, int n, ul sum) {
+ul solve(const vector<int> &arr, ul sum) {
     ul count_2 = 0, count_5 = 0;
-    for (int i = 0; i < n; ++i) {
-        ul r = sum - arr[i];
-        count_2 += count(arr[i], 2) * r;
-        count_5 += count(arr[i], 5) * r;
+    for (const int &num : arr) {
+        ul r = sum - num;
+        count_2 += count(num, 2) * r;
+        count_5 += count(num, 5) * r;
     }
     return min(count_5, count_2);
 }
@@ -36,8 +36,6 @@ int main() {
         cin >> arr[i];
         sum += arr[i];
     }
-    cout << solve(arr, n, sum);
+    cout << solve(arr, sum);
     return 0;
 }
-
-// code by duck it1

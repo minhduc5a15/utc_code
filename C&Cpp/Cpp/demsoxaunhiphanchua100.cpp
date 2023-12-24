@@ -2,26 +2,32 @@
 #include <vector>
 #define ll long long
 #define MOD 1000000007
+#define SIZE 2
 using namespace std;
-typedef vector<vector<ll>> matrixll;
+typedef vector<ll> vectorll;
+typedef vector<vectorll> matrixll;
 
-void multiply(matrixll &F, matrixll &M) {
-    ll x = (F[0][0] * M[0][0] + F[0][1] * M[1][0]) % MOD;
-    ll y = (F[0][0] * M[0][1] + F[0][1] * M[1][1]) % MOD;
-    ll z = (F[1][0] * M[0][0] + F[1][1] * M[1][0]) % MOD;
-    ll w = (F[1][0] * M[0][1] + F[1][1] * M[1][1]) % MOD;
-    F[0][0] = x;
-    F[0][1] = y;
-    F[1][0] = z;
-    F[1][1] = w;
+matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
+    matrixll result(SIZE, vectorll(SIZE, 0));
+    for (int i = 0; i < SIZE; ++i) {
+        for (int j = 0; j < SIZE; ++j) {
+            for (int k = 0; k < SIZE; ++k) {
+                result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
+            }
+        }
+    }
+    return result;
 }
 
-void power(matrixll &F, ll n) {
-    if (n <= 1) return;
-    matrixll M = {{1, 1}, {1, 0}};
-    power(F, n / 2);
-    multiply(F, F);
-    if (n & 1) multiply(F, M);
+matrixll power(const matrixll &base, ll exponent) {
+    matrixll result = {{1, 0}, {0, 1}};
+    matrixll tempBase = base;
+    while (exponent) {
+        if (exponent & 1) result = multiply(result, tempBase);
+        tempBase = multiply(tempBase, tempBase);
+        exponent >>= 1;
+    }
+    return result;
 }
 
 ll power(ll base, ll exponent) {
@@ -32,7 +38,7 @@ ll power(ll base, ll exponent) {
             result = (result * base) % MOD;
         }
         base = (base * base) % MOD;
-        exponent >>= 1ULL;
+        exponent >>= 1;
     }
     return result;
 }
@@ -40,7 +46,7 @@ ll power(ll base, ll exponent) {
 ll fib(ll n) {
     matrixll F = {{1, 1}, {1, 0}};
     if (n == 0) return 0;
-    power(F, n - 1);
+    F = power(F, n - 1);
     return F[0][0] % MOD;
 }
 

@@ -34,23 +34,24 @@ matrixll power(const matrixll &mat, int exponent) {
 	}
 	return result;
 }
+ll solve(ll P, ll S, int n) {
+    matrixll F = {{S * S * S - 3 * P * S, S * S - 2 * P}, {S * S - 2 * P, S}};
+    matrixll A = {{S, 1}, {-P, 0}};
+    if (n <= 3) {
+        return F[0][0];
+    }
+    matrixll powResult = power(A, n - 3);
+    matrixll result = multiply(F, powResult);
+    return (result[0][0] + MOD) % MOD;
+}
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
 	ll P, S;
 	cin >> P >> S;
-	matrixll F = {{S * S * S - 3 * P * S, S * S - 2 * P}, {S * S - 2 * P, S}};
-	matrixll A = {{S, 1}, {-P, 0}};
 	int n;
 	cin >> n;
-	if (n <= 3) {
-		cout << F[0][0];
-	}
-	else {
-		matrixll powResult = power(A, n - 3);
-		matrixll result = multiply(F, powResult);
-		cout << (result[0][0] + MOD) % MOD;
-	}
+	cout << solve(P, S, n);
 	return 0;
 }

@@ -1,44 +1,42 @@
-use std::collections::{HashSet, BTreeMap};
-
-fn print(x: i32, map: &BTreeMap<i32, i32>) {
-    println!("{} {}", x, map.get(&x).unwrap_or(&0));
-}
+use std::io::{self, BufRead};
 
 fn main() {
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).unwrap();
-    let n: usize = input.trim().parse().unwrap();
+    let stdin = io::stdin();
+    let mut lines = stdin.lock().lines().map(|x| x.unwrap());
 
-    input.clear();
-    std::io::stdin().read_line(&mut input).unwrap();
-    let arr: Vec<i32> = input
-        .split_whitespace()
-        .map(|s| s.parse().unwrap())
-        .collect();
+    let input_line = lines.next().unwrap();
+    let mut input_iter = input_line.split_whitespace().map(|x| x.parse::<i32>().unwrap());
+    let n = input_iter.next().unwrap();
+    let h = input_iter.next().unwrap();
 
-    let mut s = HashSet::new();
-    let mut map = BTreeMap::new();
+    let mut top = vec![0; (h + 1) as usize];
+    let mut bottom = vec![0; (h + 1) as usize];
 
-    s.insert(arr[0]);
-    for &item in &arr {
-        if let Some(&it) = s.iter().filter(|&&x| x >= item).next() {
-            if it == item {
-                continue;
-            }
-            if s.get(&(item - 1)).is_none() {
-                map.insert(item, *map.get(&(item - 1)).unwrap_or(&0));
-            } else if s.get(&(item - 1)).is_some() && s.get(&(item - 1)).unwrap() == s.iter().next().unwrap() {
-                map.insert(item, *map.get(&item).unwrap_or(&0));
-            } else {
-                map.insert(item, *map.get(&item).unwrap_or(&0));
-                map.insert(item, map[&item].max(*map.get(&(item - 1)).unwrap_or(&0)));
-            }
-            *map.entry(item).or_insert(0) += 1;
-            s.insert(item);
+    for (i, line) in lines.take(n as usize).enumerate() {
+        let x: i32 = line.parse().unwrap();
+        if i % 2 == 1 {
+            top[x as usize] += 1;
+        } else {
+            bottom[x as usize] += 1;
         }
     }
 
-    for &item in &s {
-        print(item, &map);
+    let mut res = (i32::MAX, 0);
+
+    for i in (0..h).rev() {
+        top[i as usize] += top[(i + 1) as usize];
+        bottom[i as usize] += bottom[(i + 1) as usize];
     }
+
+    for i in 1..=h {
+        if bottom[i as usize] + top[(h - i + 1) as usize] == res.0 {
+            res.1 += 1;
+        }
+        if bottom[i as usize] + top[(h - i + 1) as usize] < res.0 {
+            res.1 = 1;
+            res.0 = bottom[i as usize] + top[(h - i + 1) as usize];
+        }
+    }
+
+    println!("{} {}", res.0, res.1);
 }

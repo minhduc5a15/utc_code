@@ -22,7 +22,7 @@ public:
     }
 };
 
-class SinhVien : public DiemSinhVien {
+class SinhVien: public DiemSinhVien {
 public:
     bool operator<(const SinhVien &other) const {
         return hoTen == other.hoTen ? maSV < other.maSV : hoTen < other.hoTen;
