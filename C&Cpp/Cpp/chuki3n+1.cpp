@@ -4,10 +4,10 @@
 #define MAX 1000000
 using namespace std;
 
-vector<int> memo(MAX + 1);
+vector<int> saved(MAX + 1);
 
 void init() {
-    memo[1] = 1;
+    saved[1] = 1;
     for (int i = 2; i <= MAX; ++i) {
         long long temp = i;
         int count = 0;
@@ -20,13 +20,13 @@ void init() {
             }
             ++count;
         }
-        memo[i] = count + memo[temp];
+        saved[i] = count + saved[temp];
     }
 }
 
 int solve(int l, int r) {
     if (l > r) swap(l, r);
-    return *max_element(memo.begin() + l, memo.begin() + r + 1);
+    return *max_element(saved.begin() + l, saved.begin() + r + 1);
 }
 
 int main() {
