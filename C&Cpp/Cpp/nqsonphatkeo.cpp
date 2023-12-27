@@ -7,16 +7,17 @@ using std::cin;
 using std::cout;
 using std::ios_base;
 using std::vector;
+
 bool lambda(std::pair<ll, int> &a, std::pair<ll, int> &b) {
     return a.second < b.second || (a.second == b.second && a.first < b.first);
 }
 
 void solve(const vector<ll> &arr) {
-    std::map<ll, int> counter;
+    std::map<ll, int> mp;
     for (const ll &item: arr) {
-        counter[item]++;
+        mp[item]++;
     }
-    vector<std::pair<ll, int>> items(counter.begin(), counter.end());
+    vector<std::pair<ll, int>> items(mp.begin(), mp.end());
     std::sort(items.begin(), items.end(), lambda);
     for (std::pair<ll, int> item: items) {
         std::cout << item.first << ' ';
