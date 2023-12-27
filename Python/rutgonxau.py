@@ -1,4 +1,4 @@
-def reduce_string(s):
+def solve(s):
     stack = []
     for char in s:
         while stack and stack[-1] == char:
@@ -7,4 +7,4 @@ def reduce_string(s):
     return ''.join(stack)
 
 input()
-print(reduce_string(input()))
+print(solve(input()))

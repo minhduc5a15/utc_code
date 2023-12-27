@@ -10,6 +10,6 @@ for item in arr:
         pos.append(count)
         count = 0
 for item in pos:
-    f -= int((item - 1) / 2) 
+    f -= int((item - 1) / 2)
     if f <= 0: break
 print("NO" if f > 0 else "YES")

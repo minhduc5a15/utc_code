@@ -1,4 +1,4 @@
-def find_even_length_palindrome(N):
+def solve(N):
     count = 0
     num = 1
     while True:
@@ -8,4 +8,4 @@ def find_even_length_palindrome(N):
         if count == N:
             return palindrome
         num += 1
-print(find_even_length_palindrome(int(input())))
+print(solve(int(input())))

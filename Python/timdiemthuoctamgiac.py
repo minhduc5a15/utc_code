@@ -1,5 +1,6 @@
 def distance_point(a, b, c, d):
     return ((a - c) ** 2 + (b - d) ** 2) ** 0.5
+
 arr = []
 for i in range(4):
     a, b = map(int, input().split())

@@ -14,5 +14,5 @@ for i in range(n):
 c = 0
 for i in range(0, 6, 2):
     s = "{:.2f}%".format(round(arr[i + 1] * 100 / arr[i], 2))
-    print(f"{action[c]}: {s.replace('.',',')}.")
+    print(f"{action[c]}: {s.replace('.', ',')}.")
     c += 1

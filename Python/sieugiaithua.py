@@ -1,5 +1,5 @@
-def find_x(n):
-    def count_trailing_zeros(x):
+def solve(n):
+    def count_zeros(x):
         count = 0
         i = 5
         while x // i > 0:
@@ -12,7 +12,7 @@ def find_x(n):
 
     while lower_bound < upper_bound:
         mid = (lower_bound + upper_bound) // 2
-        count = count_trailing_zeros(mid)
+        count = count_zeros(mid)
         if count < n:
             lower_bound = mid + 1
         else:
@@ -21,4 +21,4 @@ def find_x(n):
     return lower_bound
 
 for _ in range(1, 101):
-    print(_, find_x(_))
+    print(_, solve(_))

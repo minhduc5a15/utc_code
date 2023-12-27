@@ -5,7 +5,7 @@ def extract_number(s: str):
         if s[i] == '-' or s[i] == '+':
             pos = i
             break
-    if pos == 0: 
+    if pos == 0:
         if 'i' not in s:
             num1 = s
             num2 = '0'
@@ -21,11 +21,13 @@ def extract_number(s: str):
         else:
             num2 = '0'
     if num2 == "+" or num2 == "-" or num2 == "": num2 += "1"
-    return (int(num1), int(num2))
+    return int(num1), int(num2)
+
 def multiply_complex(a, b):
     real_part = a[0] * b[0] - a[1] * b[1]
     imaginary_part = a[0] * b[1] + a[1] * b[0]
-    return (real_part, imaginary_part)
+    return real_part, imaginary_part
+
 z1 = input()
 z2 = input()
 real_part, imaginary_part = multiply_complex(extract_number(z1), extract_number(z2))

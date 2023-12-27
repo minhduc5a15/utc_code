@@ -10,10 +10,9 @@ def check(n: int) -> str:
     elif n == 0:
         return "NULL"
 
-
 n = int(input())
 while True:
-    attempt = input("")
+    attempt = input()
     try:
         num = [int(val) for val in attempt.split(" ")]
         if len(num) == n:

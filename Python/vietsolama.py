@@ -1,4 +1,4 @@
-def convert_to_roman(n):
+def solve(n):
     result = ''
     while n >= 10:
         result += 'X'
@@ -11,4 +11,4 @@ def convert_to_roman(n):
         n -= 1
     return result
 
-print(convert_to_roman(int(input())))
+print(solve(int(input())))

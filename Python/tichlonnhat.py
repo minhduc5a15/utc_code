@@ -6,5 +6,6 @@ def solve(n: int):
         return (3 ** count) * 2
     else:
         return 3 ** count
+
 for i in range(int(input())):
     print(solve(int(input())))

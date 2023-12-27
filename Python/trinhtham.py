@@ -1,4 +1,5 @@
 from collections import deque
+
 def solve(arr, n, k):
     Qi = deque()
     for i in range(k):
@@ -7,7 +8,7 @@ def solve(arr, n, k):
         Qi.append(i)
     for i in range(k, n):
         print(str(arr[Qi[0]]), end=" ")
-        while Qi and Qi[0] <= i-k:
+        while Qi and Qi[0] <= i - k:
             Qi.popleft()
         while Qi and arr[i] >= arr[Qi[-1]]:
             Qi.pop()
