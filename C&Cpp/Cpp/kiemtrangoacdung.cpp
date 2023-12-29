@@ -3,35 +3,45 @@
 #include <map>
 using namespace std;
 
-bool isValid(const string& s) {
-    stack<char> stack;
-    map<char, char> mp = { {')', '('}, {'}', '{'}, {']', '['} };
-    for (const char& c : s) {
-        if (mp.count(c)) {
-            char top_element = stack.empty() ? '#' : stack.top();
-            stack.pop();
-            if (mp[c] != top_element || (c == ']' && !stack.empty() && stack.top() == '(') || (c == '}' && !stack.empty() && stack.top() == '[') || (c == '}' && !stack.empty() && stack.top() == '(')) {
-                return false;
-            }
+bool isvalid(const string &s) {
+    stack<char> st;
+    map<char, char> mp = {{')', '('}, {'}', '{'}, {']', '['}};
+    for (const char &c: s) {
+        if (!mp[c]) {
+            st.push(c);
         }
         else {
-            stack.push(c);
+            if (st.empty() || mp[c] != st.top()) {
+                return false;
+            }
+            else {
+                st.pop();
+                if (!st.empty()) {
+                    if ((c == ']' && st.top() == '(') || (c == '}' && (st.top() == '[' || st.top() == '('))) {
+                        return false;
+                    }
+                }
+            }
         }
     }
-    return stack.empty();
+    return st.empty();
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; ++i) {
+    int t;
+    cin >> t;
+    while (t--) {
         string s;
         cin >> s;
-        cout << (isValid(s) ? "YES" : "NO") << '\n';
+        if (isvalid(s)) {
+            cout << "Dung\n";
+        }
+        else {
+            cout << "Sai\n";
+        }
     }
     return 0;
 }
-
