@@ -15,7 +15,6 @@ void sieve() {
             }
         }
     }
-    return;
 }
 
 int main() {

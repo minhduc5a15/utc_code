@@ -1,7 +1,8 @@
 #include <iostream>
+#define ll long long
 using namespace std;
 
-void solve(long long n) {
+void solve(ll n) {
     bool check = false;
     do {
         int count = 0;
@@ -26,7 +27,7 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        long long n;
+        ll n;
         cin >> n;
         solve(n);
     }

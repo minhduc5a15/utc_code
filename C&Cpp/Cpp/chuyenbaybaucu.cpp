@@ -8,7 +8,7 @@ typedef std::pair<ll, ll> pll;
 using namespace std;
 
 struct Edge {
-    ll to, cost;
+    ll tour, cost;
 };
 
 struct Compare {
@@ -38,7 +38,7 @@ void solve(int n, const vector<vector<Edge>> &graph) {
             continue;
         }
         for (const Edge &edge: graph[v]) {
-            ll w = edge.to;
+            ll w = edge.tour;
             ll w_cost = edge.cost;
             if (dist[v] + w_cost < dist[w]) {
                 dist[w] = dist[v] + w_cost;

@@ -3,6 +3,7 @@
 #define MAXN 100000
 #define MOD 1000000007
 #define ull unsigned long long
+
 ull power(ull base, ull exponent, ull modulus) {
     base %= modulus;
     ull result = 1;
@@ -15,6 +16,7 @@ ull power(ull base, ull exponent, ull modulus) {
     }
     return result;
 }
+
 int main() {
     char s[MAXN];
     scanf("%s", &s);

@@ -9,7 +9,7 @@ int main() {
     ll n;
     int q;
     scanf("%lld%d", &n, &q);
-    for (int i = 0; i < q; ++i) {
+    while (q--) {
         ll k;
         scanf("%lld", &k);
         printf("%lld ", solve(n, k));

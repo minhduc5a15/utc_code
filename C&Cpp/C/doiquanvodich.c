@@ -14,7 +14,6 @@ void solve(int l, int r) {
         if (num > r) break;
     }
     printf("%d\n", count);
-    return;
 }
 
 int main() {

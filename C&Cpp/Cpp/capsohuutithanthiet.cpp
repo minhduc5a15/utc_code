@@ -29,9 +29,7 @@ struct Fraction {
 
 struct FractionHash {
     size_t operator()(const Fraction &f) const {
-        size_t h1 = hash<int>{}(f.n);
-        size_t h2 = hash<int>{}(f.d);
-        return h1 ^ h2;
+        return hash<int>{}(f.n) ^ hash<int>{}(f.d);
     }
 };
 
