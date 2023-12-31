@@ -32,9 +32,6 @@ int main() {
             k--;
         }
     }
-
-    if (k < 0)
-        cout << "NO";
-
+    if (k < 0) cout << "NO";
     return 0;
 }

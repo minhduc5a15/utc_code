@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-#define MOD 1000000007
 #define SIZE 2
+const int MOD = 1000000007;
 using namespace std;
 typedef vector<ll> vectorll;
 typedef vector<vectorll> matrixll;

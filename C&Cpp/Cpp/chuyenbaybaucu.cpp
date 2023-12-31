@@ -2,8 +2,8 @@
 #include <vector>
 #include <queue>
 #include <climits>
-#define MOD 1000000007
 #define ll long long
+const int MOD = 1000000007;
 typedef std::pair<ll, ll> pll;
 using namespace std;
 

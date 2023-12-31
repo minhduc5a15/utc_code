@@ -4,7 +4,7 @@
 using namespace std;
 typedef vector<vector<double>> matrixdb;
 
-double determinant(matrixdb matrix) {
+double determinant(const matrixdb &matrix) {
     double total = 0;
     int size = matrix.size();
     if (matrix.size() == 2 && matrix[0].size() == 2) {

@@ -2,8 +2,8 @@
 #include <vector>
 #include <algorithm>
 #define ull unsigned long long
-#define MOD 1000000007ull
 #define MAX 1000001
+const int MOD = 1000000007;
 using namespace std;
 
 vector<ull> fact(MAX), inverse(MAX);
