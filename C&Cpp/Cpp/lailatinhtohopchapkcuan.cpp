@@ -8,14 +8,18 @@ using namespace std;
 
 vector<ll> factorial(MAX), inverse(MAX);
 
-int power(int a, int b) {
-    if (b == 0) return 1;
-    ll temp = power(a, b / 2);
-    temp = (temp * temp) % MOD;
-    if (b % 2 == 0) return temp;
-    else return ((a * temp) % MOD);
+ll power(ll base, ll exponent, int modulus = MOD) {
+    base %= modulus;
+    ll result = 1;
+    while (exponent) {
+        if (exponent & 1) {
+            result = (result * base) % modulus;
+        }
+        base = (base * base) % modulus;
+        exponent >>= 1;
+    }
+    return result;
 }
-
 ll inverse_num(int n) {
     return power(n, MOD - 2);
 }
