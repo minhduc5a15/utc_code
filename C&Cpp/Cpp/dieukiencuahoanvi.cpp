@@ -1,6 +1,6 @@
 #include <iostream>
 #define ll long long
-#define MOD 1000000007
+const int MOD = 1000000007;
 
 using namespace std;
 

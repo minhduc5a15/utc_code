@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 #define ll long long
-#define MOD 1000000007
+const int MOD = 1000000007;
 
 int total_pow(int n, int p) {
     int res = 1;

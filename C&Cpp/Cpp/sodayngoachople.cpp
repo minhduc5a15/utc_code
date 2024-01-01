@@ -1,14 +1,18 @@
 #include <iostream>
-#define MOD 1000000007
 #define ll long long
+const int MOD = 1000000007;
 
-int power(int a, int b) {
-    if (b == 0) return 1;
-    if (b == 1) return a % MOD;
-    ll t = power(a, b / 2);
-    t = (t * t) % MOD;
-    if (b & 1) t = (t * a) % MOD;
-    return t;
+int power(int base, int exponent, int modulus = MOD) {
+    base %= modulus;
+    ll result = 1;
+    while (exponent) {
+        if (exponent & 1) {
+            result = (result * base) % modulus;
+        }
+        base = (base * base) % modulus;
+        exponent >>= 1ll;
+    }
+    return result;
 }
 
 int catalan(int n) {
@@ -20,7 +24,7 @@ int catalan(int n) {
 }
 
 int solve(int n) {
-    if (n % 2 != 0) return 0;
+    if (n & 1) return 0;
     return catalan(n / 2);
 }
 

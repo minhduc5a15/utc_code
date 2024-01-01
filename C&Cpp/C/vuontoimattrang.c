@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MOD 1000000007
+const int MOD = 1000000007;
 
 int solve(int n, int a, int b) {
 	if (n == 0) return 0;
