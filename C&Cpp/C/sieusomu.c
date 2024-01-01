@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define ll long long
-#define MOD 1000000007
+const int MOD = 1000000007;
 
 ll power(ll base, ll exponent, int modulus) {
     base %= modulus;
