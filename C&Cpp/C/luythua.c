@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-#define MAXN 100000
 #define ull unsigned long long
 const int MOD = 1000000007;
+const int MAXN = 100000;
 
 ull power(ull base, ull exponent, ull modulus) {
     base %= modulus;
@@ -34,5 +34,3 @@ int main() {
     printf("%llu", power(s1, s2, MOD));
     return 0;
 }
-
-// code by duck it1

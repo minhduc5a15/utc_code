@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define SIZE 12
+const int SIZE = 12;
 
 int main() {
     char c;

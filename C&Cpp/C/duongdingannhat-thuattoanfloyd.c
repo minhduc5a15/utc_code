@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 1000000
+const int MAXN = 1000000;
+
 int min(int a, int b) {
     return a < b ? a : b;
 }
-void init(int** matrix, int n, int m) {
+
+void init(int **matrix, int n, int m) {
     for (int i = 1; i <= n; ++i) {
         matrix[i][i] = 0;
     }
@@ -25,20 +27,20 @@ void init(int** matrix, int n, int m) {
 int main() {
     int n, m, q;
     scanf("%d %d %d", &n, &m, &q);
-    int** matrix = (int**)malloc((n + 1) * sizeof(int*));
+    int **matrix = (int **) malloc((n + 1) * sizeof(int *));
     for (int i = 0; i <= n; ++i) {
-        matrix[i] = (int*)malloc((n + 1) * sizeof(int));
+        matrix[i] = (int *) malloc((n + 1) * sizeof(int));
     }
     for (int i = 0; i <= n; ++i) {
         for (int j = 0; j <= n; ++j) {
-            matrix[i][j] = MAX;
+            matrix[i][j] = MAXN;
         }
     }
     init(matrix, n, m);
     while (q--) {
         int u, v;
         scanf("%d %d", &u, &v);
-        printf("%d\n", matrix[u][v] != MAX ? matrix[u][v] : -1);
+        printf("%d\n", matrix[u][v] != MAXN ? matrix[u][v] : -1);
     }
     for (int i = 0; i <= n; ++i) {
         free(matrix[i]);

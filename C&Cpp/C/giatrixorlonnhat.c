@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define ll long long
-#define MAXN 31
+const int MAXN = 31;
 
 struct Node {
     ll val;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define MAX_N 20
+const int MAX_ITER = 20;
 
 double calc(float n, int m) {
     return pow(n, m) / (tgamma(m + 1) * m);
@@ -8,7 +8,7 @@ double calc(float n, int m) {
 
 double f(float a, float b) {
     double res = 0;
-    for (int i = 1; i <= MAX_N; ++i) {
+    for (int i = 1; i <= MAX_ITER; ++i) {
         int d = i * 2 - 1;
         int op = pow(-1, i & 1);
         res += op * (calc(a, d) - calc(b, d));

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define ll long long
-#define MAX 1024
+const int MAXN = 1024;
 
 int main() {
-    ll arr[MAX] = {0};
+    ll arr[MAXN] = {0};
     ll res = 0;
     int n;
     scanf("%d", &n);
@@ -17,10 +17,10 @@ int main() {
         ++arr[digit];
     }
 
-    for (int i = 0; i < MAX; ++i) {
+    for (int i = 0; i < MAXN; ++i) {
         if (arr[i]) {
-            for (int j = i; j < MAX; ++j) {
-                if (arr[j] && (i | j) == MAX - 1) {
+            for (int j = i; j < MAXN; ++j) {
+                if (arr[j] && (i | j) == MAXN - 1) {
                     if (i == j) {
                         res += arr[i] * (arr[i] - 1) / 2;
                     }

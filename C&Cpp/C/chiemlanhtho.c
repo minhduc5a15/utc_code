@@ -27,7 +27,7 @@ void solve(int width, int height, int x_blue, int y_blue, char p) {
 int main() {
     int t;
     scanf("%d", &t);
-    for (int i = 0; i < t; i++) {
+    while (t--) {
         int w, h, x, y;
         char p;
         scanf("%d %d %d %d %c", &w, &h, &x, &y, &p);

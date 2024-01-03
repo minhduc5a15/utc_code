@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define SIZE 3
+const int SIZE = 3;
 
 void swap(int *a, int *b) {
     int temp = *a;
