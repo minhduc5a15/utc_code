@@ -41,7 +41,7 @@ int main() {
         sv.nhapThongTin();
         danhSachSV.push_back(sv);
     }
-    if (a == 1) {
+    if (a) {
         string hoTenCanTim;
         cin.ignore();
         getline(cin, hoTenCanTim);
@@ -62,8 +62,7 @@ int main() {
             cout << '\n';
         }
     }
-
-    if (b == 1) {
+    if (b) {
         sort(danhSachSV.rbegin(), danhSachSV.rend());
         for (const SinhVien &sv: danhSachSV) {
             sv.xuatThongTin();

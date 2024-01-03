@@ -58,7 +58,7 @@ int main() {
     }
     string searchId;
     cin >> searchId;
-    if (a == 1) {
+    if (a) {
         bool found = false;
         for (const Score &s: students) {
             if (s.id == searchId) {
@@ -72,7 +72,7 @@ int main() {
         }
     }
 
-    if (b == 1) {
+    if (b) {
         sort(students.begin(), students.end(), compare);
         for (const Score &s: students) {
             cout << s.id << " - " << s.name << " - " << s.gpa << " - " << getRank(s.gpa) << '\n';
@@ -81,3 +81,5 @@ int main() {
     return 0;
 }
 
+
+#pragma clang diagnostic pop

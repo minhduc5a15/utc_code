@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-#define MAXN 100001
 const int MOD = 1000000007;
-
+const int MAXN = 100001;
 using namespace std;
 
 vector<ll> factorial(MAXN), inverse(MAXN);

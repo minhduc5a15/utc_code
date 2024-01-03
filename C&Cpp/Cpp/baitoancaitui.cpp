@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define MAXN 1000000
 using namespace std;
 typedef vector<int> vectori;
+const int MAXN = 1000000;
 
 vectori init(const vectori &arr, int n, int c) {
     vectori saved(1 << n);

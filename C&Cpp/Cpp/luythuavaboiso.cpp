@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #define ull unsigned long long
-#define MAXN 1000001
-const ull MOD = 1000000007;
+const int MOD = 1000000007;
+const int MAXN = 1000001;
 using namespace std;
 
 vector<bool> primes(MAXN, true);

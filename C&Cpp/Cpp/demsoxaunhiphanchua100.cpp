@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-#define SIZE 2
-const int MOD = 1000000007;
 using namespace std;
 typedef vector<ll> vectorll;
 typedef vector<vectorll> matrixll;
+const int MOD = 1000000007;
+const int SIZE = 2;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     matrixll result(SIZE, vectorll(SIZE, 0));

@@ -1,13 +1,14 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-#define SIZE 2
 typedef std::vector<ll> vectorll;
 typedef std::vector<vectorll> matrixll;
 using std::cin;
 using std::cout;
 using std::ios_base;
 const int MOD = 1000000007;
+const int SIZE = 2;
+
 matrixll multiply(const matrixll &a, const matrixll &b) {
     matrixll result(SIZE, vectorll(SIZE, 0));
     for (int i = 0; i < SIZE; ++i) {
