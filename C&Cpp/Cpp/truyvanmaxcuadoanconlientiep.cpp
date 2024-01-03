@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
-#define LIMIT 100001
 typedef std::vector<int> vectori;
+const int LIMIT = 100001;
+
 std::vector<vectori> max_list(LIMIT, vectori(20));
 
 void init(const vectori &arr, int n) {

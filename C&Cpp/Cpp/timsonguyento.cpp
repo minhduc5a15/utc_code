@@ -1,34 +1,34 @@
 #include <iostream>
 #include <vector>
-#define MAXN 1000000
-
 using namespace std;
+const int MAXN = 1000001;
 
-vector<bool> prime(MAXN + 1, true);
+vector<bool> primes;
 
-void sieve() {
-    prime[0] = prime[1] = false;
+void Sieve() {
+    primes.resize(MAXN, true);
     for (int p = 2; p * p <= MAXN; ++p) {
-        if (prime[p]) {
+        if (primes[p]) {
             for (int i = p * p; i <= MAXN; i += p) {
-                prime[i] = false;
+                primes[i] = false;
             }
         }
     }
+    primes[0] = primes[1] = false;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    sieve();
+    Sieve();
     int t;
     cin >> t;
     while (t--) {
         int a, b;
         cin >> a >> b;
         for (int j = a; j <= b; ++j) {
-            if (prime[j]) {
+            if (primes[j]) {
                 cout << j << " ";
             }
         }
