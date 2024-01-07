@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-
 int solve(const vector<int> &arr, int n) {
     vector<int> pos(n + 1);
     for (int i = 0; i < n; ++i) {
