@@ -5,7 +5,7 @@ using namespace std;
 
 vector<int> prefix_sum(const string &s, char c) {
     vector<int> prefix(s.size());
-    prefix.front() = (s[0] == c);
+    prefix.front() = (s.front() == c);
     for (int i = 1; i < s.size(); ++i) {
         prefix[i] = prefix[i - 1] + (s[i] == c);
     }
