@@ -2,7 +2,7 @@
 #include <vector>
 #include <iomanip>
 using namespace std;
-typedef vector<vector<double>> matrixdb;
+typedef vector<vector<double> > matrixdb;
 
 double determinant(const matrixdb &matrix) {
     double total = 0;

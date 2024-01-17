@@ -3,24 +3,22 @@
 #include <map>
 #include <algorithm>
 #define ll long long
-using std::cin;
-using std::cout;
-using std::ios_base;
-using std::vector;
+using namespace std;
+typedef pair<ll, int> pli;
 
-bool lambda(std::pair<ll, int> &a, std::pair<ll, int> &b) {
+bool lambda(pli &a, pli &b) {
     return a.second < b.second || (a.second == b.second && a.first < b.first);
 }
 
 void solve(const vector<ll> &arr) {
-    std::map<ll, int> mp;
+    map<ll, int> mp;
     for (const ll &item: arr) {
         mp[item]++;
     }
-    vector<std::pair<ll, int>> items(mp.begin(), mp.end());
-    std::sort(items.begin(), items.end(), lambda);
-    for (std::pair<ll, int> item: items) {
-        std::cout << item.first << ' ';
+    vector<pair<ll, int>> items(mp.begin(), mp.end());
+    sort(items.begin(), items.end(), lambda);
+    for (pli item: items) {
+        cout << item.first << ' ';
     }
 }
 

@@ -2,21 +2,21 @@
 #include <vector>
 #include <algorithm>
 #define ull unsigned long long
-#define MAX 1000001
-const int MOD = 1000000007;
 using namespace std;
+const int MAXN = 1000001;
+const int MOD = 1000000007;
 
-vector<ull> fact(MAX), inverse(MAX);
+vector<ull> fact(MAXN), inverse(MAXN);
 
-ull power(ull base, ull exponent) {
-    base %= MOD;
+ull power(ull base, ull exponent, ull modulus = MOD) {t
+    base %= modulus;
     ull result = 1;
     while (exponent) {
         if (exponent & 1) {
-            result = (result * base) % MOD;
+            result = (result * base) % modulus;
         }
-        base = (base * base) % MOD;
-        exponent >>= 1ull;
+        base = (base * base) % modulus;
+        exponent >>= 1ULL;
     }
     return result;
 }
@@ -54,7 +54,7 @@ int main() {
     fact[0] = 1;
     inverse[0] = 1;
     ull max_n = *max_element(arr.begin(), arr.end());
-    for (int i = 1; i <= MAX; ++i) {
+    for (int i = 1; i <= MAXN; ++i) {
         fact[i] = (fact[i - 1] * i) % MOD;
         inverse[i] = inverse_num(fact[i]);
     }

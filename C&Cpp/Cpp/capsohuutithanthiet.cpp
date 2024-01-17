@@ -1,8 +1,8 @@
 #include <iostream>
 #include <unordered_map>
 #include <cmath>
-#define MAXN 30
 using namespace std;
+const int MAXN = 30;
 
 bool square_number(int n) {
     int k = sqrt(n);
@@ -29,7 +29,7 @@ struct Fraction {
 
 struct FractionHash {
     size_t operator()(const Fraction &f) const {
-        return hash<int>{}(f.n) ^ hash<int>{}(f.d);
+        return hash<int>()(f.n) ^ hash<int>()(f.d);
     }
 };
 

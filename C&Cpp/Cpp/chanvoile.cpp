@@ -38,9 +38,9 @@ int main() {
     cin >> n;
     vector<int> arr(n + 2, 0);
     for (int i = 1; i <= n; ++i) {
-        int item;
-        cin >> item;
-        arr[i] = arr[i - 1] + (item & 1 ? -1 : 1);
+        int x;
+        cin >> x;
+        arr[i] = arr[i - 1] + (x & 1 ? -1 : 1);
     }
     cout << solve(arr, n);
     return 0;
