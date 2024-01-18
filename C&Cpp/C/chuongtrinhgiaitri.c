@@ -14,7 +14,7 @@ int compare(const void *a, const void *b) {
 int search(pair *arr, int low, int high, int target) {
     int mid;
     while (low < high) {
-        mid = low + (high - low + 1) / 2;
+        mid = low + ((high - low + 1) >> 1);
         if (arr[mid].first < target) {
             low = mid;
         }
