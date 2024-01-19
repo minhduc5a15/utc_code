@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define MAXN 100001
 using namespace std;
+const int MAXN = 100001;
 
 vector<int> parent(MAXN, 0);
 vector<int> comp_size(MAXN, 0);
