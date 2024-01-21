@@ -3,9 +3,9 @@
 #include <queue>
 #include <climits>
 #define ll long long
-const int MOD = 1000000007;
-typedef std::pair<ll, ll> pll;
 using namespace std;
+typedef pair<ll, ll> pll;
+const int MOD = 1000000007;
 
 struct Edge {
     ll tour, cost;

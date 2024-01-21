@@ -1,10 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define ll long long
 const int MAXN = 1024;
 
 int main() {
-    ll arr[MAXN] = {0};
-    ll res = 0;
+    ll *arr = (ll *) calloc(MAXN, sizeof(ll));
     int n;
     scanf("%d", &n);
     while (n--) {
@@ -16,6 +16,7 @@ int main() {
         }
         ++arr[digit];
     }
+    ll res = 0;
 
     for (int i = 0; i < MAXN; ++i) {
         if (arr[i]) {
@@ -34,5 +35,6 @@ int main() {
 
     printf("%lld\n", res);
 
+    free(arr);
     return 0;
 }

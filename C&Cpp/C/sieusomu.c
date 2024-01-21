@@ -10,7 +10,7 @@ ll power(ll base, ll exponent, int modulus) {
             result = (result * base) % modulus;
         }
         base = (base * base) % modulus;
-        exponent >>= 1;
+        exponent >>= 1ll;
     }
     return result;
 }

@@ -23,11 +23,13 @@ int main() {
     ll left = 0, right = 0;
     scanf("%d%d", &n, &k);
     ll *arr = (ll *) malloc((n + 1) * sizeof(ll));
+
     for (ll i = 0; i < n; ++i) {
         scanf("%lld", &arr[i]);
         if (arr[i] > left) left = arr[i];
         right += arr[i];
     }
+
     while (left < right) {
         ll mid = left + ((right - left) >> 1);
         if (check(mid, arr, n, k)) {
@@ -36,6 +38,7 @@ int main() {
         else left = mid + 1;
     }
     printf("%lld", left);
+
     free(arr);
     return 0;
 }

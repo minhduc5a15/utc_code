@@ -32,5 +32,3 @@ int main() {
     cout << cards.top() << endl;
     return 0;
 }
-
-// code by duck it1

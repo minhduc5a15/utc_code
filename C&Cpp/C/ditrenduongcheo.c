@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #define ll long long
+
 typedef struct {
     ll first;
     ll second;
