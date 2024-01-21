@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #define ull unsigned long long
+using namespace std;
 const int MOD = 1000000007;
 const int MAXN = 1000001;
-using namespace std;
 
 vector<bool> primes(MAXN, true);
 vector<ull> primeNumbers;
@@ -61,6 +61,7 @@ void solve(ull n) {
                     cout << power(prime, n / prime) << '\n';
                     break;
                 }
+                if (prime > n) break;
             }
         }
     }

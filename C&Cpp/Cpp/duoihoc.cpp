@@ -23,12 +23,9 @@ int main() {
     std::cout.tie(NULL);
     int n;
     std::cin >> n;
-    std::vector<ll> arr;
-    arr.reserve(n);
+    std::vector<ll> arr(n);
     for (int i = 0; i < n; ++i) {
-        ll item;
-        std::cin >> item;
-        arr.push_back(item);
+        std::cin >> arr[i];
     }
     std::cout << arr.front() << " ";
     solve(arr);

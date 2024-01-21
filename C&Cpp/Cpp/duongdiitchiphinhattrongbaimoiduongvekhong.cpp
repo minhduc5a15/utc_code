@@ -8,7 +8,7 @@ using namespace std;
 
 void solve(int s, int f) {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> h;
-    h.push({ 0, s });
+    h.push({0, s});
     set<int> visited;
     while (!h.empty()) {
         int res = h.top().first;
@@ -22,12 +22,12 @@ void solve(int s, int f) {
             continue;
         }
         visited.insert(n);
-        for (int a = 1; a <= static_cast<int>(sqrt(n)); ++a) {
+        for (int a = 1; a * a <= n; ++a) {
             if (n % a == 0) {
                 int b = n / a;
                 int m = (a - 1) * (b + 1);
                 int new_cost = res + ((b % a == 0) ? (b / a) : (a + b));
-                h.push({ new_cost, m });
+                h.push({new_cost, m});
             }
         }
     }

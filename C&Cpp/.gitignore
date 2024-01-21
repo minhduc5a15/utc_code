@@ -16,4 +16,5 @@ config
 *.png
 *.out
 *.inp
+.idea
 algorithm
