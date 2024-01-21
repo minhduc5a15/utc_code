@@ -1,5 +1,8 @@
 test.py
 test.rs
-test.txt
 main.py
 solve.py
+*.txt
+*.inp
+*.json
+*.out
