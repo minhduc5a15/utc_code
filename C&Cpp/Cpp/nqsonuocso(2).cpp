@@ -1,22 +1,24 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
+#define ll long long
+const int MAXN = 100000;
 
-std::vector<bool> sieve(99999, true);
-std::vector<long long> primes;
+std::vector<bool> sieve(MAXN, true);
+std::vector<ll> primes;
 
-void generatePrimes() {
+void Sieve() {
     sieve[0] = sieve[1] = false;
-    for (int i = 2; i * i <= 99999; ++i) {
+    for (int i = 2; i * i <= MAXN; ++i) {
         if (sieve[i]) {
-            for (int j = i * i; j <= 99999; j += i) sieve[j] = false;
+            for (int j = i * i; j <= MAXN; j += i) sieve[j] = false;
         }
     }
-    for (int i = 2; i <= 99999; ++i) {
+    for (int i = 2; i <= MAXN; ++i) {
         if (sieve[i]) primes.push_back(i);
     }
 }
 
-void solve(long long n) {
+void solve(ll n) {
     int count = 0, prime_count = 0, s = 1;
     for (int i = 0; i < primes.size() && primes[i] * primes[i] <= n; ++i) {
         if (n % primes[i] == 0) {
@@ -40,12 +42,11 @@ int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
     std::cout.tie(NULL);
-    long long n;
+    ll n;
     std::cin >> n;
-    generatePrimes();
+    Sieve();
     solve(n);
     return 0;
 }
 
 
-// code by duck it1

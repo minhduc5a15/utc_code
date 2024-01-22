@@ -2,10 +2,10 @@
 #include <algorithm>
 #include <tuple>
 #include <vector>
-
 using namespace std;
+typedef tuple<int, int, int> tup;
 
-bool lambda(const tuple<int, int, int> &A, const tuple<int, int, int> &B) {
+bool lambda(const tup &A, const tup &B) {
     return get<2>(A) < get<2>(B);
 }
 
@@ -16,7 +16,7 @@ int main() {
     int n;
     cin >> n;
     int k = n - 2;
-    vector<tuple<int, int, int>> arr(n);
+    vector<tup> arr(n);
     for (int i = 0; i < n; ++i) {
         int length, width;
         cin >> length >> width;

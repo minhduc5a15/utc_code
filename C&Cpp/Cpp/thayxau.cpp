@@ -36,7 +36,7 @@ int main() {
             }
         }
     }
-    for (const char &ch: s) {
+    for (char ch: s) {
         if (map[ch] != '\0') {
             cout << map[ch];
         }

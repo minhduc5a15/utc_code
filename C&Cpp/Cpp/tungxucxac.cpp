@@ -7,13 +7,13 @@ using std::ios_base;
 typedef std::vector<ll> vectorll;
 typedef std::vector<vectorll> matrixll;
 const int MOD = 1000000007;
-const int SIZE = 6;
+const int MAT_SIZE = 6;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
-    matrixll result(SIZE, vectorll(SIZE, 0));
-    for (int i = 0; i < SIZE; ++i) {
-        for (int j = 0; j < SIZE; ++j) {
-            for (int k = 0; k < SIZE; ++k) {
+    matrixll result(MAT_SIZE, vectorll(MAT_SIZE, 0));
+    for (int i = 0; i < MAT_SIZE; ++i) {
+        for (int j = 0; j < MAT_SIZE; ++j) {
+            for (int k = 0; k < MAT_SIZE; ++k) {
                 result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
             }
         }
@@ -38,7 +38,7 @@ ll solve(ll n) {
     vectorll v = {0, 0, 0, 0, 0, 1};
     F = power(F, n + 5);
     ll res = 0;
-    for (int i = 0; i < SIZE; ++i) {
+    for (int i = 0; i < MAT_SIZE; ++i) {
         res = (res + (F[0][i] * v[i]) % MOD) % MOD;
     }
     return res;

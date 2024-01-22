@@ -1,27 +1,28 @@
 #include <iostream>
 #include <unordered_map>
 #include <sstream>
+using namespace std;
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
-    std::string s, x;
-    std::unordered_map<std::string, bool> map;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    string s, x;
+    unordered_map<string, bool> map;
     int n;
-    std::getline(std::cin, s);
-    std::cin >> n;
+    getline(cin, s);
+    cin >> n;
     for (int i = 0; i < n; ++i) {
-        std::cin >> x;
+        cin >> x;
         map[x] = true;
     }
-    std::stringstream si(s);
+    stringstream si(s);
     while (si >> x) {
         if (map[x]) {
-            std::cout << std::string(x.size(), '*') << " ";
+            cout << string(x.size(), '*') << " ";
         }
         else {
-            std::cout << x << " ";
+            cout << x << " ";
         }
     }
     return 0;

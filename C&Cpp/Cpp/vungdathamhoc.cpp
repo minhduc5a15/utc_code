@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#define MAXN 1000000
 #define ll long long
 using namespace std;
+const int MAXN = 1000000;
 
 vector<bool> visited(MAXN);
 vector<ll> graph[MAXN];

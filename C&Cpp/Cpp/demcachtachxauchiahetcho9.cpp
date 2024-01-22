@@ -10,7 +10,7 @@ const int MOD = 1000000007;
 int solve(const std::string &s) {
     std::vector<ll> count(10, 0);
     int temp = 0;
-    for (const char &c: s) {
+    for (char c: s) {
         temp = (temp + (c - '0')) % 9;
         ++count[temp];
     }

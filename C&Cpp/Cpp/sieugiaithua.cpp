@@ -15,7 +15,7 @@ ll count_zeros(ll x) {
 ll solve(ll n) {
     ll left = 0, right = n * 5;
     while (left < right) {
-        ll mid = (left + right) / 2;
+        ll mid = (left + right) >> 1;
         ll count = count_zeros(mid);
         if (count < n) {
             left = mid + 1;

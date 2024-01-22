@@ -5,20 +5,19 @@
 using namespace std;
 
 ll solve(const vector<int> &arr, int r) {
-    map<ll, ll> p;
-    map<ll, ll> counter;
+    map<ll, ll> p, mp;
     map<ll, ll>::iterator it;
     ll count = 0;
-    for (const int &item: arr) {
-        it = counter.find(item);
-        if (it != counter.end()) {
+    for (const int &num: arr) {
+        it = mp.find(num);
+        if (it != mp.end()) {
             count += it->second;
         }
-        it = p.find(item);
+        it = p.find(num);
         if (it != p.end()) {
-            counter[item * r] += it->second;
+            mp[num * r] += it->second;
         }
-        p[item * r]++;
+        p[num * r]++;
     }
     return count;
 }

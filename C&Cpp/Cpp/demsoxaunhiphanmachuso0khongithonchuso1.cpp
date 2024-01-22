@@ -8,7 +8,7 @@ const int MOD = 1000000007;
 
 vector<ull> fact(MAXN), inverse(MAXN);
 
-ull power(ull base, ull exponent, ull modulus = MOD) {t
+ull power(ull base, ull exponent, ull modulus = MOD) {
     base %= modulus;
     ull result = 1;
     while (exponent) {
