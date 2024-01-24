@@ -25,15 +25,15 @@ void Sieve() {
     }
 }
 
-ull power(ull base, ull exponent) {
-    base %= MOD;
+ull power(ull base, ull exponent, int modulus = MOD) {
+    base %= modulus;
     ull result = 1;
     while (exponent) {
         if (exponent & 1) {
-            result = (result * base) % MOD;
+            result = (result * base) % modulus;
         }
-        base = (base * base) % MOD;
-        exponent >>= 1ull;
+        base = (base * base) % modulus;
+        exponent >>= 1ULL;
     }
     return result;
 }
@@ -56,7 +56,7 @@ void solve(ull n) {
             cout << "OK" << '\n';
         }
         else {
-            for (const ull &prime: primeNumbers) {
+            for (ull prime: primeNumbers) {
                 if (n % prime == 0) {
                     cout << power(prime, n / prime) << '\n';
                     break;
@@ -67,12 +67,13 @@ void solve(ull n) {
     }
     else {
         bool check = false;
-        for (const ull &prime: primeNumbers) {
+        for (ull prime: primeNumbers) {
             if (n % prime == 0) {
                 check = true;
                 cout << power(prime, n / prime) << '\n';
                 break;
             }
+            if (prime > n) break;
         }
         if (!check) {
             cout << "OK" << '\n';

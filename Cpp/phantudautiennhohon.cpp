@@ -2,8 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
-
 using namespace std;
+typedef pair<int, int> pii;
 
 class SegmentTree {
     vector<int> tree;
@@ -43,7 +43,7 @@ public:
     }
 };
 
-vector<int> solve(vector<pair<int, int>> &arr, const vector<pair<int, int>> &queries) {
+vector<int> solve(vector<pii> &arr, const vector<pii> &queries) {
     sort(arr.begin(), arr.end());
     int n = arr.size();
     int q = queries.size();
@@ -70,7 +70,7 @@ int main() {
     cout.tie(NULL);
     int n, q;
     cin >> n >> q;
-    vector<pair<int, int>> arr(n), queries(q);
+    vector<pii> arr(n), queries(q);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i].first;
         arr[i].second = i;

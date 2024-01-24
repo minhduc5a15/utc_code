@@ -58,7 +58,7 @@ int solve(const string& s) {
     unordered_map<char, string> huffmanCode;
     encode(root, "", huffmanCode);
     int result = 0;
-    for (const char &ch: s) {
+    for (char ch: s) {
         result += huffmanCode[ch].size();
     }
     return result;

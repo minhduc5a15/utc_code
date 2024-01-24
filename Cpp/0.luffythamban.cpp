@@ -8,7 +8,7 @@ int solve(const vector<int> &arr) {
     int result = INT_MAX;
     for (int k = *min_element(arr.begin(), arr.end()); k <= *max_element(arr.begin(), arr.end()); ++k) {
         int diffSum = 0;
-        for (const int &num: arr) {
+        for (int num: arr) {
             diffSum += abs(num - k);
         }
         result = min(result, diffSum);

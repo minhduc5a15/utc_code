@@ -6,7 +6,7 @@ typedef std::vector<int> vectori;
 vectori solve(vectori &arr, const vectori &queries) {
     std::sort(arr.begin(), arr.end());
     vectori result;
-    for (const int &query: queries) {
+    for (int query: queries) {
         int count = std::upper_bound(arr.begin(), arr.end(), query) - arr.begin();
         result.push_back(count);
     }
@@ -27,7 +27,7 @@ int main() {
         std::cin >> queries[i];
     }
     vectori result = solve(arr, queries);
-    for (const int &item: result) { std::cout << item << '\n'; }
+    for (int res: result) { std::cout << res << '\n'; }
     return 0;
 }
 

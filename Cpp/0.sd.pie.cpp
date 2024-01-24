@@ -8,13 +8,13 @@ const double PI = acos(-1);
 
 bool check(double mid, const std::vector<int> &radii, int F) {
     int pieces = 0;
-    for (const int &r: radii) {
+    for (int r: radii) {
         pieces += int(PI * r * r / mid);
     }
     return pieces >= F;
 }
 
-double solve(std::vector<int> &radii, int F) {
+double solve(const std::vector<int> &radii, int F) {
     double left = 0, right = PI * *std::max_element(radii.begin(), radii.end()) * *std::max_element(radii.begin(), radii.end());
     while (right - left > 1e-5) {
         double mid = (left + right) / 2;

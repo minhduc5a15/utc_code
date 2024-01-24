@@ -12,10 +12,10 @@ bool lambda(pli &a, pli &b) {
 
 void solve(const vector<ll> &arr) {
     map<ll, int> mp;
-    for (const ll &item: arr) {
-        mp[item]++;
+    for (ll num: arr) {
+        mp[num]++;
     }
-    vector<pair<ll, int>> items(mp.begin(), mp.end());
+    vector<pli> items(mp.begin(), mp.end());
     sort(items.begin(), items.end(), lambda);
     for (pli item: items) {
         cout << item.first << ' ';
