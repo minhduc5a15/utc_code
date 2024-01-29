@@ -1,11 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-
 #define ll long long
 using namespace std;
 
-ll solve(const vector<int>& arr, int n) {
+ll solve(const vector<int> &arr, int n) {
     unordered_map<int, int> map;
     map[0] = 1;
     ll result = 0, j = 0, k = 1;

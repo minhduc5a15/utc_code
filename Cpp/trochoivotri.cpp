@@ -10,9 +10,9 @@ int main() {
     cin >> n;
     vector<int> pos(n + 1);
     for (int i = 0; i < n; ++i) {
-    	int x;
-    	cin >> x;
-    	pos[x] = i;
+        int x;
+        cin >> x;
+        pos[x] = i;
     }
     pair<int, int> res = {1, 1};
     for (int i = 3; i <= n; ++i) {
