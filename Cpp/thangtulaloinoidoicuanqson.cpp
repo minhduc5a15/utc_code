@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#define getAll(x) (x).begin(), (x).end()
 using namespace std;
 typedef vector<int> vi;
 
@@ -11,7 +12,7 @@ private:
 public:
     int n, q;
 
-    void input() {
+    void init() {
         cin >> n >> q;
         arr.resize(n + 1);
         tree.resize(4 * n + 1, vector<int>());
@@ -26,18 +27,16 @@ public:
             return;
         }
         int mid = (l + r) / 2;
-
         build(2 * id, l, mid);
         build(2 * id + 1, mid + 1, r);
-
-        merge(tree[2 * id].begin(), tree[2 * id].end(), tree[2 * id + 1].begin(), tree[2 * id + 1].end(), back_inserter(tree[id]));
+        merge(getAll(tree[2 * id]), getAll(tree[2 * id + 1]), back_inserter(tree[id]));
     }
 
     int query(int id, int l, int r, int x, int y, int u, int v) {
         if (y < l || x > r) return 0;
         if (x <= l && r <= y) {
-            vi::iterator lb = lower_bound(tree[id].begin(), tree[id].end(), u);
-            vi::iterator ub = upper_bound(tree[id].begin(), tree[id].end(), v);
+            vi::iterator lb = lower_bound(getAll(tree[id]), u);
+            vi::iterator ub = upper_bound(getAll(tree[id]), v);
             return ub - lb;
         }
         int mid = (l + r) / 2;
@@ -45,6 +44,7 @@ public:
     }
 
     void solve() {
+        this->build(1, 1, n);
         while (q--) {
             int x, y, l, r;
             cin >> x >> y >> l >> r;
@@ -58,8 +58,7 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
     MergeSortTree tree;
-    tree.input();
-    tree.build(1, 1, tree.n);
+    tree.init();
     tree.solve();
     return 0;
 }
