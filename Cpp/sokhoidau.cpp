@@ -25,7 +25,7 @@ public:
 
     void insert(const string &word) const {
         TrieNode *node = root;
-        for (const char &c: word) {
+        for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
                 node->children[c] = new TrieNode();
             }
@@ -36,7 +36,7 @@ public:
 
     bool search(const string &word) const {
         TrieNode *node = root;
-        for (const char &c: word) {
+        for (char c: word) {
             if (node->children.find(c) == node->children.end()) {
                 return false;
             }

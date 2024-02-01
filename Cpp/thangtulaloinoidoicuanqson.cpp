@@ -15,7 +15,7 @@ public:
     void init() {
         cin >> n >> q;
         arr.resize(n + 1);
-        tree.resize(4 * n + 1, vector<int>());
+        tree.resize(4 * n + 1, vi());
         for (int i = 1; i <= n; ++i) {
             cin >> arr[i];
         }

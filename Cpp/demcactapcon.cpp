@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-const int MOD = 1000000007;
-
 using namespace std;
+const int MOD = 1000000007;
 
 ll solve(const vector<int> &arr, int n, int m) {
     vector<ll> dp(m + 1, 0);

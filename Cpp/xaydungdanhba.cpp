@@ -1,6 +1,6 @@
 #include <iostream>
-
 using namespace std;
+
 struct Node {
     int countWord;
     Node *child[26];
@@ -15,7 +15,7 @@ Node *createNode() {
     return node;
 }
 
-void addWord(Node *root, const string& s) {
+void addWord(Node *root, const string &s) {
     Node *temp = root;
     int n = s.size();
     for (int i = 0; i < n; ++i) {

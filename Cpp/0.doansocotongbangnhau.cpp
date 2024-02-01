@@ -24,9 +24,10 @@ int main() {
     int t;
     cin >> t;
     int id, n;
+    vector<int> arr;
     while (t--) {
         cin >> id >> n;
-        vector<int> arr(n + 1);
+        arr.resize(n + 1);
         int sum = 0;
         arr[0] = 0;
         for (int i = 1; i <= n; ++i) {
@@ -63,6 +64,7 @@ int main() {
         int result = max_sum / step;
         if (result) cout << id << " " << result << '\n';
         else cout << id << " " << '\n';
+        arr.clear();
         divisors.clear();
     }
     return 0;

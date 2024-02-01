@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
 #define ll long long
+typedef std::vector<ll> vll;
 
-void solve(const std::vector<ll> &arr) {
+void solve(const vll &arr) {
     ll first_max_item = arr.front();
     bool check_max = false;
     for (int i = 1; i < arr.size(); ++i) {
@@ -23,7 +24,7 @@ int main() {
     std::cout.tie(nullptr);
     int n;
     std::cin >> n;
-    std::vector<ll> arr(n);
+    vll arr(n);
     for (int i = 0; i < n; ++i) {
         std::cin >> arr[i];
     }

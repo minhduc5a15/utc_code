@@ -37,7 +37,7 @@ void encode(Node *root, const string& str, unordered_map<char, string> &huffmanC
 
 int solve(const string& s) {
     unordered_map<char, int> freq;
-    for (const char &ch: s) {
+    for (char ch: s) {
         freq[ch]++;
     }
 

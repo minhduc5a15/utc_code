@@ -8,7 +8,7 @@ ll solve(const vector<int> &arr, int r) {
     map<ll, ll> p, mp;
     map<ll, ll>::iterator it;
     ll count = 0;
-    for (const int &num: arr) {
+    for (int num: arr) {
         it = mp.find(num);
         if (it != mp.end()) {
             count += it->second;

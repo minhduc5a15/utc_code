@@ -6,7 +6,7 @@ using namespace std;
 bool isvalid(const string &s) {
     stack<char> st;
     map<char, char> mp = {{')', '('}, {'}', '{'}, {']', '['}};
-    for (const char &c: s) {
+    for (char c: s) {
         if (!mp[c]) {
             st.push(c);
         }

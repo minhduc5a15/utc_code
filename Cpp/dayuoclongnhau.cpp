@@ -3,9 +3,10 @@
 #include <algorithm>
 #define ll long long
 using namespace std;
+typedef vector<ll> vll;
 
-vector<ll> solve(ll n) {
-    vector<ll> result = {n};
+vll solve(ll n) {
+    vll result = {n};
     for (ll i = 2; i * i <= n; ++i) {
         while (n % i == 0) {
             n /= i;
@@ -24,7 +25,7 @@ int main() {
     cout.tie(nullptr);
     ll n;
     cin >> n;
-    vector<ll> result = solve(n);
+    vll result = solve(n);
     reverse(result.begin(), result.end());
     if (result.front() != 1) result.insert(result.begin(), 1);
     for_each(result.cbegin(), result.cend(), [](const ll &x) { cout << x << " "; });

@@ -10,13 +10,11 @@ int main() {
     int n, m, q;
     cin >> n >> m >> q;
     unordered_map<int, vector<int>> count(m);
-
     for (int i = 0; i < n; ++i) {
         int x;
         cin >> x;
         count[(x % m + m) % m].push_back(i + 1);
     }
-
     while (q--) {
         int index, value;
         cin >> index >> value;

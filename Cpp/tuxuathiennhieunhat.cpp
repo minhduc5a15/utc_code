@@ -3,9 +3,11 @@
 #include <sstream>
 #include <algorithm>
 #include <unordered_map>
+#define getAll(x) (x).begin(), (x).end()
 using namespace std;
+typedef pair<string, int> psi;
 
-bool compare(const pair<string, int> &a, const pair<string, int> &b) {
+bool compare(const psi &a, const psi &b) {
     return a.second == b.second ? a.first < b.first : a.second > b.second;
 }
 
@@ -29,8 +31,8 @@ int main() {
         }
         int k;
         cin >> k;
-        vector<pair<string, int>> arr(map.begin(), map.end());
-        sort(arr.begin(), arr.end(), compare);
+        vector<psi> arr(getAll(map));
+        sort(getAll(arr), compare);
         for (int i = 0; i < k; ++i) {
             cout << arr[i].first << " ";
         }
