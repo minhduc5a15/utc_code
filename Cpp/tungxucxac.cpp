@@ -4,16 +4,16 @@
 using std::cin;
 using std::cout;
 using std::ios_base;
-typedef std::vector<ll> vectorll;
-typedef std::vector<vectorll> matrixll;
+typedef std::vector<ll> vll;
+typedef std::vector<vll> matrixll;
 const int MOD = 1000000007;
-const int MAT_SIZE = 6;
+const int MAT_MAT_SIZE = 6;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
-    matrixll result(MAT_SIZE, vectorll(MAT_SIZE, 0));
-    for (int i = 0; i < MAT_SIZE; ++i) {
-        for (int j = 0; j < MAT_SIZE; ++j) {
-            for (int k = 0; k < MAT_SIZE; ++k) {
+    matrixll result(MAT_MAT_SIZE, vll(MAT_MAT_SIZE, 0));
+    for (int i = 0; i < MAT_MAT_SIZE; ++i) {
+        for (int j = 0; j < MAT_MAT_SIZE; ++j) {
+            for (int k = 0; k < MAT_MAT_SIZE; ++k) {
                 result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
             }
         }
@@ -35,10 +35,10 @@ matrixll power(matrixll base, ll exponent) {
 
 ll solve(ll n) {
     matrixll F = {{0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}, {1, 1, 1, 1, 1, 1}};
-    vectorll v = {0, 0, 0, 0, 0, 1};
+    vll v = {0, 0, 0, 0, 0, 1};
     F = power(F, n + 5);
     ll res = 0;
-    for (int i = 0; i < MAT_SIZE; ++i) {
+    for (int i = 0; i < MAT_MAT_SIZE; ++i) {
         res = (res + (F[0][i] * v[i]) % MOD) % MOD;
     }
     return res;
@@ -46,8 +46,8 @@ ll solve(ll n) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     ll n;
     cin >> n;
     cout << solve(n);

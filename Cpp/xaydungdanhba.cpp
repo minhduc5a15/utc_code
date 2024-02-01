@@ -10,7 +10,7 @@ Node *createNode() {
     Node *node = new Node;
     node->countWord = 0;
     for (Node *&i: node->child) {
-        i = NULL;
+        i = nullptr;
     }
     return node;
 }
@@ -20,7 +20,7 @@ void addWord(Node *root, const string& s) {
     int n = s.size();
     for (int i = 0; i < n; ++i) {
         int ch = s[i] - 'a';
-        if (temp->child[ch] == NULL) {
+        if (temp->child[ch] == nullptr) {
             temp->child[ch] = createNode();
         }
         temp = temp->child[ch];
@@ -33,7 +33,7 @@ int findWord(Node *root, const string &s) {
     int n = s.size();
     for (int i = 0; i < n; ++i) {
         int ch = s[i] - 'a';
-        if (temp->child[ch] == NULL) {
+        if (temp->child[ch] == nullptr) {
             return 0;
         }
         temp = temp->child[ch];
@@ -43,8 +43,8 @@ int findWord(Node *root, const string &s) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     Node *root = createNode();
     int n;
     cin >> n;

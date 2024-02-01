@@ -10,8 +10,8 @@ double distance(int x, int y) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int r, n;
     cin >> r >> n;
     double max_distance = -1;

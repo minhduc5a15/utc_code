@@ -25,8 +25,8 @@ struct pair_object {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
     unordered_set<Fraction, pair_object> cows;

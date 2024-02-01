@@ -2,12 +2,12 @@
 #include <memory>
 #include <vector>
 using namespace std;
-typedef vector<int> vectori;
+typedef vector<int> vi;
 
-shared_ptr<vectori> add(const shared_ptr<vectori> &a, const shared_ptr<vectori> &b) {
+shared_ptr<vi> add(const shared_ptr<vi> &a, const shared_ptr<vi> &b) {
     int size_a = a->size(), size_b = b->size();
     int carry = 0;
-    shared_ptr<vectori> result = make_shared<vectori>(max(size_a, size_b) + 1);
+    shared_ptr<vi> result = make_shared<vi>(max(size_a, size_b) + 1);
     for (int i = 0; i < static_cast<int>(result->size()); ++i) {
         if (i < size_a) carry += (*a)[i];
         if (i < size_b) carry += (*b)[i];
@@ -18,7 +18,7 @@ shared_ptr<vectori> add(const shared_ptr<vectori> &a, const shared_ptr<vectori> 
     return result;
 }
 
-void solve(const shared_ptr<vectori> &arr) {
+void solve(const shared_ptr<vi> &arr) {
     for (int i = static_cast<int>(arr->size()) - 1; i >= 0; --i) {
         cout << (*arr)[i];
     }
@@ -26,16 +26,16 @@ void solve(const shared_ptr<vectori> &arr) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
-    shared_ptr<vectori> a = make_shared<vectori>(1, 1);
-    shared_ptr<vectori> b = make_shared<vectori>(1, 1);
+    shared_ptr<vi> a = make_shared<vi>(1, 1);
+    shared_ptr<vi> b = make_shared<vi>(1, 1);
     if (n == 1) cout << 1;
     else {
         for (int i = 3; i <= n; ++i) {
-            shared_ptr<vectori> c = add(a, b);
+            shared_ptr<vi> c = add(a, b);
             a = b;
             b = c;
         }

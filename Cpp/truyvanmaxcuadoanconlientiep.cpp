@@ -10,7 +10,7 @@ private:
 public:
     int n, q;
 
-    void input() {
+    void init() {
         cin >> n >> q;
         arr.resize(n + 1);
         seg.resize(4 * n + 5);
@@ -48,10 +48,10 @@ public:
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     SegmentTree tree;
-    tree.input();
+    tree.init();
     tree.build(1, 1, tree.n);
     tree.solve();
     return 0;

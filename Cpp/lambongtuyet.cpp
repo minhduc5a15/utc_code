@@ -21,8 +21,8 @@ void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_su
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
     vector<ll> V(n + 1), T(n + 1), prefix_sum(n + 1, 0);

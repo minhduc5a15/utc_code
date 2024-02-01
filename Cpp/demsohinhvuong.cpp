@@ -13,7 +13,7 @@ public:
 
     Point<T1, T2>(T1 x, T2 y): x(std::move(x)), y(std::move(y)) {};
 
-    Point(): x(NULL), y(NULL) {};
+    Point(): x(nullptr), y(nullptr) {};
 
     bool operator==(const Point<T1, T2> &other) const {
         return x == other.x and y == other.y;
@@ -58,8 +58,8 @@ bool is_square(const Point<ll, ll> &A, const Point<ll, ll> &B, const Point<ll, l
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     ll n;
     cin >> n;
     vector<Point<ll, ll>> points(n);

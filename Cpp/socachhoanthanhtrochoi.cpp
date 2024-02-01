@@ -29,8 +29,8 @@ ll dfs(const unordered_map<ll, vector<ll>> &graph, ll start, ll end, unordered_s
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
     unordered_map<ll, vector<ll>> graph;

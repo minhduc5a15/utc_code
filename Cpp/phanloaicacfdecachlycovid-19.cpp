@@ -36,8 +36,8 @@ void solve(int n, const vector<int> adj_list[]) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
     vector<int> adj_list[n + 1];

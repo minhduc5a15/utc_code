@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n = 3, m = 100;
     vector<int> map(m, 0);
     while (n--) {

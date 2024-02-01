@@ -12,8 +12,8 @@ bool square_number(int n) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int arr[3];
     for (int &i: arr) {
         cin >> i;

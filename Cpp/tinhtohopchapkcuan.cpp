@@ -26,8 +26,8 @@ ll C(int n, int r) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     factorial[0] = 1;
     inverse[0] = 1;
     for (int i = 1; i < MAXN; ++i) {

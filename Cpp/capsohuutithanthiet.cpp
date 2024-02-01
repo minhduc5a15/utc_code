@@ -61,8 +61,8 @@ int solve(unordered_map<Fraction, int, FractionHash> &map, int exp) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int size;
     cin >> size;
     unordered_map<Fraction, int, FractionHash> greater_map(MAXN), less_map(MAXN);

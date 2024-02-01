@@ -10,8 +10,8 @@ ll solve(int a, int b, const vector<ll>& arr) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     vector<ll> arr(MAXN, 0);
     int k = 1;
     while (k < MAXN) {

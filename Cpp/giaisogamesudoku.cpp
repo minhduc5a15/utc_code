@@ -64,8 +64,8 @@ bool solveSudoku(vector<vector<int>>& grid, int i = 0, int j = 0) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     vector<vector<int>> grid(9, vector<int>(9));
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {

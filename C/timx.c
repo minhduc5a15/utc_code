@@ -8,7 +8,7 @@ int main() {
     fgets(eq, 50, stdin);
     sscanf(eq, "%[^=]=%s", left, right);
     int len = strlen(left);
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; ++i) {
         if (left[i] != 'x' && (left[i] < '0' || left[i] > '9')) {
             d = left[i];
             break;

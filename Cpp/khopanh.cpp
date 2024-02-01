@@ -26,8 +26,8 @@ bool solve(const vector<string>& matrixA, const vector<string>& matrixB) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
     vector<string> matrixA(n), matrixB(m);

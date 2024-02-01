@@ -2,11 +2,11 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-typedef vector<int> vectori;
+typedef vector<int> vi;
 const int MAXN = 1000000;
 
-vectori init(const vectori &arr, int n, int c) {
-    vectori saved(1 << n);
+vi init(const vi &arr, int n, int c) {
+    vi saved(1 << n);
     for (int i = 0; i < (1 << n); ++i) {
         int s = 0;
         for (int j = 0; j < n; ++j) {
@@ -20,9 +20,9 @@ vectori init(const vectori &arr, int n, int c) {
 }
 
 
-int solve(const vectori &arr, int n, int s) {
-    vectori saved_left = init(arr, n / 2, 0);
-    vectori saved_right = init(arr, n - n / 2, n / 2);
+int solve(const vi &arr, int n, int s) {
+    vi saved_left = init(arr, n / 2, 0);
+    vi saved_right = init(arr, n - n / 2, n / 2);
     int size_left = 1 << (n / 2);
     int size_right = 1 << (n - n / 2);
     sort(saved_right.begin(), saved_right.begin() + size_right);
@@ -41,11 +41,11 @@ int solve(const vectori &arr, int n, int s) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, s;
     cin >> n >> s;
-    vectori arr(n);
+    vi arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }

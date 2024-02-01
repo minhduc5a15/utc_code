@@ -30,8 +30,8 @@ double solve(const std::vector<int> &radii, int F) {
 
 int main() {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     int t;
     std::cin >> t;
     while (t--) {

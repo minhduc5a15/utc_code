@@ -28,8 +28,8 @@ void solve(const vector<int>& arr, int n, int k) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, k;
     cin >> n >> k;
     vector<int> arr(n);

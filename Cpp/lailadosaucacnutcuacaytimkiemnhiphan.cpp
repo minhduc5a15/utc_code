@@ -10,8 +10,8 @@ void print(int x, unordered_map<int, int> &map) {
 }
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
     vector<int> arr(n);

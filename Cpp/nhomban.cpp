@@ -18,8 +18,8 @@ int solve(int a, int b) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, m, max_size;
     int dist_gr = 0;
     cin >> n >> m;

@@ -3,8 +3,8 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     float x, y;
     cin >> x >> y;
     if (x == 0 && y == 0) cout << "Origem";

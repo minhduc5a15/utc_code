@@ -18,8 +18,8 @@ int solve(const vector<int> &prefix, int a, int b) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     string s;
     cin >> s;
     int t;

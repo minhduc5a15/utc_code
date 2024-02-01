@@ -31,8 +31,8 @@ int solve(int l, int r) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     init();
     int l, r;
     while (cin >> l >> r && (l || r)) {

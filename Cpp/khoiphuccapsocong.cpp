@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int temp, curr, prev, n = 0, gcd = 0, sum = 0;
     cin >> prev;
     while (cin >> curr) {

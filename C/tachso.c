@@ -8,7 +8,7 @@ int solve(int n) {
             n /= i;
             ++count;
         }
-        i++;
+        ++i;
     }
     if (n > 1) ++count;
     return count;

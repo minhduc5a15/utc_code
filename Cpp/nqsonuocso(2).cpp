@@ -40,8 +40,8 @@ void solve(ll n) {
 
 int main() {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     ll n;
     std::cin >> n;
     Sieve();

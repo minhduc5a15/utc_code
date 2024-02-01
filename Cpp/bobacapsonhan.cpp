@@ -24,8 +24,8 @@ ll solve(const vector<int> &arr, int r) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, r;
     cin >> n >> r;
     vector<int> arr(n);

@@ -2,10 +2,10 @@
 #include <vector>
 #include <climits>
 using namespace std;
-typedef vector<int> vectori;
-typedef vector<vectori> matrixi;
+typedef vector<int> vi;
+typedef vector<vi> matrixi;
 
-int kadane(const vectori &arr) {
+int kadane(const vi &arr) {
     int max_sum = INT_MIN;
     int current_sum = 0;
     for (const int &element : arr) {
@@ -19,9 +19,9 @@ int solve(const matrixi &matrix) {
     int N = matrix.size();
     int max_sum = INT_MIN;
     for (int left = 0; left < N; ++left) {
-        vectori temp(N, 0);
+        vi temp(N, 0);
         for (int right = left; right < N; ++right) {
-            for (int i = 0; i < N; i++) {
+            for (int i = 0; i < N; ++i) {
                 temp[i] += matrix[i][right];
             }
             max_sum = max(max_sum, kadane(temp));
@@ -32,11 +32,11 @@ int solve(const matrixi &matrix) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
-    matrixi matrix(n, vectori(n));
+    matrixi matrix(n, vi(n));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             cin >> matrix[i][j];

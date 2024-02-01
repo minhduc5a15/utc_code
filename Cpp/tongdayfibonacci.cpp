@@ -1,19 +1,19 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-typedef std::vector<ll> vectorll;
-typedef std::vector<vectorll> matrixll;
+typedef std::vector<ll> vll;
+typedef std::vector<vll> matrixll;
 using std::cin;
 using std::cout;
 using std::ios_base;
 const int MOD = 1000000007;
-const int MAT_SIZE = 2;
+const int MAT_MAT_SIZE = 2;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
-    matrixll result(MAT_SIZE, vectorll(MAT_SIZE, 0));
-    for (int i = 0; i < MAT_SIZE; ++i) {
-        for (int j = 0; j < MAT_SIZE; ++j) {
-            for (int k = 0; k < MAT_SIZE; ++k) {
+    matrixll result(MAT_MAT_SIZE, vll(MAT_MAT_SIZE, 0));
+    for (int i = 0; i < MAT_MAT_SIZE; ++i) {
+        for (int j = 0; j < MAT_MAT_SIZE; ++j) {
+            for (int k = 0; k < MAT_MAT_SIZE; ++k) {
                 result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
             }
         }
@@ -40,8 +40,8 @@ ll solve(int n) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
     cin >> n;
     cout << solve(n);

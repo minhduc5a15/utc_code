@@ -10,8 +10,8 @@ void sort(int a, int b, int c) {
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int a, b, c;
     cin >> a >> b >> c;
     sort(a, b, c);

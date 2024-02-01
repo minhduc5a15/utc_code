@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
 bool isPrime(int num) {
     if (num <= 1) {
@@ -13,14 +14,17 @@ bool isPrime(int num) {
     return true;
 }
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n;
-    std::cin >> n;
+    cin >> n;
     int arr[n + 1];
     for (int i = 0; i < n; ++i) {
-        std::cin >> arr[i];
+        cin >> arr[i];
     }
     for (int item: arr) {
-        if (isPrime(item)) std::cout << item << " ";
+        if (isPrime(item)) cout << item << " ";
     }
     return 0;
 }

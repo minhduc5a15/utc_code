@@ -17,8 +17,8 @@ void solve(int a, int b, int c) {
 
 int main() {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     int a, b, c;
     std::cin >> a >> b >> c;
     solve(a, b, c);

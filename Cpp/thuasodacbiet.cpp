@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     vector<int> arr = {1, 2, 5, 10, 20, 25, 50};
     vector<int> root = {100, 125, 200, 250, 500};
     arr.reserve(8 * root.size() + arr.size() + 1);

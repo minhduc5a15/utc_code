@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
 using namespace std;
 
 bool solve(const vector<vector<float>> &matrix, int n) {
@@ -29,6 +28,9 @@ bool solve(const vector<vector<float>> &matrix, int n) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int t;
     cin >> t;
     vector<vector<float>> matrix;

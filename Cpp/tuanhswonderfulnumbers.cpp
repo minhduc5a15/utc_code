@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 typedef long long ll;
-typedef std::vector<ll> vectorll;
+typedef std::vector<ll> vll;
 const int MOD = 1000000007;
 
 bool is_good(int a, int b, int n) {
@@ -49,13 +49,13 @@ ll binomial(int n, int k) {
 
 int main() {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     int a, b, n;
     std::cin >> a >> b >> n;
     ll res = 0;
-    vectorll fact(n + 1, 1);
-    vectorll inv(n + 1, 1);
+    vll fact(n + 1, 1);
+    vll inv(n + 1, 1);
     for (int i = 2; i <= n; ++i) {
         fact[i] = (fact[i - 1] * i) % MOD;
         inv[i] = power(fact[i], MOD - 2);
