@@ -1,11 +1,11 @@
 #include <iostream>
-#include <map>
-#include <algorithm>
 #include <vector>
+#include <algorithm>
+#include <map>
 
 using namespace std;
 
-bool lambda(const pair<int, string> &a, const pair<int, string> &b) {
+bool compare(const pair<int, string> &a, const pair<int, string> &b) {
     return a.first == b.first ? a.second < b.second : a.first > b.first;
 }
 
@@ -30,9 +30,8 @@ int main() {
     for (const pair<const string, int> &it: colors) {
         vec.push_back(make_pair(it.second, it.first));
     }
-    sort(vec.begin(), vec.end(), lambda);
+    sort(vec.begin(), vec.end(), compare);
     cout << vec[0].second << '\n' << vec[1].second;
     return 0;
 }
 
-// code by duck it1

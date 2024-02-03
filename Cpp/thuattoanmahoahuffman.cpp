@@ -42,7 +42,7 @@ int solve(const string& s) {
     }
 
     priority_queue<Node *, vector<Node *>, compare> pq;
-    for (pair<const char, int> pair: freq) {
+    for (const pair<const char, int> pair: freq) {
         pq.push(getNode(pair.first, pair.second, nullptr, nullptr));
     }
 

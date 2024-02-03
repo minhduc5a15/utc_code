@@ -1,7 +1,6 @@
 #include <iostream>
 #include <unordered_set>
 #include <algorithm>
-
 using namespace std;
 
 struct Fraction {
@@ -17,7 +16,7 @@ struct Fraction {
     }
 };
 
-struct pair_object {
+struct Fraction_Hash {
     size_t operator()(const Fraction &f) const {
         return hash<int>()(f.a) ^ (hash<int>()(f.b) << 1);
     }
@@ -29,7 +28,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    unordered_set<Fraction, pair_object> cows;
+    unordered_set<Fraction, Fraction_Hash> cows;
     for (int i = 0; i < n; ++i) {
         int a, b;
         cin >> a >> b;

@@ -2,6 +2,7 @@
 #include <vector>
 #include <stack>
 using namespace std;
+typedef vector<int> vi;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -9,12 +10,12 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    vector<int> arr(n);
+    vi arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    vector<int> right(n, -1);
-    vector<int> left(n, -1);
+    vi right(n, -1);
+    vi left(n, -1);
     stack<int> s;
     for (int i = 0; i < n; ++i) {
         while (!s.empty() && arr[s.top()] < arr[i]) {

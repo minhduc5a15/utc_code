@@ -5,6 +5,7 @@
 #define ll long long
 using namespace std;
 typedef pair<ll, ll> pll;
+typedef vector<ll> vll;
 const int MOD = 1000000007;
 
 struct Edge {
@@ -18,10 +19,10 @@ struct Compare {
 };
 
 void solve(int n, const vector<vector<Edge>> &graph) {
-    vector<ll> dist(n, LONG_LONG_MAX);
-    vector<ll> count(n, 0);
-    vector<ll> min_flights(n, 0);
-    vector<ll> max_flights(n, 0);
+    vll dist(n, LONG_LONG_MAX);
+    vll count(n, 0);
+    vll min_flights(n, 0);
+    vll max_flights(n, 0);
     dist[0] = 0;
     count[0] = 1;
     min_flights[0] = 0;

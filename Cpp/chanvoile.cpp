@@ -20,7 +20,7 @@ ll solve(const vector<int> &arr, int n) {
         result += k;
         ++k;
         if (map.find(arr[i]) != map.end()) {
-            map[arr[i]] += 1;
+            ++map[arr[i]];
         }
         else {
             map[arr[i]] = 1;
@@ -44,7 +44,3 @@ int main() {
     cout << solve(arr, n);
     return 0;
 }
-
-
-
-// code by duck it1

@@ -7,13 +7,13 @@ using std::ios_base;
 typedef std::vector<ull> vull;
 typedef std::vector<vull> matrixull;
 const int MOD = 1000000007;
-const int MAT_MAT_SIZE = 2;
+const int MAT_SIZE = 2;
 
 matrixull multiply(const matrixull &matrixA, const matrixull &matrixB) {
-    matrixull result(MAT_MAT_SIZE, vull(MAT_MAT_SIZE, 0));
-    for (int i = 0; i < MAT_MAT_SIZE; ++i) {
-        for (int j = 0; j < MAT_MAT_SIZE; ++j) {
-            for (int k = 0; k < MAT_MAT_SIZE; ++k) {
+    matrixull result(MAT_SIZE, vull(MAT_SIZE, 0));
+    for (int i = 0; i < MAT_SIZE; ++i) {
+        for (int j = 0; j < MAT_SIZE; ++j) {
+            for (int k = 0; k < MAT_SIZE; ++k) {
                 result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
             }
         }

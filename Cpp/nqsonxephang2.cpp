@@ -1,8 +1,8 @@
 #include <iostream>
 #include <stack>
 #include <vector>
-
 using namespace std;
+typedef vector<int> vi;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -10,12 +10,12 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    vector<int> arr(n);
+    vi arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
     stack<int> s;
-    vector<int> pos(n, -1);
+    vi pos(n, -1);
     for (int i = 0; i < n; ++i) {
         while (!s.empty() && arr[s.top()] < arr[i]) {
             pos[s.top()] = i;
@@ -24,7 +24,7 @@ int main() {
         s.push(i);
     }
 
-    vector<int> res(n, -1);
+    vi res(n, -1);
     for (int i = 0; i < n; ++i) {
         if (pos[i] == -1) pos[i] = -1;
         else {

@@ -4,6 +4,7 @@
 #include <map>
 #define ll long long
 using namespace std;
+typedef pair<const int, int> pcii;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -11,7 +12,7 @@ int main() {
     cout.tie(nullptr);
     int a, b, c;
     cin >> a >> b >> c;
-    long long n;
+    ll n;
     cin >> n;
     vector<pair<int, int>> points(n);
     map<int, int> colors;
@@ -25,17 +26,17 @@ int main() {
     cin >> k;
     if (a) {
         int res = 0;
-        for (const pair<const int, int> &color: colors) {
+        for (const pcii &color: colors) {
             res = max(res, color.second);
         }
-        for (const pair<const int, int> &color: colors) {
+        for (const pcii &color: colors) {
             if (color.second == res) cout << color.first << " ";
         }
         cout << '\n';
     }
     if (b) {
-        long long res = 0;
-        for (const pair<const int, int> &color: colors) {
+        ll res = 0;
+        for (const pcii &color: colors) {
             res += color.second * (color.second - 1) / 2;
         }
         cout << n * (n - 1) / 2 - res << '\n';

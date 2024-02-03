@@ -1,8 +1,8 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#define getAll(x) (x).begin(), (x).end()
 using namespace std;
-
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -12,7 +12,7 @@ int main() {
     vector<int> root = {100, 125, 200, 250, 500};
     arr.reserve(8 * root.size() + arr.size() + 1);
     for (int i = 1; i < 8; ++i) {
-        arr.insert(arr.end(), root.begin(), root.end());
+        arr.insert(arr.end(), getAll(root));
         for (int &item: root) {
             item *= 10;
         }
@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         int num;
         cin >> num;
-        int count = upper_bound(arr.begin(), arr.end(), num) - arr.begin();
+        int count = upper_bound(getAll(arr), num) - arr.begin();
         cout << "#Case " << i + 1 << ": " << count << "\n";
     }
     return 0;

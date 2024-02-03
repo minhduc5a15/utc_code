@@ -9,18 +9,20 @@ vector<bool> primes(MAXN, true);
 vector<ull> primeNumbers;
 
 void Sieve() {
-    int p = 2;
+    int p = 2, count = 0;
     while (p * p <= MAXN) {
         if (primes[p]) {
+            ++count;
             for (int i = p * p; i <= MAXN; i += p) {
                 primes[i] = false;
             }
         }
         ++p;
     }
+    primeNumbers.reserve(count * count);
     for (int i = 5; i <= MAXN; i += 2) {
         if (primes[i]) {
-            primeNumbers.push_back(i);
+            primeNumbers.emplace_back(i);
         }
     }
 }
@@ -33,17 +35,17 @@ ull power(ull base, ull exponent, int modulus = MOD) {
             result = (result * base) % modulus;
         }
         base = (base * base) % modulus;
-        exponent >>= 1ULL;
+        exponent >>= 1;
     }
     return result;
 }
 
 void solve(ull n) {
     if (n == 0) {
-        cout << 1 << '\n';
+        cout << "1\n";
     }
     else if (1 <= n && n <= 5) {
-        cout << "OK" << '\n';
+        cout << "OK\n";
     }
     else if (n % 3 == 0) {
         cout << power(3, n / 3) << '\n';
@@ -76,7 +78,7 @@ void solve(ull n) {
             if (prime > n) break;
         }
         if (!check) {
-            cout << "OK" << '\n';
+            cout << "OK\n";
         }
     }
 }
