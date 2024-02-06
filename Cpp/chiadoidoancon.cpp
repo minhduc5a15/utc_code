@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <climits>
-#include <cmath>
 #define ll long long
 using namespace std;
 const int ITER = 5;
