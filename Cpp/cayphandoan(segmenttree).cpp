@@ -1,23 +1,27 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <climits>
 using namespace std;
 
 class SegmentTree {
 private:
     vector<int> arr, seg, cnt, gcd;
+    int n, q;
 public:
-    explicit SegmentTree(int n) : arr(n + 1), seg(4 * n + 1), cnt(4 * n + 1), gcd(4 * n + 1) {}
 
-    void array_input(int n) {
+    void init() {
+        cin >> n;
         for (int i = 1; i <= n; ++i) {
             cin >> arr[i];
         }
+        int max_size = 4 * n + 1;
+        seg.resize(max_size);
+        cnt.resize(max_size);
+        gcd.resize(max_size);
     }
 
     static int GCD(int a, int b) {
-        return __gcd(a, b);
+        return b == 0 ? a : GCD(b, a % b);
     }
 
     void build(int id, int l, int r) {
@@ -72,7 +76,9 @@ public:
         return getCount(2 * id, l, mid, u, v, g) + getCount(2 * id + 1, mid + 1, r, u, v, g);
     }
 
-    void solve(int n, int q) {
+    void solve() {
+        this->build(1, 1, n);
+        cin >> q;
         while (q--) {
             char type;
             cin >> type;
@@ -96,11 +102,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int n, q;
-    cin >> n >> q;
-    SegmentTree tree(n);
-    tree.array_input(n);
-    tree.build(1, 1, n);
-    tree.solve(n, q);
+    SegmentTree tree;
+    tree.init();
+    tree.solve();
     return 0;
 }

@@ -33,29 +33,29 @@ struct FractionHash {
     }
 };
 
-int solve(unordered_map<Fraction, int, FractionHash> &map, int exp) {
+int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
     int result = 0;
     int n, d, value;
     for (const pair<const Fraction, int> &item: map) {
         n = item.first.n, d = item.first.d;
-        value = map[Fraction(n, d)];
+        value = map.at(Fraction(n, d));
         if (exp == 1) {
             Fraction k = Fraction(d - n, d);
-            if (map[k] && ((2 * n) != d)) {
-                result += map[k] * value;
+            if (map.find(k) != map.end() && ((n * 2) != d)) {
+                result += map.at(k) * value;
             }
         }
         else {
             int p = d * d - n * n;
             if (square_number(p)) {
                 Fraction k = Fraction(sqrt(p), d);
-                if (map[k]) {
-                    result += map[k] * value;
+                if (map.find(k) != map.end()) {
+                    result += map.at(k) * value;
                 }
             }
         }
     }
-    if (exp == 1) result += map[Fraction(1, 2)] * (map[Fraction(1, 2)] - 1);
+    if (exp == 1 && map.find(Fraction(1, 2)) != map.end()) result += map.at(Fraction(1, 2)) * (map.at(Fraction(1, 2)) - 1);
     return result / 2;
 }
 

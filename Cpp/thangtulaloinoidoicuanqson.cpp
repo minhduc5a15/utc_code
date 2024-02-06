@@ -26,20 +26,16 @@ public:
             tree[id].push_back(arr[l]);
             return;
         }
-        int mid = (l + r) / 2;
+        int mid = (l + r) >> 1;
         build(2 * id, l, mid);
         build(2 * id + 1, mid + 1, r);
         merge(getAll(tree[2 * id]), getAll(tree[2 * id + 1]), back_inserter(tree[id]));
     }
 
     int query(int id, int l, int r, int x, int y, int u, int v) {
-        if (y < l || x > r) return 0;
-        if (x <= l && r <= y) {
-            vi::iterator lb = lower_bound(getAll(tree[id]), u);
-            vi::iterator ub = upper_bound(getAll(tree[id]), v);
-            return ub - lb;
-        }
-        int mid = (l + r) / 2;
+        if (y < l or x > r) return 0;
+        if (x <= l and r <= y) return upper_bound(getAll(tree[id]), v) - lower_bound(getAll(tree[id]), u);
+        int mid = (l + r) >> 1;
         return query(2 * id, l, mid, x, y, u, v) + query(2 * id + 1, mid + 1, r, x, y, u, v);
     }
 
