@@ -1,4 +1,4 @@
-def max_number(n, k):
+def solve(n, k):
     stack = []
     removed = 0
     for current in n:
@@ -13,4 +13,4 @@ def max_number(n, k):
     return ''.join(stack)
 n, t = input(), int(input())
 for i in range(t):
-    print(max_number(n, int(input())))
+    print(solve(n, int(input())))

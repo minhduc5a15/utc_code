@@ -12,7 +12,7 @@ def is_prime(n):
         i += 6
     return True
 
-def is_interesting(n):
+def check(n):
     if n <= 1:
         return False
     factors = []
@@ -26,4 +26,4 @@ def is_interesting(n):
     if len(factors) == 2 and factors[0] * factors[1] == n:
         return True
     return False
-print(str(is_interesting(int(input()))).lower())
+print(str(check(int(input()))).lower())

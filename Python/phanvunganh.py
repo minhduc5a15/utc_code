@@ -15,14 +15,14 @@ def dfs(x, y, n, m):
     return area
 
 n, m = map(int, input().split())
-image = [list(map(int,input().split())) for _ in range(n)]
-visited = [[False]*m for _ in range(n)]
+image = [list(map(int, input().split())) for _ in range(n)]
+visited = [[False] * m for _ in range(n)]
 areas = []
 
 for i in range(n):
     for j in range(m):
         if image[i][j] == 0 and not visited[i][j]:
-            areas.append(dfs(i,j,n,m))
+            areas.append(dfs(i, j, n, m))
 
 print(len(areas))
 print(*sorted(areas))

@@ -1,6 +1,6 @@
 n = int(input())
 
-if n % 2 != 0:
+if n & 1:
     print(n * (n - 1) * (n - 2))
 else:
     if n % 3 == 0:

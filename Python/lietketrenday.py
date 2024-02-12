@@ -1,5 +1,5 @@
 def solve(arr: list):
-    arr_1 = [item for item in arr if item % 2 != 0]
+    arr_1 = [item for item in arr if item & 1]
     arr_2 = [item for item in arr if item % 5 == 2 or item % 7 == 3]
     arr_3 = [[arr[i - 1], arr[i], arr[i + 1]] for i in range(1, len(arr) - 1) if arr[i] - arr[i - 1] == arr[i + 1] - arr[i]]
     if arr_1: print(*arr_1)

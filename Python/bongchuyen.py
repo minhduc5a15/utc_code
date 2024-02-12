@@ -1,7 +1,7 @@
 n = int(input())
 arr = [0] * 6
 action = ["Service", "Block", "Spike"]
-for i in range(n):
+for _ in range(n):
     player = input()
     arr_1 = list(map(int, input().split()))
     arr_2 = list(map(int, input().split()))

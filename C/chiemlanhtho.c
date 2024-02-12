@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define BLUE_WIN "BLUE"
-#define RED_WIN "RED"
-#define DRAW_GAME "DRAW"
+const char *BLUE_WIN =  "BLUE";
+const char *RED_WIN =  "RED";
+const char *DRAW_GAME = "DRAW";
 
 void solve(int width, int height, int x_blue, int y_blue, char p) {
     int center_x = width / 2, center_y = height / 2;

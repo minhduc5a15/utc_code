@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
+typedef pair<int, int> pii;
+typedef vector<int> vi;
 
-int solve(const vector<int> &arr) {
+int solve(const vi &arr) {
     int n = arr.size();
-    vector<vector<int>> dist(n, vector<int>(n, 0));
+    vector<vi> dist(n, vi(n, 0));
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
             int diff = min(abs(arr[i] - arr[j]), 24 - abs(arr[i] - arr[j]));
@@ -14,7 +15,7 @@ int solve(const vector<int> &arr) {
             dist[j][i] = diff;
         }
     }
-    vector<pair<int, pair<int, int>>> pairs;
+    vector<pair<int, pii>> pairs;
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
             pairs.push_back({dist[i][j], {i, j}});
@@ -23,7 +24,7 @@ int solve(const vector<int> &arr) {
     sort(pairs.begin(), pairs.end());
     vector<bool> matched(n, false);
     int result = 0;
-    for (const pair<int, pair<int, int>> &p: pairs) {
+    for (const pair<int, pii> &p: pairs) {
         int d = p.first;
         int i = p.second.first;
         int j = p.second.second;
@@ -43,7 +44,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    vector<int> arr(n);
+    vi arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }

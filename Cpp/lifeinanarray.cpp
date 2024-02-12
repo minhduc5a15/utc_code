@@ -14,7 +14,7 @@ int main() {
     }
     if (count % 2 == 0) std::cout << s;
     else {
-        if (n % 2 == 0 && ((int) s.size() - count) % 2 != 0) std::cout << s;
+        if (n % 2 == 0 && ((int) s.size() - count) & 1) std::cout << s;
         else {
             for (char c: s) {
                 if (c == '1') std::cout << '0';

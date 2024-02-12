@@ -6,6 +6,6 @@ for char in s:
     else: count[char] = 1
 check = True
 for item in count.values():
-    if item % 2 != 0: 
+    if item & 1:
         check = False
 print("Yes" if check else "No")

@@ -6,6 +6,7 @@ def solve(a, b):
     for i in range(len(a)):
         r += min_steps(int(a[i]), int(b[i]))
     print(r)
+
 for _ in range(int(input())):
     input()
     solve(input(), input())
