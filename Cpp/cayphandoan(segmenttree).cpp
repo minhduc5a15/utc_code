@@ -32,11 +32,11 @@ public:
             return;
         }
         int mid = (l + r) >> 1;
-        build(2 * id, l, mid);
-        build(2 * id + 1, mid + 1, r);
-        seg[id] = min(seg[2 * id], seg[2 * id + 1]);
-        gcd[id] = GCD(gcd[2 * id], gcd[2 * id + 1]);
-        cnt[id] = (gcd[id] == gcd[2 * id] ? cnt[2 * id] : 0) + (gcd[id] == gcd[2 * id + 1] ? cnt[2 * id + 1] : 0);
+        build(id << 1, l, mid);
+        build((id << 1) + 1, mid + 1, r);
+        seg[id] = min(seg[id << 1], seg[(id << 1) + 1]);
+        gcd[id] = GCD(gcd[id << 1], gcd[(id << 1) + 1]);
+        cnt[id] = (gcd[id] == gcd[id << 1] ? cnt[id << 1] : 0) + (gcd[id] == gcd[(id << 1) + 1] ? cnt[(id << 1) + 1] : 0);
     }
 
     void update(int id, int l, int r, int i, int v) {
@@ -48,32 +48,32 @@ public:
             return;
         }
         int mid = (l + r) >> 1;
-        update(2 * id, l, mid, i, v);
-        update(2 * id + 1, mid + 1, r, i, v);
-        seg[id] = min(seg[2 * id], seg[2 * id + 1]);
-        gcd[id] = GCD(gcd[2 * id], gcd[2 * id + 1]);
-        cnt[id] = (gcd[id] == gcd[2 * id] ? cnt[2 * id] : 0) + (gcd[id] == gcd[2 * id + 1] ? cnt[2 * id + 1] : 0);
+        update(id << 1, l, mid, i, v);
+        update((id << 1) + 1, mid + 1, r, i, v);
+        seg[id] = min(seg[id << 1], seg[(id << 1) + 1]);
+        gcd[id] = GCD(gcd[id << 1], gcd[(id << 1) + 1]);
+        cnt[id] = (gcd[id] == gcd[id << 1] ? cnt[id << 1] : 0) + (gcd[id] == gcd[(id << 1) + 1] ? cnt[(id << 1) + 1] : 0);
     }
 
     int getMin(int id, int l, int r, int u, int v) {
         if (v < l || r < u) return INT_MAX;
         if (u <= l && r <= v) return seg[id];
         int mid = (l + r) >> 1;
-        return min(getMin(2 * id, l, mid, u, v), getMin(2 * id + 1, mid + 1, r, u, v));
+        return min(getMin(id << 1, l, mid, u, v), getMin((id << 1) + 1, mid + 1, r, u, v));
     }
 
     int getGCD(int id, int l, int r, int u, int v) {
         if (v < l || r < u) return 0;
         if (u <= l && r <= v) return gcd[id];
         int mid = (l + r) >> 1;
-        return GCD(getGCD(2 * id, l, mid, u, v), getGCD(2 * id + 1, mid + 1, r, u, v));
+        return GCD(getGCD(id << 1, l, mid, u, v), getGCD((id << 1) + 1, mid + 1, r, u, v));
     }
 
     int getCount(int id, int l, int r, int u, int v, int g) {
         if (v < l || r < u) return 0;
         if (u <= l && r <= v) return (gcd[id] == g ? cnt[id] : 0);
         int mid = (l + r) >> 1;
-        return getCount(2 * id, l, mid, u, v, g) + getCount(2 * id + 1, mid + 1, r, u, v, g);
+        return getCount(id << 1, l, mid, u, v, g) + getCount((id << 1) + 1, mid + 1, r, u, v, g);
     }
 
     void solve() {

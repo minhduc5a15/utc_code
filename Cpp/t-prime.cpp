@@ -32,9 +32,7 @@ void solve(ll n) {
     }
     else {
         ll k = sqrt(n);
-        if (primes[k]) {
-            cout << "YES\n";
-        }
+        if (primes[k]) cout << "YES\n";
         else cout << "NO\n";
     }
 }

@@ -6,7 +6,9 @@
 *.xml
 *.out
 *.inp
+*.js
 test
 test.cpp
 main.cpp
 test.c
+output
