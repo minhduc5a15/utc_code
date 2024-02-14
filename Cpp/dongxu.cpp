@@ -7,13 +7,13 @@ void solve(ll n) {
     do {
         int count = 0;
         while (n % 2 == 0) {
-            n /= 2;
+            n >>= 1;
             ++count;
             check = true;
         }
         n += count;
         while (n & 1 && (!check || n >= 10)) {
-            n /= 2;
+            n >>= 1;
             break;
         }
     } while (n >= 10);

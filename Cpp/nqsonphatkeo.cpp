@@ -6,7 +6,7 @@
 using namespace std;
 typedef pair<ll, int> pli;
 
-bool lambda(pli &a, pli &b) {
+bool cmp(pli &a, pli &b) {
     return a.second < b.second || (a.second == b.second && a.first < b.first);
 }
 
@@ -16,7 +16,7 @@ void solve(const vector<ll> &arr) {
         mp[num]++;
     }
     vector<pli> items(mp.begin(), mp.end());
-    sort(items.begin(), items.end(), lambda);
+    sort(items.begin(), items.end(), cmp);
     for (pli item: items) {
         cout << item.first << ' ';
     }

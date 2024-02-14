@@ -26,7 +26,7 @@ int main() {
 
     vi res(n, -1);
     for (int i = 0; i < n; ++i) {
-        if (pos[i] == -1) pos[i] = -1;
+        if (pos[i] == -1) continue;
         else {
             bool found = false;
             for (int j = pos[i] + 1; j < n; ++j) {

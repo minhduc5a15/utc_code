@@ -13,7 +13,7 @@ void init() {
         int count = 0;
         while (temp != 1 && temp >= i) {
             if (temp % 2 == 0) {
-                temp /= 2;
+                temp >>= 1;
             }
             else {
                 temp = 3 * temp + 1;

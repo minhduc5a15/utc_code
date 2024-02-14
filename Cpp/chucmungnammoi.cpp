@@ -8,8 +8,8 @@ int main() {
     int n;
     string s;
     cin >> n >> s;
-    int half = n / 2;
-    int mid = (n - 7) / 2;
+    int half = n >> 1;
+    int mid = (n - 7) >> 1;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             if (i < half) {
