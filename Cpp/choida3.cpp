@@ -21,6 +21,7 @@ int main() {
     for (int i = 1; i < n; ++i) prefixSum[i] = prefixSum[i - 1] + arr[i];
     int t;
     cin >> t;
+    ll sum = prefixSum.back();
     while (t--) {
         int q;
         cin >> q;
@@ -29,7 +30,6 @@ int main() {
         while (pos < n - 1 && arr[pos] == arr[pos + 1]) {
             ++pos;
         }
-        ll sum = prefixSum.back();
         if (pos) {
             cout << (ll)target * (2 * pos - n) - 2 * prefixSum[pos - 1] + sum << '\n';
         }

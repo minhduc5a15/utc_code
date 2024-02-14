@@ -2,7 +2,7 @@
 #define ll long long
 const int MOD = 1000000007;
 
-int power(int base, int exponent, int modulus = MOD) {
+int power(ll base, ll exponent, int modulus = MOD) {
     base %= modulus;
     ll result = 1;
     while (exponent) {
@@ -17,7 +17,7 @@ int power(int base, int exponent, int modulus = MOD) {
 
 int catalan(int n) {
     ll res = 1;
-    for (int i = 2 * n; i > n; --i) res = (res * i) % MOD;
+    for (int i = n << 1; i > n; --i) res = (res * i) % MOD;
     for (int i = n; i > 0; --i) res = (res * power(i, MOD - 2)) % MOD;
     res = (res * power(n + 1, MOD - 2)) % MOD;
     return res;
@@ -25,7 +25,8 @@ int catalan(int n) {
 
 int solve(int n) {
     if (n & 1) return 0;
-    return catalan(n / 2);
+    n >>= 1;
+    return catalan(n);
 }
 
 int main() {
