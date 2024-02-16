@@ -1,21 +1,18 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 #include <climits>
 #define ll long long
 using namespace std;
-typedef pair<ll, ll> pll;
 typedef vector<ll> vll;
 const int MOD = 1000000007;
 
 struct Edge {
     ll tour, cost;
-};
-
-struct Compare {
-    bool operator()(const pll &a, const pll &b) const {
-        return a.first > b.first;
-    }
+    struct Compare {
+        bool operator()(const Edge &a, const Edge &b) const {
+            return a.tour > b.tour;
+        }
+    };
 };
 
 void solve(int n, const vector<vector<Edge>> &graph) {
@@ -25,19 +22,15 @@ void solve(int n, const vector<vector<Edge>> &graph) {
     vll max_flights(n, 0);
     dist[0] = 0;
     count[0] = 1;
-    min_flights[0] = 0;
-    max_flights[0] = 0;
 
-    priority_queue<pll, vector<pll>, Compare> pq;
+    priority_queue<Edge, vector<Edge>, Edge::Compare> pq;
     pq.push({0, 0});
 
     while (!pq.empty()) {
-        ll v_dist = pq.top().first;
-        ll v = pq.top().second;
+        ll v_dist = pq.top().tour;
+        ll v = pq.top().cost;
         pq.pop();
-        if (v_dist != dist[v]) {
-            continue;
-        }
+        if (v_dist != dist[v]) continue;
         for (const Edge &edge: graph[v]) {
             ll w = edge.tour;
             ll w_cost = edge.cost;
