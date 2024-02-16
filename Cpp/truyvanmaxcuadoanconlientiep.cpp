@@ -24,7 +24,7 @@ public:
             seg[id] = arr[l];
             return;
         }
-        int mid = (l + r) / 2;
+        int mid = (l + r) >> 1;
         build(2 * id, l, mid);
         build(2 * id + 1, mid + 1, r);
         seg[id] = max(seg[2 * id], seg[2 * id + 1]);
@@ -33,7 +33,7 @@ public:
     int getMax(int id, int l, int r, int u, int v) {
         if (v < l || r < u) return INT_MIN;
         if (u <= l && r <= v) return seg[id];
-        int mid = (l + r) / 2;
+        int mid = (l + r) >> 1;
         return max(getMax(2 * id, l, mid, u, v), getMax(2 * id + 1, mid + 1, r, u, v));
     }
 

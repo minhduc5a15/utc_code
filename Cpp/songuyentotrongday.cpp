@@ -1,12 +1,13 @@
 #include <iostream>
+#include <vector>
 #include <cmath>
 using namespace std;
 
 bool isPrime(int num) {
-    if (num <= 1) {
-        return false;
-    }
-    for (int i = 2; i <= sqrt(num); ++i) {
+    if (num == 2) return true;
+    if (num <= 1 or num % 2 == 0) return false;
+    
+    for (int i = 3; i <= sqrt(num); i += 2) {
         if (num % i == 0) {
             return false;
         }
@@ -19,7 +20,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    int arr[n + 1];
+    vector<int> arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }

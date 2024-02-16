@@ -5,6 +5,7 @@ using namespace std;
 const int MAXN = 1000001;
 
 vector<int> saved(MAXN);
+
 bool check(int n) {
     map<int, int> mp;
     while (n) {

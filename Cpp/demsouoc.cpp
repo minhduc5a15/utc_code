@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 long long solve(long long n) {

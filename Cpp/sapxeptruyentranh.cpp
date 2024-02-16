@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+typedef vector<int> vi;
 
-int solve(const vector<int> &arr, int n) {
-    vector<int> pos(n + 1);
+int solve(const vi &arr, int n) {
+    vi pos(n + 1);
     for (int i = 0; i < n; ++i) {
         pos[arr[i]] = i;
     }
@@ -22,7 +23,7 @@ int main() {
     cout.tie(nullptr);
     int t;
     cin >> t;
-    vector<int> arr;
+    vi arr;
     for (int i = 1; i <= t; ++i) {
         int n;
         cin >> n;

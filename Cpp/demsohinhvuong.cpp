@@ -1,7 +1,7 @@
 #include <iostream>
-#include <cmath>
 #include <vector>
 #include <unordered_map>
+#include <cmath>
 #define ll long long
 #define db double
 using namespace std;
@@ -80,6 +80,7 @@ int main() {
             }
         }
     }
-    cout << count / 2;
+    count >>= 1;
+    cout << count << endl;
     return 0;
 }

@@ -6,7 +6,7 @@ string solve(const string &s) {
     int n = s.length();
     string s1, s2, result = "Just a legend";
     string t = s.substr(1, n - 2);
-    for (int i = 0; i < n / 2 + 1; ++i) {
+    for (int i = 0; i <= n / 2; ++i) {
         s1 += s[i];
         s2 = s[n - i - 1] + s2;
         if (s1 == s2) {

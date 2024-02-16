@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-typedef pair<int, int> pii;
 
 int main() {
     ios_base::sync_with_stdio(false);
