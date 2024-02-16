@@ -26,8 +26,7 @@ int main() {
 
     vi res(n, -1);
     for (int i = 0; i < n; ++i) {
-        if (pos[i] == -1) continue;
-        else {
+        if (pos[i] != -1) {
             bool found = false;
             for (int j = pos[i] + 1; j < n; ++j) {
                 if (arr[j] > arr[i]) {
