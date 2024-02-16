@@ -25,9 +25,9 @@ int main() {
     int n;
     cin >> n;
     for (int i = 0; i < n; ++i) {
-        int item;
-        cin >> item;
-        cout << solve(item) << '\n';
+        int x;
+        cin >> x;
+        cout << solve(x) << '\n';
     }
     return 0;
 }
