@@ -18,7 +18,9 @@ int main() {
     sort(arr.begin(), arr.end());
     vector<ll> prefixSum(n);
     prefixSum.front() = arr.front();
-    for (int i = 1; i < n; ++i) prefixSum[i] = prefixSum[i - 1] + arr[i];
+    for (int i = 1; i < n; ++i) {
+        prefixSum[i] = prefixSum[i - 1] + arr[i];
+    }
     int t;
     cin >> t;
     ll sum = prefixSum.back();
@@ -26,17 +28,10 @@ int main() {
         int q;
         cin >> q;
         int target = prev_arr[q];
-        int pos = lower_bound(arr.begin(), arr.end(), target) - arr.begin();
-        while (pos < n - 1 && arr[pos] == arr[pos + 1]) {
-            ++pos;
-        }
-        if (pos) {
-            cout << (ll)target * (2 * pos - n) - 2 * prefixSum[pos - 1] + sum << '\n';
-        }
-        else {
-            cout << sum - (ll)(n * target) << '\n';
-        }
+        int pos = upper_bound(arr.begin(), arr.end(), target) - arr.begin();
+        cout << (ll) target * (2 * pos - n) - 2 * prefixSum[pos - 1] + sum << '\n';
     }
+
     return 0;
 }
 

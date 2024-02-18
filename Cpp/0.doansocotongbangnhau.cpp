@@ -40,7 +40,7 @@ int main() {
         divisor(max_sum);
         sort(divisors.begin(), divisors.end());
         int step = 0;
-        for (const int &div: divisors) {
+        for (int div: divisors) {
             int s = max_sum / div;
             int d = 0, count = 0;
             bool check;

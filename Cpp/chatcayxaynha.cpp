@@ -16,7 +16,7 @@ int main() {
         right = max(right, arr[i]);
     }
     while (left <= right) {
-        ll mid = (left + right) / 2;
+        ll mid = (left + right) >> 1;
         ll sum = 0;
         for (int i = 0; i < n; ++i) {
             if (arr[i] > mid)

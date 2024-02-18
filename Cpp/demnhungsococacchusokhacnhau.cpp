@@ -21,6 +21,9 @@ void init() {
     for (int i = 0; i <= MAXN; ++i) {
         saved[i] = check(i);
     }
+    for (int i = 1; i <= MAXN; ++i) {
+        saved[i] += saved[i - 1];
+    }
 }
 
 int main() {
@@ -28,9 +31,6 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     init();
-    for (int i = 1; i <= MAXN; ++i) {
-        saved[i] += saved[i - 1];
-    }
     int t;
     cin >> t;
     while (t--) {
