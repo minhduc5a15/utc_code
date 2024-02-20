@@ -8,7 +8,7 @@ def solve(n, m):
         excessCash -= a[0]
         count += 1
     for i in range(5):
-        if excessCash < a[i] and excessCash >= a[i + 1]:
+        if a[i] > excessCash >= a[i + 1]:
             excessCash -= a[i + 1]
             count += 1
             if count > 2:
