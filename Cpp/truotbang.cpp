@@ -1,6 +1,6 @@
 #include <iostream>
-#include <queue>
 #include <vector>
+#include <queue>
 using namespace std;
 typedef vector<bool> vb;
 typedef vector<vb> matrixb;

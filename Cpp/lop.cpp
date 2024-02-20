@@ -2,10 +2,10 @@
 #include <unordered_map>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
+typedef pair<int, int> pii;
 
-bool lambda(const pair<int, int> &a, const pair<int, int> &b) {
+bool compare(const pii &a, const pii &b) {
     return a.second != b.second ? a.second > b.second : a.first > b.first;
 }
 
@@ -21,8 +21,8 @@ int main() {
         cin >> x;
         ++map[x];
     }
-    vector<pair<int, int>> arr(map.begin(), map.end());
-    sort(arr.begin(), arr.end(), lambda);
+    vector<pii> arr(map.begin(), map.end());
+    sort(arr.begin(), arr.end(), compare);
     cout << arr.front().first;
     return 0;
 }

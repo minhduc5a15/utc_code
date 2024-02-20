@@ -68,18 +68,16 @@ void solve(ull n) {
         }
     }
     else {
-        bool check = false;
+        bool found = false;
         for (ull prime: primeNumbers) {
             if (n % prime == 0) {
-                check = true;
+                found = true;
                 cout << power(prime, n / prime) << '\n';
                 break;
             }
             if (prime > n) break;
         }
-        if (!check) {
-            cout << "OK\n";
-        }
+        if (!found) cout << "OK\n";
     }
 }
 

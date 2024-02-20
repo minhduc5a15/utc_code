@@ -10,7 +10,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    priority_queue<ll, vector<ll>, greater<ll>> cards;
+    priority_queue<ll, vector<ll>, greater<>> cards;
     for (int i = 0; i < n; ++i) {
         int card;
         cin >> card;
