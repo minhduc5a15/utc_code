@@ -9,20 +9,20 @@ int main() {
     cout.tie(nullptr);
     int n, m, q;
     cin >> n >> m >> q;
-    unordered_map<int, vector<int>> count(m);
+    unordered_map<int, vector<int>> mp(m);
     for (int i = 0; i < n; ++i) {
         int x;
         cin >> x;
-        count[(x % m + m) % m].push_back(i + 1);
+        mp[(x % m + m) % m].push_back(i + 1);
     }
     while (q--) {
         int index, value;
         cin >> index >> value;
-        if (index > (int) count[value].size()) {
+        if (index > (int) mp[value].size()) {
             cout << "-1\n";
         }
         else {
-            cout << count[value][index - 1] << '\n';
+            cout << mp[value][index - 1] << '\n';
         }
     }
     return 0;

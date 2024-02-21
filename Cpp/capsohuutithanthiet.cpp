@@ -1,11 +1,10 @@
 #include <iostream>
 #include <unordered_map>
-#include <cmath>
 using namespace std;
 const int MAXN = 30;
 
 bool square_number(int n) {
-    int k = sqrt(n);
+    int k = __builtin_sqrt(n);
     return k * k == n;
 }
 
@@ -48,7 +47,7 @@ int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
         else {
             int p = d * d - n * n;
             if (square_number(p)) {
-                Fraction k = Fraction(sqrt(p), d);
+                Fraction k = Fraction(__builtin_sqrt(p), d);
                 if (map.find(k) != map.end()) {
                     result += map.at(k) * value;
                 }
@@ -56,18 +55,19 @@ int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
         }
     }
     if (exp == 1 && map.find(Fraction(1, 2)) != map.end()) result += map.at(Fraction(1, 2)) * (map.at(Fraction(1, 2)) - 1);
-    return result / 2;
+    result >>= 1;
+    return result;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int size;
-    cin >> size;
+    size_t sz;
+    cin >> sz;
     unordered_map<Fraction, int, FractionHash> greater_map(MAXN), less_map(MAXN);
     int n, d;
-    for (int i = 0; i < size; ++i) {
+    while (sz--) {
         cin >> n >> d;
         if (n > d) ++greater_map[Fraction(d, n)];
         else ++less_map[Fraction(n, d)];

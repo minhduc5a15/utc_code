@@ -44,9 +44,9 @@ public:
             int min_val = node.front(), max_val = node.back();
             if (x >= max_val) return {max_val, count(node, max_val)};
             if (x <= min_val) return {min_val, count(node, min_val)};
-            auto it = lb(node, x);
+            vi::const_iterator it = lb(node, x);
             if (*it == x) return {x, ub(node, x) - it};
-            auto left = prev(it, 1);
+            vi::const_iterator left = prev(it, 1);
             if (x - *left <= *it - x) return {*left, count(node, *left)};
             return {*it, ub(node, *it) - it};
         }

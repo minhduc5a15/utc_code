@@ -28,7 +28,7 @@ int main() {
     for (char c = 'a'; c <= 'z'; ++c) {
         prefix[c - 'a'] = prefix_sum(s, c);
     }
-    for (int i = 0; i < t; ++i) {
+    while (t--) {
         int a, b;
         char c;
         cin >> a >> b >> c;

@@ -41,11 +41,10 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int a, b;
-    cin >> a >> b;
-    int n;
-    cin >> n;
+    int a, b, n;
+    cin >> a >> b >> n;
     vector<Score> students;
+    students.reserve(n);
     for (int i = 0; i < n; ++i) {
         string id, name;
         double gpa;
@@ -53,7 +52,7 @@ int main() {
         cin.ignore();
         getline(cin, name);
         cin >> gpa;
-        students.push_back(Score(id, name, gpa));
+        students.emplace_back(Score(id, name, gpa));
     }
     string searchId;
     cin >> searchId;
