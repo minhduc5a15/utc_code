@@ -15,10 +15,10 @@ int solve(const vi &arr) {
             dist[j][i] = diff;
         }
     }
-    vector<pair<int, pii>> pairs;
+    vector<pair<int, pii>> pairs(n * n);
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
-            pairs.push_back({dist[i][j], {i, j}});
+            pairs.emplace_back({dist[i][j], {i, j}});
         }
     }
     sort(pairs.begin(), pairs.end());

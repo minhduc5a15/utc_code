@@ -37,8 +37,8 @@ int main() {
     vector<int> arr = divisor(max_sum);
     sort(arr.begin(), arr.end());
     int step = 0;
-    for (const int &item: arr) {
-        int sum_arr = item, step_arr = max_sum / sum_arr, d = 0, count = 0;
+    for (int num: arr) {
+        int sum_arr = num, step_arr = max_sum / sum_arr, d = 0, count = 0;
         bool check;
         while (true) {
             check = false;

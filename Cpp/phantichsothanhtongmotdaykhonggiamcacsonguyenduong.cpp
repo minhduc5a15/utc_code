@@ -22,7 +22,7 @@ int main() {
     while (t--) {
         int n;
         cin >> n;
-        cout << solve(n) << endl;
+        cout << solve(n) << '\n';
     }
     return 0;
 }

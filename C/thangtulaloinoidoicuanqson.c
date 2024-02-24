@@ -48,7 +48,7 @@ int *upper_bound(int *arr, int size, int value) {
     int *first = arr;
     int count = size;
     int step;
-    while (count > 0) {
+    while (count) {
         int *it = first;
         step = count / 2;
         it += step;
@@ -78,7 +78,7 @@ void build(MergeSortTree *tree, int id, int l, int r) {
         tree->tree[id][0] = tree->arr[l];
         return;
     }
-    int mid = (l + r) / 2;
+    int mid = (l + r) >> 1;
     build(tree, 2 * id, l, mid);
     build(tree, 2 * id + 1, mid + 1, r);
     int left_size = mid - l + 1;
@@ -94,7 +94,7 @@ int query(MergeSortTree *tree, int id, int l, int r, int x, int y, int u, int v)
         int *ub = upper_bound(tree->tree[id], r - l + 1, v);
         return ub - lb;
     }
-    int mid = (l + r) / 2;
+    int mid = (l + r) >> 1;
     return query(tree, 2 * id, l, mid, x, y, u, v) + query(tree, 2 * id + 1, mid + 1, r, x, y, u, v);
 }
 

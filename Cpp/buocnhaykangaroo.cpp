@@ -16,9 +16,7 @@ int main() {
     for (int i = 1; i <= n; ++i) {
         int num;
         cin >> num;
-        if (i <= x) {
-            arr[i] = num;
-        }
+        if (i <= x) arr[i] = num;
         else {
             while (!dq.empty() && arr[i - x] >= arr[dq.back()]) {
                 dq.pop_back();

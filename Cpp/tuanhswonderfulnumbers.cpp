@@ -6,7 +6,7 @@ typedef std::vector<ll> vll;
 const int MOD = 1000000007;
 
 bool is_good(int a, int b, int n) {
-    while (n > 0) {
+    while (n) {
         int digit = n % 10;
         if (digit != a && digit != b) {
             return false;

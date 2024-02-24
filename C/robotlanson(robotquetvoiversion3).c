@@ -23,6 +23,6 @@ int main() {
     printf("%d", res);
 
     free(dict_a);
-    free(dict_b);
+    free(dict_b); 
     return 0;
 }

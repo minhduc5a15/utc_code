@@ -4,12 +4,12 @@
 using namespace std;
 
 bool check(const string &s) {
-    pair<int, int> count = {0, 0};
+    int count = 0;
     for (char ch: s) {
-        if (ch == '4') ++count.first;
-        else ++count.second;
+        if (ch == '4') ++count;
+        else --count;
     }
-    return count.first == count.second;
+    return !count;
 }
 
 string solve(ll n) {

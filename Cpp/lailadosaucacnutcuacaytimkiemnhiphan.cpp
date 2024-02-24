@@ -5,8 +5,8 @@
 #include <set>
 using namespace std;
 
-void print(int x, unordered_map<int, int> &map) {
-    cout << x << " " << map[x] << '\n';
+void print(int x, const unordered_map<int, int> &map) {
+    cout << x << " " << map.at(x) << '\n';
 }
 int main() {
     ios_base::sync_with_stdio(false);

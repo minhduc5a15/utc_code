@@ -4,7 +4,7 @@
 void solve(long long n) {
     int count = 0, s = 1, prime_count = 0;
     while (n % 2 == 0) {
-        n /= 2;
+        n >>= 1;
         count++;
         prime_count = 1;
     }

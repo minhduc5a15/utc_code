@@ -15,7 +15,7 @@ long long solve(int i, int j) {
             }
         }
     }
-    return dp[i % 2][j];
+    return dp[i & 1][j];
 }
 
 int main() {
