@@ -13,7 +13,7 @@ public:
 
     Point<T1, T2>(T1 x, T2 y): x(std::move(x)), y(std::move(y)) {};
 
-    Point(): x(nullptr), y(nullptr) {};
+    Point(): x(), y() {};
 
     bool operator==(const Point<T1, T2> &other) const {
         return x == other.x and y == other.y;

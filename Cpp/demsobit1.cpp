@@ -12,8 +12,7 @@ ll solve(ll n) {
     ll m = log2(n);
     ll r = n - (1LL << m);
     ll result = m * (1LL << (m - 1)) + r + 1 + solve(r);
-    memo[n] = result;
-    return result;
+    return memo[n] = result;
 }
 
 int main() {
