@@ -22,26 +22,26 @@ int main() {
     unordered_map<int, int> map;
     set<int>::iterator it;
     s.insert(arr.front());
-    for (const int &item: arr) {
-        it = s.lower_bound(item);
-        if (*it == item) {
+    for (int x: arr) {
+        it = s.lower_bound(x);
+        if (*it == x) {
             continue;
         }
         if (it == s.end()) {
-            map[item] = map[*(--it)];
+            map[x] = map[*(--it)];
         }
         else if (it == s.begin()) {
-            map[item] = map[*it];
+            map[x] = map[*it];
         }
         else {
-            map[item] = map[*it];
-            map[item] = max(map[item], map[*(--it)]);
+            map[x] = map[*it];
+            map[x] = max(map[x], map[*(--it)]);
         }
-        ++map[item];
-        s.insert(item);
+        ++map[x];
+        s.insert(x);
     }
 
-    for_each(s.begin(), s.end(), [&map](const int &item) { print(item, map); });
+    for_each(s.begin(), s.end(), [&map](const int &x) { print(x, map); });
     return 0;
 }
 
