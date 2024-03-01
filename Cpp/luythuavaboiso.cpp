@@ -43,42 +43,41 @@ ull power(ull base, ull exponent, int modulus = MOD) {
 void solve(ull n) {
     if (n == 0) {
         cout << "1\n";
+        return;
     }
-    else if (1 <= n && n <= 5) {
+    if (1 <= n && n <= 5) {
         cout << "OK\n";
+        return;
     }
-    else if (n % 3 == 0) {
+    if (n % 3 == 0) {
         cout << power(3, n / 3) << '\n';
+        return;
     }
-    else if (n % 2 == 0) {
+    if (n % 2 == 0) {
         cout << power(2, n / 2) << '\n';
+        return;
     }
-    else if (6 <= n && n <= MAXN) {
+    if (6 <= n && n <= MAXN) {
         if (primes[n]) {
             cout << "OK" << '\n';
+            return;
         }
-        else {
-            for (ull prime: primeNumbers) {
-                if (n % prime == 0) {
-                    cout << power(prime, n / prime) << '\n';
-                    break;
-                }
-                if (prime > n) break;
-            }
-        }
-    }
-    else {
-        bool found = false;
         for (ull prime: primeNumbers) {
             if (n % prime == 0) {
-                found = true;
                 cout << power(prime, n / prime) << '\n';
-                break;
+                return;
             }
-            if (prime > n) break;
         }
-        if (!found) cout << "OK\n";
     }
+    for (ull prime: primeNumbers) {
+        if (n % prime == 0) {
+            cout << power(prime, n / prime) << '\n';
+            return;
+        }
+        if (prime > n) break;
+    }
+    cout << "OK\n";
+    return;
 }
 
 int main() {
@@ -86,10 +85,10 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     int t;
+    ull n;
     cin >> t;
     Sieve();
     while (t--) {
-        ull n;
         cin >> n;
         solve(n);
     }

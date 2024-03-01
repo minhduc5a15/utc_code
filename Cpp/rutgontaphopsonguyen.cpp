@@ -10,7 +10,7 @@ int main() {
     int n;
     cin >> n;
     unordered_map<int, bool> map;
-    for (int i = 0; i < n; ++i) {
+    while (n--) {
         int x;
         cin >> x;
         if (!map[x]) {

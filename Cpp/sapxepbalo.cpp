@@ -32,7 +32,7 @@ int main() {
         }
     }
     for (const int &query: queries) {
-        cout << dp[query] << endl;
+        cout << dp[query] << '\n';
     }
     return 0;
 }

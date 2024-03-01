@@ -13,8 +13,7 @@ int main() {
     stack<int> st;
     map<int, bool> mp;
     st.push(n);
-    mp[0] = true;
-    mp[n] = true;
+    mp[0] = mp[n] = true;
     while (!st.empty()) {
         int num = st.top();
         st.pop();

@@ -2,7 +2,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-pair<int, int> next_cell(const vector<vector<int>>& grid, int i, int j) {
+typedef vector<vector<int>> matrixi;
+
+pair<int, int> next_cell(const matrixi& grid, int i, int j) {
     for (int x = i; x < 9; ++x) {
         for (int y = j; y < 9; ++y) {
             if (grid[x][y] == 0) {
@@ -20,7 +22,7 @@ pair<int, int> next_cell(const vector<vector<int>>& grid, int i, int j) {
     return make_pair(-1, -1);
 }
 
-bool isValid(const vector<vector<int>>& grid, int i, int j, int e) {
+bool isValid(const matrixi& grid, int i, int j, int e) {
     for (int x = 0; x < 9; ++x) {
         if (grid[i][x] == e) {
             return false;
@@ -43,7 +45,7 @@ bool isValid(const vector<vector<int>>& grid, int i, int j, int e) {
     return true;
 }
 
-bool solveSudoku(vector<vector<int>>& grid, int i = 0, int j = 0) {
+bool solveSudoku(matrixi& grid, int i = 0, int j = 0) {
     pair<int, int> cell = next_cell(grid, i, j);
     i = cell.first;
     j = cell.second;
@@ -66,7 +68,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    vector<vector<int>> grid(9, vector<int>(9));
+    matrixi grid(9, vector<int>(9));
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
             cin >> grid[i][j];

@@ -16,7 +16,7 @@ ull power(ull base, ull exponent, ull modulus = MOD) {
             result = (result * base) % modulus;
         }
         base = (base * base) % modulus;
-        exponent >>= 1ULL;
+        exponent >>= 1;
     }
     return result;
 }

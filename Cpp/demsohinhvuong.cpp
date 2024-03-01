@@ -60,7 +60,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    ll n;
+    int n;
     cin >> n;
     vector<Point<ll, ll>> points(n);
     unordered_map<Point<ll, ll>, bool, Point<ll, ll>::Hash> map;
@@ -76,7 +76,7 @@ int main() {
             if (A != C) {
                 Point<ll, ll> B = getVertex(A, C, 'B');
                 Point<ll, ll> D = getVertex(A, C, 'D');
-                if (is_square(A, B, C, D) and map.find(B) != map.end() and map.find(D) != map.end()) ++count;
+                if (is_square(A, B, C, D) and map.find(B) != map.end()) ++count;
             }
         }
     }

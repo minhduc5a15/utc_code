@@ -8,7 +8,7 @@ typedef vector<vi> matrixi;
 int kadane(const vi &arr) {
     int max_sum = INT_MIN;
     int current_sum = 0;
-    for (const int &element : arr) {
+    for (int element : arr) {
         current_sum = max(current_sum + element, element);
         max_sum = max(max_sum, current_sum);
     }
