@@ -1,6 +1,6 @@
 # UTC_CODE
 
-## This is a repository of solutions to over 400 problems on the [laptrinhonline.club](http://laptrinhonline.club/) website
+## This is a repository of solutions to over 500 problems on the [laptrinhonline.club](http://laptrinhonline.club/) website
 
 ## Author: [Minh Duc](http://laptrinhonline.club/user/MinhDuc_CNTT1_K64)
 
