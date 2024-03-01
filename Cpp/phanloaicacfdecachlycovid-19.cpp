@@ -2,13 +2,13 @@
 #include <vector>
 #include <queue>
 #include <unordered_map>
-
 using namespace std;
+typedef vector<int> vi;
 
-void solve(int n, const vector<int> adj_list[]) {
+void solve(int n, const vi adj_list[]) {
     queue<int> q;
     unordered_map<int, int> map;
-    vector<int> dist(n + 1, -1);
+    vi dist(n + 1, -1);
     int t;
     cin >> t;
     map[0] = t;
@@ -40,12 +40,12 @@ int main() {
     cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
-    vector<int> adj_list[n + 1];
-    for (int i = 0; i < m; ++i) {
+    vi adj_list[n + 1];
+    while (m--) {
         int u, v;
         cin >> u >> v;
-        adj_list[u].push_back(v);
-        adj_list[v].push_back(u);
+        adj_list[u].emplace_back(v);
+        adj_list[v].emplace_back(u);
     }
     solve(n, adj_list);
     return 0;

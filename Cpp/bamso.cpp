@@ -4,19 +4,10 @@ using namespace std;
 int solve(const string &s) {
     int sum = 0;
     for (char c: s) {
-        if (isdigit(c)) {
-            sum += c - '0';
-        }
+        sum += c - '0';
     }
-    while (sum >= 10) {
-        int temp = 0;
-        while (sum != 0) {
-            temp += sum % 10;
-            sum /= 10;
-        }
-        sum = temp;
-    }
-    return sum;
+    if (sum < 10) return sum;
+    return solve(to_string(sum));
 }
 
 int main() {
