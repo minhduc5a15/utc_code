@@ -18,7 +18,7 @@ int solve(const vi &arr) {
     vector<pair<int, pii>> pairs(n * n);
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
-            pairs.emplace_back({dist[i][j], {i, j}});
+            pairs.emplace_back((pair<int, pii>){dist[i][j], {i, j}});
         }
     }
     sort(pairs.begin(), pairs.end());
