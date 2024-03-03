@@ -14,8 +14,11 @@ int main() {
         cin >> arr[i];
     }
     sort(arr.begin(), arr.end());
-    cout << max(arr[0] * arr[1], arr[n - 1] * arr[n - 2]);
+    int a = arr.front(), b = arr.back();
+    if (a * b >= 0) {
+        if (a < 0 and b < 0) cout << b * arr[n - 2];
+        else cout << a * arr[1];
+    }
+    else cout << a * b;
     return 0;
 }
-
-
