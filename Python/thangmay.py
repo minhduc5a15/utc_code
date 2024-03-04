@@ -17,7 +17,6 @@ def solve(n, k, m, s, f):
 
     return -1
 
-
 n = int(input())
 k, m = map(int, input().split())
 s, f = map(int, input().split())
