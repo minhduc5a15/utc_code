@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include <climits>
 using namespace std;
 
@@ -10,17 +11,18 @@ private:
 public:
 
     void init() {
-        cin >> n;
+        cin >> n >> q;
+        arr.resize(n + 1);
         for (int i = 1; i <= n; ++i) {
             cin >> arr[i];
         }
-        int max_size = 4 * n + 1;
-        seg.resize(max_size);
-        cnt.resize(max_size);
-        gcd.resize(max_size);
+        int size = 4 * n + 1;
+        seg.resize(size);
+        cnt.resize(size);
+        gcd.resize(size);
     }
 
-    static int GCD(int a, int b) {
+    int GCD(int a, int b) {
         return b == 0 ? a : GCD(b, a % b);
     }
 
@@ -78,7 +80,6 @@ public:
 
     void solve() {
         this->build(1, 1, n);
-        cin >> q;
         while (q--) {
             char type;
             cin >> type;
@@ -97,6 +98,7 @@ public:
         }
     }
 };
+
 
 int main() {
     ios_base::sync_with_stdio(false);
