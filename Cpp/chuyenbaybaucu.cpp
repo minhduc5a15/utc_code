@@ -6,8 +6,10 @@ using namespace std;
 typedef vector<ll> vll;
 const int MOD = 1000000007;
 
-struct Edge {
+class Edge {
+public:
     ll tour, cost;
+
     struct Compare {
         bool operator()(const Edge &a, const Edge &b) const {
             return a.tour > b.tour;
