@@ -19,14 +19,14 @@ ull power(ull base, ull exponent, ull modulus) {
 
 int main() {
     char s[MAXN];
-    scanf("%s", &s);
+    scanf("%s", s);
     int n = strlen(s);
     ull s1 = 0;
     for (int i = 0; i < n; ++i) {
         s1 = (s1 * 10 + (s[i] - '0')) % MOD;
     }
     ull s2 = 0;
-    scanf("%s", &s);
+    scanf("%s", s);
     n = strlen(s);
     for (int i = 0; i < n; ++i) {
         s2 = (s2 * 10 + (s[i] - '0')) % (MOD - 1);
