@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-typedef vector<int> vi;
-typedef vector<vi> matrixi;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -10,17 +8,19 @@ int main() {
     cout.tie(nullptr);
     int m, n, q;
     cin >> m >> n >> q;
-    matrixi matrix(m + 1, vi(n + 1));
+    int x;
+    vector<vector<int>> prefix_sum(m + 1, vector<int>(n + 1));
     for (int i = 1; i <= m; ++i) {
         for (int j = 1; j <= n; ++j) {
-            cin >> matrix[i][j];
+            cin >> x;
+            prefix_sum[i][j] = x + prefix_sum[i - 1][j] + prefix_sum[i][j - 1] - prefix_sum[i - 1][j - 1];
         }
     }
-    matrixi prefix_sum(m + 1, vi(n + 1));
-    for (int i = 1; i <= m; ++i) {
+    for (int i = 1; i <= n; ++i) {
         for (int j = 1; j <= n; ++j) {
-            prefix_sum[i][j] = matrix[i][j] + prefix_sum[i - 1][j] + prefix_sum[i][j - 1] - prefix_sum[i - 1][j - 1];
+            cout << prefix_sum[i][j] << ' ';
         }
+        cout << '\n';
     }
     int r1, r2, c1, c2;
     while (q--) {
