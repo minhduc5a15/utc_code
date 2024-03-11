@@ -15,7 +15,7 @@ int main() {
         map[y]--;
     }
     int s = 0, res = 0;
-    while (m--) {
+    for (int i = 0; i < m; ++i) {
         s += map[i];
         res += s == 0;
     }
