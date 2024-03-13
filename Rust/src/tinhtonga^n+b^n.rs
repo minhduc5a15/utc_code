@@ -4,7 +4,7 @@ const SIZE: usize = 2;
 type Matrix = Vec<Vec<i64>>;
 
 fn multiply(a: &Matrix, b: &Matrix) -> Matrix {
-    let mut result: Vec<Vec<i64>> = vec![vec![0; SIZE]; SIZE];
+    let mut result: Matrix = vec![vec![0; SIZE]; SIZE];
     for i in 0..SIZE {
         for j in 0..SIZE {
             for k in 0..SIZE {
@@ -16,8 +16,8 @@ fn multiply(a: &Matrix, b: &Matrix) -> Matrix {
 }
 
 fn pow(mat: &Matrix, mut power: i32) -> Matrix {
-    let mut result: Vec<Vec<i64>> = mat.clone();
-    let mut temp: Vec<Vec<i64>> = mat.clone();
+    let mut result: Matrix = mat.clone();
+    let mut temp: Matrix = mat.clone();
     power -= 1;
     while power != 0 {
         if power & 1 != 0 {
@@ -31,20 +31,20 @@ fn pow(mat: &Matrix, mut power: i32) -> Matrix {
 
 fn main() {
     let mut input: String = String::new();
-    std::io::stdin().read_line(&mut input).expect("");
+    std::io::stdin().read_line(&mut input).unwrap();
     let mut nums = input.trim().split_whitespace().map(|x| x.parse::<i64>().unwrap());
     let p: i64 = nums.next().unwrap();
     let s: i64 = nums.next().unwrap();
-    let f: Vec<Vec<i64>> = vec![
+    let f: Matrix = vec![
         vec![s * s * s - 3 * p * s, s * s - 2 * p],
         vec![s * s - 2 * p, s],
     ];
-    let a: Vec<Vec<i64>> = vec![
+    let a: Matrix = vec![
         vec![s, 1],
         vec![-p, 0],
     ];
     let mut input: String = String::new();
-    std::io::stdin().read_line(&mut input).expect("");
+    std::io::stdin().read_line(&mut input).unwrap();
     let n: i32 = input.trim().parse().unwrap();
     if n <= 3 {
         println!("{}", f[0][0]);
@@ -54,4 +54,3 @@ fn main() {
         println!("{}", (result[0][0] + MOD) % MOD);
     }
 }
-
