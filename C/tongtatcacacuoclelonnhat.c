@@ -6,7 +6,7 @@ ll pow2(ll n) {
 }
 
 ll calc(ll n) {
-    return n == 0 ? 0 : (n & 1 ? pow2((n + 1) / 2) + calc(n / 2) : pow2(n / 2) + calc(n / 2));
+    return n == 0 ? 0 : pow2(((n & 1) + n) >> 1) + calc(n >> 1);
 }
 
 void solve(ll a, ll b) {
@@ -16,8 +16,8 @@ void solve(ll a, ll b) {
 int main() {
     int t;
     scanf("%d", &t);
+    ll a, b;
     while (t--) {
-        ll a, b;
         scanf("%lld %lld", &a, &b);
         solve(a, b);
     }

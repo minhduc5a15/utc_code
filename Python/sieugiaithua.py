@@ -20,5 +20,4 @@ def solve(n):
 
     return lower_bound
 
-for _ in range(1, 101):
-    print(_, solve(_))
+print(solve(int(input())))
