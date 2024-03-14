@@ -6,7 +6,7 @@ string solve(int n, int k) {
     if (n == 1) return to_string(k);
     string s;
     if (k > 9) return s += solve(n - 1, k - 9) + to_string(9);
-    return s += solve(n - 1, 9) + to_string(k - 1);
+    return s += solve(n - 1, 1) + to_string(k - 1);
 }
 
 int main() {
