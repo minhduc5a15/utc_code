@@ -16,12 +16,6 @@ int main() {
             prefix_sum[i][j] = x + prefix_sum[i - 1][j] + prefix_sum[i][j - 1] - prefix_sum[i - 1][j - 1];
         }
     }
-    for (int i = 1; i <= n; ++i) {
-        for (int j = 1; j <= n; ++j) {
-            cout << prefix_sum[i][j] << ' ';
-        }
-        cout << '\n';
-    }
     int r1, r2, c1, c2;
     while (q--) {
         cin >> r1 >> r2 >> c1 >> c2;

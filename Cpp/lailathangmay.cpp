@@ -1,17 +1,16 @@
 #include <iostream>
 #include <queue>
 #include <vector>
-#include <set>
 #include <climits>
 using namespace std;
 
 vector<int> arr, dis;
-set<int> visited;
+vector<bool> visited(1005, false);
 int maxn, k, s, f;
 int res = INT_MAX;
 
 void solve() {
-    visited.insert(s);
+    visited[s] = true;
     queue<int> q;
     q.push(s);
     while (!q.empty()) {
@@ -19,8 +18,8 @@ void solve() {
         q.pop();
         for (int num: arr) {
             int x = u + num;
-            if (1 <= x and x <= maxn && visited.find(x) == visited.end()) {
-                visited.insert(x);
+            if (1 <= x and x <= maxn && !visited[x]) {
+                visited[x] = true;
                 dis[x] = dis[u] + 1;
                 if (x == f) res = min(res, dis[f]);
                 q.push(x);
