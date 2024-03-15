@@ -13,14 +13,14 @@ int main() {
     cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
+    matrixb matrix(n, vb(m, false));
     matrixb visited(n, vb(m, false));
-    matrixb result(n, vb(m, false));
-    result[1][1] = true;
+    visited[1][1] = true;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             char c;
             cin >> c;
-            visited[i][j] = (c == '.');
+            matrix[i][j] = (c == '.');
         }
     }
     queue<pii> q;
@@ -32,9 +32,9 @@ int main() {
             int nx = direction.first, ny = direction.second;
             int i = 1;
             bool check = false;
-            for (; visited[pos.first + i * nx][pos.second + i * ny]; ++i) {
-                if (!result[pos.first + i * nx][pos.second + i * ny]) {
-                    result[pos.first + i * nx][pos.second + i * ny] = true;
+            for (; matrix[pos.first + i * nx][pos.second + i * ny]; ++i) {
+                if (!visited[pos.first + i * nx][pos.second + i * ny]) {
+                    visited[pos.first + i * nx][pos.second + i * ny] = true;
                     check = true;
                 }
             }
@@ -46,7 +46,7 @@ int main() {
     int count = 0;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
-            if (result[i][j]) ++count;
+            if (visited[i][j]) ++count;
         }
     }
     cout << count;
