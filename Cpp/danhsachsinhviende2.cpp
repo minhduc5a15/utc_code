@@ -36,10 +36,11 @@ int main() {
     int a, b, n;
     cin >> a >> b >> n;
     vector<SinhVien> danhSachSV;
+    danhSachSV.reserve(n);
     for (int i = 0; i < n; ++i) {
         SinhVien sv;
         sv.nhapThongTin();
-        danhSachSV.push_back(sv);
+        danhSachSV.emplace_back(sv);
     }
     if (a) {
         string hoTenCanTim;

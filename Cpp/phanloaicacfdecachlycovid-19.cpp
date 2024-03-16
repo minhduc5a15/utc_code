@@ -21,7 +21,7 @@ void solve(int n, const vi adj_list[]) {
     while (!q.empty()) {
         int u = q.front();
         q.pop();
-        for (const int &v: adj_list[u]) {
+        for (int v: adj_list[u]) {
             if (dist[v] == -1) {
                 q.push(v);
                 dist[v] = dist[u] + 1;

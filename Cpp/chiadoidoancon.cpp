@@ -33,7 +33,7 @@ int solve(int l, int r, int end) {
 
 int re(int l, int r, int end, int iter) {
     if (iter == 0) return solve(l, r, end);
-    else return re(l, r, re(l, r, end, iter - 1), iter - 1);
+    return re(l, r, re(l, r, end, iter - 1), iter - 1);
 }
 
 int main() {

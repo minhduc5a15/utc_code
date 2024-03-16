@@ -1,14 +1,14 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#define MAX 1000000
 using namespace std;
+const int MAXN = 1000000;
 
-vector<int> saved(MAX + 1);
+vector<int> saved(MAXN + 1);
 
 void init() {
     saved[1] = 1;
-    for (int i = 2; i <= MAX; ++i) {
+    for (int i = 2; i <= MAXN; ++i) {
         long long temp = i;
         int count = 0;
         while (temp != 1 && temp >= i) {
