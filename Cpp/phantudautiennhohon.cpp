@@ -13,9 +13,7 @@ int main() {
     vector<int> arr(n + 1);
     arr[0] = INT_MAX;
     for (int i = 1; i <= n; ++i) {
-        int x;
-        cin >> x;
-        arr[i] = x;
+        cin >> arr[i];
         arr[i] = min(arr[i], arr[i - 1]);
     }
     while (q--) {
