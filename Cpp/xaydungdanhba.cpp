@@ -15,7 +15,7 @@ Node *createNode() {
     return node;
 }
 
-void z(Node *root, const string &s) {
+void addWord(Node *root, const string &s) {
     Node *temp = root;
     int n = s.size();
     for (int i = 0; i < n; ++i) {
@@ -52,7 +52,7 @@ int main() {
         string cmd, word;
         cin >> cmd >> word;
         if (cmd == "add") {
-            z(root, word);
+            addWord(root, word);
         }
         else {
             cout << findWord(root, word) << '\n';
