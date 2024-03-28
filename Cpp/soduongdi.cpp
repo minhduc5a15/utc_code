@@ -41,7 +41,7 @@ int solve(vector<vector<int>> &grid, int n, int m) {
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             if (grid[i][j] == 0) {
-                zeros += 1;
+                zeros++;
             }
             else if (grid[i][j] == 1) {
                 u = {i, j};

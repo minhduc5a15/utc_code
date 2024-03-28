@@ -8,7 +8,7 @@ long long solve(int i, int j) {
                 dp[x & 1][y] = 1;
             }
             else {
-                dp[x & 1][y] = dp[(x - 1) % 2][y - 1] + dp[(x - 1) % 2][y];
+                dp[x & 1][y] = dp[(x - 1) & 1][y - 1] + dp[(x - 1) & 1][y];
             }
             if (dp[x & 1][y] > 1e18) {
                 return -1;
