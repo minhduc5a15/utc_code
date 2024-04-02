@@ -5,8 +5,8 @@
 using namespace std;
 const int MAXN = 1000001;
 const int MOD = 1000000007;
-
-vector<ull> fact(MAXN), inverse(MAXN);
+typedef vector<ull> vull;
+vull fact(MAXN), inverse(MAXN);
 
 ull power(ull base, ull exponent, ull modulus = MOD) {
     base %= modulus;
@@ -31,12 +31,13 @@ ull C(ull n) {
     return (fact[n] * ((inverse[k] * inverse[n - k]) % MOD)) % MOD;
 }
 
-vector<ull> memo(ull max) {
+vull memo(ull max) {
     ++max;
-    vector<ull> result;
+    vull result;
+    result.reserve(max + 1);
     for (int i = 0; i <= max; ++i) {
         ull d = power(2, i - 1);
-        result.push_back(i & 1 ? d : (d % MOD + C(i) % MOD) % MOD);
+        result.emplace_back(i & 1 ? d : (d % MOD + C(i) % MOD) % MOD);
     }
     return result;
 }
@@ -47,7 +48,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    vector<ull> arr(n);
+    vull arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
@@ -58,9 +59,9 @@ int main() {
         fact[i] = (fact[i - 1] * i) % MOD;
         inverse[i] = inverse_num(fact[i]);
     }
-    vector<ull> result = memo(max_n);
-    for (ull item: arr) {
-        cout << result[item] << '\n';
+    vull result = memo(max_n);
+    for (ull num: arr) {
+        cout << result[num] << '\n';
     }
     return 0;
 }
