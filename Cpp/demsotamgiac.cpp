@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 ll solve(const vector<pair<int, int>> &points, int n) {
     ll count = 0;

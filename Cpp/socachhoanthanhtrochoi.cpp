@@ -2,8 +2,8 @@
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int MOD = 1000000007;
 
 ll dfs(const unordered_map<ll, vector<ll>> &graph, ll start, ll end, unordered_set<ll> &visited, vector<ll> &memo) {

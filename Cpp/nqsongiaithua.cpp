@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const ll MOD = 2000000014;
 
 ll power(ll base, ll exponent, ll modulus = MOD) {

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <map>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 map<ll, ll> memo;
 

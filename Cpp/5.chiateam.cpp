@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 map<char, ll> dict = {{'M', 0}, {'A', 0}, {'R', 0}, {'C', 0}, {'H', 0}};
 

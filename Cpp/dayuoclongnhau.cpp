@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define ll long long
 using namespace std;
+typedef long long ll;
 typedef vector<ll> vll;
 
 vll solve(ll n) {

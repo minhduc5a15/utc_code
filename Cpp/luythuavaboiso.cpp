@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define ull unsigned long long
 using namespace std;
+typedef unsigned long long ull;
 const int MOD = 1000000007;
 const int MAXN = 1000001;
 

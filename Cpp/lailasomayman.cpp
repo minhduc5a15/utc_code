@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 bool check(const string &s) {
     int count = 0;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 void solve(int n) {
     queue<ll> q;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int MAXN = 1000000;
 
 vector<bool> visited(MAXN);

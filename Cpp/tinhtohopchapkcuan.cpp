@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int MOD = 1000000007;
 const int MAXN = 100001;
 

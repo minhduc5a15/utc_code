@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 ll solve(const vector<int> &arr, int n) {
     unordered_map<int, int> map;

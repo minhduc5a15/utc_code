@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define ull unsigned long long
 using namespace std;
+typedef unsigned long long ull;
 const int MAXN = 1000001;
 const int MOD = 1000000007;
 typedef vector<ull> vull;

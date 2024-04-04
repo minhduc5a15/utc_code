@@ -1,8 +1,8 @@
 #include <iostream>
 #include <queue>
 #include <climits>
-#define ll long long
 using namespace std;
+typedef long long ll;
 typedef vector<ll> vll;
 const int MOD = 1000000007;
 

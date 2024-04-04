@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_sum, int n) {
     priority_queue<ll, vector<ll>, greater<>> q;

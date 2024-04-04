@@ -2,8 +2,8 @@
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
-#define ull unsigned long long
 using namespace std;
+typedef unsigned long long ull;
 
 int main() {
     ios_base::sync_with_stdio(false);

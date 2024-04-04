@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 ll solve(const vector<int> &arr, int r) {
     map<ll, ll> p, mp;

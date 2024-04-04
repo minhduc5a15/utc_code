@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int MAXN = 1000001;
 
 vector<bool> primes;

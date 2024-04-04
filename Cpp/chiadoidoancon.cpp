@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <climits>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int ITER = 5;
 
 vector<ll> prefix_sum;

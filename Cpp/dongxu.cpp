@@ -1,6 +1,6 @@
 #include <iostream>
-#define ll long long
 using namespace std;
+typedef long long ll;
 
 void solve(ll n) {
     bool check = false;

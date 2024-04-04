@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using namespace std;
+typedef long long ll;
 const int MAXN = 1e5;
 
 ll solve(int a, int b, const vector<ll>& arr) {
