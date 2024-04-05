@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ll long long
+typedef long long ll;
 
 ll solve(ll n) {
     ll i = 2;

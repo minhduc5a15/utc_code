@@ -1,8 +1,7 @@
 #include <stdio.h>
-#define ll long long
-#define MAXN 40
+typedef long long ll;
 
-ll arr[MAXN][MAXN];
+ll arr[40][40];
 
 void solve(int n) {
     for (int i = 0; i < n; ++i) {

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ll long long int
+typedef long long ll;
 const int MAXN = 200005;
 const int MAXL = 11;
 

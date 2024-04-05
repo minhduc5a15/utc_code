@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define ull unsigned long long
+typedef unsigned long long ull;
 
 int main() {
     ull n;

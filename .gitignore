@@ -5,4 +5,8 @@
 *.inp
 *.out
 *.json
+*.html
+leetcode
+practice
 algorithm
+Rust/target
