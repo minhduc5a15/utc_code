@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ll long long
+typedef long long ll;
 
 ll pow2(ll n) {
     return n * n;

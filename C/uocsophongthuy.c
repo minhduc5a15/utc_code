@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define ll long long
+typedef long long ll;
 
 int square_number(ll n) {
     ll r = sqrt(n);

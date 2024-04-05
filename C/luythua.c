@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#define ull unsigned long long
+typedef unsigned long long ull;
 const int MOD = 1000000007;
 const int MAXN = 100000;
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ll long long
+typedef long long ll;
 
 typedef struct {
     ll first;

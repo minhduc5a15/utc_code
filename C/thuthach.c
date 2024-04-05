@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#define ll long long
+typedef long long ll;
 
 bool check(ll mid, const ll *arr, int n, int k) {
     int count = 0;

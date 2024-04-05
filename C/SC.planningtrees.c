@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ll long long
+typedef long long ll;
 
 int cmp(const void *a, const void *b) {
     return *(int *) b - *(int *) a;

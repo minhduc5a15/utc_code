@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ll long long
+typedef long long ll;
 
 ll solve(ll n, ll k) {
     return n * ((k - 1) % n) + (k - 1) / n + 1;

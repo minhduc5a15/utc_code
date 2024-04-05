@@ -12,13 +12,13 @@ int main() {
     int n;
     cin >> n;
     string s;
-    for (int i = 0; i < n; ++i) {
+    while (n--) {
         cin >> s;
-        if (s[0] == 'M' || s[0] == 'A' || s[0] == 'R' || s[0] == 'C' || s[0] == 'H') {
-            ++dict[s[0]];
+        if (dict.find(s.front()) != dict.end()) {
+            ++dict.at(s.front());
         }
     }
-    ll a = dict['M'], b = dict['A'], c = dict['R'], d = dict['C'], e = dict['H'];
+    ll a = dict.at('M'), b = dict.at('A'), c = dict.at('R'), d = dict.at('C'), e = dict.at('H');
     cout << a * b * (c + d + e) + c * (a + b) * (d + e) + d * e * (a + b + c);
     return 0;
 }

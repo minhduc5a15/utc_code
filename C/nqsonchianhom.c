@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ll long long
+typedef long long ll;
 
 ll calc(int begin, int end) {
     ll length = end - begin + 1;

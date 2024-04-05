@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ll long long
+typedef long long ll;
 const int MOD = 1000000007;
 
 int main() {

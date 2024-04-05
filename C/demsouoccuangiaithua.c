@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#define ll long long
+typedef long long ll;
 const int MOD = 1000000007;
 
 int total_pow(int n, int p) {
