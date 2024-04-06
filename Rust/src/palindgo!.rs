@@ -8,7 +8,7 @@ const DY: [usize; 2] = [0, 1];
 struct State {
     x: usize,
     y: usize,
-    current: String,
+    current: String
 }
 
 fn is_valid(x: usize, y: usize, n: usize) -> bool {
