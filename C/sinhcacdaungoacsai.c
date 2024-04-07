@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int n;
-char p[25];
+char p[16];
 
 int is_valid() {
-    int balance = 0, length = n << 1;
-    for (int i = 0; i < length; ++i) {
-        if (balance < 0 || balance > n) return 0;
+    int balance = 0;
+    for (int i = 0; i < p[i]; ++i) {
+        if (balance < 0 || balance > n) return 1;
         if (p[i] == '(') ++balance;
         else --balance;
     }
-    return balance == 0;
+    return balance != 0;
 }
 
 void generate(int pos, int left, int right) {
@@ -23,8 +23,9 @@ void generate(int pos, int left, int right) {
             p[pos] = ')';
             generate(pos + 1, left, right - 1);
         }
+        return;
     }
-    else if (!is_valid()) printf("%s\n", p);
+    if (is_valid()) printf("%s\n", p);
 }
 
 int main() {
