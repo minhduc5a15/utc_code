@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int n;
-char p[13];
+char p[25];
 
 int is_valid() {
     int balance = 0, length = n << 1;
