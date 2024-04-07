@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
 #include <queue>
 using namespace std;
@@ -17,21 +16,17 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i].first >> arr[i].second;
     }
-    sort(arr.begin(), arr.end(), [](const pll &a, const pll &b) {
-        return a.first == b.first ? a.second < b.second : a.first < b.first;
-    });
+    sort(arr.begin(), arr.end());
     int j = n - 1;
     ll res = 0;
-    while (n) {
+    while (--n) {
         while (j >= 0 && arr[j].first >= n) {
-            q.push(arr[j].second);
-            --j;
+            q.push(arr[j--].second);
         }
         if (!q.empty()) {
             res += q.top();
             q.pop();
         }
-        --n;
     }
     cout << res;
     return 0;
