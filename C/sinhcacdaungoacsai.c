@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int n;
+char p[13];
+
+int is_valid() {
+    int balance = 0, length = n << 1;
+    for (int i = 0; i < length; ++i) {
+        if (balance < 0 || balance > n) return 0;
+        if (p[i] == '(') ++balance;
+        else --balance;
+    }
+    return balance == 0;
+}
+
+void generate(int pos, int left, int right) {
+    if (left + right > 0) {
+        if (left > 0) {
+            p[pos] = '(';
+            generate(pos + 1, left - 1, right);
+        }
+        if (right > 0) {
+            p[pos] = ')';
+            generate(pos + 1, left, right - 1);
+        }
+    }
+    else if (!is_valid()) printf("%s\n", p);
+}
+
+int main() {
+    scanf("%d", &n);
+    generate(0, n, n);
+    return 0;
+}
