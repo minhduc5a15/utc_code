@@ -9,5 +9,4 @@ def solve(arr: list):
         max_len = max(max_len, i - m + 1)
     return max_len
 input()
-arr = list(map(int, input().split()))
-print(solve(arr))
+print(solve(list(map(int, input().split()))))
