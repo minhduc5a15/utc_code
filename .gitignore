@@ -6,7 +6,11 @@
 *.out
 *.json
 *.html
+*.js
+*.ts
+*.go
 leetcode
 practice
 algorithm
 Rust/target
+contest
