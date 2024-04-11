@@ -1,8 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 #include <set>
-#include <cmath>
 
 using namespace std;
 
@@ -18,7 +16,7 @@ void solve(int s, int f) {
             cout << res << '\n';
             return;
         }
-        if (visited.count(n)) {
+        if (visited.find(n) != visited.end()) {
             continue;
         }
         visited.insert(n);
