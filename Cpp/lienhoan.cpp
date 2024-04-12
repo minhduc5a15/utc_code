@@ -1,18 +1,19 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 typedef vector<int> vi;
 const int MAXN = 1001;
+
 vi visited(MAXN, 0);
 vector<vi> graph(MAXN);
 vector<vi> mark(MAXN, vi(MAXN, 0));
 
-void dfs(int u, int i) {
+void dfs(int u) {
     if (visited[u]) return;
-    mark[i][u] = 1;
-    visited[u] = 1;
+    mark[u][u] = visited[u] = 1;
     for (int v: graph[u]) {
-        dfs(v, i);
+        dfs(v);
     }
 }
 
@@ -27,14 +28,14 @@ int main() {
         cin >> arr[i];
     }
     graph.reserve(n + 1);
-    for (int i = 1; i <= m; ++i) {
+    while (m--) {
         int u, v;
         cin >> u >> v;
         graph[u].emplace_back(v);
     }
     for (int x: arr) {
         fill(visited.begin(), visited.end(), 0);
-        dfs(x, x);
+        dfs(x);
     }
     int res = 0;
     for (int i = 1; i <= n; ++i) {
