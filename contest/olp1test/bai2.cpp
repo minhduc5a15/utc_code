@@ -10,10 +10,6 @@ int solve(vector<pif> &bricks) {
         return a.second <= b.second;
     });
     vector<int> dp(n, 1);
-    vector<int> arr(n);
-    for (int i = 0; i < n; ++i) {
-        arr[i] = bricks[i].first;
-    }
     for (int i = 1; i < n; ++i) {
         for (int j = 0; j < i; ++j) {
             if (bricks[i].first >= bricks[j].first and dp[i] < dp[j] + 1) {
