@@ -52,7 +52,7 @@ void solve(int n, const vector<vector<Edge>> &graph) {
         }
     }
 
-    cout << dist.back() << " " << count.back() << " " << min_flights.back() << " " << max_flights.back() << endl;
+    cout << dist.back() << ' ' << count.back() << ' ' << min_flights.back() << ' ' << max_flights.back() << endl;
 }
 
 int main() {

@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using std::cin;
 using std::cout;
 using std::ios_base;
+typedef long long ll;
 typedef std::vector<ll> vll;
 typedef std::vector<vll> matrixll;
 const int MOD = 1000000009;
 const int MAT_SIZE = 2;
 
-matrixll multiply(const matrixll& matrixA, const matrixll& matrixB) {
+matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     matrixll result(MAT_SIZE, vll(MAT_SIZE, 0));
     for (int i = 0; i < MAT_SIZE; ++i) {
         for (int j = 0; j < MAT_SIZE; ++j) {
@@ -27,7 +27,7 @@ matrixll power(matrixll base, int exponent) {
     while (exponent) {
         if (exponent & 1) identMatrix = multiply(identMatrix, base);
         base = multiply(base, base);
-        exponent >>= 1; 
+        exponent >>= 1;
     }
     return identMatrix;
 }
