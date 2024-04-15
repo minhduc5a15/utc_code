@@ -11,7 +11,7 @@ int find_x(ll n) {
     int k = sqrt(n);
     for (int i = 1; i * i <= k; ++i) {
         if (n % i == 0) {
-            ll dlt = 1 + 4 * (n / i);
+            ll dlt = (n / i) << 2 | 1;
             if (square_number(dlt)) {
                 return (sqrt(dlt) - 1) / 2;
             }
@@ -31,10 +31,10 @@ void solve(ll n) {
     int x = find_x(n);
     if (x > k) {
         printf("%d\n", x);
+        return;
     }
-    else {
-        printf("\n");
-    }
+    printf("\n");
+    return;
 }
 
 int main() {

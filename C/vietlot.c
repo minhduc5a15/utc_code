@@ -23,7 +23,7 @@ int main() {
             for (int j = i; j < MAXN; ++j) {
                 if (arr[j] && (i | j) == MAXN - 1) {
                     if (i == j) {
-                        res += arr[i] * (arr[i] - 1) / 2;
+                        res += arr[i] * (arr[i] - 1) >> 1;
                     }
                     else {
                         res += arr[i] * arr[j];

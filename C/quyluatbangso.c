@@ -1,7 +1,9 @@
 #include <stdio.h>
+typedef long long ll;
+const ll MAXN = 1000000000000000000;
 
-long long solve(int i, int j) {
-    long long dp[2][j + 5];
+ll solve(int i, int j) {
+    ll dp[2][j + 5];
     for (int x = 1; x <= i; ++x) {
         for (int y = 1; y <= j; ++y) {
             if (x == 1 || y == 1) {
@@ -10,7 +12,7 @@ long long solve(int i, int j) {
             else {
                 dp[x & 1][y] = dp[(x - 1) & 1][y - 1] + dp[(x - 1) & 1][y];
             }
-            if (dp[x & 1][y] > 1e18) {
+            if (dp[x & 1][y] > MAXN) {
                 return -1;
             }
         }
