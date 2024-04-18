@@ -3,21 +3,23 @@
 #include <algorithm>
 using namespace std;
 typedef pair<int, float> pif;
+typedef vector<int> vi;
 
-int solve(vector<pif> &bricks) {
-    int n = bricks.size();
+size_t solve(vector<pif> &bricks) {
     sort(bricks.begin(), bricks.end(), [](const pif &a, const pif &b) {
         return a.second <= b.second;
     });
-    vector<int> dp(n, 1);
-    for (int i = 1; i < n; ++i) {
-        for (int j = 0; j < i; ++j) {
-            if (bricks[i].first >= bricks[j].first and dp[i] < dp[j] + 1) {
-                dp[i] = dp[j] + 1;
-            }
+    vi lis;
+    vi::iterator it;
+    for (auto [num, _]: bricks) {
+        it = upper_bound(lis.begin(), lis.end(), num);
+        if (it == lis.end()) {
+            lis.push_back(num);
         }
+        else *it = num;
     }
-    return n - *max_element(dp.begin(), dp.end());
+
+    return bricks.size() - lis.size();
 }
 
 int main() {

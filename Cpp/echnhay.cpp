@@ -27,7 +27,6 @@ int main() {
         }
         if (solve(arr, n)) cout << "True\n";
         else cout << "False\n";
-        arr.clear();
     }
     return 0;
 }
