@@ -24,9 +24,7 @@ matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
 matrixll power(matrixll base, ll exponent) {
     matrixll result = {{1, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}};
     while (exponent) {
-        if (exponent & 1) {
-            result = multiply(result, base);
-        }
+        if (exponent & 1) result = multiply(result, base);
         base = multiply(base, base);
         exponent >>= 1;
     }
