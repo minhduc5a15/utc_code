@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#define ll long long
 using std::cin;
 using std::cout;
 using std::ios_base;
+typedef long long ll;
 typedef std::vector<ll> vll;
 typedef std::vector<vll> matrixll;
 const int MOD = 1000000007;
@@ -22,15 +22,15 @@ matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
 }
 
 matrixll power(matrixll base, ll exponent) {
-    matrixll identMatrix = {{1, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}};
+    matrixll result = {{1, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}};
     while (exponent) {
         if (exponent & 1) {
-            identMatrix = multiply(identMatrix, base);
+            result = multiply(result, base);
         }
         base = multiply(base, base);
         exponent >>= 1;
     }
-    return identMatrix;
+    return result;
 }
 
 ll solve(ll n) {

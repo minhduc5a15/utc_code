@@ -15,7 +15,6 @@ matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
         for (int j = 0; j < MAT_SIZE; ++j) {
             for (int k = 0; k < MAT_SIZE; ++k) {
                 result[i][j] += (matrixA[i][k] * matrixB[k][j]) % MOD;
-                result[i][j] %= MOD;
             }
         }
     }
@@ -23,13 +22,13 @@ matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
 }
 
 matrixll power(matrixll base, int exponent) {
-    matrixll identMatrix = {{1, 0}, {0, 1}};
+    matrixll result = {{1, 0}, {0, 1}};
     while (exponent) {
-        if (exponent & 1) identMatrix = multiply(identMatrix, base);
+        if (exponent & 1) result = multiply(result, base);
         base = multiply(base, base);
         exponent >>= 1;
     }
-    return identMatrix;
+    return result;
 }
 
 ll solve(int n) {

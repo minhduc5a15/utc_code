@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#define ll long long
+typedef long long ll;
 typedef std::vector<ll> vll;
 typedef std::vector<vll> matrixll;
 using std::cin;
@@ -9,27 +9,23 @@ using std::ios_base;
 const int MOD = 1000000007;
 const int MAT_SIZE = 2;
 
-matrixll multiply(const matrixll &a, const matrixll &b) {
+matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     matrixll result(MAT_SIZE, vll(MAT_SIZE, 0));
     for (int i = 0; i < MAT_SIZE; ++i) {
         for (int j = 0; j < MAT_SIZE; ++j) {
             for (int k = 0; k < MAT_SIZE; ++k) {
-                result[i][j] = (result[i][j] + a[i][k] * b[k][j]) % MOD;
+                result[i][j] = (result[i][j] + matrixA[i][k] * matrixB[k][j]) % MOD;
             }
         }
     }
     return result;
 }
 
-matrixll power(const matrixll &mat, int exponent) {
-    matrixll result = mat;
-    matrixll temp = mat;
-    --exponent;
+matrixll power(matrixll base, int exponent) {
+    matrixll result = {{1, 0}, {0, 1}};
     while (exponent) {
-        if (exponent & 1) {
-            result = multiply(result, temp);
-        }
-        temp = multiply(temp, temp);
+        if (exponent & 1) result = multiply(result, base);
+        base = multiply(base, base);
         exponent >>= 1;
     }
     return result;

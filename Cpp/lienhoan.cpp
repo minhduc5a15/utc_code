@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 typedef vector<int> vi;
 const int MAXN = 1001;

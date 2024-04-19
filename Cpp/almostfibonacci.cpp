@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#define ull unsigned long long
 using std::cin;
 using std::cout;
 using std::ios_base;
+typedef unsigned long long ull;
 typedef std::vector<ull> vull;
 typedef std::vector<vull> matrixull;
 const int MOD = 1000000007;

@@ -19,12 +19,11 @@ matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     return result;
 }
 
-matrixll power(const matrixll &base, ll exponent) {
+matrixll power(matrixll base, ll exponent) {
     matrixll result = {{1, 0}, {0, 1}};
-    matrixll tempBase = base;
     while (exponent) {
-        if (exponent & 1) result = multiply(result, tempBase);
-        tempBase = multiply(tempBase, tempBase);
+        if (exponent & 1) result = multiply(result, base);
+        base = multiply(base, base);
         exponent >>= 1;
     }
     return result;
