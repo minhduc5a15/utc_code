@@ -1,7 +1,7 @@
-def solve(array, n: int, k: int):
+def solve(arr, n: int, k: int):
     sum_pos, max_len, current_sum = {}, 0, 0
     for i in range(n):
-        current_sum += array[i]
+        current_sum += arr[i]
         if current_sum == k: max_len = i + 1
         if current_sum not in sum_pos: sum_pos[current_sum] = i
         if current_sum - k in sum_pos: max_len = max(max_len, i - sum_pos[current_sum - k])
