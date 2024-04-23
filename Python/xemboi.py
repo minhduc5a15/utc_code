@@ -11,7 +11,6 @@ khac = {
     "Moc": "Tho",
     "Hoa": "Kim",
     "Tho": "Thuy"
-
 }
 
 a, b = input().split()

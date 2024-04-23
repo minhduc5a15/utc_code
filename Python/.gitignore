@@ -1,4 +1,5 @@
 test.py
+test1.py
 test.rs
 main.py
 solve.py
@@ -6,4 +7,4 @@ solve.py
 *.inp
 *.json
 *.out
-Test
+test

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 int main() {
@@ -9,21 +8,16 @@ int main() {
     cout.tie(nullptr);
     int n, q, maxm = 0;
     cin >> n;
-    vector<pair<int, int>> items;
+    vector<pair<int, int>> items(n);
     items.reserve(n);
     for (int i = 0; i < n; ++i) {
-        int first, second;
-        cin >> first >> second;
-        items.emplace_back(first, second);
+        cin >> items[i].first >> items[i].second;
     }
     cin >> q;
-    vector<int> queries;
-    queries.reserve(q);
+    vector<int> queries(n);
     for (int i = 0; i < q; ++i) {
-        int query;
-        cin >> query;
-        queries.push_back(query);
-        maxm = max(maxm, query);
+        cin >> queries[i];
+        maxm = max(maxm, queries[i]);
     }
     vector<int> dp(maxm + 1, 0);
     for (const pair<int, int> &item: items) {
@@ -31,7 +25,7 @@ int main() {
             dp[w] = max(dp[w], item.second + dp[w - item.first]);
         }
     }
-    for (const int &query: queries) {
+    for (int query: queries) {
         cout << dp[query] << '\n';
     }
     return 0;

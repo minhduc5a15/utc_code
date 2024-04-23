@@ -8,6 +8,7 @@
 *.js
 *.ts
 *.go
+*.txt
 leetcode
 practice
 dsa
