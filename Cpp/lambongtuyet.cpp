@@ -2,9 +2,10 @@
 #include <queue>
 using namespace std;
 typedef long long ll;
+typedef vector<ll> vll;
 
-void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_sum, int n) {
-    priority_queue<ll, vector<ll>, greater<>> q;
+void solve(const vll &V, const vll &T, const vll &prefix_sum, int n) {
+    priority_queue<ll, vll, greater<>> q;
     ll res;
     for (int i = 1; i <= n; ++i) {
         res = 0;
@@ -14,7 +15,7 @@ void solve(const vector<ll>& V, const vector<ll>& T, const vector<ll> &prefix_su
             q.pop();
         }
         res += T[i] * q.size();
-        cout << res << " ";
+        cout << res << ' ';
     }
 }
 
@@ -24,7 +25,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    vector<ll> V(n + 1), T(n + 1), prefix_sum(n + 1, 0);
+    vll V(n + 1), T(n + 1), prefix_sum(n + 1, 0);
     for (int i = 1; i <= n; ++i) {
         cin >> V[i];
     }
