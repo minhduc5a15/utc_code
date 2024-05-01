@@ -2,9 +2,9 @@
 #include <vector>
 #include <unordered_map>
 #include <cmath>
-#define ll long long
-#define db double
 using namespace std;
+typedef long long ll;
+typedef double db;
 
 template<typename T1, typename T2> class Point {
 public:
