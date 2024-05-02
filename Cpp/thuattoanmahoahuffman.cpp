@@ -1,8 +1,7 @@
 #include <iostream>
-#include <vector>
+#include <queue>
 #include <algorithm>
 #include <unordered_map>
-#include <queue>
 using namespace std;
 
 struct Node {
@@ -37,15 +36,13 @@ void encode(Node *root, const string& str, unordered_map<char, string> &huffmanC
 
 int solve(const string& s) {
     unordered_map<char, int> freq;
-    for (char ch: s) {
-        freq[ch]++;
+    for (char c: s) {
+        ++freq[c];
     }
-
     priority_queue<Node *, vector<Node *>, compare> pq;
     for (const pair<const char, int> pair: freq) {
         pq.push(getNode(pair.first, pair.second, nullptr, nullptr));
     }
-
     while (pq.size() != 1) {
         Node *left = pq.top();
         pq.pop();
@@ -58,8 +55,8 @@ int solve(const string& s) {
     unordered_map<char, string> huffmanCode;
     encode(root, "", huffmanCode);
     int result = 0;
-    for (char ch: s) {
-        result += huffmanCode[ch].size();
+    for (char c: s) {
+        result += huffmanCode[c].size();
     }
     return result;
 }
