@@ -1,6 +1,5 @@
 #include <iostream>
 #include <queue>
-#include <algorithm>
 #include <unordered_map>
 using namespace std;
 
@@ -25,13 +24,13 @@ struct compare {
     }
 };
 
-void encode(Node *root, const string& str, unordered_map<char, string> &huffmanCode) {
+void encode(Node *root, const string& s, unordered_map<char, string> &huffmanCode) {
     if (root == nullptr) return;
     if (!root->left && !root->right) {
-        huffmanCode[root->ch] = str;
+        huffmanCode[root->ch] = s;
     }
-    encode(root->left, str + "0", huffmanCode);
-    encode(root->right, str + "1", huffmanCode);
+    encode(root->left, s + '0', huffmanCode);
+    encode(root->right, s + '1', huffmanCode);
 }
 
 int solve(const string& s) {
