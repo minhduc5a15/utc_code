@@ -16,27 +16,27 @@ int main() {
     }
     int res = 0;
     while (!q1.empty()) {
-        int t1 = q1.front();
-        if (q2.empty()) q2.push(t1), q1.pop();
-        else if (t1 > q1.back() and q2.front() > q1.back()) {
-            if (t1 < q2.front()) q1.push(t1), q1.pop();
+        int top = q1.front();
+        if (q2.empty()) q2.push(top), q1.pop();
+        else if (top > q1.back() and q2.front() > q1.back()) {
+            if (top < q2.front()) q1.push(top), q1.pop();
             else q1.push(q2.front()), q2.pop();
         }
-        else if (t1 > q1.back() and t1 > q2.back()) {
-            if (q1.back() > q2.back()) q1.push(t1);
-            else q2.push(t1);
+        else if (top > q1.back() and top > q2.back()) {
+            if (q1.back() > q2.back()) q1.push(top);
+            else q2.push(top);
             q1.pop();
         }
-        else if (t1 > q1.back() or q2.front() > q1.back()) {
-            if (t1 > q1.back()) q1.push(t1), q1.pop();
+        else if (top > q1.back() or q2.front() > q1.back()) {
+            if (top > q1.back()) q1.push(top), q1.pop();
             else q1.push(q2.front()), q2.pop();
         }
-        else if (t1 > q1.back() or t1 > q2.back()) {
-            if (t1 > q1.back()) q1.push(t1), q1.pop();
-            else q2.push(t1), q1.pop();
+        else if (top > q1.back() or top > q2.back()) {
+            if (top > q1.back()) q1.push(top), q1.pop();
+            else q2.push(top), q1.pop();
         }
         else {
-            if (t1 < q2.front()) q1.push(t1), q1.pop();
+            if (top < q2.front()) q1.push(top), q1.pop();
             else q1.push(q2.front()), q2.pop();
         }
         ++res;
