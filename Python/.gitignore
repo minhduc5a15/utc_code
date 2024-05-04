@@ -8,3 +8,4 @@ solve.py
 *.json
 *.out
 test
+sieve.py

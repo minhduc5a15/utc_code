@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stack>
 #include <map>
-
 using namespace std;
 
 int main() {
@@ -27,8 +26,8 @@ int main() {
             }
         }
     }
-    for (int i = 0; i <= n; ++i) {
-        if (mp[i]) cout << i << " ";
+    for (const pair<const int, bool> it: mp) {
+        cout << it.first << ' ';
     }
     return 0;
 }
