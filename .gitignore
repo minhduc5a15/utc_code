@@ -9,6 +9,7 @@
 *.ts
 *.go
 *.txt
+*.bat
 leetcode
 practice
 dsa
