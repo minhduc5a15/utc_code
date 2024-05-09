@@ -10,7 +10,7 @@ double determinant(const matrixdb &matrix) {
     if (matrix.size() == 2 && matrix[0].size() == 2) {
         return matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1];
     }
-    for (int fc = 0; fc < size; fc++) {
+    for (int fc = 0; fc < size; ++fc) {
         matrixdb As(size - 1, vector<double>(size - 1));
         for (int i = 1; i < size; ++i) {
             int j1 = 0;

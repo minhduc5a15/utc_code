@@ -1,30 +1,28 @@
 #include <iostream>
 #include <vector>
-#include <unordered_set>
 #include <unordered_map>
 using namespace std;
 typedef long long ll;
+typedef vector<ll> vll;
 const int MOD = 1000000007;
 
-ll dfs(const unordered_map<ll, vector<ll>> &graph, ll start, ll end, unordered_set<ll> &visited, vector<ll> &memo) {
-    if (start == end) {
-        return 1;
-    }
-    if (memo[start] != -1) {
-        return memo[start];
-    }
-    visited.insert(start);
+unordered_map<ll, vll> graph;
+vll visited, memo;
+
+ll dfs(ll start, ll end) {
+    if (start == end) return 1;
+    if (memo[start] != -1) return memo[start];
+    visited[start] = true;
     ll paths = 0;
-    if (graph.count(start)) {
+    if (graph.find(start) != graph.end()) {
         for (ll node: graph.at(start)) {
-            if (visited.find(node) == visited.end()) {
-                paths += dfs(graph, node, end, visited, memo) % MOD;
+            if (!visited[node]) {
+                paths += dfs(node, end) % MOD;
             }
         }
     }
-    visited.erase(start);
-    memo[start] = paths;
-    return paths % MOD;
+    visited[start] = false;
+    return memo[start] = paths % MOD;
 }
 
 int main() {
@@ -33,14 +31,13 @@ int main() {
     cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
-    unordered_map<ll, vector<ll>> graph;
     for (int i = 0; i < m; ++i) {
         ll u, v;
         cin >> u >> v;
-        graph[u].push_back(v);
+        graph[u].emplace_back(v);
     }
-    unordered_set<ll> visited;
-    vector<ll> memo(n + 1, -1);
-    cout << dfs(graph, 1, n, visited, memo) << endl;
+    visited.resize(n + 1, false);
+    memo.resize(n + 1, -1);
+    cout << dfs(1, n);
     return 0;
 }

@@ -3,7 +3,6 @@
 #include <algorithm>
 using namespace std;
 typedef vector<int> vi;
-const int MAXN = 1000000;
 
 vi init(const vi &arr, int n, int c) {
     vi saved(1 << n);
