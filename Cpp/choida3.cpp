@@ -21,9 +21,9 @@ int main() {
     for (int i = 1; i < n; ++i) {
         prefixSum[i] = prefixSum[i - 1] + arr[i];
     }
+    ll sum = prefixSum.back();
     int t;
     cin >> t;
-    ll sum = prefixSum.back();
     while (t--) {
         int q;
         cin >> q;
