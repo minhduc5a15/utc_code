@@ -42,8 +42,7 @@ float ddf(float z) {
 
 float newton_method(float z_init) {
     float z = z_init;
-    int iter = MAX_ITER;
-    while (iter--) {
+    for (int iter = 0; iter < MAX_ITER; iter++) {
         float z_new = z - df(z) / ddf(z);
         if (abs(z - z_new) < TOL) {
             break;

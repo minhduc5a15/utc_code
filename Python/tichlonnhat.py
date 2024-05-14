@@ -7,5 +7,5 @@ def solve(n: int):
     else:
         return 3 ** count
 
-for i in range(int(input())):
+for _ in range(int(input())):
     print(solve(int(input())))

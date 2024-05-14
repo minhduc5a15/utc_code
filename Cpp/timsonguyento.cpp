@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 const int MAXN = 1000001;
 
 vector<bool> primes;
+vector<int> nums(78498);
 
 void Sieve() {
     primes.resize(MAXN, true);
@@ -15,6 +17,21 @@ void Sieve() {
         }
     }
     primes[0] = primes[1] = false;
+    nums[0] = 2;
+    int id = 0;
+    for (int i = 3; i <= MAXN; i += 2) {
+        if (primes[i]) {
+            nums[++id] = i;
+        }
+    }
+}
+
+void solve(int l, int r) {
+    int i = lower_bound(nums.begin(), nums.end(), l) - nums.begin();
+    for (; nums[i] <= r; ++i) {
+        cout << nums[i] << ' ';
+    }
+    cout << '\n';
 }
 
 int main() {
@@ -22,19 +39,12 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     Sieve();
-    int t;
-    cin >> t;
-    while (t--) {
-        int a, b;
-        cin >> a >> b;
-        for (int j = a; j <= b; ++j) {
-            if (primes[j]) {
-                cout << j << " ";
-            }
-        }
-        cout << endl;
+    int n;
+    cin >> n;
+    while (n--) {
+        int l, r;
+        cin >> l >> r;
+        solve(l, r);
     }
     return 0;
 }
-
-

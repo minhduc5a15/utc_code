@@ -11,7 +11,7 @@ void dfs(int u, int d) {
     visited[u] = 1;
     if (d > max_dist) max_dist = d, max_node = u;
     for (int v: adj[u]) {
-        if (visited[v] == 0) {
+        if (!visited[v]) {
             dfs(v, d + 1);
         }
     }

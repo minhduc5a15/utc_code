@@ -32,8 +32,8 @@ matrixll power(matrixll base, int exponent) {
 }
 
 ll solve(int n) {
-    matrixll fibMatrix = {{1, 1}, {1, 0}};
     if (n == 0) return 0;
+    matrixll fibMatrix = {{1, 1}, {1, 0}};
     fibMatrix = power(fibMatrix, n + 1);
     return (fibMatrix[0][0] - 1 + MOD) % MOD;
 }

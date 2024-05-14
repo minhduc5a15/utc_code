@@ -15,7 +15,6 @@ int main() {
     vector<int> right_mod(n);
     left_mod.front() = (s.front() - '0') % a;
     right_mod.front() = (s.back() - '0') % b;
-
     for (int i = 1; i < n; ++i) {
         left_mod[i] = (left_mod[i - 1] * 10 + (s[i] - '0')) % a;
     }

@@ -5,13 +5,15 @@
 int min(int a, int b) {
     return a < b ? a : b;
 }
-int compare(const void* a, const void* b) {
-    return *(int*)b - *(int*)a;
+
+int compare(const void *a, const void *b) {
+    return *(int *) b - *(int *) a;
 }
+
 int main() {
     int n;
     scanf("%d", &n);
-    int *arr = (int*)calloc(n + 3, sizeof(int));
+    int *arr = (int *) calloc(n + 3, sizeof(int));
     for (int i = 0; i < n; ++i) {
         scanf("%d", &arr[i]);
     }

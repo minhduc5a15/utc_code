@@ -29,4 +29,3 @@ int main() {
     cout << solve(arr) << endl;
     return 0;
 }
-
