@@ -19,7 +19,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         curr_sum += arr[i];
         if ((curr_sum * 2) == sum + arr[i]) {
-            cout << i + 1 << " ";
+            cout << i + 1 << ' ';
             ++count;
         }
     }

@@ -14,7 +14,7 @@ int main() {
         cin >> x;
         pos[x] = i;
     }
-    pair<int, int> res = {1, 1};
+    pair<int, int> res = {1, 1};\
     for (int i = 3; i <= n; ++i) {
         if (pos[i] <= pos[i - 2]) {
             if (i & 1) ++res.first;

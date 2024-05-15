@@ -26,6 +26,6 @@ int main() {
         }
     }
     sort(arr.begin(), arr.end());
-    for_each(arr.begin(), arr.end(), [](const int &x) { cout << x << " "; });
+    for_each(arr.begin(), arr.end(), [](int x) { cout << x << ' '; });
     return 0;
 }

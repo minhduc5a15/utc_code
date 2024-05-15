@@ -11,15 +11,16 @@ int main() {
     map<int, int> mp;
     while (n--) {
         cin >> x;
-        mp[x]++;
+        ++mp[x];
     }
+    map<int, int>::iterator it;
     while (t--) {
         cin >> x;
-        auto it = mp.upper_bound(x);
+        it = mp.upper_bound(x);
         if (it == mp.begin()) cout << -1 << '\n';
         else {
             --it;
-            it->second--;
+            --it->second;
             cout << it->first << '\n';
             if (!it->second) mp.erase(it);
         }

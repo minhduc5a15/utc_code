@@ -15,9 +15,7 @@ int main() {
     int count = 1, max_l = 0;
     for (int i = 0; i < n - 1; ++i) {
         if (arr[i] == arr[i + 1]) ++count;
-        else {
-            count = 1;
-        }
+        else count = 1;
         max_l = max(max_l, count);
     }
     cout << n - max_l << endl;

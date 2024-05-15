@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cmath>
-#define ull unsigned long long
-
 using namespace std;
+typedef unsigned long long ull;
 
 ull multiply(ull a, ull b, ull M) {
     if (log10(a) + log10(b) < 17) return a * b % M;
