@@ -30,7 +30,7 @@ def solve(m, n, matrix):
 
 m, n = map(int, input().split())
 matrix = []
-for i in range(m):
+for _ in range(m):
     row = list(map(int, input().split()))
     matrix.append(row)
 print(*solve(m, n, matrix))

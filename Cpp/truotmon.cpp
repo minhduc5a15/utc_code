@@ -1,6 +1,6 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
+#include <algorithm>
 typedef std::vector<int> vi;
 
 vi solve(vi &arr, const vi &queries) {

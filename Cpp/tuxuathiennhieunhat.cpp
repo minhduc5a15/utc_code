@@ -3,7 +3,7 @@
 #include <sstream>
 #include <algorithm>
 #include <unordered_map>
-#define getAll(x) (x).begin(), (x).end()
+#define getAll(x) x.begin(), x.end()
 using namespace std;
 typedef pair<string, int> psi;
 

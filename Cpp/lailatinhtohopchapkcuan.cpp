@@ -38,7 +38,6 @@ int main() {
         factorial[i] = (factorial[i - 1] * i) % MOD;
         inverse[i] = inverse_num(factorial[i]);
     }
-
     int t;
     cin >> t;
     while (t--) {

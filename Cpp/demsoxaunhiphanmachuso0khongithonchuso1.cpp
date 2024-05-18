@@ -3,9 +3,10 @@
 #include <algorithm>
 using namespace std;
 typedef unsigned long long ull;
+typedef vector<ull> vull;
 const int MAXN = 1000001;
 const int MOD = 1000000007;
-typedef vector<ull> vull;
+
 vull fact(MAXN), inverse(MAXN);
 
 ull power(ull base, ull exponent, ull modulus = MOD) {

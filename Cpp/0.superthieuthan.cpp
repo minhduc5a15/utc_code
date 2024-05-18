@@ -34,6 +34,6 @@ int main() {
             res.first = bottom[i] + top[h - i + 1];
         }
     }
-    cout << res.first << " " << res.second;
+    cout << res.first << ' ' << res.second;
     return 0;
 }

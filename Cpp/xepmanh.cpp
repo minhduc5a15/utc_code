@@ -14,7 +14,7 @@ int main() {
         b -= (count / 2) * 4;
         a -= (count / 2) * 4;
     }
-    if (b > 0 && a >= 3) count += 1;
+    if (b > 0 && a >= 3) ++count;
     cout << count << endl;
     return 0;
 }

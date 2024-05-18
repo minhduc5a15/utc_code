@@ -33,8 +33,8 @@ public:
         }
         int mid = (l + r) >> 1;
         build(id << 1, l, mid);
-        build((id << 1) + 1, mid + 1, r);
-        merge(getAll(tree[id << 1]), getAll(tree[(id << 1) + 1]), back_inserter(tree[id]));
+        build(id << 1 | 1, mid + 1, r);
+        merge(getAll(tree[id << 1]), getAll(tree[id << 1 | 1]), back_inserter(tree[id]));
     }
 
     pii query(int id, int start, int end, int x, int l, int r) {
@@ -52,7 +52,7 @@ public:
         }
         int mid = (start + end) >> 1;
         pii left_q = query(id << 1, start, mid, x, l, r);
-        pii right_q = query((id << 1) + 1, mid + 1, end, x, l, r);
+        pii right_q = query(id << 1 | 1, mid + 1, end, x, l, r);
         if (!left_q.second) return right_q;
         if (!right_q.second) return left_q;
         if (left_q.first == right_q.first) return {left_q.first, left_q.second + right_q.second};
