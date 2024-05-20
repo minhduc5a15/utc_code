@@ -5,10 +5,6 @@
 using namespace std;
 typedef tuple<int, int, int> tup;
 
-bool lambda(const tup &A, const tup &B) {
-    return get<2>(A) < get<2>(B);
-}
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -22,7 +18,9 @@ int main() {
         cin >> length >> width;
         arr[i] = make_tuple(length, width, length * width);
     }
-    sort(arr.begin(), arr.end(), lambda);
+    sort(arr.begin(), arr.end(), [](const tup &a, const tup &b) {
+        return get<2>(a) < get<2>(b);
+    });
     while (k >= 0) {
         if (get<2>(arr[k]) < get<2>(arr[n - 1]) && ((k > 0 && get<2>(arr[k]) != get<2>(arr[k - 1])) || k == 0)) {
             cout << get<0>(arr[k]) << " " << get<1>(arr[k]);

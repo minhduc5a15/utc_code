@@ -19,7 +19,7 @@ int main() {
         for (int i = 0; i < n; ++i) {
             if (arr[i] < average) count++;
         }
-        std::cout << average << " " << count;
+        std::cout << average << ' ' << count;
     }
     return 0;
 }

@@ -14,7 +14,7 @@ int main() {
         int x;
         cin >> x;
         if (!map[x]) {
-            cout << x << " ";
+            cout << x << ' ';
         }
         map[x] = true;
     }

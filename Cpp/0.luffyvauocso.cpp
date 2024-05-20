@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef long long ll;
-const int MAXN = 1e5;
+const int MAXN = 100000;
 
 ll solve(int a, int b, const vector<ll>& arr) {
     return arr[b] - arr[a - 1];

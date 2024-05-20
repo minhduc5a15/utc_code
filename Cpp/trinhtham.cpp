@@ -13,7 +13,7 @@ void solve(const vector<int> &arr, int n, int k) {
         q.push_back(i);
     }
     for (; i < n; ++i) {
-        cout << arr[q.front()] << " ";
+        cout << arr[q.front()] << ' ';
         while ((!q.empty()) && q.front() <= i - k)
             q.pop_front();
         while ((!q.empty()) && arr[i] >= arr[q.back()])

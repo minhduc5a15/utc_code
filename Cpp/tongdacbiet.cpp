@@ -30,7 +30,7 @@ int main() {
         cout << result.size() - 1 << '\n';
     }
     for (int i = 1; i < result.size(); ++i) {
-        cout << result[i].first << " " << result[i].second << '\n';
+        cout << result[i].first << ' ' << result[i].second << '\n';
     }
     return 0;
 }

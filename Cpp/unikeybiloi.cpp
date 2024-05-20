@@ -23,7 +23,7 @@ int main() {
         temp.clear();
         while (i < n && s[i] != ' ') {
             temp += s[i];
-            i++;
+            ++i;
         }
         solve(temp);
     }

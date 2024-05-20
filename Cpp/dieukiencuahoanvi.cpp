@@ -1,8 +1,7 @@
 #include <iostream>
-#define ll long long
-const int MOD = 1000000007;
-
 using namespace std;
+typedef long long ll;
+const int MOD = 1000000007;
 
 int main() {
     ios_base::sync_with_stdio(false);

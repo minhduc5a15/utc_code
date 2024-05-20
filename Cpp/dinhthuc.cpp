@@ -2,16 +2,17 @@
 #include <vector>
 #include <iomanip>
 using namespace std;
-typedef vector<vector<double>> matrixdb;
+typedef double db;
+typedef vector<vector<db>> matrixdb;
 
-double determinant(const matrixdb &matrix) {
-    double total = 0;
+db determinant(const matrixdb &matrix) {
+    db total = 0;
     int size = matrix.size();
     if (matrix.size() == 2 && matrix[0].size() == 2) {
         return matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1];
     }
     for (int fc = 0; fc < size; ++fc) {
-        matrixdb As(size - 1, vector<double>(size - 1));
+        matrixdb As(size - 1, vector<db>(size - 1));
         for (int i = 1; i < size; ++i) {
             int j1 = 0;
             for (int j = 0; j < size; ++j) {
@@ -21,7 +22,7 @@ double determinant(const matrixdb &matrix) {
                 j1++;
             }
         }
-        double sign = (fc % 2 == 0) ? 1 : -1;
+        db sign = (fc % 2 == 0) ? 1 : -1;
         total += sign * matrix[0][fc] * determinant(As);
     }
 
@@ -34,7 +35,7 @@ int main() {
     cout.tie(nullptr);
     int n;
     cin >> n;
-    matrixdb matrix(n, vector<double>(n));
+    matrixdb matrix(n, vector<db>(n));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             cin >> matrix[i][j];

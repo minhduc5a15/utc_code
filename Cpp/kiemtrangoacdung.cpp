@@ -17,7 +17,7 @@ bool isvalid(const string &s) {
             else {
                 st.pop();
                 if (!st.empty()) {
-                    if ((c == ']' && st.top() == '(') || (c == '}' && (st.top() == '[' || st.top() == '('))) {
+                    if ((c == ']' && st.top() == '(') or (c == '}' && (st.top() == '[' or st.top() == '('))) {
                         return false;
                     }
                 }

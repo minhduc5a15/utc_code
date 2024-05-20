@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#define ll long long
+typedef long long ll;
 
 int main() {
     std::ios_base::sync_with_stdio(false);

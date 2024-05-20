@@ -39,7 +39,7 @@ int main() {
     while (t--) {
         int a, b;
         cin >> a >> b;
-        cout << C(a, b) << "\n";
+        cout << C(a, b) << '\n';
     }
     return 0;
 }

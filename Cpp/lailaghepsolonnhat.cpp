@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool lambda(string a, string b) {
+bool compare(string a, string b) {
     while (true) {
         for (int i = 0; i < a.size() and i < b.size(); ++i) {
             if (a[i] > b[i]) return true;
@@ -26,7 +26,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    sort(arr.begin(), arr.end(), lambda);
+    sort(arr.begin(), arr.end(), compare);
     for_each(arr.begin(), arr.end(), [](const string &num) { cout << num; });
     return 0;
 }
