@@ -1,13 +1,9 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <unordered_map>
 #include <set>
+#include <unordered_map>
 using namespace std;
 
-void print(int x, const unordered_map<int, int> &map) {
-    cout << x << " " << map.at(x) << '\n';
-}
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -19,29 +15,30 @@ int main() {
         cin >> arr[i];
     }
     set<int> s;
-    unordered_map<int, int> map;
     set<int>::iterator it;
+    unordered_map<int, int> mp;
     s.insert(arr.front());
     for (int x: arr) {
         it = s.lower_bound(x);
-        if (*it == x) {
-            continue;
-        }
+        if (*it == x) continue;
         if (it == s.end()) {
-            map[x] = map[*(--it)];
+            mp[x] = mp[*(--it)];
         }
         else if (it == s.begin()) {
-            map[x] = map[*it];
+            mp[x] = mp[*it];
         }
         else {
-            map[x] = map[*it];
-            map[x] = max(map[x], map[*(--it)]);
+            mp[x] = mp[*it];
+            mp[x] = max(mp[x], mp[*(--it)]);
         }
-        ++map[x];
+        ++mp[x];
         s.insert(x);
     }
 
-    for_each(s.begin(), s.end(), [&map](const int &x) { print(x, map); });
+    for (int x: s) {
+        cout << x << ' ' << mp.at(x) << '\n';
+    }
+
     return 0;
 }
 
