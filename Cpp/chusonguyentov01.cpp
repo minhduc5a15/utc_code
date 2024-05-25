@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 using namespace std;
 
 const vector<int> prime_digits = {2, 3, 5, 7};
