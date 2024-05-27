@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define ll long long
+typedef long long ll;
 
 int main() {
     std::ios_base::sync_with_stdio(false);

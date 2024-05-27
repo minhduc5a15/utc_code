@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
-#define ll long long
-const int MOD = 1000000007;
-
+typedef long long ll;
 using namespace std;
+const int MOD = 1000000007;
 
 ll solve(ll n) {
     --n;

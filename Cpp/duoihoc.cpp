@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#define ll long long
+typedef long long ll;
 typedef std::vector<ll> vll;
 
 void solve(const vll &arr) {

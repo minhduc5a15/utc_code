@@ -1,5 +1,5 @@
 #include <iostream>
-#define ll long long
+typedef long long ll;
 const int MOD = 1000000007;
 
 int power(ll base, ll exponent, int modulus = MOD) {
