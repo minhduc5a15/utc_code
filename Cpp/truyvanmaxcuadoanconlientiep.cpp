@@ -13,7 +13,7 @@ public:
     void init() {
         cin >> n >> q;
         arr.resize(n + 1);
-        seg.resize(4 * n + 5);
+        seg.resize(n << 2 | 1);
         for (int i = 1; i <= n; ++i) {
             cin >> arr[i];
         }
@@ -25,34 +25,33 @@ public:
             return;
         }
         int mid = (l + r) >> 1;
-        build(2 * id, l, mid);
-        build(2 * id + 1, mid + 1, r);
-        seg[id] = max(seg[2 * id], seg[2 * id + 1]);
+        build(id << 1, l, mid);
+        build(id << 1 | 1, mid + 1, r);
+        seg[id] = max(seg[id << 1], seg[id << 1 | 1]);
     }
 
     int getMax(int id, int l, int r, int u, int v) {
         if (v < l || r < u) return INT_MIN;
         if (u <= l && r <= v) return seg[id];
         int mid = (l + r) >> 1;
-        return max(getMax(2 * id, l, mid, u, v), getMax(2 * id + 1, mid + 1, r, u, v));
+        return max(getMax(id << 1, l, mid, u, v), getMax(id << 1 | 1, mid + 1, r, u, v));
     }
 
     void solve() {
+        build(1, 1, n);
+        int l, r;
         while (q--) {
-            int l, r;
             cin >> l >> r;
             cout << getMax(1, 1, n, l, r) << '\n';
         }
     }
-};
+} tree;
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    SegmentTree tree;
     tree.init();
-    tree.build(1, 1, tree.n);
     tree.solve();
     return 0;
 }
