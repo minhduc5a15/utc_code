@@ -1,7 +1,7 @@
 #include <iostream>
-#include <algorithm>
-#include <tuple>
 #include <vector>
+#include <tuple>
+#include <algorithm>
 using namespace std;
 typedef tuple<int, int, int> tup;
 
