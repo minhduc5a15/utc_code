@@ -11,7 +11,7 @@ bool isvalid(const string &s) {
             st.push(c);
         }
         else {
-            if (st.empty() || mp[c] != st.top()) {
+            if (st.empty() or mp[c] != st.top()) {
                 return false;
             }
             else {
