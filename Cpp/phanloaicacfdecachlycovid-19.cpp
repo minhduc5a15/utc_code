@@ -29,7 +29,7 @@ void solve(int n, const vi adj_list[]) {
         }
     }
     for (int i = 0; i < n && map[i]; ++i) {
-        cout << "F" << i << ": " << map[i] << '\n';
+        cout << 'F' << i << ": " << map[i] << '\n';
     }
 }
 

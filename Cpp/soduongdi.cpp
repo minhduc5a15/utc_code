@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
+typedef vector<int> vi;
+typedef vector<vi> matrixi;
 
-bool isValid(int r, int c, int n, int m, vector<vector<int>> &grid, vector<vector<bool>> &visited) {
+bool isValid(int r, int c, int n, int m, matrixi &grid, vector<vector<bool>> &visited) {
     if (0 <= r && r < n && 0 <= c && c < m) {
         if (!visited[r][c] && (grid[r][c] == 0 || grid[r][c] == 2)) {
             return true;
@@ -12,7 +13,7 @@ bool isValid(int r, int c, int n, int m, vector<vector<int>> &grid, vector<vecto
     return false;
 }
 
-int countPaths(vector<int> &v, int r, int c, int n, int m, vector<vector<int>> &grid, vector<vector<bool>> &visited, int zeros) {
+int countPaths(vector<int> &v, int r, int c, int n, int m, matrixi &grid, vector<vector<bool>> &visited, int zeros) {
     if (r == v[0] && c == v[1]) {
         return (zeros == 0) ? 1 : 0;
     }
@@ -34,14 +35,14 @@ int countPaths(vector<int> &v, int r, int c, int n, int m, vector<vector<int>> &
     return count;
 }
 
-int solve(vector<vector<int>> &grid, int n, int m) {
-    vector<int> u = {0, 0};
-    vector<int> v = {0, 0};
+int solve(matrixi &grid, int n, int m) {
+    vi u = {0, 0};
+    vi v = {0, 0};
     int zeros = 0;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             if (grid[i][j] == 0) {
-                zeros++;
+                ++zeros;
             }
             else if (grid[i][j] == 1) {
                 u = {i, j};
@@ -61,10 +62,10 @@ int main() {
     cout.tie(nullptr);
     int t;
     cin >> t;
-    for (int i = 0; i < t; ++i) {
+    while (t--) {
         int n, m;
         cin >> n >> m;
-        vector<vector<int>> grid(n, vector<int>(m));
+        matrixi grid(n, vi(m));
         for (int j = 0; j < n; ++j) {
             for (int k = 0; k < m; ++k) {
                 cin >> grid[j][k];

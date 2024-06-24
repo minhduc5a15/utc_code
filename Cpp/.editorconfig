@@ -1,5 +1,5 @@
 [*]
-indent_style = space
+indent_style = tab
 indent_size = 4
 cpp_space_within_lambda_brackets = 4
 cpp_indent_braces = false

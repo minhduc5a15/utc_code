@@ -3,6 +3,9 @@
 using namespace std;
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int n, total = 0;
     vector<int> denomination = {500000, 200000, 100000, 50000, 20000, 10000, 5000, 2000, 1000};
     cin >> n;

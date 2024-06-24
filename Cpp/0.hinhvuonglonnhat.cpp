@@ -13,7 +13,6 @@ int max_side(const matrixi &matrix, int n, int m, int num) {
     for (int j = 0; j < m; ++j) {
         F[0][j] = (matrix[0][j] == num) ? 1 : 0;
     }
-
     for (int i = 1; i < n; ++i) {
         for (int j = 1; j < m; ++j) {
             if (matrix[i][j] == num && i >= F[i - 1][j] && j >= F[i][j - 1] && i >= F[i - 1][j - 1]) {
@@ -21,12 +20,10 @@ int max_side(const matrixi &matrix, int n, int m, int num) {
             }
         }
     }
-
     int max_side = 0;
     for (const vi &row: F) {
         max_side = max(max_side, *max_element(row.begin(), row.end()));
     }
-
     return max_side;
 }
 
