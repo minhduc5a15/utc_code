@@ -23,7 +23,7 @@ int main() {
     });
     while (k >= 0) {
         if (get<2>(arr[k]) < get<2>(arr[n - 1]) && ((k > 0 && get<2>(arr[k]) != get<2>(arr[k - 1])) || k == 0)) {
-            cout << get<0>(arr[k]) << " " << get<1>(arr[k]);
+            cout << get<0>(arr[k]) << ' ' << get<1>(arr[k]);
             break;
         }
         else {

@@ -19,10 +19,10 @@ int main() {
     stringstream si(s);
     while (si >> x) {
         if (map[x]) {
-            cout << string(x.size(), '*') << " ";
+            cout << string(x.size(), '*') << ' ';
         }
         else {
-            cout << x << " ";
+            cout << x << ' ';
         }
     }
     return 0;

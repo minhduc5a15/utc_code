@@ -62,8 +62,8 @@ int main() {
             }
         }
         int result = max_sum / step;
-        if (result) cout << id << " " << result << '\n';
-        else cout << id << " " << '\n';
+        if (result) cout << id << ' ' << result << '\n';
+        else cout << id << ' ' << '\n';
         arr.clear();
         divisors.clear();
     }

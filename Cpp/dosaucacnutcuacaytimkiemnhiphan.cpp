@@ -54,7 +54,7 @@ public:
     void inOrder(Node *current_node) {
         if (current_node != nullptr) {
             inOrder(current_node->left);
-            cout << current_node->data << " " << map[current_node->data] << '\n';
+            cout << current_node->data << ' ' << map[current_node->data] << '\n';
             inOrder(current_node->right);
         }
     }

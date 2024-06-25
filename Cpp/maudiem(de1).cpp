@@ -29,7 +29,7 @@ int main() {
             res = min(res, color.second);
         }
         for (const pcii &color: colors) {
-            if (color.second == res) cout << color.first << " ";
+            if (color.second == res) cout << color.first << ' ';
         }
         cout << '\n';
     }

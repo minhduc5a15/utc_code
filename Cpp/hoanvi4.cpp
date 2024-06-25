@@ -17,7 +17,7 @@ void solve(int n, vector<int> &arr, vector<bool> &saved, int &res, int index) {
         }
         if (c) {
             for (int i = 0; i < n; ++i) {
-                cout << arr[i] << " ";
+                cout << arr[i] << ' ';
             }
             cout << '\n';
             ++res;

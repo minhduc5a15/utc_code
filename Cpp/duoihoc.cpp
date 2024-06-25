@@ -8,7 +8,7 @@ void solve(const vll &arr) {
     bool check_max = false;
     for (int i = 1; i < arr.size(); ++i) {
         if (arr[i] > first_max_item) {
-            std::cout << arr[i] << " ";
+            std::cout << arr[i] << ' ';
             first_max_item = arr[i];
             check_max = true;
         }
@@ -28,7 +28,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         std::cin >> arr[i];
     }
-    std::cout << arr.front() << " ";
+    std::cout << arr.front() << ' ';
     solve(arr);
     return 0;
 }

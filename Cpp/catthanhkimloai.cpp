@@ -21,11 +21,11 @@ int main() {
     map[m - arr.front()]++;
     h.push(arr.front());
     h.push(m - arr.front());
-    cout << h.top() << " ";
+    cout << h.top() << ' ';
     int left, right;
     for (int i = 1; i < n; ++i) {
         if (visited[arr[i]]) {
-            cout << h.top() << " ";
+            cout << h.top() << ' ';
             continue;
         }
         visited[arr[i]] = true;
@@ -49,7 +49,7 @@ int main() {
         while (map[h.top()] <= 0) {
             h.pop();
         }
-        cout << h.top() << " ";
+        cout << h.top() << ' ';
     }
     return 0;
 }

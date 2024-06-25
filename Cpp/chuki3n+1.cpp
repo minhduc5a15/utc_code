@@ -36,7 +36,7 @@ int main() {
     init();
     int l, r;
     while (cin >> l >> r && (l || r)) {
-        cout << l << " " << r << " " << solve(l, r) << '\n';
+        cout << l << ' ' << r << ' ' << solve(l, r) << '\n';
     }
     return 0;
 }

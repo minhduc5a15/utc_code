@@ -12,7 +12,7 @@ int main() {
     while (n--) {
         int x;
         cin >> x;
-        if (map[k - x]) cout << min(x, k - x) << " " << max(x, k - x) << '\n';
+        if (map[k - x]) cout << min(x, k - x) << ' ' << max(x, k - x) << '\n';
         map[x] = true;
     }
     return 0;

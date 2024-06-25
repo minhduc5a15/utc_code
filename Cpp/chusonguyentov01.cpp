@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < t; ++i) {
         int k;
         cin >> k;
-        cout << "#" << (i + 1) << " " << solve(k) << '\n';
+        cout << "#" << (i + 1) << ' ' << solve(k) << '\n';
     }
     return 0;
 }

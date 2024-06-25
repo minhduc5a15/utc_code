@@ -28,6 +28,6 @@ int main() {
     vll result = solve(n);
     reverse(result.begin(), result.end());
     if (result.front() != 1) result.insert(result.begin(), 1);
-    for_each(result.cbegin(), result.cend(), [](const ll &x) { cout << x << " "; });
+    for_each(result.cbegin(), result.cend(), [](const ll &x) { cout << x << ' '; });
     return 0;
 }
