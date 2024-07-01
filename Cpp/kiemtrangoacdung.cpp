@@ -3,7 +3,7 @@
 #include <map>
 using namespace std;
 
-bool isvalid(const string &s) {
+bool isValid(const string &s) {
     stack<char> st;
     map<char, char> mp = {{')', '('}, {'}', '{'}, {']', '['}};
     for (char c: s) {
@@ -36,7 +36,7 @@ int main() {
     while (t--) {
         string s;
         cin >> s;
-        if (isvalid(s)) {
+        if (isValid(s)) {
             cout << "Dung\n";
         }
         else {

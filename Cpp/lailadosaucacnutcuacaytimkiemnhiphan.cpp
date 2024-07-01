@@ -34,11 +34,9 @@ int main() {
         ++mp[x];
         s.insert(x);
     }
-
     for (int x: s) {
         cout << x << ' ' << mp.at(x) << '\n';
     }
-
     return 0;
 }
 

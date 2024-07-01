@@ -23,7 +23,9 @@ public:
         cin >> n >> q;
         arr.resize(n + 1);
         tree.resize(4 * n + 5, vi());
-        for (int i = 1; i <= n; ++i) cin >> arr[i];
+        for (int i = 1; i <= n; ++i) {
+            cin >> arr[i];
+        }
     }
 
     void build(int id, int l, int r) {
@@ -39,7 +41,7 @@ public:
 
     pii query(int id, int start, int end, int x, int l, int r) {
         if (l > end || r < start) return {0, 0};
-        if (l <= start && r >= end) {
+        if (l <= start && end <= r) {
             const vi &node = tree[id];
             int min_val = node.front(), max_val = node.back();
             if (x >= max_val) return {max_val, count(node, max_val)};

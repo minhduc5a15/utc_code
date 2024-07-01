@@ -36,7 +36,7 @@ int main() {
     dfs(1, 0);
     while (Q--) {
         cin >> u >> c;
-        cout << dp[u][c] << "\n";
+        cout << dp[u][c] << '\n';
     }
     return 0;
 }

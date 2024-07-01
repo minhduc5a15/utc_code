@@ -3,9 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void solve() {
-    int a, b;
-    cin >> a >> b;
+void solve(int a, int b) {
     if (b - a == 0) {
         cout << "infinity\n";
         return;
@@ -14,8 +12,7 @@ void solve() {
     set<int> s;
     for (int i = 1; i <= sqrt(d); ++i) {
         if (d % i == 0) {
-            s.insert(i);
-            s.insert(d / i);
+            s.insert(i), s.insert(d / i);
         }
     }
     int count = 0;
@@ -29,10 +26,11 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int t;
+    int t, a, b;
     cin >> t;
     while (t--) {
-        solve();
+        cin >> a >> b;
+        solve(a, b);
     }
     return 0;
 }
