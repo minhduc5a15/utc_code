@@ -13,7 +13,7 @@ int main() {
     vector<int> arr(n);
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
-        if (arr[i] >= -c && arr[i] <= d) ++count;
+        if (arr[i] >= -c and arr[i] <= d) ++count;
     }
     cout << count << '\n';
     bool check = arr[0] < arr[1];

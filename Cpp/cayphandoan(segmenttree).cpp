@@ -41,7 +41,7 @@ public:
     }
 
     void update(int id, int l, int r, int i, int v) {
-        if (i < l || r < i) return;
+        if (i < l or r < i) return;
         if (l == r) {
             seg[id] = v;
             gcd[id] = v;
@@ -57,22 +57,22 @@ public:
     }
 
     int getMin(int id, int l, int r, int u, int v) {
-        if (v < l || r < u) return INT_MAX;
-        if (u <= l && r <= v) return seg[id];
+        if (v < l or r < u) return INT_MAX;
+        if (u <= l and r <= v) return seg[id];
         int mid = (l + r) >> 1;
         return min(getMin(id << 1, l, mid, u, v), getMin(id << 1 | 1, mid + 1, r, u, v));
     }
 
     int getGCD(int id, int l, int r, int u, int v) {
-        if (v < l || r < u) return 0;
-        if (u <= l && r <= v) return gcd[id];
+        if (v < l or r < u) return 0;
+        if (u <= l and r <= v) return gcd[id];
         int mid = (l + r) >> 1;
         return GCD(getGCD(id << 1, l, mid, u, v), getGCD(id << 1 | 1, mid + 1, r, u, v));
     }
 
     int getCount(int id, int l, int r, int u, int v, int g) {
-        if (v < l || r < u) return 0;
-        if (u <= l && r <= v) return (gcd[id] == g ? cnt[id] : 0);
+        if (v < l or r < u) return 0;
+        if (u <= l and r <= v) return (gcd[id] == g ? cnt[id] : 0);
         int mid = (l + r) >> 1;
         return getCount(id << 1, l, mid, u, v, g) + getCount(id << 1 | 1, mid + 1, r, u, v, g);
     }

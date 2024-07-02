@@ -45,7 +45,7 @@ void solve(ull n) {
         cout << "1\n";
         return;
     }
-    if (1 <= n && n <= 5) {
+    if (1 <= n and n <= 5) {
         cout << "OK\n";
         return;
     }
@@ -57,7 +57,7 @@ void solve(ull n) {
         cout << power(2, n / 2) << '\n';
         return;
     }
-    if (6 <= n && n <= MAXN) {
+    if (6 <= n and n <= MAXN) {
         if (primes[n]) {
             cout << "OK" << '\n';
             return;

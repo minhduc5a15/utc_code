@@ -17,7 +17,7 @@ int main() {
     stack<int> s;
     vector<int> res(n, -1);
     for (int i = 0; i < n; ++i) {
-        while (!s.empty() && arr[s.top()] < arr[i]) {
+        while (!s.empty() and arr[s.top()] < arr[i]) {
             res[s.top()] = arr[i];
             s.pop();
         }

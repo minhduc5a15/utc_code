@@ -14,7 +14,7 @@ int main() {
     while (n--) {
         int x;
         cin >> x;
-        if (x > m || mp[x] || x < 1) {
+        if (x > m or mp[x] or x < 1) {
             cout << "NO";
             check = false;
             break;

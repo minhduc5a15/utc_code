@@ -31,8 +31,8 @@ public:
     }
 
     int getMax(int id, int l, int r, int u, int v) {
-        if (v < l || r < u) return INT_MIN;
-        if (u <= l && r <= v) return seg[id];
+        if (v < l or r < u) return INT_MIN;
+        if (u <= l and r <= v) return seg[id];
         int mid = (l + r) >> 1;
         return max(getMax(id << 1, l, mid, u, v), getMax(id << 1 | 1, mid + 1, r, u, v));
     }

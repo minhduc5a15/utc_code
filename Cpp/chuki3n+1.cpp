@@ -11,7 +11,7 @@ void init() {
     for (int i = 2; i <= MAXN; ++i) {
         long long temp = i;
         int count = 0;
-        while (temp != 1 && temp >= i) {
+        while (temp != 1 and temp >= i) {
             if (temp % 2 == 0) {
                 temp >>= 1;
             }
@@ -35,7 +35,7 @@ int main() {
     cout.tie(nullptr);
     init();
     int l, r;
-    while (cin >> l >> r && (l || r)) {
+    while (cin >> l >> r and (l or r)) {
         cout << l << ' ' << r << ' ' << solve(l, r) << '\n';
     }
     return 0;

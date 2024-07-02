@@ -18,7 +18,7 @@ string solve(ll n) {
     while (!q.empty()) {
         string num = q.front();
         q.pop();
-        if (stoll(num) >= n && check(num)) return num;
+        if (stoll(num) >= n and check(num)) return num;
         q.push(num + '4');
         q.push(num + '7');
     }

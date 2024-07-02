@@ -7,7 +7,7 @@ const vi dx = {-1, 0, 1, 0};
 const vi dy = {0, 1, 0, -1};
 
 bool is_valid(int x, int y, int n, int m) {
-    return x >= 0 && y >= 0 && x < n && y < m;
+    return x >= 0 and y >= 0 and x < n and y < m;
 }
 
 int solve(vector<vi> &grid) {
@@ -26,7 +26,7 @@ int solve(vector<vi> &grid) {
         }
     }
     int res = 0;
-    while (!q.empty() && count) {
+    while (!q.empty() and count) {
         int sz = q.size();
         while (sz--) {
             pair<int, int> p = q.front();
@@ -34,7 +34,7 @@ int solve(vector<vi> &grid) {
             for (int i = 0; i < 4; ++i) {
                 int nx = p.first + dx[i];
                 int ny = p.second + dy[i];
-                if (is_valid(nx, ny, n, m) && grid[nx][ny] == 1) {
+                if (is_valid(nx, ny, n, m) and grid[nx][ny] == 1) {
                     --count;
                     grid[nx][ny] = 2;
                     q.push({nx, ny});

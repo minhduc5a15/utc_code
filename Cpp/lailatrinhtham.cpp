@@ -8,17 +8,17 @@ void solve(const vector<int> &arr, int n, int k) {
     deque<int> q(k);
     int i;
     for (i = 0; i < k; ++i) {
-        while ((!q.empty()) && arr[i] >= arr[q.back()]) {
+        while ((!q.empty()) and arr[i] >= arr[q.back()]) {
             q.pop_back();
         }
         q.push_back(i);
     }
     for (; i < n; ++i) {
         cout << arr[q.front()] << ' ';
-        while ((!q.empty()) && q.front() <= i - k) {
+        while ((!q.empty()) and q.front() <= i - k) {
             q.pop_front();
         }
-        while ((!q.empty()) && arr[i] >= arr[q.back()]) {
+        while ((!q.empty()) and arr[i] >= arr[q.back()]) {
             q.pop_back();
         }
         q.push_back(i);

@@ -30,7 +30,7 @@ int main() {
     else if ((s + arr[id] + arr[id] / 2 + d) <= m) {
         cout << 2 * id + 2;
     }
-    else if ((s + arr[id] <= m) || (s + arr[id] / 2 + d) <= m) {
+    else if ((s + arr[id] <= m) or (s + arr[id] / 2 + d) <= m) {
         cout << 2 * id + 1;
     }
     else cout << 2 * id;

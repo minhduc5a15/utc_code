@@ -35,7 +35,7 @@ int main() {
     }
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
-            if (not visited[i][j] && matrix[i][j] == 0) {
+            if (not visited[i][j] and matrix[i][j] == 0) {
                 dfs(i, j);
                 res += not flag;
                 flag = false;

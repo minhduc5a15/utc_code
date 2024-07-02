@@ -12,7 +12,7 @@ struct Fraction {
         this->b /= d;
     }
     bool operator==(const Fraction &other) const {
-        return a == other.a && b == other.b;
+        return a == other.a and b == other.b;
     }
 };
 

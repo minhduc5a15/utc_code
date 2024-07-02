@@ -23,11 +23,11 @@ int main() {
     long long count = 0;
     for (int i = 0; i < n; ++i) {
         int pos = upper_bound(arr.begin(), arr.end(), (k - 1) + arr[i]) - arr.begin() - 1;
-        if (pos != -1 && pos > i) {
+        if (pos != -1 and pos > i) {
             count += (pos - i);
         }
         pos = upper_bound(arr.begin(), arr.end(), (k + 1) + arr[i]) - arr.begin() - 1;
-        if (pos != -1 && pos > i) {
+        if (pos != -1 and pos > i) {
             count += (pos - i);
         }
     }

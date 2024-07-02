@@ -8,7 +8,7 @@ typedef vector<vector<db>> matrixdb;
 db determinant(const matrixdb &matrix) {
     db total = 0;
     int size = matrix.size();
-    if (matrix.size() == 2 && matrix[0].size() == 2) {
+    if (matrix.size() == 2 and matrix[0].size() == 2) {
         return matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1];
     }
     for (int fc = 0; fc < size; ++fc) {

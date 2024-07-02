@@ -24,7 +24,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         dp[i] = arr[i];
         for (int j = 0; j < i; ++j) {
-            if (arr[j] < arr[i] && gcd(arr[j], arr[i]) == 1) {
+            if (arr[j] < arr[i] and gcd(arr[j], arr[i]) == 1) {
                 dp[i] = max(dp[i], dp[j] + arr[i]);
             }
         }

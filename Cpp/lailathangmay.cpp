@@ -18,7 +18,7 @@ void solve() {
         q.pop();
         for (int num: arr) {
             int x = u + num;
-            if (1 <= x and x <= maxn && !visited[x]) {
+            if (1 <= x and x <= maxn and !visited[x]) {
                 visited[x] = true;
                 dis[x] = dis[u] + 1;
                 if (x == f) res = min(res, dis[f]);

@@ -16,7 +16,7 @@ int main() {
     size_t res = 0;
     sort(arr.begin(), arr.begin() + n, greater<>());
     for (int i = 0; i < n; ++i) {
-        while (q.size() > 1 && q.front() >= q.back() + arr[i]) q.pop();
+        while (q.size() > 1 and q.front() >= q.back() + arr[i]) q.pop();
         q.push(arr[i]);
         res = max(res, q.size());
     }

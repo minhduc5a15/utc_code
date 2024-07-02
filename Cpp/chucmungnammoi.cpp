@@ -13,15 +13,15 @@ int main() {
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             if (i < half) {
-                if (j < half - i || j >= half + i + 1) cout << "---";
+                if (j < half - i or j >= half + i + 1) cout << "---";
                 else cout << s;
             }
             else if (i == half) {
                 if (j == mid) cout << "--CHUC MUNG NAM MOI--";
-                if (j < mid || j > mid + 6) cout << "---";
+                if (j < mid or j > mid + 6) cout << "---";
             }
             else {
-                if (j < i - half || j >= n - (i - half)) cout << "---";
+                if (j < i - half or j >= n - (i - half)) cout << "---";
                 else cout << s;
             }
         }

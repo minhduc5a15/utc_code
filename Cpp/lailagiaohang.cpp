@@ -20,7 +20,7 @@ int main() {
     int j = n - 1;
     ll res = 0;
     while (--n) {
-        while (j >= 0 && arr[j].first >= n) {
+        while (j >= 0 and arr[j].first >= n) {
             q.push(arr[j--].second);
         }
         if (!q.empty()) {

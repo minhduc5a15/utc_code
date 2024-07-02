@@ -15,7 +15,7 @@ int max_side(const matrixi &matrix, int n, int m, int num) {
     }
     for (int i = 1; i < n; ++i) {
         for (int j = 1; j < m; ++j) {
-            if (matrix[i][j] == num && i >= F[i - 1][j] && j >= F[i][j - 1] && i >= F[i - 1][j - 1]) {
+            if (matrix[i][j] == num and i >= F[i - 1][j] and j >= F[i][j - 1] and i >= F[i - 1][j - 1]) {
                 F[i][j] = min(F[i - 1][j], min(F[i][j - 1], F[i - 1][j - 1])) + 1;
             }
         }

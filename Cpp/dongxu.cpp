@@ -12,7 +12,7 @@ void solve(ll n) {
             check = true;
         }
         n += count;
-        while (n & 1 && (!check || n >= 10)) {
+        while (n & 1 and (!check or n >= 10)) {
             n >>= 1;
             break;
         }

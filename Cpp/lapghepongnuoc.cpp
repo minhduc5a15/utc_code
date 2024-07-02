@@ -17,7 +17,7 @@ int main() {
     long long res = 0;
     while (!heap.empty()) {
         int s = 0;
-        for (int i = 0; i < k && !heap.empty(); ++i) {
+        for (int i = 0; i < k and !heap.empty(); ++i) {
             int a = heap.top();
             heap.pop();
             s += a;

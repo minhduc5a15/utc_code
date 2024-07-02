@@ -19,7 +19,7 @@ int main() {
         for (int i = 1; i * i <= num; ++i) {
             if (num % i == 0) {
                 int j = (i - 1) * (num / i + 1);
-                if (j && !mp[j]) {
+                if (j and !mp[j]) {
                     st.push(j);
                     mp[j] = true;
                 }

@@ -15,7 +15,7 @@ spvi add(const spvi &a, const spvi &b) {
         (*result)[i] = carry % 10;
         carry /= 10;
     }
-    while (static_cast<int>(result->size()) > 1 && result->back() == 0) result->pop_back();
+    while (static_cast<int>(result->size()) > 1 and result->back() == 0) result->pop_back();
     return result;
 }
 

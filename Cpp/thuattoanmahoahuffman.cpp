@@ -26,7 +26,7 @@ struct compare {
 
 void encode(Node *root, const string& s, unordered_map<char, string> &huffmanCode) {
     if (root == nullptr) return;
-    if (!root->left && !root->right) {
+    if (!root->left and !root->right) {
         huffmanCode[root->ch] = s;
     }
     encode(root->left, s + '0', huffmanCode);

@@ -17,7 +17,7 @@ bool is_valid(int x, int y, int steps, int n) {
 
 int solve(int i, int j, int steps, int n) {
     if (visited[i + MAXN][j + MAXN] or not is_valid(i, j, steps, n)) return 0;
-    if (i == ex && j == ey) return steps == n;
+    if (i == ex and j == ey) return steps == n;
     int res = 0;
     visited[i + MAXN][j + MAXN] = true;
     if (path[steps] == 'R') res = solve(i + 1, j, steps + 1, n);

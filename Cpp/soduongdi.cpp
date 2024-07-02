@@ -5,8 +5,8 @@ typedef vector<int> vi;
 typedef vector<vi> matrixi;
 
 bool isValid(int r, int c, int n, int m, matrixi &grid, vector<vector<bool>> &visited) {
-    if (0 <= r && r < n && 0 <= c && c < m) {
-        if (!visited[r][c] && (grid[r][c] == 0 || grid[r][c] == 2)) {
+    if (0 <= r and r < n and 0 <= c and c < m) {
+        if (!visited[r][c] and (grid[r][c] == 0 or grid[r][c] == 2)) {
             return true;
         }
     }
@@ -14,7 +14,7 @@ bool isValid(int r, int c, int n, int m, matrixi &grid, vector<vector<bool>> &vi
 }
 
 int countPaths(vector<int> &v, int r, int c, int n, int m, matrixi &grid, vector<vector<bool>> &visited, int zeros) {
-    if (r == v[0] && c == v[1]) {
+    if (r == v[0] and c == v[1]) {
         return (zeros == 0) ? 1 : 0;
     }
     visited[r][c] = true;

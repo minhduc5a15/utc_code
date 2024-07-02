@@ -20,7 +20,7 @@ int main() {
         while (static_cast<int>(q.size()) > m) {
             q.pop();
         }
-        while (!q.empty() && num) {
+        while (!q.empty() and num) {
             if (q.front() <= num) {
                 num -= q.front();
                 res += q.front();

@@ -8,7 +8,7 @@ const int MOD = 1000000007;
 bool is_good(int a, int b, int n) {
     while (n) {
         int digit = n % 10;
-        if (digit != a && digit != b) {
+        if (digit != a and digit != b) {
             return false;
         }
         n /= 10;

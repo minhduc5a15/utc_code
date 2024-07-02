@@ -20,19 +20,19 @@ void generate() {
         if (matrix[x][y] == des) i_end = x, j_end = y;
         if (d == 0) {
             x++;
-            if (x + 1 == n || matrix[x + 1][y] != 0) {
+            if (x + 1 == n or matrix[x + 1][y] != 0) {
                 d = 1;
             }
         }
         else if (d == 1) {
             y++;
-            if (y + 1 == n || matrix[x][y + 1] != 0) {
+            if (y + 1 == n or matrix[x][y + 1] != 0) {
                 d = 2;
             }
         }
         else if (d == 2) {
             x--;
-            if (x - 1 == -1 || matrix[x - 1][y] != 0) {
+            if (x - 1 == -1 or matrix[x - 1][y] != 0) {
                 d = 3;
             }
         }
@@ -52,7 +52,7 @@ void is_valid(int i, int j, int value, int step) {
     if (j < min(j_start, j_end) - 10) return;
     if (i > max(i_start, i_end) + 10) return;
     if (j > max(j_start, j_end) + 10) return;
-    if (i < 0 || j < 0 || i >= n || j >= n) return;
+    if (i < 0 or j < 0 or i >= n or j >= n) return;
     if (dist[i][j] != 0) return;
     if (gcd(value, matrix[i][j]) != 1) return;
     dist[i][j] = step + 1;

@@ -15,11 +15,11 @@ int main() {
     }
     int res = 1, j = 1;
     for (int i = 1; i < n;) {
-        while (i < n && arr[i] >= arr[i - 1]) {
+        while (i < n and arr[i] >= arr[i - 1]) {
             ++j;
             ++i;
         }
-        while (i < n && arr[i] <= arr[i - 1]) {
+        while (i < n and arr[i] <= arr[i - 1]) {
             ++j;
             ++i;
         }

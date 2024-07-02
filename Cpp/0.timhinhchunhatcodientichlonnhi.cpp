@@ -22,7 +22,7 @@ int main() {
         return get<2>(a) < get<2>(b);
     });
     while (k >= 0) {
-        if (get<2>(arr[k]) < get<2>(arr[n - 1]) && ((k > 0 && get<2>(arr[k]) != get<2>(arr[k - 1])) || k == 0)) {
+        if (get<2>(arr[k]) < get<2>(arr[n - 1]) and ((k > 0 and get<2>(arr[k]) != get<2>(arr[k - 1])) or k == 0)) {
             cout << get<0>(arr[k]) << ' ' << get<1>(arr[k]);
             break;
         }

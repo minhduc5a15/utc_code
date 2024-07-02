@@ -29,7 +29,7 @@ int solve(const vi &arr, int n, int s) {
     for (int i = 0; i < size_left; ++i) {
         if (saved_left[i] < s) {
             int p = lower_bound(saved_right.begin(), saved_right.begin() + size_right, s - saved_left[i]) - saved_right.begin();
-            if (p == size_right || saved_right[p] + saved_left[i] != s) {
+            if (p == size_right or saved_right[p] + saved_left[i] != s) {
                 --p;
             }
             result = max(result, saved_right[p] + saved_left[i]);

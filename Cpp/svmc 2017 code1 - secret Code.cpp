@@ -15,12 +15,12 @@ int main() {
         int b = static_cast<int>(sqrt(static_cast<double>(bb)) - 1e-6);
         stack<int> ans;
         bool decrypted = true;
-        while (xr != 0 || xi != 0) {
+        while (xr != 0 or xi != 0) {
             bool found = false;
             for (int a = 0; a <= b; ++a) {
                 int r = (xr - a) * br - xi * (-bi);
                 int i = (xr - a) * (-bi) + xi * br;
-                if (r % bb == 0 && i % bb == 0) {
+                if (r % bb == 0 and i % bb == 0) {
                     xr = r / bb;
                     xi = i / bb;
                     ans.push(a);
@@ -29,7 +29,7 @@ int main() {
                 }
             }
 
-            if (!found || ans.size() > 100) {
+            if (!found or ans.size() > 100) {
                 decrypted = false;
                 break;
             }

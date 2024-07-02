@@ -22,7 +22,7 @@ struct Fraction {
     }
 
     bool operator==(const Fraction &other) const {
-        return n == other.n && d == other.d;
+        return n == other.n and d == other.d;
     }
 };
 
@@ -40,7 +40,7 @@ int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
         value = map.at(Fraction(n, d));
         if (exp == 1) {
             Fraction k = Fraction(d - n, d);
-            if (map.find(k) != map.end() && ((n * 2) != d)) {
+            if (map.find(k) != map.end() and ((n * 2) != d)) {
                 result += map.at(k) * value;
             }
         }
@@ -54,7 +54,7 @@ int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
             }
         }
     }
-    if (exp == 1 && map.find(Fraction(1, 2)) != map.end()) result += map.at(Fraction(1, 2)) * (map.at(Fraction(1, 2)) - 1);
+    if (exp == 1 and map.find(Fraction(1, 2)) != map.end()) result += map.at(Fraction(1, 2)) * (map.at(Fraction(1, 2)) - 1);
     result >>= 1;
     return result;
 }

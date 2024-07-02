@@ -13,7 +13,7 @@ int main() {
     while (n--) {
         int x;
         cin >> x;
-        if (maxHeap.empty() || x <= maxHeap.top()) {
+        if (maxHeap.empty() or x <= maxHeap.top()) {
             maxHeap.push(x);
         }
         else {

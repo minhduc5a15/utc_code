@@ -38,7 +38,7 @@ int main() {
     for (int num: nums) {
         if (num * 3 <= n) {
             for (int i = num; num + i + i <= n; ++i) {
-                if (primes[i] && primes[n - num - i]) {
+                if (primes[i] and primes[n - num - i]) {
                     ++count;
                 }
             }

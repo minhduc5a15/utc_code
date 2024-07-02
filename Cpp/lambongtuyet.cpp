@@ -10,7 +10,7 @@ void solve(const vll &V, const vll &T, const vll &prefix_sum, int n) {
     for (int i = 1; i <= n; ++i) {
         res = 0;
         q.push(V[i] + prefix_sum[i - 1]);
-        while (!q.empty() && q.top() <= prefix_sum[i]) {
+        while (!q.empty() and q.top() <= prefix_sum[i]) {
             res += q.top() - prefix_sum[i - 1];
             q.pop();
         }

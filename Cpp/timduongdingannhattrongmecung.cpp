@@ -10,7 +10,7 @@ const vi dy = {0, 0, 1, -1};
 matrixi matrix;
 
 bool isValid(int x, int y, int n, int m) {
-    return 1 <= x and x <= n && 1 <= y and y <= m and matrix[x][y] != 1;
+    return 1 <= x and x <= n and 1 <= y and y <= m and matrix[x][y] != 1;
 }
 
 int bfs(int x1, int y1, int x2, int y2, int n, int m) {
@@ -22,7 +22,7 @@ int bfs(int x1, int y1, int x2, int y2, int n, int m) {
         tuple<int, int, int> top = q.front();
         q.pop();
         int x = get<0>(top), y = get<1>(top), steps = get<2>(top);
-        if (x == x2 && y == y2) return steps;
+        if (x == x2 and y == y2) return steps;
         for (int i = 0; i < 4; ++i) {
             int nx = x + dx[i], ny = y + dy[i];
             if (isValid(nx, ny, n, m) and !visited[nx][ny]) {

@@ -11,7 +11,7 @@ int main() {
     while (n--) {
         int x;
         std::cin >> x;
-        if (dq.empty() || dq.back() != x) {
+        if (dq.empty() or dq.back() != x) {
             dq.push_back(x);
         }
     }
@@ -21,14 +21,13 @@ int main() {
     while (m--) {
         int x;
         std::cin >> x;
-        while (!dq.empty() && dq.back() <= x) {
+        while (!dq.empty() and dq.back() <= x) {
             dq.pop_back();
             --rank;
         }
         dq.push_back(x);
         std::cout << ++rank << "\n";
     }
-
     return 0;
 }
 

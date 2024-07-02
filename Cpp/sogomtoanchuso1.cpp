@@ -3,7 +3,7 @@
 using namespace std;
 
 int solve(int n) {
-    if (n % 2 == 0 || n % 5 == 0) return -1;
+    if (n % 2 == 0 or n % 5 == 0) return -1;
     int res = 0;
     for (int i = 1; i <= n; ++i) {
         res = (res * 10 + 1) % n;

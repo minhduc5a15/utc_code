@@ -23,7 +23,7 @@ int main() {
                         ++count;
                     }
                 }
-                if (count == 1 && (sub.size() < res.size() || (sub.size() == res.size() && sub < res))) {
+                if (count == 1 and (sub.size() < res.size() or (sub.size() == res.size() and sub < res))) {
                     res = sub;
                 }
             }

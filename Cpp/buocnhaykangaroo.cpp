@@ -18,10 +18,10 @@ int main() {
         cin >> num;
         if (i <= x) arr[i] = num;
         else {
-            while (!dq.empty() && arr[i - x] >= arr[dq.back()]) {
+            while (!dq.empty() and arr[i - x] >= arr[dq.back()]) {
                 dq.pop_back();
             }
-            if (!dq.empty() && dq.front() < i - y) {
+            if (!dq.empty() and dq.front() < i - y) {
                 dq.pop_front();
             }
             dq.push_back(i - x);

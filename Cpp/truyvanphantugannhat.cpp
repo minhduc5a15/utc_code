@@ -40,8 +40,8 @@ public:
     }
 
     pii query(int id, int start, int end, int x, int l, int r) {
-        if (l > end || r < start) return {0, 0};
-        if (l <= start && end <= r) {
+        if (l > end or r < start) return {0, 0};
+        if (l <= start or end <= r) {
             const vi &node = tree[id];
             int min_val = node.front(), max_val = node.back();
             if (x >= max_val) return {max_val, count(node, max_val)};

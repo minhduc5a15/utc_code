@@ -1,13 +1,13 @@
 #include <iostream>
 
 void solve(int a, int b, int c) {
-    if (a + b <= c || a + c <= b || b + c <= a) {
+    if (a + b <= c or a + c <= b or b + c <= a) {
         std::cout << "KHONG PHAI TAM GIAC";
     }
-    else if (a == b || a == c || b == c) {
+    else if (a == b or a == c or b == c) {
         std::cout << "TAM GIAC CAN";
     }
-    else if (a * a + b * b == c * c || b * b + c * c == a * a || c * c + a * a == b * b) {
+    else if (a * a + b * b == c * c or b * b + c * c == a * a or c * c + a * a == b * b) {
         std::cout << "TAM GIAC VUONG";
     }
     else {

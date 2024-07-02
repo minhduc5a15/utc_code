@@ -13,7 +13,7 @@ vll solve(ll n) {
             result.push_back(n);
         }
     }
-    if (n > 1 && result.back() != n) {
+    if (n > 1 and result.back() != n) {
         result.push_back(n);
     }
     return result;

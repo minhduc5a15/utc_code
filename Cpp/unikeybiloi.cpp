@@ -21,7 +21,7 @@ int main() {
     int n = s.length();
     for (int i = 0; i < n; ++i) {
         temp.clear();
-        while (i < n && s[i] != ' ') {
+        while (i < n and s[i] != ' ') {
             temp += s[i];
             ++i;
         }

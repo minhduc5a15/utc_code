@@ -28,7 +28,7 @@ int solve(const vi &arr) {
         int d = p.first;
         int i = p.second.first;
         int j = p.second.second;
-        if (!matched[i] && !matched[j]) {
+        if (!matched[i] and !matched[j]) {
             matched[i] = true;
             matched[j] = true;
             result += d;

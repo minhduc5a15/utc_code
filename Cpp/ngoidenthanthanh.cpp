@@ -10,7 +10,7 @@ string solve(const string &s) {
         s1 += s[i];
         s2 = s[n - i - 1] + s2;
         if (s1 == s2) {
-            if (s1 + s2 == s || s1 + s2 + s[0] == s) return t;
+            if (s1 + s2 == s or s1 + s2 + s[0] == s) return t;
             if (t.find(s1) != string::npos) {
                 result = s1;
             }
