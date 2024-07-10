@@ -29,7 +29,7 @@ int main() {
     else {
         for (const pair<int, int> &item: arr) {
             if (distance(item.first, item.second) == max_distance) {
-                cout << item.first << " " << item.second << endl;
+                cout << item.first << ' ' << item.second << '\n';
                 break;
             }
         }

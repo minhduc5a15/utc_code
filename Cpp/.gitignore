@@ -13,3 +13,4 @@ test.cpp
 main.cpp
 test.c
 output
+*.md

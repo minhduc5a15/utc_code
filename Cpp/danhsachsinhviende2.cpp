@@ -58,7 +58,7 @@ int main() {
         }
         else {
             for (const string &maSV: danhSachMaSV) {
-                cout << maSV << " ";
+                cout << maSV << ' ';
             }
             cout << '\n';
         }

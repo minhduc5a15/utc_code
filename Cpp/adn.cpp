@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;
-string a, b;
+string graph, b;
 set<string> res;
 
 void backtrack(int i, string s) {
@@ -11,8 +11,8 @@ void backtrack(int i, string s) {
         res.insert(s);
         return;
     }
-    if (a[i] == b[i]) backtrack(i + 1, s + a[i]);
-    backtrack(i + 1, s + a[i]);
+    if (graph[i] == b[i]) backtrack(i + 1, s + graph[i]);
+    backtrack(i + 1, s + graph[i]);
     backtrack(i + 1, s + b[i]);
 }
 
@@ -21,7 +21,7 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     cin >> n;
-    cin >> a >> b;
+    cin >> graph >> b;
     backtrack(0, "");
     cout << res.size() << '\n';
     for (const string &s: res) {

@@ -24,7 +24,7 @@ int main() {
         }
         s.push(i);
     }
-    while (!s.empty()) s.pop();
+    s = {};
     for (int i = n - 1; i >= 0; --i) {
         while (!s.empty() and arr[s.top()] < arr[i]) {
             left[s.top()] = i;

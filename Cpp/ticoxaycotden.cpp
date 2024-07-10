@@ -9,8 +9,9 @@ ll calc(ll n) {
 }
 
 int main() {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     ll l, r;
     cin >> l >> r;
     cout << calc(r) - calc(l - 1);

@@ -34,7 +34,7 @@ int main() {
         vector<psi> arr(getAll(map));
         sort(getAll(arr), compare);
         for (int i = 0; i < k; ++i) {
-            cout << arr[i].first << " ";
+            cout << arr[i].first << ' ';
         }
         cout << "\n";
         map.clear();

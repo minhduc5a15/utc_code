@@ -24,7 +24,7 @@ int main() {
         cin >> arr[i];
     }
     for (int num: arr) {
-        if (isPrime(num)) cout << num << " ";
+        if (isPrime(num)) cout << num << ' ';
     }
     return 0;
 }

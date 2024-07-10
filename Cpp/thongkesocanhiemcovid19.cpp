@@ -26,7 +26,7 @@ int main() {
             --rank;
         }
         dq.push_back(x);
-        std::cout << ++rank << "\n";
+        std::cout << ++rank << '\n';
     }
     return 0;
 }

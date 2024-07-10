@@ -31,7 +31,7 @@ struct FractionHash {
         return hash<int>()(f.n) ^ hash<int>()(f.d);
     }
 };
-
+t
 int solve(const unordered_map<Fraction, int, FractionHash> &map, int exp) {
     int result = 0;
     int n, d, value;

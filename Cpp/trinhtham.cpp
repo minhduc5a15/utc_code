@@ -14,10 +14,12 @@ void solve(const vector<int> &arr, int n, int k) {
     }
     for (; i < n; ++i) {
         cout << arr[q.front()] << ' ';
-        while ((!q.empty()) and q.front() <= i - k)
+        while ((!q.empty()) and q.front() <= i - k) {
             q.pop_front();
-        while ((!q.empty()) and arr[i] >= arr[q.back()])
+        }
+        while ((!q.empty()) and arr[i] >= arr[q.back()]) {
             q.pop_back();
+        }
         q.push_back(i);
     }
     cout << arr[q.front()] << '\n';
@@ -39,6 +41,3 @@ int main() {
     solve(arr, n, k);
     return 0;
 }
-
-
-// code by duck it1
