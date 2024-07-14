@@ -12,4 +12,3 @@ def find_destination(DDD):
     return destinations.get(DDD, "DDD nao cadastrado")
 
 print(find_destination(int(input())))
-# code by duck it1
