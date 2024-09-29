@@ -21,3 +21,7 @@ dsa
 .vs
 ./.idea/utc_code2.iml
 .vscode
+cmake-build-debug
+.clang-format
+.editorconfig
+.clang-tidy
