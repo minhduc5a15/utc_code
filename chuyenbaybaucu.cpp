@@ -6,18 +6,18 @@ typedef long long ll;
 typedef vector<ll> vll;
 const int MOD = 1000000007;
 
-class Edge {
+class edge {
 public:
     ll tour, cost;
 
     struct Compare {
-        bool operator()(const Edge &a, const Edge &b) const {
+        bool operator()(const edge &a, const edge &b) const {
             return a.tour > b.tour;
         }
     };
 };
 
-void solve(int n, const vector<vector<Edge>> &graph) {
+void solve(int n, const vector<vector<edge>> &graph) {
     vll dist(n, LONG_LONG_MAX);
     vll count(n, 0);
     vll min_flights(n, 0);
@@ -25,7 +25,7 @@ void solve(int n, const vector<vector<Edge>> &graph) {
     dist[0] = 0;
     count[0] = 1;
 
-    priority_queue<Edge, vector<Edge>, Edge::Compare> pq;
+    priority_queue<edge, vector<edge>, edge::Compare> pq;
     pq.push({0, 0});
 
     while (!pq.empty()) {
@@ -33,7 +33,7 @@ void solve(int n, const vector<vector<Edge>> &graph) {
         ll v = pq.top().cost;
         pq.pop();
         if (v_dist != dist[v]) continue;
-        for (const Edge &edge: graph[v]) {
+        for (const edge &edge: graph[v]) {
             ll w = edge.tour;
             ll w_cost = edge.cost;
             if (dist[v] + w_cost < dist[w]) {
@@ -61,7 +61,7 @@ int main() {
     cout.tie(nullptr);
     int n, m;
     cin >> n >> m;
-    vector<vector<Edge>> graph(n);
+    vector<vector<edge>> graph(n);
     while (m--) {
         ll a, b, c;
         cin >> a >> b >> c;

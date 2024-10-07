@@ -3,7 +3,7 @@
 #include <algorithm>
 
 long long solve(std::vector<int>& arr, int n, int k) {
-    std::sort(arr.begin(), arr.end());
+    std::ranges::sort(arr);
     int left = 0, right = n - 1;
     long long count = 0;
     while (left < right) {

@@ -15,8 +15,7 @@ int main() {
         if (arr[i] >= -c and arr[i] <= d) ++count;
     }
     cout << count << '\n';
-    bool check = arr[0] < arr[1];
-    if (!check) cout << "NO";
+    if (bool check = arr[0] < arr[1]; !check) cout << "NO";
     else {
         for (int i = 2; i < n - 1; ++i) {
             if (check != (arr[i] < arr[i + 1])) {

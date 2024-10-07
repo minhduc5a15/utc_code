@@ -6,14 +6,12 @@ typedef pair<int, float> pif;
 typedef vector<int> vi;
 
 size_t solve(vector<pif> &bricks) {
-    sort(bricks.begin(), bricks.end(), [](const pif &a, const pif &b) {
+    ranges::sort(bricks, [](const pif &a, const pif &b) {
         return a.second <= b.second;
     });
     vi lis;
-    vi::iterator it;
     for (auto [num, _]: bricks) {
-        it = upper_bound(lis.begin(), lis.end(), num);
-        if (it == lis.end()) {
+        if (auto it = ranges::upper_bound(lis, num); it == lis.end()) {
             lis.push_back(num);
         }
         else *it = num;

@@ -7,7 +7,7 @@ using namespace std;
 class SegmentTree {
 private:
     vector<int> arr, seg, cnt, gcd;
-    int n, q;
+    int n = 0, q = 0;
 public:
     void init() {
         cin >> n >> q;
