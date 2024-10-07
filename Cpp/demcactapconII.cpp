@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef vector<int> vi;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 int main() {
     ios_base::sync_with_stdio(false);

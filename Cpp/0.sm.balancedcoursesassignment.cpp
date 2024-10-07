@@ -23,11 +23,11 @@ bool isValid(int t, int p) {
 
 int solve(int i) {
     if (i == n) {
-        return *max_element(load.begin(), load.end());
+        return *ranges::max_element(load);
     }
     int res = INT_MAX;
     for (int p = 0; p < m; ++p) {
-        if (find(graph[p].begin(), graph[p].end(), i + 1) != graph[p].end() && isValid(i, p)) {
+        if (ranges::find(graph[p], i + 1) != graph[p].end() && isValid(i, p)) {
             tasks[i] = p;
             load[p]++;
             res = min(res, solve(i + 1));

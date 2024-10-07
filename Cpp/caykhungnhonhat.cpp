@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-struct Edge {
+struct edge {
     int u, v, w;
 };
 
@@ -31,7 +31,7 @@ struct Dsu {
     }
 } dsu;
 
-vector<Edge> edges;
+vector<edge> edges;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -45,10 +45,10 @@ int main() {
         edges.push_back({u, v, w});
     }
     dsu.init(n);
-    sort(edges.begin(), edges.end(), [](const Edge &a, const Edge &b) {
+    sort(edges.begin(), edges.end(), [](const edge &a, const edge &b) {
         return a.w < b.w;
     });
-    for (const Edge &edge: edges) {
+    for (const edge &edge: edges) {
         if (!dsu.join(edge.u, edge.v)) continue;
         res += edge.w;
     }

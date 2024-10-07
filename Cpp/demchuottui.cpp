@@ -13,7 +13,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    sort(arr.begin(), arr.end());
+    ranges::sort(arr);
     int count = 0, m = n >> 1;
     for (int i = 0; i < m; ++i) {
         for (int j = m; j < n; ++j) {

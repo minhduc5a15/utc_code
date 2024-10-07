@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef long long ll;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 ll solve(const vector<int> &arr, int n, int m) {
     vector<ll> dp(m + 1, 0);

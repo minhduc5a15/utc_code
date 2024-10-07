@@ -22,7 +22,7 @@ int max_side(const matrixi &matrix, int n, int m, int num) {
     }
     int max_side = 0;
     for (const vi &row: F) {
-        max_side = max(max_side, *max_element(row.begin(), row.end()));
+        max_side = max(max_side, *ranges::max_element(row));
     }
     return max_side;
 }

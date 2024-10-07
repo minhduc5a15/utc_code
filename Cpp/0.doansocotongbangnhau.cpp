@@ -38,14 +38,13 @@ int main() {
         }
         int max_sum = arr.back();
         divisor(max_sum);
-        sort(divisors.begin(), divisors.end());
+        ranges::sort(divisors);
         int step = 0;
         for (int div: divisors) {
             int s = max_sum / div;
             int d = 0, count = 0;
-            bool check;
             while (true) {
-                check = false;
+                bool check = false;
                 for (int j = d + 1; j <= n; ++j) {
                     if (arr[j] - arr[d] == div) {
                         check = true;
@@ -61,8 +60,7 @@ int main() {
                 break;
             }
         }
-        int result = max_sum / step;
-        if (result) cout << id << ' ' << result << '\n';
+        if (int result = max_sum / step) cout << id << ' ' << result << '\n';
         else cout << id << ' ' << '\n';
         arr.clear();
         divisors.clear();

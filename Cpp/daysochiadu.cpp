@@ -18,7 +18,7 @@ int main() {
     while (q--) {
         int index, value;
         cin >> index >> value;
-        if (index > (int) mp[value].size()) {
+        if (index > static_cast<int>(mp[value].size())) {
             cout << "-1\n";
         }
         else {

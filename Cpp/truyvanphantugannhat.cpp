@@ -36,20 +36,19 @@ public:
         int mid = (l + r) >> 1;
         build(id << 1, l, mid);
         build(id << 1 | 1, mid + 1, r);
-        merge(getAll(tree[id << 1]), getAll(tree[id << 1 | 1]), back_inserter(tree[id]));
+        ranges::merge(getAll(tree[id << 1]), getAll(tree[id << 1 | 1]), back_inserter(tree[id]));
     }
 
     pii query(int id, int start, int end, int x, int l, int r) {
         if (l > end or r < start) return {0, 0};
         if (l <= start or end <= r) {
             const vi &node = tree[id];
-            int min_val = node.front(), max_val = node.back();
-            if (x >= max_val) return {max_val, count(node, max_val)};
+            int min_val = node.front();
+            if (int max_val = node.back(); x >= max_val) return {max_val, count(node, max_val)};
             if (x <= min_val) return {min_val, count(node, min_val)};
-            vi::const_iterator it = lb(node, x);
+            auto it = lb(node, x);
             if (*it == x) return {x, ub(node, x) - it};
-            vi::const_iterator left = prev(it, 1);
-            if (x - *left <= *it - x) return {*left, count(node, *left)};
+            if (auto left = prev(it, 1); x - *left <= *it - x) return {*left, count(node, *left)};
             return {*it, ub(node, *it) - it};
         }
         int mid = (start + end) >> 1;
@@ -68,12 +67,11 @@ public:
 
     void solve() {
         build(1, 1, n);
-        pii res;
         int x, l, r;
         while (q--) {
             cin >> x >> l >> r;
-            res = query(1, 1, n, x, l, r);
-            cout << res.first << ' ' << res.second << '\n';
+            auto [fst, snd] = query(1, 1, n, x, l, r);
+            cout << fst << ' ' << snd << '\n';
         }
     }
 };
