@@ -74,7 +74,6 @@ int main() {
 
     for (int i = q - 1; i >= 0; --i) {
         auto [e, c] = queries[i];
-        // cout << dsu.get_size(c) << '\n';
         result[i] = dsu.get_size(c);
         dsu.handle(graph[e].u, graph[e].v);
     }
