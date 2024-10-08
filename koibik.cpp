@@ -34,7 +34,7 @@ int bfs(const string &start, const string &goal) {
                 bool clockwise = dir == 0;
                 string newState = rotate(current, face, clockwise);
                 if (newState == goal) return steps + 1;
-                if (visited.find(newState) == visited.end()) {
+                if (!visited.contains(newState)) {
                     visited[newState];
                     q.push({newState, steps + 1});
                 }
