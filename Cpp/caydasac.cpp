@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-const int MAXN = 100005;
+constexpr int MAXN = 100005;
 typedef vector<int> vi;
 
 vector<vi> tree(MAXN, vi()), dp(MAXN, vi(10, 0));
