@@ -6,12 +6,12 @@ struct Node {
     int w, s, val;
     bool f;
 
-    Node(int x) {
+    explicit Node(int x) {
         left = right = nullptr;
         w = rand();
         s = 1;
         val = x;
-        f = 0;
+        f = false;
     }
 };
 
@@ -19,16 +19,15 @@ class Treap {
 private:
     Node *root;
 public:
-
     Treap(): root(nullptr) {}
 
-    int size(Node *treap) {
+    int size(Node *treap) const {
         return treap == nullptr ? 0 : treap->s;
     }
 
-    void push(Node *treap) {
+    void push(Node *treap) const {
         if (treap && treap->f) {
-            treap->f = 0;
+            treap->f = false;
             swap(treap->left, treap->right);
             if (treap->left) treap->left->f ^= 1;
             if (treap->right) treap->right->f ^= 1;
@@ -38,14 +37,12 @@ public:
     void split(Node *treap, Node *&left, Node *&right, int k) {
         if (treap == nullptr) {
             left = right = nullptr;
-        }
-        else {
+        } else {
             push(treap);
             if (size(treap->left) < k) {
                 split(treap->right, treap->right, right, k - size(treap->left) - 1);
                 left = treap;
-            }
-            else {
+            } else {
                 split(treap->left, left, treap->left, k);
                 right = treap;
             }
@@ -56,18 +53,15 @@ public:
     void merge(Node *&treap, Node *left, Node *right) {
         if (left == nullptr) {
             treap = right;
-        }
-        else if (right == nullptr) {
+        } else if (right == nullptr) {
             treap = left;
-        }
-        else {
+        } else {
             push(left);
             push(right);
             if (left->w < right->w) {
                 merge(left->right, left->right, right);
                 treap = left;
-            }
-            else {
+            } else {
                 merge(right->left, left, right->left);
                 treap = right;
             }

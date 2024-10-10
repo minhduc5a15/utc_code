@@ -30,7 +30,6 @@ int main() {
             }
         }
         cout << "Y\n";
-        return;
     };
     while (q--) {
         cin >> l >> r;
