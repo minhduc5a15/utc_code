@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <set>
-#include <unordered_map>
+#include <map>
 using namespace std;
 
 int main() {
@@ -14,30 +13,25 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    set<int> s;
-    set<int>::iterator it;
-    unordered_map<int, int> mp;
-    s.insert(arr.front());
+    map<int, int> mp;
+    mp[arr.front()] = 0;
     for (int x: arr) {
-        it = s.lower_bound(x);
-        if (*it == x) continue;
-        if (it == s.end()) {
-            mp[x] = mp[*(--it)];
+        auto it = mp.lower_bound(x);
+        if (it->first == x) continue;
+        if (it == mp.end()) {
+            mp[x] = (--it)->second;
         }
-        else if (it == s.begin()) {
-            mp[x] = mp[*it];
+        else if (it == mp.begin()) {
+            mp[x] = it->second;
         }
         else {
-            mp[x] = mp[*it];
-            mp[x] = max(mp[x], mp[*(--it)]);
+            mp[x] = it->second;
+            mp[x] = max(mp[x], (--it)->second);
         }
         ++mp[x];
-        s.insert(x);
     }
-    for (int x: s) {
-        cout << x << ' ' << mp.at(x) << '\n';
+    for (auto [k, _]: mp) {
+        cout << k << ' ' << mp.at(k) << '\n';
     }
     return 0;
 }
-
-
