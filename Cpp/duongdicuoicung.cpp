@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 vector<int> res;
@@ -18,7 +19,7 @@ void solve(int i) {
         return;
     }
     if (i < n) return res.pop_back();
-    for (int j = __builtin_sqrt(i); j >= 1; --j) {
+    for (int j = sqrt(i); j >= 1; --j) {
         if (i % j) continue;
         solve((j - 1) * (i / j + 1));
     }
