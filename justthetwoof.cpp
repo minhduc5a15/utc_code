@@ -1,17 +1,24 @@
 #include <iostream>
-#include <map>
+#include <queue>
+#include <unordered_map>
 using namespace std;
 typedef long long ll;
 
-map<ll, bool> mp;
+unordered_map<ll, bool> mp;
 ll n;
 
-void test(ll num, int a, int b) {
-    if (num > n) return;
-
-    mp[num] = true;
-    test(num * 10 + a, a, b);
-    test(num * 10 + b, a, b);
+void solve(int a, int b) {
+    queue<ll> q;
+    q.push(a);
+    q.push(b);
+    while (!q.empty()) {
+        ll num = q.front();
+        if (num > n) return;
+        q.pop();
+        mp[num] = true;
+        q.push(num * 10 + a);
+        q.push(num * 10 + b);
+    }
 }
 
 int main() {
@@ -19,13 +26,11 @@ int main() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     cin >> n;
-
     for (int i = 0; i <= 9; ++i) {
         for (int j = i + 1; j <= 9; ++j) {
-            test(i, i, j);
+            solve(i, j);
         }
     }
-
     cout << mp.size() - 1;
     return 0;
 }

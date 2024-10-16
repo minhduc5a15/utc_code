@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
-const int MAXN = 1000001;
+constexpr int MAXN = 1000001;
 
 vector<bool> prime(MAXN, true);
 
 void Sieve() {
-    for (int i = 2; i <= __builtin_sqrt(MAXN); ++i) {
+    for (int i = 2; i <= sqrt(MAXN); ++i) {
         if (prime[i]) {
             for (int p = i * i; p < MAXN; p += i) {
                 prime[p] = false;
