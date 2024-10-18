@@ -25,3 +25,5 @@ cmake-build-debug
 .editorconfig
 .clang-tidy
 bai-tap-lon
+*.save
+out
