@@ -24,10 +24,9 @@ int main() {
         for (int j = 0; j < 3; ++j) {
             if (i != j and arr[i] != arr[j]) {
                 int sum = arr[i] * arr[i] + arr[j] * arr[j];
-                int diff = abs(arr[i] * arr[i] - arr[j] * arr[j]);
-                if (square_number(sum) or square_number(diff)) {
+                if (int diff = abs(arr[i] * arr[i] - arr[j] * arr[j]); square_number(sum) or square_number(diff)) {
                     int d = square_number(sum) ? sum : diff;
-                    min_result = min(min_result, abs(int(sqrt(d)) - arr[3 - i - j]));
+                    min_result = min(min_result, abs(static_cast<int>(sqrt(d)) - arr[3 - i - j]));
                     check = true;
                 }
             }
