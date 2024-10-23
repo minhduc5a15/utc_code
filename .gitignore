@@ -25,9 +25,6 @@ cmake-build-debug
 .editorconfig
 .clang-tidy
 bai-tap-lon
-*.py
-*.rs
-*.java
 test
 test1.cpp
 test.cpp
