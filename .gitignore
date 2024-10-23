@@ -18,7 +18,7 @@ Rust/target
 vnoj-code
 hackerrank
 .vs
-./.idea/utc_code2.iml
+.idea
 .vscode
 cmake-build-debug
 .clang-format
