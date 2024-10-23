@@ -1,1 +1,0 @@
-# [OLP TIN HỌC SINH VIÊN UTC VÒNG THỨ NHẤT](http://laptrinhonline.club/contest/olp20241)

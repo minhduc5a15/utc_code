@@ -1,1 +1,0 @@
-# [Kiểm tra đầu vào lớp Thuật toán - SFIT](http://laptrinhonline.club/contest/testthuattoan)

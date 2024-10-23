@@ -1,1 +1,0 @@
-# [Luyện đề OLP 2024 lần 1](https://laptrinhonline.club/contest/olp2024lt1)
