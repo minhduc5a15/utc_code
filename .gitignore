@@ -34,7 +34,5 @@ test.cpp
 main.cpp
 test.c
 output
->>>>>>> 7591b65 (update)
-
 *.save
 out
