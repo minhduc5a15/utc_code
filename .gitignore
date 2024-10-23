@@ -15,19 +15,12 @@ test.c
 output
 *.md
 .editorconfig
-=======
-*.xml
 *.png
-*.inp
-*.out
 *.json
 *.html
-*.js
 *.ts
 *.go
-*.txt
 *.bat
-*.md
 leetcode
 practice
 dsa
@@ -38,7 +31,6 @@ hackerrank
 .vscode
 cmake-build-debug
 .clang-format
-.editorconfig
 .clang-tidy
 bai-tap-lon
 out
