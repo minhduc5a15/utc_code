@@ -1,0 +1,1 @@
+print(f"Ky niem {int(input()) - 1975} nam ngay Giai phong Mien Nam, thong nhat dat nuoc")

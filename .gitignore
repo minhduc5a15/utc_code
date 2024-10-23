@@ -1,4 +1,5 @@
 *.exe
+<<<<<<< HEAD
 *.txt
 *.py
 *.rs
@@ -15,3 +16,31 @@ test.c
 output
 *.md
 .editorconfig
+=======
+*.xml
+*.png
+*.inp
+*.out
+*.json
+*.html
+*.js
+*.ts
+*.go
+*.txt
+*.bat
+*.md
+leetcode
+practice
+dsa
+Rust/target
+vnoj-code
+hackerrank
+.vs
+./.idea/utc_code2.iml
+.vscode
+cmake-build-debug
+.clang-format
+.editorconfig
+.clang-tidy
+bai-tap-lon
+>>>>>>> 99f2e5cb16fc5b9d2212ce689c65efa92c5e5b2f
