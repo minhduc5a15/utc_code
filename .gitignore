@@ -1,7 +1,6 @@
 *.exe
 *.txt
 *.py
-*.rs
 *.java
 *.xml
 *.out
