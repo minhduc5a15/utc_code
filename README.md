@@ -1,6 +1,6 @@
 # UTC_CODE
 
-## This is a repository of solutions to over 600 problems on the [laptrinhonline.club](http://laptrinhonline.club/) website
+## This is a repository of solutions to over 700 problems on the [laptrinhonline.club](http://laptrinhonline.club/) website
 
 > **Note:** Some solutions are using C++20 and may not get AC because [laptrinhonline.club](http://laptrinhonline.club/) only supports up to C++17.
 
