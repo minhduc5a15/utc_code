@@ -4,7 +4,8 @@
 
 > **Note:** Some solutions are using C++20 and may not get AC because [laptrinhonline.club](http://laptrinhonline.club/) only supports up to C++17.
 
-## Author: [Minh Duc](http://laptrinhonline.club/user/MinhDuc_CNTT1_K64)
+## Author: <a href="http://laptrinhonline.club/user/MinhDuc_CNTT1_K64" style="color: #ffb100;">MinhDuc_CNTT1_K64</a>
+
 
 ### Remember to rewrite the code at least once, instead of copying and pasting
 
