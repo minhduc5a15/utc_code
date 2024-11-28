@@ -4,7 +4,7 @@
 
 > **Note:** Some solutions are using C++20 and may not get AC because [laptrinhonline.club](http://laptrinhonline.club/) only supports up to C++17.
 
-## Author: [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&pause=1000&color=FFB100&multiline=true&repeat=false&width=435&height=36&lines=MinhDuc_CNTT1_K64)](https://git.io/typing-svg)
+## Author: [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&pause=1000&color=FFB100&multiline=true&repeat=false&width=435&height=36&lines=MinhDuc_CNTT1_K64)](https://laptrinhonline.club/user/MinhDuc_CNTT1_K64)
 
 ### Remember to rewrite the code at least once, instead of copying and pasting
 
