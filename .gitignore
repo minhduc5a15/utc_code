@@ -6,7 +6,6 @@
 *.inp
 *.js
 .idea
-test
 test1.cpp
 test.cpp
 main.cpp
@@ -32,4 +31,5 @@ cmake-build-debug
 .clang-tidy
 bai-tap-lon
 out
-main.*
+main*
+test*

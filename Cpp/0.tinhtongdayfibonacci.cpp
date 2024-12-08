@@ -1,11 +1,9 @@
 #include <iostream>
 #include <vector>
-using std::cin;
-using std::cout;
-using std::ios_base;
+using namespace std;
 typedef long long ll;
-typedef std::vector<ll> vll;
-typedef std::vector<vll> matrixll;
+typedef vector<ll> vll;
+typedef vector<vll> matrixll;
 constexpr int MOD = 1000000009;
 constexpr int MAT_SIZE = 2;
 
