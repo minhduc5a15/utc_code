@@ -2,7 +2,6 @@
 #include <algorithm>
 using namespace std;
 
-
 int count(string s) {
     int sz = s.length();
     int c = 0;
