@@ -35,7 +35,6 @@ public:
         return x;
     }
 
-m
     void link(Node *x, Node *y) const {
         make_root(x);
         x->parent = y;
