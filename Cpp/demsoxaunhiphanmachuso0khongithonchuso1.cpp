@@ -4,8 +4,8 @@
 using namespace std;
 typedef unsigned long long ull;
 typedef vector<ull> vull;
-const int MAXN = 1000001;
-const int MOD = 1000000007;
+constexpr int MAXN = 1000001;
+constexpr int MOD = 1000000007;
 
 vull fact(MAXN), inverse(MAXN);
 

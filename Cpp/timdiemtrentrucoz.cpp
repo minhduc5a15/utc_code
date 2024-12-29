@@ -3,13 +3,13 @@
 #include <cmath>
 #include <iomanip>
 using namespace std;
-const int MAX_ITER = 9;
-const float TOL = 1e-4;
+constexpr int MAX_ITER = 9;
+constexpr float TOL = 1e-4;
 
 struct Point {
     float x, y, z;
 
-    Point(float x, float y, float z): x(x), y(y), z(z) {}
+    Point(float _x, float _y, float _z): x(_x), y(_y), z(_z) {}
 };
 
 vector<Point> points;

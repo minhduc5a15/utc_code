@@ -6,12 +6,13 @@ using namespace std;
 typedef long long ll;
 typedef double db;
 
-template<typename T1, typename T2> class Point {
+template<typename T1, typename T2>
+class Point {
 public:
     T1 x;
     T2 y;
 
-    Point<T1, T2>(T1 x, T2 y): x(std::move(x)), y(std::move(y)) {};
+    Point(T1 _x, T2 _y): x(std::move(_x)), y(std::move(_y)) {};
 
     Point(): x(), y() {};
 
@@ -32,7 +33,7 @@ public:
 
 db getTheta(const Point<ll, ll> &A, const Point<ll, ll> &C) {
     if (A.y == C.y) return M_PI_2;
-    return atan((db) (C.x - A.x) * 1.0 / (A.y - C.y) * 1.0);
+    return atan(static_cast<db>(C.x - A.x) * 1.0 / (A.y - C.y) * 1.0);
 }
 
 db getEdge(const Point<ll, ll> &A, const Point<ll, ll> &C) {

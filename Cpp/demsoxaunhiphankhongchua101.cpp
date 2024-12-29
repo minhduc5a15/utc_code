@@ -2,7 +2,7 @@
 #include <vector>
 typedef long long ll;
 using namespace std;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 ll solve(ll n) {
     --n;

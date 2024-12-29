@@ -1,9 +1,9 @@
-t#include <iostream>
+#include <iostream>
 #include <vector>
 #include <cmath>
 using namespace std;
 typedef long long ll;
-const int MAXN = 1000001;
+constexpr int MAXN = 1000001;
 
 vector<bool> primes;
 

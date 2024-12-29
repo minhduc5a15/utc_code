@@ -3,7 +3,7 @@
 #include <vector>
 typedef long long ll;
 typedef std::vector<ll> vll;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 bool is_good(int a, int b, int n) {
     while (n) {

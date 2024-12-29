@@ -2,8 +2,8 @@
 #include <vector>
 using namespace std;
 typedef long long ll;
-const int MOD = 1000000007;
-const int MAX = 100001;
+constexpr int MOD = 1000000007;
+constexpr int MAX = 100001;
 
 vector<ll> factorial(MAX), inverse(MAX);
 

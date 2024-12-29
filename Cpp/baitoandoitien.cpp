@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAXN = 10001;
+constexpr int MAXN = 10001;
 
 int main() {
     ios_base::sync_with_stdio(false);

@@ -25,13 +25,13 @@ int main() {
         ranges[i].id = i;
     }
     sort(ranges.begin(), ranges.end());
-    vector<int> contains(n), contained_by(n);
+    vector<int> contains(n), contained(n);
 
     ordered_set tree;
     for (int i = 0; i < n; ++i) {
         int r = ranges[i].r, id = ranges[i].id;
         int k = tree.order_of_key({r, -1});
-        contained_by[id] = i - k;
+        contained[id] = i - k;
         tree.insert({r, i});
     }
     tree.clear();
@@ -42,12 +42,11 @@ int main() {
         tree.insert({r, i});
     }
     for (int num: contains) {
-        cout << num << ' ';
+        cout << (num > 0) << ' ';
     }
     cout << '\n';
-    for (int num: contained_by) {
-        cout << num << ' ';
+    for (int num: contained) {
+        cout << (num > 0) << ' ';
     }
-
     return 0;
 }

@@ -2,7 +2,7 @@
 #include <unordered_map>
 using namespace std;
 typedef long long ll;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 unordered_map<int, ll> mp;
 

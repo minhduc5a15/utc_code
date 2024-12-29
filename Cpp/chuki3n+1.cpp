@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-const int MAXN = 1000000;
+constexpr int MAXN = 1000000;
 
 vector<int> saved(MAXN + 1);
 

@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef vector<int> vi;
-const int MAXN = 1001;
+constexpr int MAXN = 1001;
 
 vi visited(MAXN, 0);
 vector<vi> graph(MAXN);

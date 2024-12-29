@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 using namespace std;
-const int MAXN = 1000001;
+constexpr int MAXN = 1000001;
 
 vector<int> saved(MAXN);
 

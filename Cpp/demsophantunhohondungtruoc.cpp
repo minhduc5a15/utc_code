@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-const int MAXN = 100005;
+constexpr int MAXN = 100005;
 
 vector<int> BIT(MAXN * 3 + 5, 0);
 

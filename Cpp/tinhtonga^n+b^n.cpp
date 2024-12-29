@@ -6,8 +6,8 @@ typedef std::vector<vll> matrixll;
 using std::cin;
 using std::cout;
 using std::ios_base;
-const int MOD = 1000000007;
-const int MAT_SIZE = 2;
+constexpr int MOD = 1000000007;
+constexpr int MAT_SIZE = 2;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     matrixll result(MAT_SIZE, vll(MAT_SIZE, 0));

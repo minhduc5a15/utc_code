@@ -16,7 +16,6 @@ output
 *.json
 *.html
 *.ts
-*.go
 *.bat
 leetcode
 practice
@@ -33,3 +32,5 @@ bai-tap-lon
 out
 main*
 test*
+*.md
+!README.md

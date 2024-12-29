@@ -4,7 +4,7 @@
 using namespace std;
 typedef long long ll;
 typedef vector<ll> vll;
-const int MOD = 1000000007;
+constexpr int MOD = 1000000007;
 
 unordered_map<ll, vll> graph;
 vll visited, memo;

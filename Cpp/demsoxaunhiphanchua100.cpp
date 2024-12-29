@@ -4,8 +4,8 @@ using namespace std;
 typedef long long ll;
 typedef vector<ll> vll;
 typedef vector<vll> matrixll;
-const int MOD = 1000000007;
-const int MAT_SIZE = 2;
+constexpr int MOD = 1000000007;
+constexpr int MAT_SIZE = 2;
 
 matrixll multiply(const matrixll &matrixA, const matrixll &matrixB) {
     matrixll result(MAT_SIZE, vll(MAT_SIZE, 0));

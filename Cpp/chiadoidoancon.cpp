@@ -3,7 +3,7 @@
 #include <climits>
 using namespace std;
 typedef long long ll;
-const int ITER = 5;
+constexpr int ITER = 5;
 
 vector<ll> prefix_sum;
 

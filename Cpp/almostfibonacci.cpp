@@ -6,8 +6,8 @@ using std::ios_base;
 typedef unsigned long long ull;
 typedef std::vector<ull> vull;
 typedef std::vector<vull> matrixull;
-const int MOD = 1000000007;
-const int MAT_SIZE = 2;
+constexpr int MOD = 1000000007;
+constexpr int MAT_SIZE = 2;
 
 matrixull multiply(const matrixull &matrixA, const matrixull &matrixB) {
     matrixull result(MAT_SIZE, vull(MAT_SIZE, 0));

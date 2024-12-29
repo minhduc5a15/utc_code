@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAXN = 1000001;
+constexpr int MAXN = 1000001;
 
 vector<bool> primes;
 vector<int> nums(78498);

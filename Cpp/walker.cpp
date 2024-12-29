@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef vector<bool> vb;
-const int MAXN = 25;
+constexpr int MAXN = 25;
 
 string path;
 vector<vb> visited(MAXN << 1, vb(MAXN << 1, false));

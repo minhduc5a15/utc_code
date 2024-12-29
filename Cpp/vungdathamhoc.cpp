@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 typedef long long ll;
-const int MAXN = 1000000;
+constexpr int MAXN = 1000000;
 
 vector<bool> visited(MAXN);
 vector<ll> graph[MAXN];

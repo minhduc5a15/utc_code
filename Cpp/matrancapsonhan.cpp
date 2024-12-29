@@ -21,7 +21,7 @@ matrixll multiply(const matrixll &A, const matrixll &B) {
     return C;
 }
 
-matrixll identity(int size) {
+matrixll ident(int size) {
     matrixll I(size, vll(size, 0));
     for (int i = 0; i < size; ++i) {
         I[i][i] = 1;
@@ -30,7 +30,7 @@ matrixll identity(int size) {
 }
 
 matrixll power(matrixll base, ll exp) {
-    matrixll result = identity(base.size());
+    matrixll result = ident(base.size());
     while (exp) {
         if (exp & 1) result = multiply(result, base);
         base = multiply(base, base);

@@ -5,7 +5,7 @@
 #include <algorithm>
 #define getAll(x) (x).begin(), (x).end()
 typedef std::vector<int> vi;
-const double PI = acos(-1);
+constexpr double PI = acos(-1);
 
 bool check(double mid, const vi &radii, int F) {
     int pieces = 0;

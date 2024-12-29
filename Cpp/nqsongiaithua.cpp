@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 typedef long long ll;
-const ll MOD = 2000000014;
+constexpr ll MOD = 2000000014;
 
 ll power(ll base, ll exponent, ll modulus = MOD) {
     ll result = 1;
