@@ -16,6 +16,7 @@ output
 *.html
 *.ts
 *.bat
+*.o
 leetcode
 practice
 dsa
