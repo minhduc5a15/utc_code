@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class minhduc5a12 {
     private static final int MOD = 1000000007;
 
     private static long power(long base, long exponent, int modulus) {
