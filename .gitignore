@@ -17,6 +17,7 @@ output
 *.ts
 *.bat
 *.o
+*.h
 leetcode
 practice
 dsa
@@ -34,3 +35,4 @@ main*
 test*
 *.md
 !README.md
+.qodo
