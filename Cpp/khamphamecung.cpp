@@ -1,6 +1,5 @@
 #include <iostream>
-#include <vector>
-#include <deque>
+#include <queue>
 #include <climits>
 using namespace std;
 
@@ -14,21 +13,21 @@ int main() {
     for (int i = 0; i < m; ++i) {
         int u, v;
         cin >> u >> v;
-        graph[u].push_back(v);
+        graph[u].emplace_back(v);
     }
     vector dist(n + 1, vector(n + 1, -1));
     for (int i = 1; i <= n; ++i) {
-        deque<int> dq;
+        queue<int> qu;
         dist[i][i] = 0;
-        dq.push_back(i);
-        while (!dq.empty()) {
-            int u = dq.front();
-            dq.pop_front();
+        qu.push(i);
+        while (!qu.empty()) {
+            int u = qu.front();
+            qu.pop();
             int d = dist[i][u];
             for (int v: graph[u]) {
                 if (dist[i][v] == -1) {
                     dist[i][v] = d + 1;
-                    dq.push_back(v);
+                    qu.push(v);
                 }
             }
         }
