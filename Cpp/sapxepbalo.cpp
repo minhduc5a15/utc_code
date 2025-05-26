@@ -9,7 +9,6 @@ int main() {
     int n, q, maxm = 0;
     cin >> n;
     vector<pair<int, int>> items(n);
-    items.reserve(n);
     for (int i = 0; i < n; ++i) {
         cin >> items[i].first >> items[i].second;
     }

@@ -18,6 +18,8 @@ output
 *.bat
 *.o
 *.h
+*.OUT
+*.INP
 leetcode
 practice
 dsa
@@ -36,3 +38,4 @@ test*
 *.md
 !README.md
 .qodo
+Test
